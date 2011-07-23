@@ -14,23 +14,18 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "beatportr"
-  gem.homepage = "http://github.com/mateomurphy/beatportr"
+  gem.name = "beatport"
+  gem.homepage = "http://github.com/mateomurphy/beatport"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{TODO: ruby gem for accessing the beatport api}
+  gem.description = %Q{TODO: ruby gem for accessing the beatport api}
   gem.email = "mateo.murphy@gmail.com"
   gem.authors = ["Mateo Murphy"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
 
-require 'rake/testtask'
-Rake::TestTask.new(:test) do |test|
-  test.libs << 'lib' << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-end
+#task :default => :test
 
 require 'rcov/rcovtask'
 Rcov::RcovTask.new do |test|
@@ -40,14 +35,21 @@ Rcov::RcovTask.new do |test|
   test.rcov_opts << '--exclude "gems/*"'
 end
 
-task :default => :test
+
 
 require 'rake/rdoctask'
 Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "beatportr #{version}"
+  rdoc.title = "beatport #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
+
+require 'rspec/core/rake_task'
+
+RSpec::Core::RakeTask.new('spec')
+
+# If you want to make this the default task
+task :default => :spec
