@@ -1,6 +1,5 @@
 require 'spec_helper'
 
-
 module Beatport 
   describe Release do
   
