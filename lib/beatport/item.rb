@@ -6,6 +6,8 @@ module Beatport
     @@associations = {}
         
     def initialize(data = {})
+      raise ArgumentError, "Invalid data passed to Item.new" unless data.is_a?(Hash)
+            
       # OpenStruct doesn't like ids in its data, so we store it after the call to super
       id = data.delete('id')
       
