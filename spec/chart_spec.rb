@@ -3,6 +3,14 @@ require 'spec_helper'
 module Beatport 
   describe Chart do
   
+    describe '.find' do
+      chart = Chart.find(15722)
+      chart.id.should == 15722
+      chart.genres.first.name.should == "Trance"
+      chart.price.usd.to_s.should == '15.90'
+      chart.tracks.length.should == 10
+    end
+  
     describe '.all' do
       it "should get arbitrary charts" do
         charts = Chart.all
