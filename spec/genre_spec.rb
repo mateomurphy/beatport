@@ -6,6 +6,9 @@ module Beatport
       it "should retrieve information about the trance genre via its id" do
         genre = Genre.find(7)
         genre.name.should == "Trance"
+        
+        genre.slideshow.header.length.should be > 1
+        genre.slideshow.small.length.should be > 1
       end
     
       it "should include subgenre information" do
