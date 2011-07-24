@@ -2,29 +2,20 @@ require 'spec_helper'
 
 module Beatport 
   describe Genre do
-    let :trance do
-      Genre.new({"slug"=>"trance", "name"=>"Trance", "id"=>7, "subgenres"=>[]}) 
-    end
-  
     describe '.find' do
-      it "should retrieve information about the trance genre via the slug" do
-        genre = Genre.find(trance.slug).should
-      
-        genre.should == trance
-      end
-    
       it "should retrieve information about the trance genre via its id" do
-        genre = Genre.find(trance.id)
-        genre.should == trance
+        genre = Genre.find(7)
+        genre.name.should == "Trance"
       end
     
       it "should include subgenre information" do
-        genre = Genre.find(trance.id)
+        genre = Genre.find(7)
         genre.subgenres.length.should be > 1
       end
     
-      it "should not choke on a non-existant genre" do
-        Beatport.genre('fakegenre').should be_nil
+      it "should return the default genre with an invalid id" do
+        genre = Beatport.genre(9999999)
+        genre.name.should == "default"
       end
     end
   
@@ -42,11 +33,11 @@ module Beatport
       end
   
       it "should retrieve information about the trance genre via the slug" do
-        Genre.all(trance.slug).should == [trance]
+        Genre.all('trance').first.name.should == "Trance"
       end
     
       it "should retrieve information about the trance genre via its id" do
-        Genre.all(trance.id).should == [trance]
+        Genre.all(7).first.name.should == "Trance"
       end
     end
   end
