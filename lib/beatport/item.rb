@@ -10,8 +10,9 @@ module Beatport
     def initialize(data = {})
       raise ArgumentError, "Invalid data passed to Item.new: #{data.inspect}" unless data.is_a?(Hash)
             
-      # OpenStruct doesn't like ids in its data, so we store it after the call to super
+      # OpenStruct doesn't like id or type, so we store them after the call to super
       id = data.delete('id')
+      type = data.delete('type')
       
       self.class.associations.each do |k, v|
         associate(data, k, v[:list], v[:klass])
@@ -20,10 +21,15 @@ module Beatport
       super(data)
       
       @table['id'] = id if id
+      @table['type'] = type if type
     end
     
     def id
       @table['id']
+    end
+    
+    def type
+      @table['type']
     end
     
     # Allow treating the item as a hash
