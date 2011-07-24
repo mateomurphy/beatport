@@ -17,5 +17,8 @@ module Beatport
       ChartOverview.get
     end
     
+    def self.featured(*args)
+      Client.retrieve('featured/charts', Chart, *args)
+    end    
   end
 end

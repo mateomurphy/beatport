@@ -61,5 +61,20 @@ module Beatport
         end
       end
     end
+    
+    describe '.featured' do
+      it "should get the featured charts for the Home page" do
+        charts = Chart.featured
+        charts.length.should be > 1
+      end
+      
+      it "should get the featured charts for the Trance page" do
+        charts = Chart.featured :genreId => 7
+        charts.length.should be > 1
+        charts.each do |chart|
+          chart.genres.map(&:id).should include(7)
+        end
+      end
+    end
   end
 end
