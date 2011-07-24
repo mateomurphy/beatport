@@ -1,5 +1,3 @@
-require 'ostruct'
-
 module Beatport
   
   class Item < OpenStruct
@@ -17,7 +15,7 @@ module Beatport
       
       super(data)
       
-      @table['id'] = id
+      @table['id'] = id if id
     end
     
     def id

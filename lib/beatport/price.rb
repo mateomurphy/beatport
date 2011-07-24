@@ -1,5 +1,3 @@
-require 'ostruct'
-
 module Beatport
   class Price
     attr_reader :usd, :eur, :gbp
