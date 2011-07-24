@@ -17,6 +17,9 @@ module Beatport
       Client.retrieve('releases', Release, *args)
     end    
     
+    def self.featured(*args)
+      Client.retrieve('featured/releases', Release, *args)
+    end
   end
 end
   

@@ -66,5 +66,35 @@ module Beatport
         end
       end
     end
+
+    describe '.featured' do
+      it "should get the featured releases for the Home page" do
+        releases = Release.featured
+        releases.length.should be > 1
+      end
+      
+      it "should get the featured releases for the Trance page" do
+        releases = Release.featured :genreId => 7
+        releases.length.should be > 1
+        releases.each do |release|
+          release.genres.map(&:id).should include(7)
+        end  
+      end
+      
+      it "should get 'Just Added' featured releases for the Trance page" do
+        releases = Release.featured :genreId => 7, :justAdded => true
+        releases.length.should be > 1
+        releases.each do |release|
+          release.genres.map(&:id).should include(7)
+        end  
+      end
+      
+      it "should not give the same releases with justAdded true and false" do
+        featured = Release.featured :genreId => 7
+        just_added = Release.featured :genreId => 7, :justAdded => true
+        
+        featured.map(&:id).should_not == just_added.map(&:id)
+      end
+    end
   end
 end
