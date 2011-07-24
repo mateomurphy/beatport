@@ -1,6 +1,8 @@
-= beatport
+= Beatport
 
-Description goes here.
+A ruby gem for accessing the Beatport API
+
+http://api.beatport.com/
 
 == Contributing to beatport
  
