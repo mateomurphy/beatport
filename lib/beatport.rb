@@ -10,6 +10,8 @@ module Beatport
   autoload :Client,     'beatport/client'
   autoload :Collection, 'beatport/collection'
   autoload :Genre,      'beatport/genre'
+  autoload :Image,      'beatport/image'
+  autoload :Images,     'beatport/images'    
   autoload :Item,       'beatport/item'
   autoload :Label,      'beatport/label'
   autoload :Release,    'beatport/release'
