@@ -67,5 +67,20 @@ module Beatport
         end
       end
     end
+    
+    describe '.featured' do
+      it "should get the featured labels for the Home page" do
+        labels = Label.featured
+        labels.length.should be > 1
+      end
+      
+      it "should get the featured labels for the Trance page" do
+        labels = Label.featured :genreId => 7
+        labels.length.should be > 1
+        labels.each do |label|
+          label.genres.map(&:id).should include(7)
+        end
+      end
+    end
   end
 end

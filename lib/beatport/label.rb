@@ -14,6 +14,8 @@ module Beatport
       Client.retrieve 'labels', Label, *args
     end
     
+    def self.featured(*args)
+      Client.retrieve('featured/labels', Label, *args)
+    end    
   end
-  
 end
