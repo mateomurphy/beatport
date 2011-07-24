@@ -1,11 +1,12 @@
 module Beatport
   class Track < Item
-    has_many :genres
-    has_many :artists
-    has_many :charts
-    has_one :release
-    has_one :label
-    
+    has_many :genres, Genre
+    has_many :artists, Artist
+    has_many :charts, Chart
+    has_one :release, Release
+    has_one :label, Label
+    has_one :price, Price
+    has_one :images, Images
     
     # Returns the track with the given id
     def self.find(id)

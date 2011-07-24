@@ -2,7 +2,6 @@ module Beatport
   class Chart < Item
     has_many :genres, Genre
     
-    
     def self.find(id)
       Client.retrieve('charts/detail', Chart, :id => id)
     end

@@ -6,6 +6,7 @@ module Beatport
     has_one :price, Price
     has_one :discount, Price
     has_one :trackPrice, Price
+    has_one :images, Images
     
     def self.find(id)
       Client.retrieve('releases/detail', Release, :id => id)

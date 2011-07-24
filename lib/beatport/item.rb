@@ -41,13 +41,13 @@ module Beatport
       end
     end
     
-    def self.has_one(var, klass = Item)
+    def self.has_one(var, klass)
       self.send(:attr_reader, var)
 
       @@associations[var] = {:list => false, :klass => klass}
     end
     
-    def self.has_many(var, klass = Item)
+    def self.has_many(var, klass)
       self.send(:attr_reader, var)
 
       @@associations[var] = {:list => true, :klass => klass}

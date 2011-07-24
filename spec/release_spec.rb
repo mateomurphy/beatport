@@ -9,7 +9,8 @@ module Beatport
         release.id.should == 164808
         release.name.should == "Anjunabeats Volume 6 (Unmixed - DJ Ready)"
         release.trackPrice.usd.to_s.should == "43.21"
-        
+        release.artists.map(&:name).should include("Paul Keeley")
+        release.images.small.width.should == 30
       end
     end
   
