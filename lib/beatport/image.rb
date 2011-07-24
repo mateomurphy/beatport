@@ -1,5 +1,5 @@
 module Beatport
-  class Image < OpenStruct
+  class Image < Item
     
     
   end
