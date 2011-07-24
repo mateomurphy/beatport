@@ -4,10 +4,11 @@ module Beatport
   describe Release do
   
     describe '.find' do
-      it "should get Anjunabeats Volume 6 when given 164808" do
+      it "should get Anjunabeats Volume 6 when given id 164808" do
         release = Release.find(164808)
-        
+        release.id.should == 164808
         release.name.should == "Anjunabeats Volume 6 (Unmixed - DJ Ready)"
+        release.trackPrice.usd.to_s.should == "43.21"
         
       end
     end

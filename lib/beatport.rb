@@ -1,18 +1,21 @@
 # http://api.beatport.com/index.html
 
 require 'httparty'
-require 'beatport/client'
+require 'money'
+
 
 module Beatport
   autoload :Artist,     'beatport/artist'
   autoload :Chart,      'beatport/chart'
+  autoload :Client,     'beatport/client'
   autoload :Collection, 'beatport/collection'
   autoload :Genre,      'beatport/genre'
   autoload :Item,       'beatport/item'
   autoload :Label,      'beatport/label'
   autoload :Release,    'beatport/release'
   autoload :Track,      'beatport/track'  
-
+  autoload :Price,      'beatport/price'
+  
   def self.artist(id)
     Artist.find(id)
   end

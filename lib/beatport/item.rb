@@ -46,7 +46,6 @@ module Beatport
 
       @@associations[var] = {:list => false, :klass => klass}
     end
-
     
     def self.has_many(var, klass = Item)
       self.send(:attr_reader, var)

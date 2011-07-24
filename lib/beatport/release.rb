@@ -3,6 +3,9 @@ module Beatport
     has_one :label, Label
     has_many :artists, Artist
     has_many :genres, Genre
+    has_one :price, Price
+    has_one :discount, Price
+    has_one :trackPrice, Price
     
     def self.find(id)
       Client.retrieve('releases/detail', Release, :id => id)
