@@ -4,7 +4,7 @@ module Beatport
     @@associations = {}
         
     def initialize(data = {})
-      raise ArgumentError, "Invalid data passed to Item.new" unless data.is_a?(Hash)
+      raise ArgumentError, "Invalid data passed to Item.new: #{data.inspect}" unless data.is_a?(Hash)
             
       # OpenStruct doesn't like ids in its data, so we store it after the call to super
       id = data.delete('id')
@@ -33,10 +33,18 @@ module Beatport
       return unless a
       
       if many
-        instance_variable_set(:"@#{var}", a.map { |g| klass.new(g) })
+        a.map! { |g| klass.new(g) }
+      elsif a.is_a?(Hash)
+        a = klass.new(a)
+      elsif a == []
+        # In some cases, when there's no data returned for an association it'll be an empty array instead of a hash
+        a = nil
       else
-        instance_variable_set(:"@#{var}", klass.new(a))
+        raise ArgumentError, "Invalid data for association: #{a.inspect}"
       end
+      
+      instance_variable_set(:"@#{var}", a)
+      
     end
     
     def self.has_one(var, klass)
