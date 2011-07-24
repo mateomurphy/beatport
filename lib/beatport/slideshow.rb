@@ -1,6 +1,6 @@
 module Beatport
   class Slideshow < Item
-    has_many :header, Image
-    has_many :small, Image
+    has_many :header, Slide
+    has_many :small, Slide
   end
 end
