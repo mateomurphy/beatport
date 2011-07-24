@@ -11,6 +11,7 @@ module Beatport
         release.trackPrice.usd.to_s.should == "43.21"
         release.artists.map(&:name).should include("Paul Keeley")
         release.images.small.width.should == 30
+        release.recommendations.releases.length.should be > 1
       end
     end
   
