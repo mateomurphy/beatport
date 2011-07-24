@@ -2,6 +2,9 @@ module Beatport
   class Label < Item
     has_many :genres, Genre
     has_many :subgenres, Genre
+    has_many :topDownnloads, Track
+    has_many :featuredReleases, Release
+    has_many :mostPopularReleases, Release
     
     def self.find(id)
       Client.retrieve('labels/detail', Label, :id => id)

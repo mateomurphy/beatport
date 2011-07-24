@@ -3,6 +3,17 @@ require 'spec_helper'
 module Beatport 
   describe Label do
   
+    describe 'find' do
+      it "should get Anjunadeep give id 1390" do
+        label = Label.find(1390)
+        label.id.should == 1390
+        label.name.should == "Anjunadeep"
+        label.topDownloads.length.should be > 1
+        label.featuredReleases.length.should be > 1
+        label.mostPopularReleases.length.should be > 1
+      end
+    end
+  
     describe '.all' do
       it "should get arbitrary labels" do
         labels = Label.all
