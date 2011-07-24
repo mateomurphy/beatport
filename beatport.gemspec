@@ -19,10 +19,31 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
-    "VERSION"
+    "VERSION",
+    "beatport.gemspec",
+    "lib/beatport.rb",
+    "lib/beatport/artist.rb",
+    "lib/beatport/chart.rb",
+    "lib/beatport/client.rb",
+    "lib/beatport/collection.rb",
+    "lib/beatport/genre.rb",
+    "lib/beatport/item.rb",
+    "lib/beatport/label.rb",
+    "lib/beatport/release.rb",
+    "lib/beatport/track.rb",
+    "spec/artist_spec.rb",
+    "spec/chart_spec.rb",
+    "spec/collection_spec.rb",
+    "spec/genre_spec.rb",
+    "spec/item_spec.rb",
+    "spec/label_spec.rb",
+    "spec/release_spec.rb",
+    "spec/spec_helper.rb",
+    "spec/track_spec.rb"
   ]
   s.homepage = %q{http://github.com/mateomurphy/beatport}
   s.licenses = ["MIT"]
@@ -36,12 +57,14 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<httparty>, [">= 0"])
+      s.add_runtime_dependency(%q<money>, [">= 0"])
       s.add_development_dependency(%q<rspec>, [">= 0"])
       s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.6.3"])
       s.add_development_dependency(%q<rcov>, [">= 0"])
     else
       s.add_dependency(%q<httparty>, [">= 0"])
+      s.add_dependency(%q<money>, [">= 0"])
       s.add_dependency(%q<rspec>, [">= 0"])
       s.add_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_dependency(%q<jeweler>, ["~> 1.6.3"])
@@ -49,6 +72,7 @@ Gem::Specification.new do |s|
     end
   else
     s.add_dependency(%q<httparty>, [">= 0"])
+    s.add_dependency(%q<money>, [">= 0"])
     s.add_dependency(%q<rspec>, [">= 0"])
     s.add_dependency(%q<bundler>, ["~> 1.0.0"])
     s.add_dependency(%q<jeweler>, ["~> 1.6.3"])
