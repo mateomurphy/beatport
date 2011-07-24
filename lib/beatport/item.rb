@@ -43,10 +43,10 @@ module Beatport
       return unless a
       
       if collection && a.is_a?(Array)
-        a.map! { |g| klass.new(g) }
+        a = a.compact.map { |g| klass.new(g) }
       elsif !collection && a.is_a?(Hash)
         a = klass.new(a)
-      elsif a == []
+      elsif a == [] # || !a
         # In some cases, when there's no data returned for an association it'll be an empty array instead of a hash
         a = nil
       else
@@ -54,7 +54,6 @@ module Beatport
       end
       
       instance_variable_set(:"@#{var}", a)
-      
     end
     
     def self.has_one(var, klass)
