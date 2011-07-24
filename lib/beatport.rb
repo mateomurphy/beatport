@@ -15,6 +15,7 @@ module Beatport
   autoload :Images,          'beatport/images'    
   autoload :Item,            'beatport/item'
   autoload :Label,           'beatport/label'
+  autoload :List,            'beatport/list'
   autoload :Release,         'beatport/release'
   autoload :Slideshow,       'beatport/slideshow'
   autoload :Track,           'beatport/track'  

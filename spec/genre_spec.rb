@@ -9,6 +9,7 @@ module Beatport
         
         genre.slideshow.header.length.should be > 1
         genre.slideshow.small.length.should be > 1
+        genre.topDownloads.length.should be > 1
         
         genre.features.each do |feature|
           if feature.autoload
@@ -49,6 +50,20 @@ module Beatport
       it "should retrieve information about the trance genre via its id" do
         Genre.all(7).first.name.should == "Trance"
       end
+    end
+    
+    describe '.overview' do
+      it "should retrieve an overview" do
+        overview = Genre.overview
+        overview.length.should be > 0
+        overview.each do |genre|
+          genre.counts.releases.should be > 0
+        
+          # This fails for glitch hop?
+          # genre.list.items.length.should == 3
+        end
+      end
+      
     end
   end
 end
