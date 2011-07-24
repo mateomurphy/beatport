@@ -3,6 +3,16 @@ require 'spec_helper'
 module Beatport 
   describe Artist do
   
+    describe '.find' do
+      it "should find Above & Beyond when given id 7181" do
+        artist = Artist.find(7181)
+        artist.id.should == 7181
+        artist.name.should == "Above & Beyond"
+        artist.topDownloads.length.should be > 1
+        artist.featuredReleases.length.should be > 1
+      end
+    end
+  
     describe '.all' do
       it "should get arbitrary artists" do
         artists = Artist.all
