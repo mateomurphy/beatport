@@ -11,6 +11,7 @@ module Beatport
   autoload :Collection,      'beatport/collection'
   autoload :Feature,         'beatport/feature'
   autoload :Genre,           'beatport/genre'
+  autoload :Home,            'beatport/home'
   autoload :Image,           'beatport/image'
   autoload :Images,          'beatport/images'    
   autoload :Item,            'beatport/item'
@@ -46,8 +47,16 @@ module Beatport
     Genre.find(key)
   end
   
+  def self.genre_overview
+    Genre.overview
+  end
+  
   def self.genres(*args)
     Genre.all(*args)
+  end
+
+  def self.home
+    Home.get
   end
 
   def self.label(id)

@@ -13,5 +13,9 @@ module Beatport
       Client.retrieve 'charts', Chart, *args
     end    
     
+    def self.overview
+      ChartOverview.get
+    end
+    
   end
 end
