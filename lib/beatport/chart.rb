@@ -4,7 +4,7 @@ module Beatport
     
     
     def self.find(id)
-      Client.retrieve('charts/detail', Chart, :id => id).first
+      Client.retrieve('charts/detail', Chart, :id => id)
     end
   
     #  def self.overview(*args)

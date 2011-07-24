@@ -19,7 +19,16 @@ module Beatport
         options[:ids] = key
       end
 
-      Collection.new(klass, get("/#{path}", :query => normalize_options(options)))
+      result = get("/#{path}", :query => normalize_options(options))
+
+      case result['results']
+      when Array
+        Collection.new(klass, result)
+      when Hash
+        klass.new(result['results'])
+      else
+        raise "results is an unexpected class #{result['results'].class}"
+      end
     end 
   
     def self.normalize_options(options)

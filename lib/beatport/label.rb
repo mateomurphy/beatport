@@ -1,10 +1,10 @@
 module Beatport
   class Label < Item
-    has_many :genres
-    has_many :subgenres
+    has_many :genres, Genre
+    has_many :subgenres, Genre
     
     def self.find(id)
-      Client.retrieve('labels/detail', Label, :id => id).first
+      Client.retrieve('labels/detail', Label, :id => id)
     end
 
     def self.all(*args)

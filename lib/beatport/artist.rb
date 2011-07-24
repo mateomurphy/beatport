@@ -4,7 +4,7 @@ module Beatport
     has_many :subgenres, Genre
     
     def self.find(id)
-      Client.retrieve('artists/detail', Artist, :id => id).first
+      Client.retrieve('artists/detail', Artist, :id => id)
     end
 
     def self.all(*args)

@@ -3,6 +3,15 @@ require 'spec_helper'
 module Beatport 
   describe Release do
   
+    describe '.find' do
+      it "should get Anjunabeats Volume 6 when given 164808" do
+        release = Release.find(164808)
+        
+        release.name.should == "Anjunabeats Volume 6 (Unmixed - DJ Ready)"
+        
+      end
+    end
+  
     describe '.all' do
       it "should get arbitrary releases" do
         releases = Release.all
