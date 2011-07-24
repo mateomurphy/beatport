@@ -9,6 +9,7 @@ module Beatport
   autoload :ChartOverview,   'beatport/chart_overview'
   autoload :Client,          'beatport/client'
   autoload :Collection,      'beatport/collection'
+  autoload :Feature,         'beatport/feature'
   autoload :Genre,           'beatport/genre'
   autoload :Image,           'beatport/image'
   autoload :Images,          'beatport/images'    

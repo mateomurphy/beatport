@@ -9,6 +9,13 @@ module Beatport
         
         genre.slideshow.header.length.should be > 1
         genre.slideshow.small.length.should be > 1
+        
+        genre.features.each do |feature|
+          if feature.autoload
+            feature.items.length.should be > 1
+            feature.items.first.class.to_s.should == "Beatport::#{feature.type}"
+          end
+        end
       end
     
       it "should include subgenre information" do

@@ -3,6 +3,7 @@ module Beatport
     has_many :subgenres, Genre
     has_many :topDownloads, Track
     has_one :slideshow, Slideshow
+    has_many :features, Feature
     
     def self.find(id)
       Client.retrieve('genres/detail', Genre, :id => id)
