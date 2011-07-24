@@ -2,7 +2,7 @@ module Beatport
   class Label < Item
     has_many :genres, Genre
     has_many :subgenres, Genre
-    has_many :topDownnloads, Track
+    has_many :topDownloads, Track
     has_many :featuredReleases, Release
     has_many :mostPopularReleases, Release
     

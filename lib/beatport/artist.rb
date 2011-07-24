@@ -3,7 +3,7 @@ module Beatport
     has_many :genres, Genre
     has_many :subgenres, Genre
     has_one :images, Images
-    has_many :topDownnloads, Track
+    has_many :topDownloads, Track
     has_many :featuredReleases, Release
     
     def self.find(id)
