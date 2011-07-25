@@ -4,7 +4,7 @@ module Beatport
     attr_reader :items
     
     def initialize(data = {})
-      item_klass = Beatport.const_get(data['type'])
+      item_klass = Support.constantize(data['type'])
 
       associate(data, 'items', true, item_klass)
       super

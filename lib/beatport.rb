@@ -20,6 +20,7 @@ module Beatport
   autoload :Release,         'beatport/release'
   autoload :Slide,           'beatport/slide'
   autoload :Slideshow,       'beatport/slideshow'
+  autoload :Support,         'beatport/support'
   autoload :Track,           'beatport/track'  
   autoload :Price,           'beatport/price'
   autoload :Recommendations, 'beatport/recommendations'
