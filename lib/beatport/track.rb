@@ -18,5 +18,21 @@ module Beatport
       Client.retrieve 'tracks', Track, *args
     end    
     
+    def self.most_popular(*args)
+      Client.retrieve 'most-popular', Track, *args
+    end
+    
+    def self.most_popular_for_genre(*args)
+      Client.retrieve "most-popular/genre", Track, *args    
+    end
+    
+    def self.most_popular_for_artist(*args)
+      Client.retrieve "most-popular/artist", Track, *args    
+    end
+
+    def self.most_popular_for_label(*args)
+      Client.retrieve "most-popular/label", Track, *args    
+    end
+    
   end
 end

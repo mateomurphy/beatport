@@ -58,6 +58,75 @@ module Beatport
         end
       end
     end
+
+    describe '.most_popular' do
+      it "should get the top download for the home page" do
+        tracks = Track.most_popular
+        tracks.count.should == 100
+        tracks.length.should == 10
+      end
+      
+      it "should get the top classics for the home page" do
+        tracks = Track.most_popular :status => 5
+        tracks.count.should == 100
+        tracks.length.should == 10
+      end
+
+      it "should not return the same results for most_popular and classics" do
+        popular = Track.most_popular
+        classics = Track.most_popular :status => 5
+        
+        popular.map(&:id).should_not == classics.map(&:id)
+      end
+    end
+    
+    describe '.most_popular_for_genre' do
+      it "should get the top download for the trance page" do
+        tracks = Track.most_popular_for_genre 7
+        
+        tracks.count.should == 100
+        tracks.length.should == 10
+        tracks.each do |track|
+          track.genres.map(&:id).should include(7)
+        end
+      end
+
+      it "should get the top classics for the trance page" do
+        tracks = Track.most_popular_for_genre 7, :status => 5
+        
+        tracks.each do |track|
+          track.genres.map(&:id).should include(7)
+        end
+      end
+      
+      it "should not return the same results for most_popular and classics" do
+        popular = Track.most_popular_for_genre 7
+        classics = Track.most_popular_for_genre 7, :status => 5
+        
+        popular.map(&:id).should_not == classics.map(&:id)
+      end      
+      
+    end
+
+    describe '.most_popular_for_artist' do
+      it "should get the top downloads for Above & Beyond" do
+        tracks = Track.most_popular_for_artist 7181
+        tracks.length.should be > 1
+        tracks.each do |track|
+          track.artists.map(&:id).should include(7181)
+        end
+      end
+    end
+
+    describe '.most_popular_for_label' do
+      it "should get the top downloads for Anjunabeats" do
+        tracks = Track.most_popular_for_label 804
+        tracks.length.should be > 1
+        tracks.each do |track|
+          track.label.id.should == 804
+        end
+      end      
+    end
   end
 end
 
