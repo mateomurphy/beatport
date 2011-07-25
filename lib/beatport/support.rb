@@ -21,5 +21,11 @@ module Beatport
       word.downcase!
       word
     end
+    
+    def self.process_keys(hash, &block)
+      return hash unless hash.is_a?(Hash)
+      Hash[hash.map {|k, v| [yield(k), process_keys(v, &block)]}]
+    end
+    
   end
 end
