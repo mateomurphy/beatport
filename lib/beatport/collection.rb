@@ -16,7 +16,19 @@ module Beatport
         instance_variable_set(:"@#{k}", v)
       end
       
-      @results = data['results'].map { |r| klass.new(r) }
+      @results = if klass == :auto
+        data['results'].map do |r|
+          item_klass = Support.constantize(r['type'])
+          item_klass.new(r)
+        end
+      else
+        data['results'].map { |r| klass.new(r) }
+      end
     end
+    
+    def grouped
+      group_by { |i| i.type.capitalize }
+    end
+    
   end
 end
