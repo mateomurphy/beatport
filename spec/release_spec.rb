@@ -74,7 +74,7 @@ module Beatport
       end
       
       it "should get the featured releases for the Trance page" do
-        releases = Release.featured :genreId => 7
+        releases = Release.featured :genre_id => 7
         releases.length.should be > 1
         releases.each do |release|
           release.genres.map(&:id).should include(7)
@@ -82,7 +82,7 @@ module Beatport
       end
       
       it "should get 'Just Added' featured releases for the Trance page" do
-        releases = Release.featured :genreId => 7, :justAdded => true
+        releases = Release.featured :genre_id => 7, :just_added => true
         releases.length.should be > 1
         releases.each do |release|
           release.genres.map(&:id).should include(7)
@@ -90,8 +90,8 @@ module Beatport
       end
       
       it "should not give the same releases with justAdded true and false" do
-        featured = Release.featured :genreId => 7
-        just_added = Release.featured :genreId => 7, :justAdded => true
+        featured = Release.featured :genre_id => 7
+        just_added = Release.featured :genre_id => 7, :just_added => true
         
         featured.map(&:id).should_not == just_added.map(&:id)
       end

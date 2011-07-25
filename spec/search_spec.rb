@@ -9,7 +9,7 @@ module Beatport
       end
       
       it "should find all content for Anjunadepe that has something to do with Trance" do
-        results = Search.query('anjunadeep', :facets => { :genreName => 'Trance' })
+        results = Search.query('anjunadeep', :facets => { :genre_name => 'Trance' })
         results.length.should be > 1
         
         results.grouped.keys.should == ["Track", "Label", "Release"]

@@ -20,14 +20,14 @@ module Beatport
       end
     
       it "should get the first page with 5 artists per page" do
-        artists = Artist.all :perPage => 5, :page => 1
+        artists = Artist.all :per_page => 5, :page => 1
         artists.length.should == 5
         artists.page.should == 1
         artists.perPage.should == 5
       end
     
       it "should get the first page with 5 artists per page, sorted by publish date and artist id, for the House genre" do
-        artists = Artist.all(:sortBy=> ['publishDate asc', 'artistId asc'], :genreId=> 5, :perPage=>5, :page=>1)
+        artists = Artist.all(:sort_by=> {:publish_date  => 'asc', :artist_id => 'asc'}, :genre_id=> 5, :per_page=>5, :page=>1)
         artists.length.should == 5
       
         old_id = nil
@@ -47,14 +47,14 @@ module Beatport
       end
     
       it "should get arbitrary artists with filter metadata for all genre names and artist names" do
-        artists = Artist.all :returnFacets => ['genreName', 'performerName']
+        artists = Artist.all :return_facets => ['genreName', 'performerName']
     
         artists.facets['fields']['performerName'].count.should be > 1
         artists.facets['fields']['genreName'].count.should be > 1      
       end
 
       it "should get all trance artists for above & beyond" do
-        artists = Artist.all :facets => {:genreName => ['Trance', 'Progessive House']}
+        artists = Artist.all :facets => {:genre_name => ['Trance', 'Progessive House']}
     
         artists.each do |artist|
           artists = artist['artists'].map { |a| a['name'] }

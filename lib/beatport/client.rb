@@ -19,7 +19,7 @@ module Beatport
         options[:ids] = key
       end
 
-      result = get("/#{path}", :query => normalize_options(options))
+      result = get("/#{path}", :query => OptionNormalizer.new(options).process)
 
       case result['results']
       when Array
@@ -30,21 +30,5 @@ module Beatport
         raise "results is an unexpected class #{result['results'].class}"
       end
     end 
-  
-    def self.normalize_options(options)
-      options.each do |key, value|
-        case value
-        when Array
-          options[key] = value.join(',')
-        when Hash
-          result = []
-          value.each do |k, v|
-            result << "#{k}:#{v}"
-          end
-          options[key] = result.join(',')
-        end
-      end    
-    end    
-    
   end
 end
