@@ -1,5 +1,5 @@
 module Beatport
-  module Support
+  module Inflector
     def self.constantize(string)
       Beatport.const_get(string.capitalize)      
     end

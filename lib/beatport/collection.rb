@@ -18,7 +18,7 @@ module Beatport
       
       @results = if klass == :auto
         data['results'].map do |r|
-          item_klass = Support.constantize(r['type'])
+          item_klass = Inflector.constantize(r['type'])
           item_klass.new(r)
         end
       else

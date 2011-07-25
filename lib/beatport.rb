@@ -21,7 +21,7 @@ module Beatport
   autoload :Search,          'beatport/search'
   autoload :Slide,           'beatport/slide'
   autoload :Slideshow,       'beatport/slideshow'
-  autoload :Support,         'beatport/support'
+  autoload :Inflector,       'beatport/inflector'
   autoload :Track,           'beatport/track'  
   autoload :Price,           'beatport/price'
   autoload :Recommendations, 'beatport/recommendations'
