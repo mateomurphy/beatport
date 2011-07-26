@@ -19,5 +19,12 @@ module Beatport
       Client.retrieve('genres/overview', Genre)
     end
     
+    def top_downloads
+      @top_downloads ||= Track.most_popular_for_genre(id)
+    end
+    
+    def slideshow
+      @slideshow ||= Slideshow.find(id)
+    end
   end
 end
