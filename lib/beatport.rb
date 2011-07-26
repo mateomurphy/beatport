@@ -14,19 +14,20 @@ module Beatport
   autoload :Home,            'beatport/home'
   autoload :Image,           'beatport/image'
   autoload :Images,          'beatport/images'    
+  autoload :Inflector,       'beatport/inflector'
   autoload :Item,            'beatport/item'
   autoload :Label,           'beatport/label'
   autoload :List,            'beatport/list'
-  autoload :QueryBuilder,'beatport/query_builder'
+  autoload :Parser,          'beatport/parser'
+  autoload :Price,           'beatport/price'
+  autoload :QueryBuilder,    'beatport/query_builder'
+  autoload :Recommendations, 'beatport/recommendations'
   autoload :Release,         'beatport/release'
   autoload :Search,          'beatport/search'
   autoload :Slide,           'beatport/slide'
   autoload :Slideshow,       'beatport/slideshow'
-  autoload :Inflector,       'beatport/inflector'
   autoload :Track,           'beatport/track'  
-  autoload :Price,           'beatport/price'
-  autoload :Recommendations, 'beatport/recommendations'
-
+    
   def self.artist(id)
     Artist.find(id)
   end
