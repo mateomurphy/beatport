@@ -1,29 +1,44 @@
 module Beatport
+  # Converts a set of arguments into a format that beatport will understand
   class QueryBuilder
     SPECIAL_OPTIONS = ['sortBy', 'facets', 'returnFacets']
-    
-    attr_accessor :options
-    
-    def initialize(*args)
-      options = args.last.is_a?(Hash) ? args.pop : {}      
-      
-      # Camelize all the keys in the options hash
-      @options = Inflector.process_keys(options) { |k| Inflector.camelize(k.to_s, false) }
+
+    def self.process(*args)
+      new.process(*args)
     end
-   
+
     def special_option?(key)
       SPECIAL_OPTIONS.include?(key)
     end
-  
-    # Converts an options hash into a format that beatport will understand
-    def process
-      options.each do |key, value|
+   
+    def process(*args)
+      options = args.last.is_a?(Hash) ? args.pop : {}      
+      
+      key = options.delete(:key) || (args.length > 1 ? args.compact : args.first)
+    
+      case key
+      when Integer
+        options[:id] = key
+      when String, Symbol
+        options[:slug] = key.to_s
+      when Array
+        options[:ids] = key
+      end
+      
+      options = camelize_keys(options)
+      
+      options.map do |key, value|
         options[key] = send(Inflector.underscore("process_#{key}"), value) if special_option?(key)
       end
       
       options
-    end    
-    
+    end
+
+    # Camelizes all the keys in the options hash
+    def camelize_keys(options)
+      Inflector.process_keys(options) { |k| Inflector.camelize(k.to_s, false) }   
+    end
+
     def process_sort_by(values)
       map_values(values) do |value|
         split_value(value, " ").join(" ")
@@ -55,6 +70,5 @@ module Beatport
         
       [Inflector.camelize(value.first, false), value.last]
     end
-    
   end
 end

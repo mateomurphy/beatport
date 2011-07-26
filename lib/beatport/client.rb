@@ -6,20 +6,7 @@ module Beatport
     default_params :v => '1.0', :format => 'json'
     
     def self.retrieve(path, klass, *args)
-      options = args.last.is_a?(Hash) ? args.pop : {}
-    
-      key = options.delete(:key) || (args.length > 1 ? args.compact : args.first)
-    
-      case key
-      when Integer
-        options[:id] = key
-      when String
-        options[:slug] = key
-      when Array
-        options[:ids] = key
-      end
-
-      result = get("/#{path}", :query => QueryBuilder.new(options).process)
+      result = get("/#{path}", :query => QueryBuilder.process(*args))
 
       case result['results']
       when Array

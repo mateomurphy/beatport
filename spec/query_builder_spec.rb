@@ -69,31 +69,31 @@ module Beatport
       it "should handle sort by" do
         h = {:sort_by => ['publishDate asc', 'chartId asc']}
         
-        QueryBuilder.new(h).process.should == {'sortBy'=>"publishDate asc,chartId asc"}
+        QueryBuilder.process(h).should == {'sortBy'=>"publishDate asc,chartId asc"}
       end
 
       it "should handle sort by with hash syntax" do
         h = {:sortBy => {'publish_date'=>'asc', 'chart_id'=>'asc'}}
         
-        QueryBuilder.new(h).process.should == {'sortBy'=>"publishDate asc,chartId asc"}
+        QueryBuilder.process(h).should == {'sortBy'=>"publishDate asc,chartId asc"}
       end
 
       it "should handle return facets" do
         h = {:return_facets => ['genreName', 'performerName']}
         
-        QueryBuilder.new(h).process.should == {'returnFacets'=>"genreName,performerName"}
+        QueryBuilder.process(h).should == {'returnFacets'=>"genreName,performerName"}
       end
 
       it "should handle return facets" do
         h = {:return_facets => ['genre_name', 'performer_name']}
         
-        QueryBuilder.new(h).process.should == {'returnFacets'=>"genreName,performerName"}
+        QueryBuilder.process(h).should == {'returnFacets'=>"genreName,performerName"}
       end
 
       it "should handle facets" do
         h = {:facets => {:genre_name => ['Trance', 'Progessive House']}}
         
-        QueryBuilder.new(h).process.should == {'facets'=>"genreName:Trance,genreName:Progessive House"}
+        QueryBuilder.process(h).should == {'facets'=>"genreName:Trance,genreName:Progessive House"}
       end
     end
   end

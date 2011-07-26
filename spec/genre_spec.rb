@@ -46,6 +46,10 @@ module Beatport
       it "should retrieve information about the trance genre via the slug" do
         Genre.all('trance').first.name.should == "Trance"
       end
+
+      it "should retrieve information about the trance genre via the slug passed as a symbol" do
+        Genre.all(:trance).first.name.should == "Trance"
+      end
     
       it "should retrieve information about the trance genre via its id" do
         Genre.all(7).first.name.should == "Trance"
