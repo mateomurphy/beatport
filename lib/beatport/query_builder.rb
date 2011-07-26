@@ -1,10 +1,12 @@
 module Beatport
-  class OptionNormalizer
+  class QueryBuilder
     SPECIAL_OPTIONS = ['sortBy', 'facets', 'returnFacets']
     
     attr_accessor :options
     
-    def initialize(options = {})
+    def initialize(*args)
+      options = args.last.is_a?(Hash) ? args.pop : {}      
+      
       # Camelize all the keys in the options hash
       @options = Inflector.process_keys(options) { |k| Inflector.camelize(k.to_s, false) }
     end

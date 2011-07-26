@@ -17,7 +17,7 @@ module Beatport
   autoload :Item,            'beatport/item'
   autoload :Label,           'beatport/label'
   autoload :List,            'beatport/list'
-  autoload :OptionNormalizer,'beatport/option_normalizer'
+  autoload :QueryBuilder,'beatport/query_builder'
   autoload :Release,         'beatport/release'
   autoload :Search,          'beatport/search'
   autoload :Slide,           'beatport/slide'

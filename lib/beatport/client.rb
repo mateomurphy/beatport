@@ -19,7 +19,7 @@ module Beatport
         options[:ids] = key
       end
 
-      result = get("/#{path}", :query => OptionNormalizer.new(options).process)
+      result = get("/#{path}", :query => QueryBuilder.new(options).process)
 
       case result['results']
       when Array
