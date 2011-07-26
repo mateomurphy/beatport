@@ -10,6 +10,15 @@ module Beatport
         Inflector.process_keys(h1) { |k| Inflector.camelize(k.to_s) }.should == h2
         Inflector.process_keys(h2) { |k| Inflector.underscore(k.to_s).to_sym }.should == h1
       end
+      
+      it "should transform all keys in arrays to camel case" do
+        h1 = {:key_one => 'a', :array => [{:key_two => 'b'}, {:key_three => 'c'}]}
+        h2 = {"KeyOne" => "a", 'Array' => [{"KeyTwo" => 'b'}, {"KeyThree" => "c"}]}
+        
+        Inflector.process_keys(h1) { |k| Inflector.camelize(k.to_s) }.should == h2
+        Inflector.process_keys(h2) { |k| Inflector.underscore(k.to_s).to_sym }.should == h1
+      end
+      
     end
   end
 end

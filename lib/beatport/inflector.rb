@@ -22,9 +22,15 @@ module Beatport
       word
     end
     
-    def self.process_keys(hash, &block)
-      return hash unless hash.is_a?(Hash)
-      Hash[hash.map {|k, v| [yield(k), process_keys(v, &block)]}]
+    def self.process_keys(obj, &block)
+      case obj
+      when Hash
+        Hash[obj.map {|k, v| [yield(k), process_keys(v, &block)]}]
+      when Array
+        obj.map {|o| process_keys(o, &block)}
+      else
+        obj
+      end
     end
     
   end
