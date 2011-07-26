@@ -9,7 +9,7 @@ module Beatport
         home.slideshow.header.length.should be >= 1
         home.slideshow.feature.length.should be > 1
         home.features.length.should be > 1
-        home.topDownloads.length.should be > 1
+        home.top_downloads.length.should be > 1
       end
     end
   end

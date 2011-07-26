@@ -3,8 +3,8 @@ module Beatport
     has_many :genres, Genre
     has_many :subgenres, Genre
     has_one :images, Images
-    has_many :topDownloads, Track
-    has_many :featuredReleases, Release
+    has_many :top_downloads, Track
+    has_many :featured_releases, Release
     
     def self.find(id)
       Client.retrieve('artists/detail', Artist, :id => id)

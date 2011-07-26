@@ -8,8 +8,8 @@ module Beatport
         artist = Artist.find(7181)
         artist.id.should == 7181
         artist.name.should == "Above & Beyond"
-        artist.topDownloads.length.should be > 1
-        artist.featuredReleases.length.should be > 1
+        artist.top_downloads.length.should be > 1
+        artist.featured_releases.length.should be > 1
       end
     end
   
@@ -23,7 +23,7 @@ module Beatport
         artists = Artist.all :per_page => 5, :page => 1
         artists.length.should == 5
         artists.page.should == 1
-        artists.perPage.should == 5
+        artists.per_page.should == 5
       end
     
       it "should get the first page with 5 artists per page, sorted by publish date and artist id, for the House genre" do
@@ -31,26 +31,26 @@ module Beatport
         artists.length.should == 5
       
         old_id = nil
-        old_date = artists.first.lastPublishDate
+        old_date = artists.first.last_publish_date
       
         artists.each do |artist|
-          old_id = nil if old_date.to_s != artist.lastPublishDate.to_s
+          old_id = nil if old_date.to_s != artist.last_publish_date.to_s
         
           # beatport has some bad genre data?
           # artist.genres.map(&:id).should include(5)
           artist.id.should be >= old_id if old_id
-          artist.lastPublishDate.should be >= old_date if old_date
+          artist.last_publish_date.should be >= old_date if old_date
         
           old_id = artist.id
-          old_date = artist.publishDate
+          old_date = artist.publish_date
         end
       end
     
       it "should get arbitrary artists with filter metadata for all genre names and artist names" do
-        artists = Artist.all :return_facets => ['genreName', 'performerName']
+        artists = Artist.all :return_facets => ['genre_name', 'performer_name']
     
-        artists.facets['fields']['performerName'].count.should be > 1
-        artists.facets['fields']['genreName'].count.should be > 1      
+        artists.facets['fields']['performer_name'].count.should be > 1
+        artists.facets['fields']['genre_name'].count.should be > 1      
       end
 
       it "should get all trance artists for above & beyond" do

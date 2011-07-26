@@ -73,13 +73,13 @@ module Beatport
       end
 
       it "should handle sort by with hash syntax" do
-        h = {:sortBy => {'publish_date'=>'asc', 'chart_id'=>'asc'}}
+        h = {:sort_by => {'publish_date'=>'asc', 'chart_id'=>'asc'}}
         
         QueryBuilder.process(h).should == {'sortBy'=>"publishDate asc,chartId asc"}
       end
 
       it "should handle return facets" do
-        h = {:return_facets => ['genreName', 'performerName']}
+        h = {:return_facets => ['genre_name', 'performer_name']}
         
         QueryBuilder.process(h).should == {'returnFacets'=>"genreName,performerName"}
       end

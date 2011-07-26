@@ -36,7 +36,7 @@ module Beatport
 
     # Camelizes all the keys in the options hash
     def camelize_keys(options)
-      Inflector.process_keys(options) { |k| Inflector.camelize(k.to_s, false) }   
+      Inflector.process_keys(options) { |k| Inflector.camelize(k.to_s, false) }
     end
 
     def process_sort_by(values)

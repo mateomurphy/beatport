@@ -5,7 +5,7 @@ module Beatport
     has_many :genres, Genre
     has_one :price, Price
     has_one :discount, Price
-    has_one :trackPrice, Price
+    has_one :track_price, Price
     has_one :images, Images
     has_one :recommendations, Recommendations
     

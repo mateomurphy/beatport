@@ -8,6 +8,8 @@ module Beatport
     def self.retrieve(path, klass, *args)
       result = get("/#{path}", :query => QueryBuilder.process(*args))
 
+      result = Inflector.process_keys(result.parsed_response) { |k| Inflector.underscore(k) }
+
       case result['results']
       when Array
         Collection.new(klass, result)

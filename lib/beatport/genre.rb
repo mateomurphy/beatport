@@ -1,7 +1,7 @@
 module Beatport
   class Genre < Item
     has_many :subgenres, Genre
-    has_many :topDownloads, Track
+    has_many :top_downloads, Track
     has_one :slideshow, Slideshow
     has_many :features, Feature
     has_one :counts, Item

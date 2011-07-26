@@ -7,7 +7,7 @@ module Beatport
     
     def_delegators :@results, :each, :'<=>', :length, :==, :===, :to_a
     
-    attr_reader :page, :perPage, :count, :spellcheck, :totalPages, :dateFilters, :appliedDateFilters, :facets, :appliedFacets
+    attr_reader :page, :per_page, :count, :spellcheck, :total_pages, :date_filters, :applied_date_filters, :facets, :applied_facets
     
     def initialize(klass, data)
       raise ArgumentError, "Invalid data passed to Collection.new" unless data['results'].is_a?(Array)

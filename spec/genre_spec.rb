@@ -9,7 +9,7 @@ module Beatport
         
         genre.slideshow.header.length.should be > 1
         genre.slideshow.small.length.should be > 1
-        genre.topDownloads.length.should be > 1
+        genre.top_downloads.length.should be > 1
         
         genre.features.each do |feature|
           if feature.autoload
@@ -35,7 +35,7 @@ module Beatport
         genres = Genre.all
         genres.length.should > 1
         genres.length.should == genres.count
-        genres.length.should == genres.perPage
+        genres.length.should == genres.per_page
       end
   
       it "should retrieve genres with their subgenres" do
