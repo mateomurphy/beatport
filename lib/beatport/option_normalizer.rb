@@ -23,31 +23,29 @@ module Beatport
     end    
     
     def process_sort_by(values)
-      process_special(values, ' ')
+      map_values(values) do |value|
+        split_value(value, " ").join(" ")
+      end       
     end
     
     def process_facets(values)
-      process_special(values, ':')
-    end
-    
-    def process_special(values, seperator = ' ')
-      values = split_values(values)
-      
-      values.inject([]) do |result, value|
-        k, v = split_value(value, seperator)
-        result << v.to_a.map {|v| "#{k}#{seperator}#{v}"}.join(',')
-      end.join(",")        
+      map_values(values) do |value|
+        k, v = split_value(value, ':')
+        v.to_a.map {|v| "#{k}:#{v}"}.join(',')
+      end       
     end
     
     def process_return_facets(values)
-      values = split_values(values)
-      
-      values.map { |v| Inflector.camelize(v, false) }.join(',')
+      map_values(values) do |value|
+        Inflector.camelize(value, false)
+      end
     end    
     
-    def split_values(values)
+    def map_values(values)
       values = values.split(/,\s*/) if values.is_a?(String)
-      values
+      values.map do |value|
+        yield value
+      end.join(",") 
     end
     
     def split_value(value, seperator)
