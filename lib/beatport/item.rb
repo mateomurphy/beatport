@@ -57,13 +57,13 @@ module Beatport
     end
     
     def self.has_one(var, klass)
-      self.send(:attr_reader, var)
+      self.send(:attr_reader, var) unless respond_to?(var)
 
       self.associations[var] = {:list => false, :klass => klass}
     end
     
     def self.has_many(var, klass)
-      self.send(:attr_reader, var)
+      self.send(:attr_reader, var) unless respond_to?(var)
 
       self.associations[var] = {:list => true, :klass => klass}
     end
