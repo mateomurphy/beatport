@@ -2,14 +2,14 @@ module Beatport
   module Catalog
     class Genre < Item
       has_many :subgenres, Genre
-      has_many :top_downloads, Track
-      has_one :slideshow, Slideshow
-      has_many :features, Feature
+#      has_many :top_downloads, Track
+#      has_one :slideshow, Slideshow
+#      has_many :features, Feature
       has_one :counts, Item
       has_one :list, List
     
       def self.find(id)
-        Client.retrieve('genres/detail', Genre, :id => id)
+        Client.retrieve('genres', Genre, :id => id, :subgenres => true).first
       end
   
       def self.all(*args)
