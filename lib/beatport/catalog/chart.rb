@@ -1,10 +1,11 @@
 module Beatport
   module Catalog  
     class Chart < Item
+      has_one :audio_format_fee, AudioFormatFee      
       has_many :genres, Genre
+      has_one :images, Images
       has_one :price, Price
       has_many :tracks, Track
-      has_one :images, Images
     
       def self.find(id)
         Client.retrieve('charts/detail', Chart, :id => id)
