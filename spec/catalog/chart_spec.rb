@@ -7,8 +7,8 @@ module Beatport::Catalog
       chart = Chart.find(15722)
       chart.id.should == 15722
       chart.genres.first.name.should == "Trance"
-      chart.price.usd.to_s.should == '15.90'
-      chart.tracks.length.should == 10
+      chart.price.to_s.should == '13.91'
+      chart.tracks.length.should == 9
     end
   
     describe '.all' do
