@@ -1,7 +1,14 @@
 module Beatport
   module Inflector
-    def self.constantize(string)
-      Beatport.const_get(string.capitalize)      
+    def self.constantize(camel_cased_word)
+      names = camel_cased_word.split('::')
+      names.shift if names.empty? || names.first.empty?
+
+      constant = Object
+      names.each do |name|
+        constant = constant.const_defined?(name) ? constant.const_get(name) : constant.const_missing(name)
+      end
+      constant
     end
     
     def self.camelize(lower_case_and_underscored_word, first_letter_in_uppercase = true)

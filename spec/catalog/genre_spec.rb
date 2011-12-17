@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-module Beatport 
+module Beatport::Catalog
   describe Genre do
     describe '.find' do
       it "should retrieve information about the trance genre via its id" do
@@ -14,7 +14,7 @@ module Beatport
         genre.features.each do |feature|
           if feature.autoload
             feature.items.length.should be > 1
-            feature.items.first.class.to_s.should == "Beatport::#{feature.type}"
+            feature.items.first.class.to_s.should == "Beatport::Catalog::#{feature.type}"
           end
         end
       end
@@ -25,7 +25,7 @@ module Beatport
       end
     
       it "should return the default genre with an invalid id" do
-        genre = Beatport.genre(9999999)
+        genre = Beatport::Catalog.genre(9999999)
         genre.name.should == "default"
       end
     end

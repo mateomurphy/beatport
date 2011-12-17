@@ -1,7 +1,14 @@
 require 'spec_helper'
 
-module Beatport 
+module Beatport::Catalog
   describe Track do
+    describe 'lazy loading' do
+      it "should lazy load artists" do
+        pending
+        track = Track.all(:per_page => 1, :page => 1).first
+      end
+    end
+    
     describe '.find' do
       it "should find the track with the id 1217790" do
         track = Track.find(1217790)

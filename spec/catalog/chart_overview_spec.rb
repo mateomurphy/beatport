@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-module Beatport 
+module Beatport::Catalog
   describe ChartOverview do
     describe '.get' do
       it "should have 16 newest charts and 4 featured charts" do

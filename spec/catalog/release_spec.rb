@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-module Beatport 
+module Beatport::Catalog
   describe Release do
   
     describe '.find' do
@@ -12,6 +12,7 @@ module Beatport
         release.artists.map(&:name).should include("Paul Keeley")
         release.images.small.width.should == 30
         release.recommendations.releases.length.should be > 1
+        release.catalog_number.should == "ANJCDCO011D"
       end
     end
   
@@ -95,6 +96,22 @@ module Beatport
         
         featured.map(&:id).should_not == just_added.map(&:id)
       end
+    end
+
+    describe '#tracks' do
+      before :all do
+        @release = Release.find(164808)
+        @tracks = @release.tracks
+      end
+      
+      it "should return all 29 tracks for Anjunabeats Volume 6" do
+        @tracks.count.should == 29
+      end
+      
+      it "should return paper jet as the first track" do
+        @tracks.first.name.should == "Paper Jet"
+      end
+      
     end
   end
 end

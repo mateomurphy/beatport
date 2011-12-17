@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-module Beatport 
+module Beatport::Catalog
   describe Chart do
   
     describe '.find' do

@@ -1,8 +1,7 @@
 require 'spec_helper'
 
-module Beatport 
+module Beatport::Catalog
   describe Artist do
-  
     describe '.find' do
       it "should find Above & Beyond when given id 7181" do
         artist = Artist.find(7181)

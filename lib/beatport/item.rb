@@ -5,6 +5,21 @@ module Beatport
       def associations
         @associations ||= {}
       end
+      
+      def has_one(var, klass)
+        lazy_accessor(var)
+        self.associations[var] = {:list => false, :klass => klass}
+      end
+    
+      def has_many(var, klass)
+        lazy_accessor(var)
+        self.associations[var] = {:list => true, :klass => klass}
+      end
+      
+      def lazy_accessor(var)
+        return if respond_to?(var)
+        class_eval "def #{var}; @#{var}; end"
+      end
     end
   
     def initialize(data = {})
@@ -23,7 +38,7 @@ module Beatport
       @table['id'] = id if id
       @table['type'] = type if type
     end
-    
+
     def id
       @table['id']
     end
@@ -56,17 +71,6 @@ module Beatport
       instance_variable_set(:"@#{var}", a)
     end
     
-    def self.has_one(var, klass)
-      self.send(:attr_reader, var) unless respond_to?(var)
-
-      self.associations[var] = {:list => false, :klass => klass}
-    end
-    
-    def self.has_many(var, klass)
-      self.send(:attr_reader, var) unless respond_to?(var)
-
-      self.associations[var] = {:list => true, :klass => klass}
-    end
     
   end
 end

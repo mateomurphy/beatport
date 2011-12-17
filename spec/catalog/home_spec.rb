@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-module Beatport 
+module Beatport::Catalog
   describe Home do
     describe '.get' do
       it "should get the home page" do

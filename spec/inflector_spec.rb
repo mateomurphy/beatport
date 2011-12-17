@@ -2,6 +2,16 @@ require 'spec_helper'
 
 module Beatport 
   describe Inflector do
+    describe '.camelize' do
+      it "should camelize an underscored word" do
+        Inflector.camelize('foo_bar').should == "FooBar"
+      end
+      
+      it "should camelize a namespaced word" do
+        Inflector.camelize('foo_bar/baz').should == "FooBar::Baz"
+      end
+    end
+    
     describe '.process_keys' do
       it "should transform all keys to camel case" do
         h1 = {:key_one => 'a', :key_two => { :key_three => 'b'}}
