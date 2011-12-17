@@ -2,7 +2,7 @@
 
 A ruby gem for accessing the Beatport API
 
-http://api.beatport.com/
+http://api.beatport.com
 
 == Contributing to beatport
  
