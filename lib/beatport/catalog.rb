@@ -7,6 +7,8 @@ module Beatport
     autoload :Feature,         'beatport/catalog/feature'    
     autoload :Genre,           'beatport/catalog/genre'
     autoload :Home,            'beatport/catalog/home'
+    autoload :Key,             'beatport/catalog/key'
+    autoload :Keys,            'beatport/catalog/keys'
     autoload :Label,           'beatport/catalog/label'
     autoload :List,            'beatport/catalog/list'    
     autoload :Recommendations, 'beatport/catalog/recommendations'

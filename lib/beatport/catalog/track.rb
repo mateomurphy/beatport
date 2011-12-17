@@ -2,6 +2,7 @@ module Beatport
   module Catalog  
     class Track < Item
       has_many :genres, Genre
+      has_many :sub_genres, Genre
       has_many :artists, Artist
       has_many :charts, Chart
       has_one :release, Release
@@ -9,6 +10,7 @@ module Beatport
       has_one :price, Price
       has_one :images, Images
       has_one :audio_format_fee, AudioFormatFee
+      has_one :key, Keys
     
       # Returns the track with the given id
       def self.find(id)
