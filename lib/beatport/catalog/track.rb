@@ -8,6 +8,7 @@ module Beatport
       has_one :label, Label
       has_one :price, Price
       has_one :images, Images
+      has_one :audio_format_fee, AudioFormatFee
     
       # Returns the track with the given id
       def self.find(id)
