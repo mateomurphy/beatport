@@ -1,16 +1,24 @@
 module Beatport
   module Catalog
+    autoload :AccountType,     'beatport/catalog/account_type'
     autoload :Artist,          'beatport/catalog/artist'
+    autoload :AudioFormatFee,  'beatport/catalog/audio_format_fee'
     autoload :Chart,           'beatport/catalog/chart'
     autoload :ChartOverview,   'beatport/catalog/chart_overview'
     autoload :Feature,         'beatport/catalog/feature'    
     autoload :Genre,           'beatport/catalog/genre'
     autoload :Home,            'beatport/catalog/home'
+    autoload :Image,           'beatport/catalog/image'
+    autoload :Images,          'beatport/catalog/images'    
+    autoload :Key,             'beatport/catalog/key'
+    autoload :Keys,            'beatport/catalog/keys'
     autoload :Label,           'beatport/catalog/label'
     autoload :List,            'beatport/catalog/list'    
     autoload :Recommendations, 'beatport/catalog/recommendations'
     autoload :Release,         'beatport/catalog/release'
     autoload :Search,          'beatport/catalog/search'
+    autoload :Slide,           'beatport/catalog/slide'
+    autoload :Slideshow,       'beatport/catalog/slideshow'
     autoload :Track,           'beatport/catalog/track'  
     
     def self.artist(id)

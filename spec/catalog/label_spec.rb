@@ -2,15 +2,32 @@ require 'spec_helper'
 
 module Beatport::Catalog
   describe Label do
+
+    describe 'structure' do
+      before(:all) { @label = Label.find(1390) }
+      it { @label.id.should == 1390 }
+      it { @label.type.should == "label" }
+      it { @label.name.should == "Anjunadeep" }
+      it { @label.slug.should == "anjunadeep" }      
+      it { @label.source_type.should == ["store", "mobile", "sushi"] }
+      it { @label.last_publish_date.should == Date.new(2011, 12, 07) }
+      it { @label.biography.should == "" }
+      it { @label.genres.length.should be > 1 }
+      it { @label.sub_genres.length.should be > 0 }      
+      it { @label.display_level.should == 1 }
+      it { @label.images.small.url.should == "http://geo-media.beatport.com/items/imageCatalog/0/0/0/3000/400/0/3406.jpg"}
+      it { @label.images.medium.url.should == "http://geo-media.beatport.com/items/imageCatalog/0/0/0/1000/100/90/1191.jpg"}
+      it { @label.images.banner.url.should == "http://geo-media.beatport.com/items/imageCatalog/0/300000/40000/5000/100/50/345152.jpg"}            
+      
+      it { @label.top_downloads.length.should be > 1 }
+      it { @label.featured_releases.length.should be > 1 }
+      it { @label.most_popular_releases.length.should be > 1 }
+    end
   
-    describe 'find' do
+    describe '.find' do
       it "should get Anjunadeep give id 1390" do
         label = Label.find(1390)
         label.id.should == 1390
-        label.name.should == "Anjunadeep"
-        label.top_downloads.length.should be > 1
-        label.featured_releases.length.should be > 1
-        label.most_popular_releases.length.should be > 1
       end
     end
   

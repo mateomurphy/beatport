@@ -8,12 +8,45 @@ module Beatport::Catalog
         track = Track.all(:per_page => 1, :page => 1).first
       end
     end
+
+    describe 'structure' do
+      before(:all) { @track = Track.find(1217790) }
+      
+      it { @track.id.should == 1217790 }
+      it { @track.type.should == 'track' }
+      it { @track.name.should == "Tonight (IMS Anthem 2009)" }
+      it { @track.mix_name.should == "Above & Beyond Remix" }
+      it { @track.slug.should == "tonight-ims-anthem-2009-above-and-beyond-remix" }
+      it { @track.title.should == "Tonight (IMS Anthem 2009) (Above & Beyond Remix)"}
+      it { @track.release_date.should == Date.new(2010,05,17) }
+      it { @track.publish_date.should == Date.new(2010,05,17) }
+      it { @track.sample_url.should == 'http://geo-samples.beatport.com/items/volumes/volume7/items/1000000/200000/10000/7000/700/90/1217790.LOFI.mp3' }
+      it { @track.rtmp_stream_url.should == 'rtmp://geo-rtmp-samples.beatport.com/beatport/_definst_/mp3:lofi_samples/items/volumes/volume7/items/1000000/200000/10000/7000/700/90/1217790.LOFI'}
+      it { @track.exclusive.should be_false }
+      it { @track.price.to_s.should == "1.49" }
+      it { @track.audio_format_fee.wav.to_s.should == "1.00" }
+      it { @track.audio_format_fee.aiff.to_s.should == "1.00" }
+#      it { @track.current_status.should == nil "General Content" }
+      it { @track.length.should == "07:53" }
+      it { @track.bpm.should == 128 }
+      it { @track.key.standard.letter.should == "D" }
+      it { @track.sale_type.should == "purchase" }
+      it { @track.artists.map(&:name).should == ["Above & Beyond", "Dirty Vegas"] }
+      it { @track.genres.map(&:name).should == ["Trance"]}
+      it { @track.sub_genres.map(&:name).should == ['Progressive']}      
+      it { @track.charts.should == [] }
+      it { @track.release.id.should == 245137 }
+      it { @track.label.id.should == 495}
+      it { @track.images.small.url.should == 'http://geo-media.beatport.com/items/imageCatalog/0/600000/70000/4000/700/50/674759.jpg' }
+      it { @track.images.medium.url.should == 'http://geo-media.beatport.com/items/imageCatalog/0/600000/70000/4000/700/60/674760.jpg' }
+      it { @track.images.large.url.should == 'http://geo-media.beatport.com/items/imageCatalog/0/600000/70000/4000/700/60/674761.jpg' }
+      it { @track.images.waveform.url.should == 'http://geo-media.beatport.com/items/imageCatalog/1000000/200000/60000/8000/200/20/1268229.png' }                  
+    end
     
     describe '.find' do
       it "should find the track with the id 1217790" do
         track = Track.find(1217790)
         track.id.should == 1217790
-        track.name.should == "Tonight (IMS Anthem 2009)"
       end
     end
   

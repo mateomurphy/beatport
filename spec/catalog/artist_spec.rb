@@ -2,13 +2,28 @@ require 'spec_helper'
 
 module Beatport::Catalog
   describe Artist do
+    describe 'structure' do
+      before(:all) { @artist = Artist.find(7181) }
+      
+      it { @artist.id.should == 7181 }
+      it { @artist.type.should == "artist" }
+      it { @artist.name.should == "Above & Beyond" }
+      it { @artist.slug.should == "above-and-beyond" }
+      it { @artist.last_publish_date.should == Date.new(2011, 12, 15)}
+      it { @artist.biography.should == "" }
+      it { @artist.genres.length.should be > 1 }
+      it { @artist.sub_genres.length.should be > 1 }            
+      it { @artist.top_downloads.length.should be > 1 }
+      it { @artist.images.small.url.should == "http://geo-media.beatport.com/items/imageCatalog/0/400000/90000/1000/500/20/491527.jpg" }
+      it { @artist.images.medium.url.should == "http://geo-media.beatport.com/items/imageCatalog/0/400000/90000/1000/500/30/491530.jpg" }
+      it { @artist.images.large.url.should == "http://geo-media.beatport.com/items/imageCatalog/4000000/600000/80000/6000/400/20/4686424.jpg" }
+      it { @artist.featured_releases.length.should be > 1 }
+    end
+    
     describe '.find' do
       it "should find Above & Beyond when given id 7181" do
         artist = Artist.find(7181)
         artist.id.should == 7181
-        artist.name.should == "Above & Beyond"
-        artist.top_downloads.length.should be > 1
-        artist.featured_releases.length.should be > 1
       end
     end
   

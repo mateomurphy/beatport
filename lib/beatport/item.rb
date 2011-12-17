@@ -34,6 +34,11 @@ module Beatport
       end
       
       super(data)
+
+      data.each do |k, v|
+        @table[k.to_sym] = Date.parse(v) if k =~ /_date$/
+        @table[k.to_sym] = Regexp.new(v.to_s) if k =~ /_regex$/
+      end
       
       @table['id'] = id if id
       @table['type'] = type if type

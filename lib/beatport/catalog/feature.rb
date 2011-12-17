@@ -1,3 +1,4 @@
+#TODO deprecated in latest api version?
 module Beatport
   module Catalog
     class Feature < Item
