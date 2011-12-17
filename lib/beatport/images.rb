@@ -1,6 +1,6 @@
 module Beatport
   class Images
-    attr_reader :small, :medium, :large
+    attr_reader :small, :medium, :large, :waveform
     
     def initialize(images)
       images.each do |format, data|
