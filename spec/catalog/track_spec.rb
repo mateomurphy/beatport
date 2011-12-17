@@ -18,8 +18,8 @@ module Beatport::Catalog
       it { @track.mix_name.should == "Above & Beyond Remix" }
       it { @track.slug.should == "tonight-ims-anthem-2009-above-and-beyond-remix" }
       it { @track.title.should == "Tonight (IMS Anthem 2009) (Above & Beyond Remix)"}
-      it { @track.release_date.should == '2010-05-17' }
-      it { @track.publish_date.should == '2010-05-17' }
+      it { @track.release_date.should == Date.new(2010,05,17) }
+      it { @track.publish_date.should == Date.new(2010,05,17) }
       it { @track.sample_url.should == 'http://geo-samples.beatport.com/items/volumes/volume7/items/1000000/200000/10000/7000/700/90/1217790.LOFI.mp3' }
       it { @track.rtmp_stream_url.should == 'rtmp://geo-rtmp-samples.beatport.com/beatport/_definst_/mp3:lofi_samples/items/volumes/volume7/items/1000000/200000/10000/7000/700/90/1217790.LOFI'}
       it { @track.exclusive.should be_false }

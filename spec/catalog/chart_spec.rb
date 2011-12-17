@@ -10,7 +10,7 @@ module Beatport::Catalog
       it { @chart.name.should == "Nitrous Oxide – April Top 10" }    
       it { @chart.slug.should == "nitrous-oxide-april-top-10" }
       it { @chart.description.should == "" }
-      it { @chart.publish_date.should == "2009-05-12" }
+      it { @chart.publish_date.should == Date.new(2009, 05, 12) }
       it { @chart.price.to_s.should == '13.91' }
       it { @chart.audio_format_fee.wav.to_s.should == "9.00" }
       it { @chart.audio_format_fee.aiff.to_s.should == "9.00" }      

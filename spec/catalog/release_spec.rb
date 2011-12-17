@@ -9,8 +9,8 @@ module Beatport::Catalog
       it { @release.type.should == 'release' }
       it { @release.name.should == "Anjunabeats Volume 6 (Unmixed - DJ Ready)" }
       it { @release.slug.should == 'anjunabeats-volume-6-unmixed-dj-ready'}
-      it { @release.release_date.should == '2009-04-06' }
-      it { @release.publish_date.should == '2009-04-06' }
+      it { @release.release_date.should == Date.new(2009, 04, 06) }
+      it { @release.publish_date.should == Date.new(2009, 04, 06) }
       it { @release.exclusive.should == false }
       it { @release.category.should == 'Album' }
       it { @release.current_status.should == "General Content"}
