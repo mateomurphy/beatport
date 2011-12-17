@@ -41,9 +41,6 @@ module Beatport::Catalog
       it { @track.images.medium.url.should == 'http://geo-media.beatport.com/items/imageCatalog/0/600000/70000/4000/700/60/674760.jpg' }
       it { @track.images.large.url.should == 'http://geo-media.beatport.com/items/imageCatalog/0/600000/70000/4000/700/60/674761.jpg' }
       it { @track.images.waveform.url.should == 'http://geo-media.beatport.com/items/imageCatalog/1000000/200000/60000/8000/200/20/1268229.png' }                  
-      
-
-
     end
     
     describe '.find' do
