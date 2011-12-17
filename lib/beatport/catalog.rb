@@ -8,6 +8,8 @@ module Beatport
     autoload :Feature,         'beatport/catalog/feature'    
     autoload :Genre,           'beatport/catalog/genre'
     autoload :Home,            'beatport/catalog/home'
+    autoload :Image,           'beatport/catalog/image'
+    autoload :Images,          'beatport/catalog/images'    
     autoload :Key,             'beatport/catalog/key'
     autoload :Keys,            'beatport/catalog/keys'
     autoload :Label,           'beatport/catalog/label'
@@ -15,6 +17,8 @@ module Beatport
     autoload :Recommendations, 'beatport/catalog/recommendations'
     autoload :Release,         'beatport/catalog/release'
     autoload :Search,          'beatport/catalog/search'
+    autoload :Slide,           'beatport/catalog/slide'
+    autoload :Slideshow,       'beatport/catalog/slideshow'
     autoload :Track,           'beatport/catalog/track'  
     
     def self.artist(id)

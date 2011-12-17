@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-module Beatport 
+module Beatport::Catalog
   describe Slide do
     describe '.header' do
       it "should get the header slides for the home page" do
