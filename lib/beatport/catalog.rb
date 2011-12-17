@@ -1,6 +1,7 @@
 module Beatport
   module Catalog
     autoload :Artist,          'beatport/catalog/artist'
+    autoload :AudioFormatFee,  'beatport/catalog/audio_format_fee'
     autoload :Chart,           'beatport/catalog/chart'
     autoload :ChartOverview,   'beatport/catalog/chart_overview'
     autoload :Feature,         'beatport/catalog/feature'    
