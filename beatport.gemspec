@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{beatport}
-  s.version = "0.0.1"
+  s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Mateo Murphy"]
-  s.date = %q{2011-07-23}
+  s.date = %q{2011-12-18}
   s.description = %q{TODO: ruby gem for accessing the beatport api}
   s.email = %q{mateo.murphy@gmail.com}
   s.extra_rdoc_files = [
@@ -26,47 +26,69 @@ Gem::Specification.new do |s|
     "VERSION",
     "beatport.gemspec",
     "lib/beatport.rb",
-    "lib/beatport/artist.rb",
-    "lib/beatport/chart.rb",
-    "lib/beatport/chart_overview.rb",
+    "lib/beatport/catalog.rb",
+    "lib/beatport/catalog/account_type.rb",
+    "lib/beatport/catalog/artist.rb",
+    "lib/beatport/catalog/audio_format_fee.rb",
+    "lib/beatport/catalog/chart.rb",
+    "lib/beatport/catalog/chart_overview.rb",
+    "lib/beatport/catalog/feature.rb",
+    "lib/beatport/catalog/genre.rb",
+    "lib/beatport/catalog/home.rb",
+    "lib/beatport/catalog/image.rb",
+    "lib/beatport/catalog/images.rb",
+    "lib/beatport/catalog/key.rb",
+    "lib/beatport/catalog/keys.rb",
+    "lib/beatport/catalog/label.rb",
+    "lib/beatport/catalog/list.rb",
+    "lib/beatport/catalog/recommendations.rb",
+    "lib/beatport/catalog/release.rb",
+    "lib/beatport/catalog/search.rb",
+    "lib/beatport/catalog/slide.rb",
+    "lib/beatport/catalog/slideshow.rb",
+    "lib/beatport/catalog/track.rb",
     "lib/beatport/client.rb",
     "lib/beatport/collection.rb",
-    "lib/beatport/genre.rb",
-    "lib/beatport/image.rb",
-    "lib/beatport/images.rb",
+    "lib/beatport/inflector.rb",
     "lib/beatport/item.rb",
-    "lib/beatport/label.rb",
+    "lib/beatport/parser.rb",
     "lib/beatport/price.rb",
-    "lib/beatport/release.rb",
-    "lib/beatport/track.rb",
-    "spec/artist_spec.rb",
-    "spec/chart_overview_spec.rb",
-    "spec/chart_spec.rb",
+    "lib/beatport/query_builder.rb",
+    "spec/catalog/account_type_spec.rb",
+    "spec/catalog/artist_spec.rb",
+    "spec/catalog/chart_overview_spec.rb",
+    "spec/catalog/chart_spec.rb",
+    "spec/catalog/genre_spec.rb",
+    "spec/catalog/home_spec.rb",
+    "spec/catalog/label_spec.rb",
+    "spec/catalog/release_spec.rb",
+    "spec/catalog/search_spec.rb",
+    "spec/catalog/slide_spec.rb",
+    "spec/catalog/track_spec.rb",
     "spec/collection_spec.rb",
-    "spec/genre_spec.rb",
+    "spec/inflector_spec.rb",
     "spec/item_spec.rb",
-    "spec/label_spec.rb",
-    "spec/release_spec.rb",
-    "spec/spec_helper.rb",
-    "spec/track_spec.rb"
+    "spec/query_builder_spec.rb",
+    "spec/spec_helper.rb"
   ]
   s.homepage = %q{http://github.com/mateomurphy/beatport}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.6}
+  s.rubygems_version = %q{1.5.2}
   s.summary = %q{TODO: ruby gem for accessing the beatport api}
 
   if s.respond_to? :specification_version then
-    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
-    if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
+    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<httparty>, [">= 0"])
       s.add_runtime_dependency(%q<money>, [">= 0"])
       s.add_development_dependency(%q<rspec>, [">= 0"])
       s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.6.3"])
       s.add_development_dependency(%q<rcov>, [">= 0"])
+      s.add_development_dependency(%q<yard>, [">= 0"])
+      s.add_development_dependency(%q<log_buddy>, [">= 0"])
     else
       s.add_dependency(%q<httparty>, [">= 0"])
       s.add_dependency(%q<money>, [">= 0"])
@@ -74,6 +96,8 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_dependency(%q<jeweler>, ["~> 1.6.3"])
       s.add_dependency(%q<rcov>, [">= 0"])
+      s.add_dependency(%q<yard>, [">= 0"])
+      s.add_dependency(%q<log_buddy>, [">= 0"])
     end
   else
     s.add_dependency(%q<httparty>, [">= 0"])
@@ -82,6 +106,8 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<bundler>, ["~> 1.0.0"])
     s.add_dependency(%q<jeweler>, ["~> 1.6.3"])
     s.add_dependency(%q<rcov>, [">= 0"])
+    s.add_dependency(%q<yard>, [">= 0"])
+    s.add_dependency(%q<log_buddy>, [">= 0"])
   end
 end
 
