@@ -26,6 +26,7 @@ module Beatport::Catalog
       it { @track.price.to_s.should == "1.49" }
       it { @track.audio_format_fee.wav.to_s.should == "1.00" }
       it { @track.audio_format_fee.aiff.to_s.should == "1.00" }
+      # for some reason this doesn't always return the same result
 #      it { @track.current_status.should == nil "General Content" }
       it { @track.length.should == "07:53" }
       it { @track.bpm.should == 128 }
