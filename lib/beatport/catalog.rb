@@ -26,6 +26,7 @@ module Beatport
     autoload :State,            'beatport/catalog/state'
     autoload :Slide,            'beatport/catalog/slide'
     autoload :Slideshow,        'beatport/catalog/slideshow'
+    autoload :SourceType,       'beatport/catalog/source_type'
     autoload :Track,            'beatport/catalog/track'  
     
     def self.artist(id)
