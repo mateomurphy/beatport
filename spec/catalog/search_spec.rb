@@ -13,7 +13,7 @@ module Beatport::Catalog
         results.length.should be 0
       end
       
-      it "should find all content for Anjunadepe that has something to do with Trance" do
+      it "should find all content for Anjunadeep that has something to do with Trance" do
         results = Search.query('anjunadeep', :facets => { :genre_name => 'Trance' })
         results.length.should be > 1
         
