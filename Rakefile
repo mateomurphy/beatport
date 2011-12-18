@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "beatport"
   gem.homepage = "http://github.com/mateomurphy/beatport"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: ruby gem for accessing the beatport api}
-  gem.description = %Q{TODO: ruby gem for accessing the beatport api}
+  gem.summary = %Q{ruby gem for accessing the beatport api}
+  gem.description = %Q{A ruby gem for accessing the beatport api}
   gem.email = "mateo.murphy@gmail.com"
   gem.authors = ["Mateo Murphy"]
   # dependencies defined in Gemfile
