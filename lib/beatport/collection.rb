@@ -9,9 +9,9 @@ module Beatport
     
     attr_reader :host, :path, :query, :next_query
     attr_reader :per_page_options, :page, :per_page, :total_pages, :count
-    attr_reader :facets, :spellcheck
+    attr_reader :facets, :applied_facets, :spellcheck
+    attr_reader :date_filters, :applied_date_filters
     
-    # :date_filters, :applied_date_filters, :applied_facets
     def initialize(klass, data)
       raise ArgumentError, "Invalid data passed to Collection.new" unless data['results'].is_a?(Array)
       
