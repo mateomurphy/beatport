@@ -4,6 +4,8 @@ A ruby gem for accessing the Beatport API
 
 http://api.beatport.com
 
+Currently incomplete, but under active development. 
+
 == Contributing to beatport
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
