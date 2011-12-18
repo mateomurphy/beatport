@@ -12,6 +12,7 @@ module Beatport
     autoload :Feature,          'beatport/catalog/feature'    
     autoload :Genre,            'beatport/catalog/genre'
     autoload :Home,             'beatport/catalog/home'
+    autoload :ItemType,         'beatport/catalog/item_type'
     autoload :Image,            'beatport/catalog/image'
     autoload :Images,           'beatport/catalog/images'    
     autoload :Key,              'beatport/catalog/key'
