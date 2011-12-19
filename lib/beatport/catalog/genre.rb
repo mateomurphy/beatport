@@ -8,22 +8,26 @@ module Beatport
       has_one :counts, Item
       has_one :list, List
     
-      def self.find(id)
-        Client.retrieve('genres', Genre, :id => id, :subgenres => true).first
+      # Returns the genre with the given id or slug
+      def self.find(key)
+        Client.retrieve('genres', Genre, :key => key, :string_key_type => :slug, :subgenres => true).first
       end
   
-      def self.all(*args)
-        Client.retrieve('genres', Genre, *args)
+      # Returns all the genres
+      def self.all(options = {})
+        Client.retrieve('genres', Genre, options)
       end
     
       def self.overview
         Client.retrieve('genres/overview', Genre)
       end
-    
+      
+      # Returns the top downloads for the genre
       def top_downloads
         @top_downloads ||= Track.most_popular_for_genre(id)
       end
     
+      # Returns the slideshow for the genre
       def slideshow
         @slideshow ||= Slideshow.find(id)
       end
