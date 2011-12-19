@@ -14,12 +14,8 @@ module Beatport::Catalog
       its (:'slideshow.small.length') { should be > 1 }
       its (:'top_downloads.length') { should be > 1 }
 #      it { @genre.features.length.should be > 1}
-    end
-    
-    describe '.find' do
-      it "should retrieve information about the trance genre via its id" do
-        genre = Genre.find(7)
-        genre.name.should == "Trance"
+
+
 =begin
         genre.features.each do |feature|
           if feature.autoload
@@ -28,6 +24,19 @@ module Beatport::Catalog
           end
         end
 =end
+    end
+    
+    describe '.find' do
+      it "should retrieve information about the trance genre via its id" do
+        Genre.find(7).name.should == "Trance"
+      end
+
+      it "should retrieve information about the trance genre via the slug" do
+        Genre.find('trance').name.should == "Trance"
+      end
+
+      it "should retrieve information about the trance genre via the slug passed as a symbol" do
+        Genre.find(:trance).name.should == "Trance"
       end
 
       it "should return nil with an invalid id" do
@@ -47,18 +56,6 @@ module Beatport::Catalog
       it "should retrieve genres with their subgenres" do
         genres = Genre.all(:subgenres => true)
         genres.first.subgenres.length.should be > 1
-      end
-  
-      it "should retrieve information about the trance genre via the slug" do
-        Genre.all('trance').first.name.should == "Trance"
-      end
-
-      it "should retrieve information about the trance genre via the slug passed as a symbol" do
-        Genre.all(:trance).first.name.should == "Trance"
-      end
-    
-      it "should retrieve information about the trance genre via its id" do
-        Genre.all(7).first.name.should == "Trance"
       end
     end
     
