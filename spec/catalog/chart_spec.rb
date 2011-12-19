@@ -6,20 +6,20 @@ module Beatport::Catalog
     describe 'structure' do
       subject { Chart.find(15722) }
       
-      specify { subject.id.should == 15722 }
-      specify { subject.type.should == "chart" }
-      specify { subject.name.should == "Nitrous Oxide – April Top 10" }    
-      specify { subject.slug.should == "nitrous-oxide-april-top-10" }
-      specify { subject.description.should == "" }
-      specify { subject.publish_date.should == Date.new(2009, 05, 12) }
-      specify { subject.price.to_s.should == '13.91' }
-      specify { subject.audio_format_fee.wav.to_s.should == "9.00" }
-      specify { subject.audio_format_fee.aiff.to_s.should == "9.00" }      
+      its (:id) { should == 15722 }
+      its (:type) { should == "chart" }
+      its (:name) { should == "Nitrous Oxide – April Top 10" }    
+      its (:slug) { should == "nitrous-oxide-april-top-10" }
+      its (:description) { should == "" }
+      its (:publish_date) { should == Date.new(2009, 05, 12) }
+      its (:'price.to_s') { should == '13.91' }
+      its (:'audio_format_fee.wav.to_s') { should == "9.00" }
+      its (:'audio_format_fee.aiff.to_s') { should == "9.00" }      
       specify { subject.genres.map(&:name).should == ["Trance"] }
-      specify { subject.images.small.url.should == "http://geo-media.beatport.com/items/imageCatalog/0/400000/90000/1000/500/30/491534.jpg"}
-      specify { subject.images.medium.url.should == "http://geo-media.beatport.com/items/imageCatalog/0/400000/10000/2000/900/20/412921.jpg"}
-      specify { subject.images.large.url.should == "http://geo-media.beatport.com/items/imageCatalog/0/400000/10000/2000/900/20/412922.jpg"}            
-      specify { subject.tracks.length.should == 9 }
+      its (:'images.small.url') { should == "http://geo-media.beatport.com/items/imageCatalog/0/400000/90000/1000/500/30/491534.jpg"}
+      its (:'images.medium.url') { should == "http://geo-media.beatport.com/items/imageCatalog/0/400000/10000/2000/900/20/412921.jpg"}
+      its (:'images.large.url') { should == "http://geo-media.beatport.com/items/imageCatalog/0/400000/10000/2000/900/20/412922.jpg"}            
+      its (:'tracks.length') { should == 9 }
     end
   
     describe '.find' do

@@ -12,36 +12,36 @@ module Beatport::Catalog
     describe 'structure' do
       subject { Track.find(1217790) }
       
-      specify { subject.id.should == 1217790 }
-      specify { subject.type.should == 'track' }
-      specify { subject.name.should == "Tonight (IMS Anthem 2009)" }
-      specify { subject.mix_name.should == "Above & Beyond Remix" }
-      specify { subject.slug.should == "tonight-ims-anthem-2009-above-and-beyond-remix" }
-      specify { subject.title.should == "Tonight (IMS Anthem 2009) (Above & Beyond Remix)"}
-      specify { subject.release_date.should == Date.new(2010,05,17) }
-      specify { subject.publish_date.should == Date.new(2010,05,17) }
-      specify { subject.sample_url.should == 'http://geo-samples.beatport.com/items/volumes/volume7/items/1000000/200000/10000/7000/700/90/1217790.LOFI.mp3' }
-      specify { subject.rtmp_stream_url.should == 'rtmp://geo-rtmp-samples.beatport.com/beatport/_definst_/mp3:lofi_samples/items/volumes/volume7/items/1000000/200000/10000/7000/700/90/1217790.LOFI'}
-      specify { subject.exclusive.should be_false }
-      specify { subject.price.to_s.should == "1.49" }
-      specify { subject.audio_format_fee.wav.to_s.should == "1.00" }
-      specify { subject.audio_format_fee.aiff.to_s.should == "1.00" }
+      its (:id) { should == 1217790 }
+      its (:type) { should == 'track' }
+      its (:name) { should == "Tonight (IMS Anthem 2009)" }
+      its (:mix_name) { should == "Above & Beyond Remix" }
+      its (:slug) { should == "tonight-ims-anthem-2009-above-and-beyond-remix" }
+      its (:title) { should == "Tonight (IMS Anthem 2009) (Above & Beyond Remix)"}
+      its (:release_date) { should == Date.new(2010,05,17) }
+      its (:publish_date) { should == Date.new(2010,05,17) }
+      its (:sample_url) { should == 'http://geo-samples.beatport.com/items/volumes/volume7/items/1000000/200000/10000/7000/700/90/1217790.LOFI.mp3' }
+      its (:rtmp_stream_url) { should == 'rtmp://geo-rtmp-samples.beatport.com/beatport/_definst_/mp3:lofi_samples/items/volumes/volume7/items/1000000/200000/10000/7000/700/90/1217790.LOFI'}
+      its (:exclusive) { should be_false }
+      its (:'price.to_s') { should == "1.49" }
+      its (:'audio_format_fee.wav.to_s') { should == "1.00" }
+      its (:'audio_format_fee.aiff.to_s') { should == "1.00" }
       # for some reason this doesn't always return the same result
-#      it { @track.current_status.should == nil "General Content" }
-      specify { subject.length.should == "07:53" }
-      specify { subject.bpm.should == 128 }
-      specify { subject.key.standard.letter.should == "D" }
-      specify { subject.sale_type.should == "purchase" }
+#      it { @track.current_status) { should == nil "General Content" }
+      its (:length) { should == "07:53" }
+      its (:bpm) { should == 128 }
+      its (:'key.standard.letter') { should == "D" }
+      its (:sale_type) { should == "purchase" }
       specify { subject.artists.map(&:name).should == ["Above & Beyond", "Dirty Vegas"] }
-      specify { subject.genres.map(&:name).should == ["Trance"]}
-      specify { subject.sub_genres.map(&:name).should == ['Progressive']}      
-      specify { subject.charts.should == [] }
-      specify { subject.release.id.should == 245137 }
-      specify { subject.label.id.should == 495}
-      specify { subject.images.small.url.should == 'http://geo-media.beatport.com/items/imageCatalog/0/600000/70000/4000/700/50/674759.jpg' }
-      specify { subject.images.medium.url.should == 'http://geo-media.beatport.com/items/imageCatalog/0/600000/70000/4000/700/60/674760.jpg' }
-      specify { subject.images.large.url.should == 'http://geo-media.beatport.com/items/imageCatalog/0/600000/70000/4000/700/60/674761.jpg' }
-      specify { subject.images.waveform.url.should == 'http://geo-media.beatport.com/items/imageCatalog/1000000/200000/60000/8000/200/20/1268229.png' }                  
+      specify { subject.genres.map(&:name).should == ["Trance"] }
+      specify { subject.sub_genres.map(&:name).should == ['Progressive'] }
+      its (:charts) { should == [] }
+      its (:'release.id') { should == 245137 }
+      its (:'label.id') { should == 495}
+      its (:'images.small.url') { should == 'http://geo-media.beatport.com/items/imageCatalog/0/600000/70000/4000/700/50/674759.jpg' }
+      its (:'images.medium.url') { should == 'http://geo-media.beatport.com/items/imageCatalog/0/600000/70000/4000/700/60/674760.jpg' }
+      its (:'images.large.url') { should == 'http://geo-media.beatport.com/items/imageCatalog/0/600000/70000/4000/700/60/674761.jpg' }
+      its (:'images.waveform.url') { should == 'http://geo-media.beatport.com/items/imageCatalog/1000000/200000/60000/8000/200/20/1268229.png' }                  
     end
     
     describe '.find' do

@@ -5,8 +5,8 @@ module Beatport::Catalog
     describe '.get' do
       subject { ChartOverview.get }
       
-      specify {subject.newest.length.should == 16 }
-      specify {subject.featured.length.should == 4 }
+      its (:'newest.length') { should == 16 }
+      its (:'featured.length') { should == 4 }
     end
   end
 end

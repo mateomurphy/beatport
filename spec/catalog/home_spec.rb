@@ -5,10 +5,10 @@ module Beatport::Catalog
     describe '.get' do
       subject { Home.get }
         
-      specify { subject.slideshow.header.length.should be >= 1 }
-      specify { subject.slideshow.feature.length.should be > 1 }
-      specify { subject.features.length.should be > 1 }
-      specify { subject.top_downloads.length.should be > 1 }
+      its (:'slideshow.header.length') { should be >= 1 }
+      its (:'slideshow.feature.length') { should be > 1 }
+      its (:'features.length') { should be > 1 }
+      its (:'top_downloads.length') { should be > 1 }
     end
   end
 end

@@ -5,19 +5,19 @@ module Beatport::Catalog
     describe 'structure' do
       subject { Artist.find(7181) }
       
-      specify { subject.id.should == 7181 }
-      specify { subject.type.should == "artist" }
-      specify { subject.name.should == "Above & Beyond" }
-      specify { subject.slug.should == "above-and-beyond" }
-      specify { subject.last_publish_date.should == Date.new(2011, 12, 15)}
-      specify { subject.biography.should == "" }
-      specify { subject.genres.length.should be > 1 }
-      specify { subject.sub_genres.length.should be > 1 }            
-      specify { subject.top_downloads.length.should be > 1 }
-      specify { subject.images.small.url.should == "http://geo-media.beatport.com/items/imageCatalog/0/400000/90000/1000/500/20/491527.jpg" }
-      specify { subject.images.medium.url.should == "http://geo-media.beatport.com/items/imageCatalog/0/400000/90000/1000/500/30/491530.jpg" }
-      specify { subject.images.large.url.should == "http://geo-media.beatport.com/items/imageCatalog/4000000/600000/80000/6000/400/20/4686424.jpg" }
-      specify { subject.featured_releases.length.should be > 1 }
+      its (:id) { should == 7181 }
+      its (:type) { should == "artist" }
+      its (:name) { should == "Above & Beyond" }
+      its (:slug) { should == "above-and-beyond" }
+      its (:last_publish_date) { should == Date.new(2011, 12, 15)}
+      its (:biography) { should == "" }
+      its (:'genres.length') { should be > 1 }
+      its (:'sub_genres.length') { should be > 1 }            
+      its (:'top_downloads.length') { should be > 1 }
+      its (:'images.small.url') { should == "http://geo-media.beatport.com/items/imageCatalog/0/400000/90000/1000/500/20/491527.jpg" }
+      its (:'images.medium.url') { should == "http://geo-media.beatport.com/items/imageCatalog/0/400000/90000/1000/500/30/491530.jpg" }
+      its (:'images.large.url') { should == "http://geo-media.beatport.com/items/imageCatalog/4000000/600000/80000/6000/400/20/4686424.jpg" }
+      its (:'featured_releases.length') { should be > 1 }
     end
     
     describe '.find' do

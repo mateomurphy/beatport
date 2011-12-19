@@ -5,9 +5,9 @@ module Beatport::Catalog
     describe "structure" do
       subject { Currency.all.first }
       
-      specify { subject.id.should == 1 }
-      specify { subject.code.should == "USD" }
-      specify { subject.name.should == "Dollar" }      
+      its (:id) { should == 1 }
+      its (:code) { should == "USD" }
+      its (:name) { should == "Dollar" }      
       
     end
   end

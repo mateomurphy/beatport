@@ -7,12 +7,12 @@ module Beatport::Catalog
     describe "structure" do
       subject { Genre.find(7) }
 
-      specify { subject.name.should == "Trance" }
-      specify { subject.slug.should == "trance" }
-      specify { subject.subgenres.length.should be > 1}
-      specify { subject.slideshow.header.length.should be > 1 }
-      specify { subject.slideshow.small.length.should be > 1 }
-      specify { subject.top_downloads.length.should be > 1 }
+      its (:name) { should == "Trance" }
+      its (:slug) { should == "trance" }
+      its (:'subgenres.length') { should be > 1}
+      its (:'slideshow.header.length') { should be > 1 }
+      its (:'slideshow.small.length') { should be > 1 }
+      its (:'top_downloads.length') { should be > 1 }
 #      it { @genre.features.length.should be > 1}
     end
     

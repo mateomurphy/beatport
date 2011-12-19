@@ -6,22 +6,22 @@ module Beatport::Catalog
     describe 'structure' do
       subject { Label.find(1390) }
       
-      specify { subject.id.should == 1390 }
-      specify { subject.type.should == "label" }
-      specify { subject.name.should == "Anjunadeep" }
-      specify { subject.slug.should == "anjunadeep" }      
-      specify { subject.source_type.should == ["store", "mobile", "sushi"] }
-      specify { subject.last_publish_date.should == Date.new(2011, 12, 07) }
-      specify { subject.biography.should == "" }
-      specify { subject.genres.length.should be > 1 }
-      specify { subject.sub_genres.length.should be > 0 }      
-      specify { subject.display_level.should == 1 }
-      specify { subject.images.small.url.should == "http://geo-media.beatport.com/items/imageCatalog/0/0/0/3000/400/0/3406.jpg"}
-      specify { subject.images.medium.url.should == "http://geo-media.beatport.com/items/imageCatalog/0/0/0/1000/100/90/1191.jpg"}
-      specify { subject.images.banner.url.should == "http://geo-media.beatport.com/items/imageCatalog/0/300000/40000/5000/100/50/345152.jpg"}            
-      specify { subject.top_downloads.length.should be > 1 }
-      specify { subject.featured_releases.length.should be > 1 }
-      specify { subject.most_popular_releases.length.should be > 1 }
+      its (:id) { should == 1390 }
+      its (:type) { should == "label" }
+      its (:name) { should == "Anjunadeep" }
+      its (:slug) { should == "anjunadeep" }      
+      its (:source_type) { should == ["store", "mobile", "sushi"] }
+      its (:last_publish_date) { should == Date.new(2011, 12, 07) }
+      its (:biography) { should == "" }
+      its (:'genres.length') { should be > 1 }
+      its (:'sub_genres.length') { should be > 0 }      
+      its (:display_level) { should == 1 }
+      its (:'images.small.url') { should == "http://geo-media.beatport.com/items/imageCatalog/0/0/0/3000/400/0/3406.jpg"}
+      its (:'images.medium.url') { should == "http://geo-media.beatport.com/items/imageCatalog/0/0/0/1000/100/90/1191.jpg"}
+      its (:'images.banner.url') { should == "http://geo-media.beatport.com/items/imageCatalog/0/300000/40000/5000/100/50/345152.jpg"}            
+      its (:'top_downloads.length') { should be > 1 }
+      its (:'featured_releases.length') { should be > 1 }
+      its (:'most_popular_releases.length') { should be > 1 }
     end
   
     describe '.find' do
@@ -55,7 +55,7 @@ module Beatport::Catalog
           old_id = nil if old_date.to_s != label.last_publish_date.to_s
         
           # beatport has some bad genre data?
-          # label.genres.map(&:id).should include(5)
+          # label.genres.map(&:id)) { should include(5)
           label.id.should be >= old_id if old_id
           label.last_publish_date.should be >= old_date if old_date
         
@@ -68,7 +68,7 @@ module Beatport::Catalog
         labels = Label.all :return_facets => ['genre_name', 'performer_name']
         
         # no worky
-#        labels.facets['fields']['performer_name'].count.should be > 1
+#        labels.facets['fields']['performer_name'].count) { should be > 1
         labels.facets['fields']['genre_name'].count.should be > 1      
       end
 

@@ -6,29 +6,29 @@ module Beatport::Catalog
     describe 'structure' do
       subject { Release.find(164808) }
       
-      specify { subject.id.should == 164808 }
-      specify { subject.type.should == 'release' }
-      specify { subject.name.should == "Anjunabeats Volume 6 (Unmixed - DJ Ready)" }
-      specify { subject.slug.should == 'anjunabeats-volume-6-unmixed-dj-ready'}
-      specify { subject.release_date.should == Date.new(2009, 04, 06) }
-      specify { subject.publish_date.should == Date.new(2009, 04, 06) }
-      specify { subject.exclusive.should == false }
-      specify { subject.category.should == 'Album' }
-      specify { subject.current_status.should == "General Content"}
-      specify { subject.catalog_number.should == "ANJCDCO011D"}
-      specify { subject.purchasable.should == true }
-      specify { subject.price.to_s.should == "15.99" }
-      specify { subject.tracks_price.to_s.should == "43.21" }
-      specify { subject.audio_format_fee.wav.to_s.should == '29.00'}
-      specify { subject.audio_format_fee.aiff.to_s.should == '29.00'}
-      specify { subject.label.id.should == 804 }
+      its (:id) { should == 164808 }
+      its (:type) { should == 'release' }
+      its (:name) { should == "Anjunabeats Volume 6 (Unmixed - DJ Ready)" }
+      its (:slug) { should == 'anjunabeats-volume-6-unmixed-dj-ready'}
+      its (:release_date) { should == Date.new(2009, 04, 06) }
+      its (:publish_date) { should == Date.new(2009, 04, 06) }
+      its (:exclusive) { should == false }
+      its (:category) { should == 'Album' }
+      its (:current_status) { should == "General Content"}
+      its (:catalog_number) { should == "ANJCDCO011D"}
+      its (:purchasable) { should == true }
+      its (:'price.to_s') { should == "15.99" }
+      its (:'tracks_price.to_s') { should == "43.21" }
+      its (:'audio_format_fee.wav.to_s') { should == '29.00'}
+      its (:'audio_format_fee.aiff.to_s') { should == '29.00'}
+      its (:'label.id') { should == 804 }
       specify { subject.artists.map(&:name).should include("Paul Keeley") }
-      specify { subject.genres.map(&:name).should == ["Trance", "Progressive House"]}
-      specify { subject.images.small.url.should == "http://geo-media.beatport.com/items/imageCatalog/0/300000/90000/2000/600/90/392699.jpg" }
-      specify { subject.images.medium.url.should == "http://geo-media.beatport.com/items/imageCatalog/0/300000/90000/2000/700/0/392700.jpg" }
-      specify { subject.images.large.url.should == "http://geo-media.beatport.com/items/imageCatalog/0/300000/90000/2000/700/0/392701.jpg" }      
-      specify { subject.discount.to_s.should == "27.22" }
-      specify { subject.recommendations.releases.length.should > 1 }
+      specify { subject.genres.map(&:name).should == ["Trance", "Progressive House"] }
+      its (:'images.small.url') { should == "http://geo-media.beatport.com/items/imageCatalog/0/300000/90000/2000/600/90/392699.jpg" }
+      its (:'images.medium.url') { should == "http://geo-media.beatport.com/items/imageCatalog/0/300000/90000/2000/700/0/392700.jpg" }
+      its (:'images.large.url') { should == "http://geo-media.beatport.com/items/imageCatalog/0/300000/90000/2000/700/0/392701.jpg" }      
+      its (:'discount.to_s') { should == "27.22" }
+      its (:'recommendations.releases.length') { should > 1 }
     end
   
     describe '.find' do
