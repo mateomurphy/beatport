@@ -13,6 +13,7 @@ module Beatport
    
     def process(*args)
       options = args.last.is_a?(Hash) ? args.pop : {}      
+      string_key_type = options.delete(:string_key_type) || :name
       
       key = options.delete(:key) || (args.length > 1 ? args.compact : args.first)
     
@@ -20,7 +21,7 @@ module Beatport
       when Integer
         options[:id] = key
       when String, Symbol
-        options[:slug] = key.to_s
+        options[string_key_type] = key.to_s
       when Array
         options[:ids] = key
       end
