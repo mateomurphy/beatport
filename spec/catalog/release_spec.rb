@@ -4,30 +4,31 @@ module Beatport::Catalog
   describe Release do
   
     describe 'structure' do
-      before(:all) { @release = Release.find(164808) }
-      it { @release.id.should == 164808 }
-      it { @release.type.should == 'release' }
-      it { @release.name.should == "Anjunabeats Volume 6 (Unmixed - DJ Ready)" }
-      it { @release.slug.should == 'anjunabeats-volume-6-unmixed-dj-ready'}
-      it { @release.release_date.should == Date.new(2009, 04, 06) }
-      it { @release.publish_date.should == Date.new(2009, 04, 06) }
-      it { @release.exclusive.should == false }
-      it { @release.category.should == 'Album' }
-      it { @release.current_status.should == "General Content"}
-      it { @release.catalog_number.should == "ANJCDCO011D"}
-      it { @release.purchasable.should == true }
-      it { @release.price.to_s.should == "15.99" }
-      it { @release.tracks_price.to_s.should == "43.21" }
-      it { @release.audio_format_fee.wav.to_s.should == '29.00'}
-      it { @release.audio_format_fee.aiff.to_s.should == '29.00'}
-      it { @release.label.id.should == 804 }
-      it { @release.artists.map(&:name).should include("Paul Keeley") }
-      it { @release.genres.map(&:name).should == ["Trance", "Progressive House"]}
-      it { @release.images.small.url.should == "http://geo-media.beatport.com/items/imageCatalog/0/300000/90000/2000/600/90/392699.jpg" }
-      it { @release.images.medium.url.should == "http://geo-media.beatport.com/items/imageCatalog/0/300000/90000/2000/700/0/392700.jpg" }
-      it { @release.images.large.url.should == "http://geo-media.beatport.com/items/imageCatalog/0/300000/90000/2000/700/0/392701.jpg" }      
-      it { @release.discount.to_s.should == "27.22" }
-      it { @release.recommendations.releases.length.should > 1 }
+      subject { Release.find(164808) }
+      
+      specify { subject.id.should == 164808 }
+      specify { subject.type.should == 'release' }
+      specify { subject.name.should == "Anjunabeats Volume 6 (Unmixed - DJ Ready)" }
+      specify { subject.slug.should == 'anjunabeats-volume-6-unmixed-dj-ready'}
+      specify { subject.release_date.should == Date.new(2009, 04, 06) }
+      specify { subject.publish_date.should == Date.new(2009, 04, 06) }
+      specify { subject.exclusive.should == false }
+      specify { subject.category.should == 'Album' }
+      specify { subject.current_status.should == "General Content"}
+      specify { subject.catalog_number.should == "ANJCDCO011D"}
+      specify { subject.purchasable.should == true }
+      specify { subject.price.to_s.should == "15.99" }
+      specify { subject.tracks_price.to_s.should == "43.21" }
+      specify { subject.audio_format_fee.wav.to_s.should == '29.00'}
+      specify { subject.audio_format_fee.aiff.to_s.should == '29.00'}
+      specify { subject.label.id.should == 804 }
+      specify { subject.artists.map(&:name).should include("Paul Keeley") }
+      specify { subject.genres.map(&:name).should == ["Trance", "Progressive House"]}
+      specify { subject.images.small.url.should == "http://geo-media.beatport.com/items/imageCatalog/0/300000/90000/2000/600/90/392699.jpg" }
+      specify { subject.images.medium.url.should == "http://geo-media.beatport.com/items/imageCatalog/0/300000/90000/2000/700/0/392700.jpg" }
+      specify { subject.images.large.url.should == "http://geo-media.beatport.com/items/imageCatalog/0/300000/90000/2000/700/0/392701.jpg" }      
+      specify { subject.discount.to_s.should == "27.22" }
+      specify { subject.recommendations.releases.length.should > 1 }
     end
   
     describe '.find' do

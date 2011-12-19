@@ -3,8 +3,8 @@ require 'spec_helper'
 module Beatport::Catalog
   describe Mixed do
     describe '.all' do
-      before(:all) do
-        @results = Mixed.all(
+      subject do
+        Mixed.all(
           :label_ids => [804,1390],
           :artist_ids => [7181, 10395],
           :chart_ids => [15722, 29514],
@@ -14,11 +14,11 @@ module Beatport::Catalog
       end
 
       it "should return two of each type" do
-        @results.map(&:type).should == ['label', 'label', 'artist', 'artist', 'chart', 'chart', 'release', 'release', 'track', 'track']
+        subject.map(&:type).should == ['label', 'label', 'artist', 'artist', 'chart', 'chart', 'release', 'release', 'track', 'track']
       end
 
       it "should return the right ids" do
-        @results.map(&:id).should == [804, 1390, 7181, 10395, 15722, 29514, 164808, 385763, 1746687, 1873426]
+        subject.map(&:id).should == [804, 1390, 7181, 10395, 15722, 29514, 164808, 385763, 1746687, 1873426]
       end
 
     end

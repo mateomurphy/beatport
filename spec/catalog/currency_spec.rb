@@ -3,10 +3,11 @@ require 'spec_helper'
 module Beatport::Catalog
   describe Currency do
     describe "structure" do
-      before(:all) { @currency = Currency.all.first }
-      it { @currency.id.should == 1 }
-      it { @currency.code.should == "USD" }
-      it { @currency.name.should == "Dollar" }      
+      subject { Currency.all.first }
+      
+      specify { subject.id.should == 1 }
+      specify { subject.code.should == "USD" }
+      specify { subject.name.should == "Dollar" }      
       
     end
   end

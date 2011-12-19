@@ -5,14 +5,14 @@ module Beatport::Catalog
   describe Genre do
     
     describe "structure" do
-      before(:all) { @genre = Genre.find(7) }
+      subject { Genre.find(7) }
 
-      it { @genre.name.should == "Trance" }
-      it { @genre.slug.should == "trance" }
-      it { @genre.subgenres.length.should be > 1}
-      it { @genre.slideshow.header.length.should be > 1 }
-      it { @genre.slideshow.small.length.should be > 1 }
-      it { @genre.top_downloads.length.should be > 1 }
+      specify { subject.name.should == "Trance" }
+      specify { subject.slug.should == "trance" }
+      specify { subject.subgenres.length.should be > 1}
+      specify { subject.slideshow.header.length.should be > 1 }
+      specify { subject.slideshow.small.length.should be > 1 }
+      specify { subject.top_downloads.length.should be > 1 }
 #      it { @genre.features.length.should be > 1}
     end
     
