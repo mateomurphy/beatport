@@ -23,5 +23,12 @@ module Beatport::Catalog
       its (:facets) { should_not be_nil }
       its (:spellcheck) { should_not be_nil }
     end
+    
+    describe '.query' do
+      subject { Autocomplete.query('lutzen', :page => 3, :per_page => 2)}
+      
+      its (:page) { should == 3 }
+      its (:per_page) { should == 2 }
+    end
   end
 end
