@@ -1,23 +1,23 @@
 require 'spec_helper'
 
-module Beatport 
+module Beatport::Support
   describe QueryBuilder do
     describe '#process_sort_by' do
-      it "should handle a string" do
+      it "handles strings" do
         input = 'publish_date desc, chart_id desc'
         output = 'publishDate desc,chartId desc'
         
         QueryBuilder.new.process_sort_by(input).should == output
       end
 
-      it "should handle an array" do
+      it "handles arrays" do
         input = ['publish_date desc', 'chart_id desc']
         output = 'publishDate desc,chartId desc'
         
         QueryBuilder.new.process_sort_by(input).should == output
       end
 
-      it "should handle a hash" do
+      it "handles hashes" do
         input = {'publish_date' => 'desc', 'chart_id' => 'desc'}
         output = 'publishDate desc,chartId desc'
         
@@ -26,21 +26,21 @@ module Beatport
     end
     
     describe '#process_facets' do
-      it "should handle a string" do
+      it "handles strings" do
         input = "genre_name:Trance, genre_name:Progressive House"
         output = "genreName:Trance,genreName:Progressive House"
         
         QueryBuilder.new.process_facets(input).should == output        
       end
 
-      it "should handle an array" do
+      it "handles arrays" do
         input = ["genre_name:Trance", "genre_name:Progressive House"]
         output = "genreName:Trance,genreName:Progressive House"
         
         QueryBuilder.new.process_facets(input).should == output        
       end
 
-      it "should handle a hash with a string value" do
+      it "handles hashes with string values" do
         input = {"genre_name" => "Trance"}
         output = "genreName:Trance"
         
@@ -48,7 +48,7 @@ module Beatport
       end
 
 
-      it "should handle a hash with an array value" do
+      it "handles hashes with array values" do
         input = {"genre_name" => ["Trance", "Progressive House"]}
         output = "genreName:Trance,genreName:Progressive House"
         
@@ -57,7 +57,7 @@ module Beatport
     end
     
     describe '#process_return_facets' do
-      it "should handle a string" do
+      it "handles strings" do
         input = "genre_name, performer_name"
         output = "genreName,performerName"
         
@@ -66,31 +66,25 @@ module Beatport
     end
     
     describe ".process" do
-      it "should handle sort by" do
+      it "handles sort by" do
         h = {:sort_by => ['publishDate asc', 'chartId asc']}
         
         QueryBuilder.process(h).should == {'sortBy'=>"publishDate asc,chartId asc"}
       end
 
-      it "should handle sort by with hash syntax" do
+      it "handles sort by with hash syntax" do
         h = {:sort_by => {'publish_date'=>'asc', 'chart_id'=>'asc'}}
         
         QueryBuilder.process(h).should == {'sortBy'=>"publishDate asc,chartId asc"}
       end
 
-      it "should handle return facets" do
+      it "handles return facets" do
         h = {:return_facets => ['genre_name', 'performer_name']}
         
         QueryBuilder.process(h).should == {'returnFacets'=>"genreName,performerName"}
       end
 
-      it "should handle return facets" do
-        h = {:return_facets => ['genre_name', 'performer_name']}
-        
-        QueryBuilder.process(h).should == {'returnFacets'=>"genreName,performerName"}
-      end
-
-      it "should handle facets" do
+      it "handles facets" do
         h = {:facets => {:genre_name => ['Trance', 'Progessive House']}}
         
         QueryBuilder.process(h).should == {'facets'=>"genreName:Trance,genreName:Progessive House"}

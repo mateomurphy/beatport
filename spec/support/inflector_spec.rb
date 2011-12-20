@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-module Beatport 
+module Beatport::Support 
   describe Inflector do
     describe '.camelize' do
       it "should camelize an underscored word" do

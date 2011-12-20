@@ -6,7 +6,7 @@ module Beatport
       attr_reader :items
     
       def initialize(data = {})
-        item_klass = Inflector.constantize("Beatport::Catalog::#{data['type']}")
+        item_klass = Support::Inflector.constantize("Beatport::Catalog::#{data['type']}")
 
         associate(data, 'items', true, item_klass)
         super
