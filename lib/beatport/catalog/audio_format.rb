@@ -4,7 +4,7 @@ module Beatport
       
       # Returns the audio format with the name given
       def self.find(key)
-        Client.retrieve('audio-formats', AudioFormat, :key => key).first
+        Client.retrieve 'audio-formats', AudioFormat, :key => key
       end
             
       def self.all

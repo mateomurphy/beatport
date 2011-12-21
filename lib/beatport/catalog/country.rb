@@ -9,7 +9,7 @@ module Beatport
       end
       
       def self.find(code)
-        Client.retrieve('countries', Country, :code_short => code).first
+        Client.retrieve 'countries', Country, :key => code, :string_key_type => :code_short
       end
     end
   end

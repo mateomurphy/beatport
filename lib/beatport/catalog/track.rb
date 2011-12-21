@@ -13,29 +13,35 @@ module Beatport
       has_one :key, Keys
     
       # Returns the track with the given id
-      def self.find(id)
-        Client.retrieve('tracks', Track, :id => id).first
+      def self.find(key)
+        Client.retrieve 'tracks', Track, :key => key
       end
   
       # Returns all the tracks matching the criterea
-      def self.all(*args)
-        Client.retrieve 'tracks', Track, *args
+      def self.all(options = {})
+        Client.retrieve 'tracks', Track, options
       end    
     
-      def self.most_popular(*args)
-        Client.retrieve 'most-popular', Track, *args
+      def self.most_popular(options = {})
+        Client.retrieve 'most-popular', Track, options
       end
     
-      def self.most_popular_for_genre(*args)
-        Client.retrieve "most-popular/genre", Track, *args    
+      def self.most_popular_for_genre(id, options = {})
+        options[:id] = id
+        options[:collection] = true
+        Client.retrieve "most-popular/genre", Track, options
       end
     
-      def self.most_popular_for_artist(*args)
-        Client.retrieve "most-popular/artist", Track, *args    
+      def self.most_popular_for_artist(id, options = {})
+        options[:id] = id
+        options[:collection] = true
+        Client.retrieve "most-popular/artist", Track, options
       end
 
-      def self.most_popular_for_label(*args)
-        Client.retrieve "most-popular/label", Track, *args    
+      def self.most_popular_for_label(id, options = {})
+        options[:id] = id
+        options[:collection] = true
+        Client.retrieve "most-popular/label", Track, options
       end
     
     end

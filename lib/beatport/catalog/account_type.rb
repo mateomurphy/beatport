@@ -5,7 +5,7 @@ module Beatport
       
       # Returns the account type with the name given
       def self.find(key)
-        Client.retrieve('account-types', AccountType, :key => key).first
+        Client.retrieve 'account-types', AccountType, :key => key
       end
       
       # Returns all the account types

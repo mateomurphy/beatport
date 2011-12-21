@@ -7,11 +7,17 @@ module Beatport
 #    default_params :v => '1.0', :format => 'json'
     
     def self.retrieve(path, klass, *args)
-      result = get("/#{path}", :query => Support::QueryBuilder.process(*args))
+      builder = Support::QueryBuilder.new
+      
+      result = get("/#{path}", :query => builder.process(*args))
 
       case result['results']
       when Array
-        Collection.new(klass, result)
+        if builder.single_result?
+          klass.new(result['results'].first) if result['results'].any?
+        else
+          Collection.new(klass, result)
+        end
       when Hash
         klass.new(result['results'])
       else
