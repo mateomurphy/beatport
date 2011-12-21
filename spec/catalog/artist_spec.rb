@@ -18,15 +18,37 @@ module Beatport::Catalog
       its (:'images.small.url') { should == "http://geo-media.beatport.com/items/imageCatalog/0/400000/90000/1000/500/20/491527.jpg" }
       its (:'images.medium.url') { should == "http://geo-media.beatport.com/items/imageCatalog/0/400000/90000/1000/500/30/491530.jpg" }
       its (:'images.large.url') { should == "http://geo-media.beatport.com/items/imageCatalog/4000000/600000/80000/6000/400/20/4686424.jpg" }
-      its (:'featured_releases.length') { should be > 1 }
+#      its (:'featured_releases.length') { should be > 1 }
     end
     
     describe '.find' do
-      it "should find Above & Beyond when given id 7181" do
-        artist = Artist.find(7181)
-        artist.id.should == 7181
+      context 'with a single id' do
+        subject { Artist.find(7181) }
+        
+        it { should be_an(Artist) }
+        its (:id) { should == 7181 }
       end
-    end
+
+      context 'with multiple ids' do
+        subject { Artist.find(7181, 7182) }
+        
+#        it { should be_a(Collection) }
+        its (:length) { should == 2 }
+        it "returns the requested artists" do
+          subject.map(&:id).should == [7181, 7182]
+        end
+      end
+
+      context 'with an array of ids' do
+        subject { Artist.find([7181, 7182]) }
+        
+#        it { should be_a(Collection) }
+        its (:length) { should == 2 }
+        it "returns the requested artists" do
+          subject.map(&:id).should == [7181, 7182]
+        end
+      end
+    end    
   
     describe '.all' do
       it "should get arbitrary artists" do

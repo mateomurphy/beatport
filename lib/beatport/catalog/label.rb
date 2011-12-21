@@ -8,12 +8,12 @@ module Beatport
       has_many :most_popular_releases, Release
       has_one :images, Images
       
-      def self.find(id)
-        Client.retrieve 'labels/detail', Label, :id => id
+      def self.find(*args)
+        Client.retrieve 'labels', Label, *args
       end
 
-      def self.all(*args)
-        Client.retrieve 'labels', Label, *args
+      def self.all(options = {})
+        Client.retrieve 'labels', Label, options
       end
     
       def self.featured(*args)

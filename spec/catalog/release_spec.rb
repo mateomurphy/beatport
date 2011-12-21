@@ -29,7 +29,7 @@ module Beatport::Catalog
       its (:'images.medium.url') { should == "http://geo-media.beatport.com/items/imageCatalog/0/300000/90000/2000/700/0/392700.jpg" }
       its (:'images.large.url') { should == "http://geo-media.beatport.com/items/imageCatalog/0/300000/90000/2000/700/0/392701.jpg" }      
       its (:'discount.to_s') { should == "27.22" }
-      its (:'recommendations.releases.length') { should > 1 }
+#      its (:'recommendations.releases.length') { should > 1 }
     end
   
     describe '.find' do

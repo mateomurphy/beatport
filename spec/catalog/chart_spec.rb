@@ -33,7 +33,7 @@ module Beatport::Catalog
         subject { Chart.find(15722, 15723) }
         its (:length) { should == 2 }
         it "returns the requested charts" do
-          subject.map(&:id) == [15722, 15723]
+          subject.map(&:id).should == [15722, 15723]
         end
       end
 
@@ -41,7 +41,7 @@ module Beatport::Catalog
         subject { Chart.find([15722, 15723]) }
         its (:length) { should == 2 }
         it "returns the requested charts" do
-          subject.map(&:id) == [15722, 15723]
+          subject.map(&:id).should == [15722, 15723]
         end
       end
     end

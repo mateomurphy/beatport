@@ -15,16 +15,21 @@ module Beatport
         tracks_price - price
       end
     
-      def self.find(id)
-        Client.retrieve 'releases/detail', Release, :id => id
+      def self.find(*args)
+        Client.retrieve 'releases', Release, *args
       end
 
-      def self.all(*args)
-        Client.retrieve 'releases', Release, *args
+      def self.all(options={})
+        Client.retrieve 'releases', Release, options
       end    
     
       def self.featured(*args)
         Client.retrieve 'featured/releases', Release, *args
+      end
+
+      def tracks(options = {})
+        options[:release_id] = id
+        @tracks ||= Track.all(options)
       end
     end
   end
