@@ -78,18 +78,6 @@ module Beatport::Catalog
         genre = Genre.find(7)
         genre.top_downloads.length.should == 10
       end
-      
-      it "should return the top downloads of a genre loaded via all" do
-        genre = Genre.all(7).first
-        genre.top_downloads.length.should == 10
-      end
-      
-      it "should return the same downloads no matter how the genre was loaded" do
-        by_find = Genre.find(7)
-        by_all = Genre.all(7).first
-        
-        by_find.top_downloads.map(&:id).should == by_all.top_downloads.map(&:id)
-      end
     end
     
     describe '#slideshow' do
@@ -97,18 +85,6 @@ module Beatport::Catalog
         genre = Genre.find(7)
         genre.slideshow.header.length.should be > 1
       end
-      
-      it "should return the slideshow of a genre loaded via all" do
-        genre = Genre.all(7).first
-        genre.slideshow.header.length.should be > 1
-      end
-    
-      it "should return the same slideshow no matter how the genre was loaded" do
-        by_find = Genre.find(7)
-        by_all = Genre.all(7).first
-        
-        by_find.slideshow.header.map(&:link).should == by_all.slideshow.header.map(&:link)
-      end    
     end    
   end
 end
