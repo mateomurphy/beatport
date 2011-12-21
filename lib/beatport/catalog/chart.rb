@@ -7,12 +7,12 @@ module Beatport
       has_one :price, Price
       has_many :tracks, Track
     
-      def self.find(id)
-        Client.retrieve 'charts/detail', Chart, :id => id
+      def self.find(*keys)
+        Client.retrieve 'charts', Chart, *keys
       end
   
-      def self.all(*args)
-        Client.retrieve 'charts', Chart, *args
+      def self.all(options = {})
+        Client.retrieve 'charts', Chart, options
       end    
     
       def self.overview
@@ -21,7 +21,13 @@ module Beatport
     
       def self.featured(*args)
         Client.retrieve 'featured/charts', Chart, *args
-      end    
+      end
+      
+      def tracks(options = {})
+        options[:chart_id] = id
+        @tracks ||= Track.all(options)
+      end
+      
     end
   end
 end

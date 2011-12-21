@@ -24,8 +24,26 @@ module Beatport::Catalog
     end
   
     describe '.find' do
-      chart = Chart.find(15722)
-      chart.id.should == 15722
+      context 'with a single id' do
+        subject { Chart.find(15722) }
+        its (:id) { should == 15722 }
+      end
+
+      context 'with multiple ids' do
+        subject { Chart.find(15722, 15723) }
+        its (:length) { should == 2 }
+        it "returns the requested charts" do
+          subject.map(&:id) == [15722, 15723]
+        end
+      end
+
+      context 'with an array of ids' do
+        subject { Chart.find([15722, 15723]) }
+        its (:length) { should == 2 }
+        it "returns the requested charts" do
+          subject.map(&:id) == [15722, 15723]
+        end
+      end
     end
   
     describe '.all' do
