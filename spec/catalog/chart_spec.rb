@@ -6,6 +6,7 @@ module Beatport::Catalog
     describe 'structure' do
       subject { Chart.find(15722) }
       
+      it { should be_a(Chart) }
       its (:id) { should == 15722 }
       its (:type) { should == "chart" }
       its (:name) { should == "Nitrous Oxide – April Top 10" }    

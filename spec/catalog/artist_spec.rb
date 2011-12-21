@@ -5,6 +5,7 @@ module Beatport::Catalog
     describe 'structure' do
       subject { Artist.find(7181) }
       
+      it { should be_an(Artist) }
       its (:id) { should == 7181 }
       its (:type) { should == "artist" }
       its (:name) { should == "Above & Beyond" }

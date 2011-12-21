@@ -5,6 +5,7 @@ module Beatport::Catalog
     describe '.get' do
       subject { ChartOverview.get }
       
+      it { should be_a(ChartOverview) }
       its (:'newest.length') { should == 16 }
       its (:'featured.length') { should == 4 }
     end

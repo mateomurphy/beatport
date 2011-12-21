@@ -5,6 +5,7 @@ module Beatport::Catalog
     describe 'structure' do
       subject { Country.find('au') }
       
+      it { should be_a(Country) }
       its (:id) { should ==  5 }
       its (:code) { should == "AUS" }
       its (:code_short) { should == "AU" }

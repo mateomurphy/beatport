@@ -5,6 +5,7 @@ module Beatport::Catalog
     describe 'structure' do
       subject { AccountType.all.first }
       
+      it { should be_an(AccountType) }
       its (:code) { should == "AMEX" }
       its (:bpid) { should == "1" }
       its (:name) { should == "American Express"}

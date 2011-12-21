@@ -6,7 +6,8 @@ module Beatport::Catalog
     
     describe "structure" do
       subject { Genre.find(7) }
-
+      
+      it { should be_a(Genre) }
       its (:name) { should == "Trance" }
       its (:slug) { should == "trance" }
       its (:'subgenres.length') { should be > 1}

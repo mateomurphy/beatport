@@ -5,6 +5,7 @@ module Beatport::Catalog
     describe "structure" do
       subject { ItemType.all.first }
       
+      it { should be_an(ItemType) }
       its (:id) { should == 1 }
       its (:name) { should == "track" }            
     end

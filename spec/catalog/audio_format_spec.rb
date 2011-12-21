@@ -5,6 +5,7 @@ module Beatport::Catalog
     describe 'structure' do
       subject { AudioFormat.all.first }
      
+      it { should be_an(AudioFormat) }
       its (:id) { should == 1 }
       its (:name) { should == "mp3" }
       its (:person_preference_visibility) { should == true }

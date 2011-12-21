@@ -6,6 +6,7 @@ module Beatport::Catalog
     describe 'structure' do
       subject { Release.find(164808) }
       
+      it { should be_a(Release) }
       its (:id) { should == 164808 }
       its (:type) { should == 'release' }
       its (:name) { should == "Anjunabeats Volume 6 (Unmixed - DJ Ready)" }

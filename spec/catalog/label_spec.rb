@@ -6,6 +6,7 @@ module Beatport::Catalog
     describe 'structure' do
       subject { Label.find(1390) }
       
+      it { should be_a(Label) }
       its (:id) { should == 1390 }
       its (:type) { should == "label" }
       its (:name) { should == "Anjunadeep" }

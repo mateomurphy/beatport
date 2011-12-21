@@ -12,6 +12,7 @@ module Beatport::Catalog
     describe 'structure' do
       subject { Track.find(1217790) }
       
+      it { should be_a(Track) }
       its (:id) { should == 1217790 }
       its (:type) { should == 'track' }
       its (:name) { should == "Tonight (IMS Anthem 2009)" }
