@@ -4,7 +4,7 @@ module Beatport
       def self.query(query, options = {})
         options['query'] = query
       
-        Client.retrieve('autocomplete', Autocomplete, options)
+        Client.retrieve 'autocomplete', Autocomplete, options
       end
     end
   end

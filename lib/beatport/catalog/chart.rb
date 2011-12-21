@@ -8,7 +8,7 @@ module Beatport
       has_many :tracks, Track
     
       def self.find(id)
-        Client.retrieve('charts/detail', Chart, :id => id)
+        Client.retrieve 'charts/detail', Chart, :id => id
       end
   
       def self.all(*args)
@@ -20,7 +20,7 @@ module Beatport
       end
     
       def self.featured(*args)
-        Client.retrieve('featured/charts', Chart, *args)
+        Client.retrieve 'featured/charts', Chart, *args
       end    
     end
   end

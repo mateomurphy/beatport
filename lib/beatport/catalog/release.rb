@@ -16,15 +16,15 @@ module Beatport
       end
     
       def self.find(id)
-        Client.retrieve('releases/detail', Release, :id => id)
+        Client.retrieve 'releases/detail', Release, :id => id
       end
 
       def self.all(*args)
-        Client.retrieve('releases', Release, *args)
+        Client.retrieve 'releases', Release, *args
       end    
     
       def self.featured(*args)
-        Client.retrieve('featured/releases', Release, *args)
+        Client.retrieve 'featured/releases', Release, *args
       end
     end
   end

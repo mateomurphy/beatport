@@ -8,7 +8,7 @@ module Beatport
       has_many :featured_releases, Release
     
       def self.find(id)
-        Client.retrieve('artists/detail', Artist, :id => id)
+        Client.retrieve 'artists/detail', Artist, :id => id
       end
 
       def self.all(*args)

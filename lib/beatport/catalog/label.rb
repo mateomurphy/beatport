@@ -9,15 +9,15 @@ module Beatport
       has_one :images, Images
       
       def self.find(id)
-        Client.retrieve('labels/detail', Label, :id => id)
+        Client.retrieve 'labels/detail', Label, :id => id
       end
 
       def self.all(*args)
-        Client.retrieve('labels', Label, *args)
+        Client.retrieve 'labels', Label, *args
       end
     
       def self.featured(*args)
-        Client.retrieve('featured/labels', Label, *args)
+        Client.retrieve 'featured/labels', Label, *args
       end    
     
       def releases(options)
