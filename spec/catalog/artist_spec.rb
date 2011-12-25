@@ -10,7 +10,7 @@ module Beatport::Catalog
       its (:type) { should == "artist" }
       its (:name) { should == "Above & Beyond" }
       its (:slug) { should == "above-and-beyond" }
-      its (:last_publish_date) { should == Date.new(2011, 12, 15)}
+      its (:last_publish_date) { should >= Date.new(2011, 12, 15)}
       its (:biography) { should == "" }
       its (:'genres.length') { should be > 1 }
       its (:'sub_genres.length') { should be > 1 }            
