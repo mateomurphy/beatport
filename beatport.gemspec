@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{beatport}
-  s.version = "0.1.2"
+  s.version = "0.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Mateo Murphy"]
-  s.date = %q{2011-12-21}
+  s.date = %q{2011-12-25}
   s.description = %q{A ruby gem for accessing the beatport api}
   s.email = %q{mateo.murphy@gmail.com}
   s.extra_rdoc_files = [
@@ -64,6 +64,7 @@ Gem::Specification.new do |s|
     "lib/beatport/support/inflector.rb",
     "lib/beatport/support/parser.rb",
     "lib/beatport/support/query_builder.rb",
+    "spec/beatport_spec.rb",
     "spec/catalog/account_type_spec.rb",
     "spec/catalog/artist_spec.rb",
     "spec/catalog/audio_format_spec.rb",
