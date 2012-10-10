@@ -1,10 +1,14 @@
+# encoding: UTF-8
+
 require 'spec_helper'
 
 module Beatport::Catalog
   describe Chart do
   
     describe 'structure' do
-      subject { Chart.find(15722) }
+      subject do
+        VCR.use_cassette('chart_15722') { Chart.find(15722) }
+      end
       
       it { should be_a(Chart) }
       its (:id) { should == 15722 }
@@ -17,15 +21,17 @@ module Beatport::Catalog
       its (:'audio_format_fee.wav.to_s') { should == "9.00" }
       its (:'audio_format_fee.aiff.to_s') { should == "9.00" }      
       specify { subject.genres.map(&:name).should == ["Trance"] }
-      its (:'images.small.url') { should == "http://geo-media.beatport.com/items/imageCatalog/0/400000/90000/1000/500/30/491534.jpg"}
-      its (:'images.medium.url') { should == "http://geo-media.beatport.com/items/imageCatalog/0/400000/10000/2000/900/20/412921.jpg"}
-      its (:'images.large.url') { should == "http://geo-media.beatport.com/items/imageCatalog/0/400000/10000/2000/900/20/412922.jpg"}            
+      its (:'images.small.url') { should == "http://geo-media.beatport.com/image/491534.jpg"}
+      its (:'images.medium.url') { should == "http://geo-media.beatport.com/image/412921.jpg"}
+      its (:'images.large.url') { should == "http://geo-media.beatport.com/image/412922.jpg"}            
       its (:'tracks.length') { should == 9 }
     end
   
     describe '.find' do
       context 'with a single id' do
-        subject { Chart.find(15722) }
+        subject do
+          VCR.use_cassette('chart_15722') { Chart.find(15722) }
+        end
         its (:id) { should == 15722 }
       end
 

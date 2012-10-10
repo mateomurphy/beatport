@@ -2,6 +2,9 @@ require 'spec_helper'
 
 module Beatport::Catalog
   describe Slide do
+    pending "deprecated?"
+
+=begin
     describe '.header' do
       it "should get the header slides for the home page" do
         slides = Slide.header
@@ -37,6 +40,7 @@ module Beatport::Catalog
         slides.length.should be > 1
       end
     end
+=end
   end
 end
     

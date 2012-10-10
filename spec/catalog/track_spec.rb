@@ -4,13 +4,15 @@ module Beatport::Catalog
   describe Track do
     describe 'lazy loading' do
       it "should lazy load artists" do
-        pending
+        pending "Not implemented yet"
         track = Track.all(:per_page => 1, :page => 1).first
       end
     end
 
     describe 'structure' do
-      subject { Track.find(1217790) }
+      subject do
+        VCR.use_cassette('track_1217790') { Track.find(1217790) }
+      end
       
       it { should be_a(Track) }
       its (:id) { should == 1217790 }
@@ -21,7 +23,7 @@ module Beatport::Catalog
       its (:title) { should == "Tonight (IMS Anthem 2009) (Above & Beyond Remix)"}
       its (:release_date) { should == Date.new(2010,05,17) }
       its (:publish_date) { should == Date.new(2010,05,17) }
-      its (:sample_url) { should == 'http://geo-samples.beatport.com/items/volumes/volume7/items/1000000/200000/10000/7000/700/90/1217790.LOFI.mp3' }
+      its (:sample_url) { should == 'http://geo-samples.beatport.com/lofi/1217790.LOFI.mp3' }
       its (:rtmp_stream_url) { should == 'rtmp://geo-rtmp-samples.beatport.com/beatport/_definst_/mp3:lofi_samples/items/volumes/volume7/items/1000000/200000/10000/7000/700/90/1217790.LOFI'}
       its (:exclusive) { should be_false }
       its (:'price.to_s') { should == "1.49" }
@@ -39,10 +41,10 @@ module Beatport::Catalog
       its (:charts) { should == [] }
       its (:'release.id') { should == 245137 }
       its (:'label.id') { should == 495}
-      its (:'images.small.url') { should == 'http://geo-media.beatport.com/items/imageCatalog/0/600000/70000/4000/700/50/674759.jpg' }
-      its (:'images.medium.url') { should == 'http://geo-media.beatport.com/items/imageCatalog/0/600000/70000/4000/700/60/674760.jpg' }
-      its (:'images.large.url') { should == 'http://geo-media.beatport.com/items/imageCatalog/0/600000/70000/4000/700/60/674761.jpg' }
-      its (:'images.waveform.url') { should == 'http://geo-media.beatport.com/items/imageCatalog/1000000/200000/60000/8000/200/20/1268229.png' }                  
+      its (:'images.small.url') { should == 'http://geo-media.beatport.com/image/674759.jpg' }
+      its (:'images.medium.url') { should == 'http://geo-media.beatport.com/image/674760.jpg' }
+      its (:'images.large.url') { should == 'http://geo-media.beatport.com/image/674761.jpg' }
+      its (:'images.waveform.url') { should == 'http://geo-media.beatport.com/image/1268229.png' }                  
     end
     
     describe '.find' do

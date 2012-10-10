@@ -4,7 +4,9 @@ module Beatport::Catalog
   describe Release do
   
     describe 'structure' do
-      subject { Release.find(164808) }
+      subject do
+        VCR.use_cassette("release_164808") { Release.find(164808) }
+      end
       
       it { should be_a(Release) }
       its (:id) { should == 164808 }
@@ -18,17 +20,17 @@ module Beatport::Catalog
       its (:current_status) { should == "General Content"}
       its (:catalog_number) { should == "ANJCDCO011D"}
       its (:purchasable) { should == true }
-      its (:'price.to_s') { should == "15.99" }
+      its (:'price.to_s') { should == "9.99" }
       its (:'tracks_price.to_s') { should == "43.21" }
       its (:'audio_format_fee.wav.to_s') { should == '29.00'}
       its (:'audio_format_fee.aiff.to_s') { should == '29.00'}
       its (:'label.id') { should == 804 }
       specify { subject.artists.map(&:name).should include("Paul Keeley") }
-      specify { subject.genres.map(&:name).should == ["Trance", "Progressive House"] }
-      its (:'images.small.url') { should == "http://geo-media.beatport.com/items/imageCatalog/0/300000/90000/2000/600/90/392699.jpg" }
-      its (:'images.medium.url') { should == "http://geo-media.beatport.com/items/imageCatalog/0/300000/90000/2000/700/0/392700.jpg" }
-      its (:'images.large.url') { should == "http://geo-media.beatport.com/items/imageCatalog/0/300000/90000/2000/700/0/392701.jpg" }      
-      its (:'discount.to_s') { should == "27.22" }
+      specify { subject.genres.map(&:name).sort.should == ["Progressive House", "Trance"] }
+      its (:'images.small.url') { should == "http://geo-media.beatport.com/image/392699.jpg" }
+      its (:'images.medium.url') { should == "http://geo-media.beatport.com/image/392700.jpg" }
+      its (:'images.large.url') { should == "http://geo-media.beatport.com/image/392701.jpg" }      
+      its (:'discount.to_s') { should == "33.22" }
 #      its (:'recommendations.releases.length') { should > 1 }
     end
   
@@ -114,6 +116,8 @@ module Beatport::Catalog
       end
       
       it "should not give the same releases with justAdded true and false" do
+        pending "test will not give consistent results, revisit"
+        
         featured = Release.featured :genre_id => 7
         just_added = Release.featured :genre_id => 7, :just_added => true
         

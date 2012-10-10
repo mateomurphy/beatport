@@ -4,22 +4,25 @@ module Beatport::Catalog
   describe Label do
 
     describe 'structure' do
-      subject { Label.find(1390) }
+      subject do
+        VCR.use_cassette("label_1390") { Label.find(1390) }
+      end
       
       it { should be_a(Label) }
       its (:id) { should == 1390 }
       its (:type) { should == "label" }
       its (:name) { should == "Anjunadeep" }
       its (:slug) { should == "anjunadeep" }      
-      its (:source_type) { should == ["store", "mobile", "sushi"] }
-      its (:last_publish_date) { should == Date.new(2011, 12, 07) }
+      pending "source type is no longer returned?"
+      #its (:source_type) { should == ["store", "mobile", "sushi"] }
+      its (:last_publish_date) { should == Date.new(2012, 10, 8) }
       its (:biography) { should == "" }
       its (:'genres.length') { should be > 1 }
       its (:'sub_genres.length') { should be > 0 }      
       its (:display_level) { should == 1 }
-      its (:'images.small.url') { should == "http://geo-media.beatport.com/items/imageCatalog/0/0/0/3000/400/0/3406.jpg"}
-      its (:'images.medium.url') { should == "http://geo-media.beatport.com/items/imageCatalog/0/0/0/1000/100/90/1191.jpg"}
-      its (:'images.banner.url') { should == "http://geo-media.beatport.com/items/imageCatalog/0/300000/40000/5000/100/50/345152.jpg"}            
+      its (:'images.small.url') { should == "http://geo-media.beatport.com/image/3406.jpg"}
+      its (:'images.medium.url') { should == "http://geo-media.beatport.com/image/1191.jpg"}
+      its (:'images.banner.url') { should == "http://geo-media.beatport.com/image/345152.jpg"}            
 #      its (:'top_downloads.length') { should be > 1 }
 #      its (:'featured_releases.length') { should be > 1 }
 #      its (:'most_popular_releases.length') { should be > 1 }
@@ -27,15 +30,19 @@ module Beatport::Catalog
   
     describe '.find' do
       it "should get Anjunadeep give id 1390" do
-        label = Label.find(1390)
-        label.id.should == 1390
+        VCR.use_cassette("label_1390") do
+          label = Label.find(1390)
+          label.id.should == 1390
+        end
       end
     end
   
     describe '.all' do
       it "should get arbitrary labels" do
-        labels = Label.all
-        labels.length.should == 10
+        VCR.use_cassette("label_all") do
+          labels = Label.all
+          labels.length.should == 10
+        end
       end
     
       it "should get the first page with 5 labels per page" do
@@ -88,11 +95,15 @@ module Beatport::Catalog
     
     describe '.featured' do
       it "should get the featured labels for the Home page" do
+        pending "deprecated?"
+
         labels = Label.featured
         labels.length.should be > 1
       end
       
       it "should get the featured labels for the Trance page" do
+        pending "deprecated?"
+        
         labels = Label.featured :genre_id => 7
         labels.length.should be > 1
         labels.each do |label|
