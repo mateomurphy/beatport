@@ -1,0 +1,102 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/search?query=Archipel
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 10 Oct 2012 01:19:14 GMT
+      server:
+      - Apache
+      expires:
+      - Wed, 10 Oct 2012 01:49:14 GMT
+      pragma:
+      - public
+      cache-control:
+      - public, max-age=1800
+      access-control-allow-origin:
+      - ! '*'
+      connection:
+      - close
+      transfer-encoding:
+      - chunked
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/search","query":"query=Archipel","page":1,"perPage":10,"count":730,"totalPages":73,"nextQuery":"query=Archipel&page=2","perPageOptions":[{"value":50,"applyQuery":"query=Archipel&perPage=50"},{"value":100,"applyQuery":"query=Archipel&perPage=100"},{"value":150,"applyQuery":"query=Archipel&perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"spellcheck":{"suggestions":[]}},"results":[{"id":1435378,"selected":false,"type":"track","sku":"track-1435378","name":"Archipel","active":true,"mixName":"Lost
+        Archipel Remix","title":"Archipel (Lost Archipel Remix)","slug":"archipel-lost-archipel-remix","isrc":null,"releaseDate":"2010-09-26","publishDate":"2010-09-26","sampleUrl":"http:\/\/geo-samples.beatport.com\/lofi\/1435378.LOFI.mp3","isPreviewAvailable":null,"isAvailableForMix":true,"rtmpStreamUrl":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume7\/items\/1000000\/400000\/30000\/5000\/300\/70\/1435378.LOFI","exclusive":false,"price":{"code":"usd","symbol":"$","value":149},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":100},"aiff":{"code":"usd","symbol":"$","value":100}},"losslessUpgradeFormatFee":[],"currentStatus":"General
+        Content","length":"07:28","bpm":123,"key":{"standard":{"letter":"A","sharp":false,"flat":false,"chord":"minor"}},"saleType":"purchase","artists":[{"id":47626,"name":"Nils
+        Nilson","slug":"nils-nilson","type":"remixer"},{"id":100671,"name":"Oliver
+        Schories","slug":"oliver-schories","type":"artist"}],"genres":[{"id":6,"name":"Techno","slug":"techno","type":"genre"}],"subGenres":[{"id":68,"name":"Dub
+        Techno","slug":"dub-techno","type":"subgenre"}],"charts":[],"release":{"id":284365,"name":"Archipel","type":"release","slug":"archipel"},"label":{"id":6246,"name":"Ostwind
+        Records","type":"label","slug":"ostwind-records"},"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/809565.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/809565.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/809566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/809566.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/809567.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/809567.jpg"},"waveform":{"width":1500,"height":250,"url":"http:\/\/geo-media.beatport.com\/image\/1594551.png","secureUrl":"https:\/\/media.beatport.com\/image\/1594551.png"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/809567.jpg"},"waveform":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/1594551.png"}}},{"id":2966,"type":"label","name":"Archipel","slug":"archipel","active":true,"lastPublishDate":"2012-09-03","biography":"","genres":[{"id":14,"name":"Minimal","slug":"minimal","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":16,"name":"DJ
+        Tools","slug":"dj-tools","type":"genre"},{"id":10,"name":"Chill Out","slug":"chill-out","type":"genre"},{"id":11,"name":"Tech
+        House","slug":"tech-house","type":"genre"},{"id":12,"name":"Deep House","slug":"deep-house","type":"genre"},{"id":9,"name":"Breaks","slug":"breaks","type":"genre"}],"subGenres":[{"id":13,"name":"IDM","slug":"idm","type":"subgenre"},{"id":39,"name":"Downtempo","slug":"downtempo","type":"subgenre"},{"id":15,"name":"LeftField","slug":"leftfield","type":"subgenre"},{"id":69,"name":"Ambient","slug":"ambient","type":"subgenre"},{"id":24,"name":"Melodic","slug":"melodic","type":"subgenre"},{"id":71,"name":"Experimental\/Noise\/Industrial","slug":"experimental-noise-industrial","type":"subgenre"},{"id":90,"name":"Acid","slug":"acid","type":"subgenre"},{"id":25,"name":"Detroit
+        Techno","slug":"detroit-techno","type":"subgenre"}],"displayLevel":1,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/37857.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/37857.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/37856.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/37856.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/264626.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/264626.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/37856.jpg"}}},{"id":25998,"type":"label","name":"Archipel
+        Soundtracks","slug":"archipel-soundtracks","active":true,"lastPublishDate":"2012-08-27","biography":"","genres":[{"id":14,"name":"Minimal","slug":"minimal","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":11,"name":"Tech
+        House","slug":"tech-house","type":"genre"},{"id":18,"name":"Dubstep","slug":"dubstep","type":"genre"}],"subGenres":[],"displayLevel":1,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/5274089.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5274089.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/5274090.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5274090.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5274091.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5274091.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5274091.jpg"}}},{"id":1435377,"selected":false,"type":"track","sku":"track-1435377","name":"Archipel","active":true,"mixName":"Original
+        Mix","title":"Archipel (Original Mix)","slug":"archipel-original-mix","isrc":null,"releaseDate":"2010-09-26","publishDate":"2010-09-26","sampleUrl":"http:\/\/geo-samples.beatport.com\/lofi\/1435377.LOFI.mp3","isPreviewAvailable":null,"isAvailableForMix":true,"rtmpStreamUrl":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume6\/items\/1000000\/400000\/30000\/5000\/300\/70\/1435377.LOFI","exclusive":false,"price":{"code":"usd","symbol":"$","value":149},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":100},"aiff":{"code":"usd","symbol":"$","value":100}},"losslessUpgradeFormatFee":[],"currentStatus":"General
+        Content","length":"07:37","bpm":127,"key":{"standard":{"letter":"F","sharp":false,"flat":false,"chord":"major"}},"saleType":"purchase","artists":[{"id":100671,"name":"Oliver
+        Schories","slug":"oliver-schories","type":"artist"}],"genres":[{"id":11,"name":"Tech
+        House","slug":"tech-house","type":"genre"}],"subGenres":[],"charts":[{"id":96889,"position":1,"type":"chart"}],"release":{"id":284365,"name":"Archipel","type":"release","slug":"archipel"},"label":{"id":6246,"name":"Ostwind
+        Records","type":"label","slug":"ostwind-records"},"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/809565.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/809565.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/809566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/809566.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/809567.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/809567.jpg"},"waveform":{"width":1500,"height":250,"url":"http:\/\/geo-media.beatport.com\/image\/1594536.png","secureUrl":"https:\/\/media.beatport.com\/image\/1594536.png"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/809567.jpg"},"waveform":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/1594536.png"}}},{"id":575579,"type":"part","sku":"part-575579","name":"Kick
+        Archipel","slug":"kick-archipel","genres":[{"id":6,"name":"Techno","slug":"techno","type":"genre"}],"seconds":0.9375,"filesize":null,"bpm":127,"beats":4,"progression":"","audioType":"Sample","instrument":{"id":9,"name":"Kick","parent":{"id":6,"name":"Drums","parent":null}},"active":true,"publishDate":"2011-09-23","pack":{"id":1154,"name":"Techno"},"label":{"id":24786,"name":"Sample
+        Magic"},"price":{"code":"usd","symbol":"$","value":99},"audioFormat":"wav","key":null},{"id":27635,"type":"chart","sku":"chart-27635","name":"Pheek''s
+        Archipel 5 Year Anniversary Chart","slug":"pheeks-archipel-5-year-anniversary-chart","description":"Pheek''s
+        label Archipel, is turning 5 year old this year! Since 2005, the little Montreal
+        based label is putting energy is releasing original and emotional music. Pheek
+        is currently working on an album to be released later this year.","active":true,"publishDate":"2010-08-31","price":{"code":"usd","symbol":"$","value":1490},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":1000},"aiff":{"code":"usd","symbol":"$","value":1000}},"genres":[{"id":14,"name":"Minimal","slug":"minimal","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"},{"id":11,"name":"Tech
+        House","slug":"tech-house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491534.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491534.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/787962.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/787962.jpg"},"large":{"width":130,"height":130,"url":"http:\/\/geo-media.beatport.com\/image\/787963.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/787963.jpg"},"xlarge":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5245821.jpg"}},"chartOwner":null},{"id":284365,"type":"release","sku":"release-284365","name":"Archipel","slug":"archipel","active":true,"releaseDate":"2010-09-26","publishDate":"2010-09-26","exclusive":false,"category":"Release","description":"An
+        archipelago is beautiful - just like the \"Archipel\" of Oliver Schories.
+        Various elements combined to a wonderful ensemble. Just as with ''Seenplatte''
+        or ''Ostwind Limited Series'', Oliver sets crispy beats, soft strings and
+        striking chords. Everything is in place and cut to the chase. A high area
+        of the Azores which offers unequaled opportunities. Watch out, native fans
+        of Bermuda shorts, \"Archipel\" will twist your bones with an about-face!
+        A hymn which makes you spill your endorphin and which turns the summer into
+        an unforgettable experience. On ''Flip'', Nils Nilson presents the perfect
+        matching part. A descreet grooving dub piece, rolling down like a trade wind
+        and turning into a giant warm monsoon after the break. A record made for the
+        summer season. Sun, sand and the sea, what could be better? Many thanks go
+        out to Oliver and Nils for this release.\r\n\r\nSupported by Stephan Bodzin,
+        Aka Aka, D. Diggler, Axel Bartsch, 2000 and one, Mihalis Safras, Kev Obrien","currentStatus":"General
+        Content","catalogNumber":"OW032","purchasable":true,"price":{"code":"usd","symbol":"$","value":298},"tracksPrice":{"code":"usd","symbol":"$","value":298},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":200},"aiff":{"code":"usd","symbol":"$","value":200}},"label":{"id":6246,"name":"Ostwind
+        Records","type":"label","slug":"ostwind-records"},"artists":[{"id":47626,"name":"Nils
+        Nilson","slug":"nils-nilson","type":"remixer"},{"id":100671,"name":"Oliver
+        Schories","slug":"oliver-schories","type":"artist"}],"genres":[{"id":11,"name":"Tech
+        House","slug":"tech-house","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/809565.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/809565.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/809566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/809566.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/809567.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/809567.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/809567.jpg"}}},{"id":257610,"type":"release","sku":"release-257610","name":"Alike
+        Minds 5 Years Of Archipel Music","slug":"alike-minds-5-years-of-archipel-music","active":true,"releaseDate":"2010-07-23","publishDate":"2010-07-23","exclusive":false,"category":"Album","description":"Archipel
+        has been a family and a community, in constant growth, for the past five revolutions
+        around the sun and we''ve had so many excellent personal and shared experiences
+        within this hive of great minds through this time. We are so proud to bring
+        you together with us in celebration of our five years and five years yet to
+        come.","currentStatus":"General Content","catalogNumber":"ARCHIPELCD007","purchasable":true,"price":{"code":"usd","symbol":"$","value":1199},"tracksPrice":{"code":"usd","symbol":"$","value":1788},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":1200},"aiff":{"code":"usd","symbol":"$","value":1200}},"label":{"id":2966,"name":"Archipel","type":"label","slug":"archipel"},"artists":[{"id":5543,"name":"Niederflur","slug":"niederflur","type":"artist"},{"id":5552,"name":"Pheek","slug":"pheek","type":"artist"},{"id":10577,"name":"Vincent
+        Casanova","slug":"vincent-casanova","type":"artist"},{"id":23067,"name":"Smirk","slug":"smirk","type":"artist"},{"id":25680,"name":"Jack
+        Rock","slug":"jack-rock","type":"artist"},{"id":31312,"name":"Sensual Physics","slug":"sensual-physics","type":"artist"},{"id":49025,"name":"Sul.a","slug":"sul-a","type":"artist"},{"id":98700,"name":"Time
+        For Trees","slug":"time-for-trees","type":"artist"},{"id":116796,"name":"Offthesky","slug":"offthesky","type":"artist"},{"id":125682,"name":"Flourish","slug":"flourish","type":"artist"},{"id":143934,"name":"Louer","slug":"louer","type":"artist"},{"id":12250,"name":"Stefny
+        Winter","slug":"stefny-winter","type":"remixer"}],"genres":[{"id":3,"name":"Electronica","slug":"electronica","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":14,"name":"Minimal","slug":"minimal","type":"genre"},{"id":11,"name":"Tech
+        House","slug":"tech-house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/717931.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/717931.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/717932.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/717932.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/717933.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/717933.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/717933.jpg"}}},{"id":870801,"type":"release","sku":"release-870801","name":"Tributary","slug":"tributary","active":true,"releaseDate":"2012-02-13","publishDate":"2012-02-13","exclusive":false,"category":"Album","description":"","currentStatus":"General
+        Content","catalogNumber":"ARCH085","purchasable":true,"price":{"code":"usd","symbol":"$","value":999},"tracksPrice":{"code":"usd","symbol":"$","value":1341},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":900},"aiff":{"code":"usd","symbol":"$","value":900}},"label":{"id":2966,"name":"Archipel","type":"label","slug":"archipel"},"artists":[{"id":220927,"name":"Mi","slug":"mi","type":"artist"}],"genres":[{"id":3,"name":"Electronica","slug":"electronica","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/5003729.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5003729.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/5003730.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5003730.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5003731.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5003731.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5003731.jpg"}}},{"id":842083,"type":"release","sku":"release-842083","name":"C++","slug":"c-plus","active":true,"releaseDate":"2011-12-12","publishDate":"2011-12-12","exclusive":false,"category":"Release","description":"After
+        a first appearance on the label''s 5 year anniversary release, Louer finally
+        makes his way back with his very first album titled \"C++\". With releases
+        on Nerv and Archipel, Nicolas Ballesteros, position himself in the new generation
+        of young producers from Argentina to follow Barem''s path. Interested in sound
+        design and music complexity, Louer uses the title of C++, one of the most
+        powerful programmation language, to reach out for the other music nerds out
+        there. Trippy, explorative, hypnotic, deep and lush, this album follows Archipel''s
+        main direction while adding a note of profound serenity while being sweetly
+        naive. Tool or not, tracks will work as music on its own but will also complement
+        other laid back tracks to add texture and layers.","currentStatus":"General
+        Content","catalogNumber":"ARCH084","purchasable":true,"price":{"code":"usd","symbol":"$","value":894},"tracksPrice":{"code":"usd","symbol":"$","value":894},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":600},"aiff":{"code":"usd","symbol":"$","value":600}},"label":{"id":2966,"name":"Archipel","type":"label","slug":"archipel"},"artists":[{"id":143934,"name":"Louer","slug":"louer","type":"artist"}],"genres":[{"id":14,"name":"Minimal","slug":"minimal","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/4738976.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/4738976.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/4738977.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/4738977.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/4738978.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/4738978.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/4738978.jpg"}}}]}'
+    http_version: '1.1'
+  recorded_at: Wed, 10 Oct 2012 01:19:14 GMT
+recorded_with: VCR 2.2.5
