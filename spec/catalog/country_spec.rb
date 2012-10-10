@@ -2,10 +2,16 @@ require 'spec_helper'
 
 module Beatport::Catalog
   describe Country do
+    before :each do
+      VCR.insert_cassette 'country'
+    end
+
+    after :each do
+      VCR.eject_cassette
+    end
+
     describe 'structure' do
-      subject do
-        VCR.use_cassette("country_au") { Country.find('au') }
-      end
+      subject { Country.find('au') }
       
       it { should be_a(Country) }
       its (:id) { should ==  5 }

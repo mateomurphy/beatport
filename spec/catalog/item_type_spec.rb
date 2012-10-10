@@ -2,6 +2,14 @@ require 'spec_helper'
 
 module Beatport::Catalog
   describe ItemType do
+    before :each do
+      VCR.insert_cassette 'item_type'
+    end
+
+    after :each do
+      VCR.eject_cassette
+    end
+
     describe "structure" do
       subject { ItemType.all.first }
       

@@ -2,6 +2,14 @@ require 'spec_helper'
 
 module Beatport::Catalog
   describe ChartOverview do
+    before :each do
+      VCR.insert_cassette 'chart_overview'
+    end
+
+    after :each do
+      VCR.eject_cassette
+    end
+
     describe '.get' do
       subject { ChartOverview.get }
       

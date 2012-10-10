@@ -2,11 +2,16 @@ require 'spec_helper'
 
 module Beatport::Catalog
   describe Label do
+    before :each do
+      VCR.insert_cassette 'label'
+    end
+
+    after :each do
+      VCR.eject_cassette
+    end
 
     describe 'structure' do
-      subject do
-        VCR.use_cassette("label_1390") { Label.find(1390) }
-      end
+      subject { Label.find(1390) }
       
       it { should be_a(Label) }
       its (:id) { should == 1390 }
@@ -15,7 +20,7 @@ module Beatport::Catalog
       its (:slug) { should == "anjunadeep" }      
       pending "source type is no longer returned?"
       #its (:source_type) { should == ["store", "mobile", "sushi"] }
-      its (:last_publish_date) { should == Date.new(2012, 10, 8) }
+      its (:last_publish_date) { should == Date.new(2012, 9, 10) }
       its (:biography) { should == "" }
       its (:'genres.length') { should be > 1 }
       its (:'sub_genres.length') { should be > 0 }      
@@ -26,23 +31,20 @@ module Beatport::Catalog
 #      its (:'top_downloads.length') { should be > 1 }
 #      its (:'featured_releases.length') { should be > 1 }
 #      its (:'most_popular_releases.length') { should be > 1 }
+
     end
   
     describe '.find' do
       it "should get Anjunadeep give id 1390" do
-        VCR.use_cassette("label_1390") do
-          label = Label.find(1390)
-          label.id.should == 1390
-        end
+        label = Label.find(1390)
+        label.id.should == 1390
       end
     end
   
     describe '.all' do
       it "should get arbitrary labels" do
-        VCR.use_cassette("label_all") do
-          labels = Label.all
-          labels.length.should == 10
-        end
+        labels = Label.all
+        labels.length.should == 10
       end
     
       it "should get the first page with 5 labels per page" do

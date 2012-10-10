@@ -4,11 +4,16 @@ require 'spec_helper'
 
 module Beatport::Catalog
   describe Chart do
-  
+    before :each do
+      VCR.insert_cassette 'chart'
+    end
+
+    after :each do
+      VCR.eject_cassette
+    end
+
     describe 'structure' do
-      subject do
-        VCR.use_cassette('chart_15722') { Chart.find(15722) }
-      end
+      subject { Chart.find(15722) }
       
       it { should be_a(Chart) }
       its (:id) { should == 15722 }
@@ -29,9 +34,8 @@ module Beatport::Catalog
   
     describe '.find' do
       context 'with a single id' do
-        subject do
-          VCR.use_cassette('chart_15722') { Chart.find(15722) }
-        end
+        subject { Chart.find(15722) }
+
         its (:id) { should == 15722 }
       end
 

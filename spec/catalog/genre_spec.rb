@@ -3,11 +3,16 @@ require 'spec_helper'
 # TODO improve this
 module Beatport::Catalog
   describe Genre do
-    
+    before :each do
+      VCR.insert_cassette 'genre'
+    end
+
+    after :each do
+      VCR.eject_cassette
+    end
+
     describe "structure" do
-      subject do
-        VCR.use_cassette("genre_7") { Genre.find(7) }
-      end
+      subject { Genre.find(7) }
       
       it { should be_a(Genre) }
       its (:name) { should == "Trance" }
@@ -31,9 +36,7 @@ module Beatport::Catalog
     
     describe '.find' do
       it "should retrieve information about the trance genre via its id" do
-        VCR.use_cassette("genre_7") do
-          Genre.find(7).name.should == "Trance"
-        end
+        Genre.find(7).name.should == "Trance"
       end
 
       it "should retrieve information about the trance genre via the slug" do
@@ -49,28 +52,22 @@ module Beatport::Catalog
       end
 
       it "should return nil with an invalid id" do
-        VCR.use_cassette("genre_invalid") do
-          genre = Beatport::Catalog.genre(9999999)
-          genre.should be nil
-        end
+        genre = Beatport::Catalog.genre(9999999)
+        genre.should be nil
       end
     end
   
     describe '.all' do
       it "should retrieve all genres" do
-        VCR.use_cassette("genre_all") do
-          genres = Genre.all
-          genres.length.should > 1
-          genres.length.should == genres.count
-          genres.length.should == genres.per_page
-        end
+        genres = Genre.all
+        genres.length.should > 1
+        genres.length.should == genres.count
+        genres.length.should == genres.per_page
       end
   
       it "should retrieve genres with their subgenres" do
-        VCR.use_cassette("genre_all_with_subgenres") do
-          genres = Genre.all(:subgenres => true)
-          genres.first.subgenres.length.should be > 1
-        end
+        genres = Genre.all(:subgenres => true)
+        genres.first.subgenres.length.should be > 1
       end
     end
     

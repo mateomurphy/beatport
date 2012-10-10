@@ -2,18 +2,22 @@ require 'spec_helper'
 
 module Beatport::Catalog
   describe Autocomplete do
+    before :each do
+      VCR.insert_cassette 'autocomplete'
+    end
+
+    after :each do
+      VCR.eject_cassette
+    end
+
     describe 'stucture' do
-      subject do
-        VCR.use_cassette("autocomplete_lutzen") { Autocomplete.query('lutzen').first }
-      end
+      subject { Autocomplete.query('lutzen').first }
       
       its (:'name.downcase') { should match(/lutzen/) }
     end
     
     describe 'collection' do
-      subject do
-        VCR.use_cassette("autocomplete_lutzen") { Autocomplete.query('lutzen') }
-      end
+      subject { Autocomplete.query('lutzen') }
       
       its (:host) { should == "api.beatport.com" }
       its (:path) { should == "/catalog/autocomplete" }
@@ -29,9 +33,7 @@ module Beatport::Catalog
     end
     
     describe '.query' do
-      subject do
-        VCR.use_cassette("autocomplete_lutzen_page_3") { Autocomplete.query('lutzen', :page => 3, :per_page => 2) }
-      end
+      subject { Autocomplete.query('lutzen', :page => 3, :per_page => 2) }
       
       its (:page) { should == 3 }
       its (:per_page) { should == 2 }

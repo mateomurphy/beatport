@@ -13,11 +13,11 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Wed, 10 Oct 2012 00:36:24 GMT
+      - Wed, 10 Oct 2012 16:07:29 GMT
       server:
       - Apache
       expires:
-      - Wed, 10 Oct 2012 01:06:24 GMT
+      - Wed, 10 Oct 2012 16:37:29 GMT
       pragma:
       - public
       cache-control:
@@ -40,5 +40,75 @@ http_interactions:
         refill","personPreferenceVisibility":false,"isLossless":false},{"id":11,"name":"elements","personPreferenceVisibility":false,"isLossless":false},{"id":12,"name":"s4","personPreferenceVisibility":false,"isLossless":false},{"id":13,"name":"ableton
         live racks","personPreferenceVisibility":false,"isLossless":false},{"id":14,"name":"aiff","personPreferenceVisibility":true,"isLossless":true},{"id":15,"name":"mp4","personPreferenceVisibility":false,"isLossless":false}]}'
     http_version: '1.1'
-  recorded_at: Wed, 10 Oct 2012 00:36:25 GMT
+  recorded_at: Wed, 10 Oct 2012 16:07:26 GMT
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/audio-formats?id=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 10 Oct 2012 16:07:29 GMT
+      server:
+      - Apache
+      expires:
+      - Wed, 10 Oct 2012 16:37:29 GMT
+      pragma:
+      - public
+      cache-control:
+      - public, max-age=1800
+      access-control-allow-origin:
+      - ! '*'
+      connection:
+      - close
+      transfer-encoding:
+      - chunked
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"page":1,"perPage":10,"count":1},"results":[{"id":2,"name":"m4a","personPreferenceVisibility":false,"isLossless":false}]}'
+    http_version: '1.1'
+  recorded_at: Wed, 10 Oct 2012 16:07:27 GMT
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/audio-formats?name=wav
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 10 Oct 2012 16:07:29 GMT
+      server:
+      - Apache
+      expires:
+      - Wed, 10 Oct 2012 16:37:29 GMT
+      pragma:
+      - public
+      cache-control:
+      - public, max-age=1800
+      access-control-allow-origin:
+      - ! '*'
+      connection:
+      - close
+      transfer-encoding:
+      - chunked
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"page":1,"perPage":10,"count":1},"results":[{"id":3,"name":"wav","personPreferenceVisibility":true,"isLossless":true}]}'
+    http_version: '1.1'
+  recorded_at: Wed, 10 Oct 2012 16:07:27 GMT
 recorded_with: VCR 2.2.5

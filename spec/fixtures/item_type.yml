@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/item-types?
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 10 Oct 2012 16:07:38 GMT
+      server:
+      - Apache
+      expires:
+      - Wed, 10 Oct 2012 16:37:38 GMT
+      pragma:
+      - public
+      cache-control:
+      - public, max-age=1800
+      access-control-allow-origin:
+      - ! '*'
+      connection:
+      - close
+      transfer-encoding:
+      - chunked
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"page":1,"count":13,"perPage":13},"results":[{"id":1,"name":"track","defaultPrice":null,"audioFormats":[{"id":1,"name":"mp3","mimeType":{"id":367,"header":"audio\/mpeg","ext":"mp3"}},{"id":2,"name":"m4a","mimeType":{"id":518,"header":"audio\/mp4","ext":"m4a"}},{"id":3,"name":"wav","mimeType":{"id":11,"header":"audio\/x-wav","ext":"wav"}},{"id":4,"name":"zip","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":14,"name":"aiff","mimeType":{"id":10,"header":"audio\/x-aiff","ext":"aiff"}}]},{"id":2,"name":"release","defaultPrice":null,"audioFormats":[]},{"id":3,"name":"label","defaultPrice":null,"audioFormats":[]},{"id":4,"name":"person","defaultPrice":null,"audioFormats":[]},{"id":5,"name":"performer","defaultPrice":null,"audioFormats":[]},{"id":6,"name":"genre","defaultPrice":null,"audioFormats":[]},{"id":7,"name":"image","defaultPrice":null,"audioFormats":[]},{"id":8,"name":"chart","defaultPrice":null,"audioFormats":[]},{"id":9,"name":"pack","defaultPrice":null,"audioFormats":[{"id":3,"name":"wav","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":5,"name":"full
+        download","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":6,"name":"apple
+        loops","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":7,"name":"rex","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":8,"name":"synth
+        presets","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":9,"name":"sampler
+        patches","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":11,"name":"elements","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":12,"name":"s4","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":13,"name":"ableton
+        live racks","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":14,"name":"aiff","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}}]},{"id":10,"name":"part","defaultPrice":{"code":"usd","symbol":"$","value":99},"audioFormats":[{"id":3,"name":"wav","mimeType":{"id":11,"header":"audio\/x-wav","ext":"wav"}},{"id":14,"name":"aiff","mimeType":{"id":10,"header":"audio\/x-aiff","ext":"aiff"}}]},{"id":11,"name":"djprofile","defaultPrice":null,"audioFormats":[]},{"id":12,"name":"mix","defaultPrice":{"code":"usd","symbol":"$","value":529},"audioFormats":[{"id":1,"name":"mp3","mimeType":{"id":367,"header":"audio\/mpeg","ext":"mp3"}},{"id":3,"name":"wav","mimeType":{"id":11,"header":"audio\/x-wav","ext":"wav"}},{"id":14,"name":"aiff","mimeType":{"id":10,"header":"audio\/x-aiff","ext":"aiff"}}]},{"id":13,"name":"event","defaultPrice":null,"audioFormats":[]}]}'
+    http_version: '1.1'
+  recorded_at: Wed, 10 Oct 2012 16:07:35 GMT
+recorded_with: VCR 2.2.5

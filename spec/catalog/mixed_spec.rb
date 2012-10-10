@@ -2,6 +2,14 @@ require 'spec_helper'
 
 module Beatport::Catalog
   describe Mixed do
+    before :each do
+      VCR.insert_cassette 'mixed'
+    end
+
+    after :each do
+      VCR.eject_cassette
+    end
+
     describe '.all' do
       subject do
         Mixed.all(

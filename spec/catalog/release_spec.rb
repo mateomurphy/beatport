@@ -2,11 +2,16 @@ require 'spec_helper'
 
 module Beatport::Catalog
   describe Release do
-  
+    before :each do
+      VCR.insert_cassette 'release'
+    end
+
+    after :each do
+      VCR.eject_cassette
+    end
+
     describe 'structure' do
-      subject do
-        VCR.use_cassette("release_164808") { Release.find(164808) }
-      end
+      subject { Release.find(164808) }
       
       it { should be_a(Release) }
       its (:id) { should == 164808 }
@@ -126,17 +131,17 @@ module Beatport::Catalog
     end
 
     describe '#tracks' do
-      before :all do
-        @release = Release.find(164808)
-        @tracks = @release.tracks
+      subject :all do
+        release = Release.find(164808)
+        release.tracks
       end
       
       it "should return all 29 tracks for Anjunabeats Volume 6" do
-        @tracks.count.should == 29
+        subject.count.should == 29
       end
       
       it "should return paper jet as the first track" do
-        @tracks.first.name.should == "Paper Jet"
+        subject.first.name.should == "Paper Jet"
       end
       
     end

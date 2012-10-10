@@ -2,11 +2,17 @@ require 'spec_helper'
 
 module Beatport::Catalog
   describe AccountType do
+    before :each do
+      VCR.insert_cassette 'account_type'
+    end
+
+    after :each do
+      VCR.eject_cassette
+    end
+
     describe 'structure' do
       subject do
-        VCR.use_cassette "account_type_all" do
-          AccountType.all.first
-        end
+        AccountType.all.first
       end
       
       it { should be_an(AccountType) }
@@ -21,9 +27,7 @@ module Beatport::Catalog
     
     describe '.all' do
       subject do
-        VCR.use_cassette "account_type_all" do
-          AccountType.all
-        end
+        AccountType.all
       end
       
       its (:length) { should be > 1 }
@@ -38,9 +42,7 @@ module Beatport::Catalog
       
       context "by name" do
         subject do
-          VCR.use_cassette "account_type_visa" do
-            AccountType.find('Visa')
-          end
+          AccountType.find('Visa')
         end
 
         its (:name) { should == "Visa" }

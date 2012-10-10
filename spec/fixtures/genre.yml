@@ -1,0 +1,263 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/genres?subgenres=true&id=7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 10 Oct 2012 16:07:36 GMT
+      server:
+      - Apache
+      expires:
+      - Wed, 10 Oct 2012 16:37:36 GMT
+      pragma:
+      - public
+      cache-control:
+      - public, max-age=1800
+      access-control-allow-origin:
+      - ! '*'
+      connection:
+      - close
+      transfer-encoding:
+      - chunked
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"page":1,"perPage":1,"count":1},"results":[{"id":7,"name":"Trance","slug":"trance","subgenres":[{"id":28,"name":"Acid","slug":"acid"},{"id":30,"name":"Epic","slug":"epic"},{"id":31,"name":"Hard","slug":"hard"},{"id":27,"name":"Progressive","slug":"progressive"},{"id":29,"name":"Tech","slug":"tech"},{"id":26,"name":"Tribal","slug":"tribal"}]}]}'
+    http_version: '1.1'
+  recorded_at: Wed, 10 Oct 2012 16:07:33 GMT
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/most-popular/genre?id=7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 10 Oct 2012 16:07:36 GMT
+      server:
+      - Apache
+      expires:
+      - Wed, 10 Oct 2012 16:37:36 GMT
+      pragma:
+      - public
+      cache-control:
+      - public, max-age=1800
+      access-control-allow-origin:
+      - ! '*'
+      connection:
+      - close
+      transfer-encoding:
+      - chunked
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/most-popular\/genre","query":"id=7","page":1,"perPage":10,"count":100,"totalPages":10,"nextQuery":"id=7&page=2","perPageOptions":[{"value":50,"applyQuery":"id=7&perPage=50"},{"value":100,"applyQuery":"id=7&perPage=100"},{"value":150,"applyQuery":"id=7&perPage=150"}],"facets":{"fields":[]},"spellcheck":{"suggestions":[]},"date":"2012-10-10"},"results":[{"id":3790761,"selected":false,"type":"track","sku":"track-3790761","name":"Silence
+        feat. Sarah McLachlan","active":true,"mixName":"W&W vs Jonas Stenberg Remix","title":"Silence
+        feat. Sarah McLachlan (W&W vs Jonas Stenberg Remix)","slug":"silence-feat-sarah-mclachlan-w-and-w-vs-jonas-stenberg-remix","isrc":"CAN111200100","releaseDate":"2012-09-21","publishDate":"2012-09-21","sampleUrl":"http:\/\/geo-samples.beatport.com\/lofi\/3790761.LOFI.mp3","isPreviewAvailable":null,"isAvailableForMix":true,"rtmpStreamUrl":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume2\/items\/3000000\/700000\/90000\/0\/700\/60\/3790761.LOFI","exclusive":false,"price":{"code":"usd","symbol":"$","value":199},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":100},"aiff":{"code":"usd","symbol":"$","value":100}},"losslessUpgradeFormatFee":[],"currentStatus":"New
+        Release","length":"5:28","bpm":130,"key":{"standard":{"letter":"A","sharp":false,"flat":false,"chord":"minor"}},"saleType":"purchase","artists":[{"id":10426,"name":"Delerium","slug":"delerium","type":"artist"},{"id":24772,"name":"Sarah
+        McLachlan","slug":"sarah-mclachlan","type":"artist"},{"id":67269,"name":"W&W","slug":"w-and-w","type":"remixer"},{"id":69678,"name":"Jonas
+        Stenberg","slug":"jonas-stenberg","type":"remixer"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"}],"subGenres":[],"charts":[{"id":115153,"position":4,"type":"chart"},{"id":115667,"position":6,"type":"chart"},{"id":117694,"position":2,"type":"chart"},{"id":116131,"position":3,"type":"chart"},{"id":111801,"position":1,"type":"chart"},{"id":117359,"position":5,"type":"chart"},{"id":117400,"position":1,"type":"chart"},{"id":117417,"position":2,"type":"chart"},{"id":117612,"position":3,"type":"chart"},{"id":117634,"position":6,"type":"chart"},{"id":117737,"position":1,"type":"chart"},{"id":117833,"position":2,"type":"chart"},{"id":117937,"position":4,"type":"chart"},{"id":117997,"position":2,"type":"chart"},{"id":118205,"position":3,"type":"chart"},{"id":118230,"position":3,"type":"chart"},{"id":118272,"position":6,"type":"chart"},{"id":118716,"position":4,"type":"chart"},{"id":119247,"position":2,"type":"chart"},{"id":119559,"position":1,"type":"chart"},{"id":119601,"position":5,"type":"chart"},{"id":119713,"position":1,"type":"chart"},{"id":119820,"position":7,"type":"chart"},{"id":119876,"position":9,"type":"chart"},{"id":119889,"position":9,"type":"chart"},{"id":119977,"position":5,"type":"chart"},{"id":119999,"position":8,"type":"chart"},{"id":119022,"position":8,"type":"chart"},{"id":120196,"position":12,"type":"chart"}],"release":{"id":968981,"name":"Mainstage,
+        Vol. 1 - Mixed by W&W","type":"release","slug":"mainstage-vol-1-mixed-by-w-and-w"},"label":{"id":38,"name":"Armada
+        Music","type":"label","slug":"armada-music"},"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/5989096.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5989096.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/5989097.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5989097.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5989098.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5989098.jpg"},"waveform":{"width":1500,"height":250,"url":"http:\/\/geo-media.beatport.com\/image\/5991474.png","secureUrl":"https:\/\/media.beatport.com\/image\/5991474.png"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5989098.jpg"},"waveform":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5991474.png"}},"position":1},{"id":3790517,"selected":false,"type":"track","sku":"track-3790517","name":"Must
+        Be The Love","active":true,"mixName":"Original Mix","title":"Must Be The Love
+        (Original Mix)","slug":"must-be-the-love-original-mix","isrc":"NLF711204878","releaseDate":"2012-09-17","publishDate":"2012-09-17","sampleUrl":"http:\/\/geo-samples.beatport.com\/lofi\/3790517.LOFI.mp3","isPreviewAvailable":null,"isAvailableForMix":true,"rtmpStreamUrl":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume3\/items\/3000000\/700000\/90000\/0\/500\/10\/3790517.LOFI","exclusive":false,"price":{"code":"usd","symbol":"$","value":199},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":100},"aiff":{"code":"usd","symbol":"$","value":100}},"losslessUpgradeFormatFee":[],"currentStatus":"New
+        Release","length":"7:49","bpm":128,"key":{"standard":{"letter":"G","sharp":true,"flat":false,"chord":"minor"}},"saleType":"purchase","artists":[{"id":1786,"name":"BT","slug":"bt","type":"artist"},{"id":81004,"name":"Nadia
+        Ali","slug":"nadia-ali","type":"artist"},{"id":100105,"name":"Arty","slug":"arty","type":"artist"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"}],"subGenres":[],"charts":[{"id":113874,"position":4,"type":"chart"},{"id":113933,"position":4,"type":"chart"},{"id":113998,"position":2,"type":"chart"},{"id":114112,"position":10,"type":"chart"},{"id":114342,"position":4,"type":"chart"},{"id":114379,"position":7,"type":"chart"},{"id":114384,"position":6,"type":"chart"},{"id":114512,"position":7,"type":"chart"},{"id":114623,"position":2,"type":"chart"},{"id":114647,"position":5,"type":"chart"},{"id":114702,"position":3,"type":"chart"},{"id":114711,"position":1,"type":"chart"},{"id":114741,"position":2,"type":"chart"},{"id":110978,"position":2,"type":"chart"},{"id":115289,"position":6,"type":"chart"},{"id":115468,"position":4,"type":"chart"},{"id":115652,"position":9,"type":"chart"},{"id":115806,"position":5,"type":"chart"},{"id":115811,"position":4,"type":"chart"},{"id":115878,"position":2,"type":"chart"},{"id":116006,"position":1,"type":"chart"},{"id":116111,"position":10,"type":"chart"},{"id":116131,"position":6,"type":"chart"},{"id":116212,"position":1,"type":"chart"},{"id":116380,"position":1,"type":"chart"},{"id":116420,"position":1,"type":"chart"},{"id":116516,"position":8,"type":"chart"},{"id":116713,"position":9,"type":"chart"},{"id":116891,"position":3,"type":"chart"},{"id":116934,"position":3,"type":"chart"},{"id":117050,"position":4,"type":"chart"},{"id":117153,"position":10,"type":"chart"},{"id":117261,"position":4,"type":"chart"},{"id":117292,"position":1,"type":"chart"},{"id":117328,"position":6,"type":"chart"},{"id":117355,"position":9,"type":"chart"},{"id":117424,"position":8,"type":"chart"},{"id":117463,"position":9,"type":"chart"},{"id":117612,"position":8,"type":"chart"},{"id":117652,"position":2,"type":"chart"},{"id":117759,"position":1,"type":"chart"},{"id":117997,"position":1,"type":"chart"},{"id":118075,"position":7,"type":"chart"},{"id":118111,"position":7,"type":"chart"},{"id":118307,"position":9,"type":"chart"},{"id":118394,"position":4,"type":"chart"},{"id":118406,"position":8,"type":"chart"},{"id":118428,"position":1,"type":"chart"},{"id":118538,"position":8,"type":"chart"},{"id":118551,"position":5,"type":"chart"},{"id":118647,"position":7,"type":"chart"},{"id":118839,"position":2,"type":"chart"},{"id":118920,"position":2,"type":"chart"},{"id":119087,"position":6,"type":"chart"},{"id":119247,"position":3,"type":"chart"},{"id":119513,"position":1,"type":"chart"},{"id":119800,"position":6,"type":"chart"},{"id":119804,"position":3,"type":"chart"},{"id":119842,"position":9,"type":"chart"},{"id":119865,"position":3,"type":"chart"},{"id":119866,"position":4,"type":"chart"},{"id":119889,"position":5,"type":"chart"},{"id":119999,"position":1,"type":"chart"},{"id":120007,"position":8,"type":"chart"},{"id":120194,"position":7,"type":"chart"}],"release":{"id":968963,"name":"Must
+        Be The Love","type":"release","slug":"must-be-the-love"},"label":{"id":40,"name":"Armind
+        (Armada)","type":"label","slug":"armind-armada"},"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/5988993.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5988993.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/5988994.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5988994.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5988995.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5988995.jpg"},"waveform":{"width":1500,"height":250,"url":"http:\/\/geo-media.beatport.com\/image\/5991188.png","secureUrl":"https:\/\/media.beatport.com\/image\/5991188.png"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5988995.jpg"},"waveform":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5991188.png"}},"position":2},{"id":3812175,"selected":false,"type":"track","sku":"track-3812175","name":"Perpetual
+        Motion","active":true,"mixName":"Original Mix","title":"Perpetual Motion (Original
+        Mix)","slug":"perpetual-motion-original-mix","isrc":"NLF711205110","releaseDate":"2012-10-01","publishDate":"2012-10-01","sampleUrl":"http:\/\/geo-samples.beatport.com\/lofi\/3812175.LOFI.mp3","isPreviewAvailable":null,"isAvailableForMix":true,"rtmpStreamUrl":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume3\/items\/3000000\/800000\/10000\/2000\/100\/70\/3812175.LOFI","exclusive":true,"price":{"code":"usd","symbol":"$","value":249},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":100},"aiff":{"code":"usd","symbol":"$","value":100}},"losslessUpgradeFormatFee":[],"currentStatus":"Exclusive","length":"7:08","bpm":130,"key":{"standard":{"letter":"G","sharp":false,"flat":false,"chord":"minor"}},"saleType":"purchase","artists":[{"id":12005,"name":"Protoculture","slug":"protoculture","type":"artist"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"}],"subGenres":[],"charts":[{"id":117612,"position":9,"type":"chart"},{"id":117621,"position":3,"type":"chart"},{"id":117716,"position":4,"type":"chart"},{"id":118382,"position":3,"type":"chart"},{"id":118406,"position":1,"type":"chart"},{"id":118441,"position":10,"type":"chart"},{"id":118681,"position":10,"type":"chart"},{"id":118716,"position":2,"type":"chart"},{"id":118910,"position":7,"type":"chart"},{"id":119574,"position":2,"type":"chart"},{"id":119759,"position":4,"type":"chart"},{"id":119790,"position":8,"type":"chart"},{"id":119820,"position":4,"type":"chart"},{"id":119865,"position":2,"type":"chart"},{"id":119866,"position":3,"type":"chart"},{"id":119876,"position":2,"type":"chart"},{"id":119910,"position":2,"type":"chart"},{"id":120053,"position":10,"type":"chart"},{"id":120121,"position":4,"type":"chart"}],"release":{"id":973153,"name":"Perpetual
+        Motion","type":"release","slug":"perpetual-motion"},"label":{"id":2882,"name":"Re*Brand
+        (Armada)","type":"label","slug":"re-brand-armada"},"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/6025199.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6025199.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6025200.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6025200.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6025201.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6025201.jpg"},"waveform":{"width":1500,"height":250,"url":"http:\/\/geo-media.beatport.com\/image\/6034068.png","secureUrl":"https:\/\/media.beatport.com\/image\/6034068.png"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6025201.jpg"},"waveform":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6034068.png"}},"position":3},{"id":3820038,"selected":false,"type":"track","sku":"track-3820038","name":"Nice","active":true,"mixName":"Maarten
+        de Jong Remix","title":"Nice (Maarten de Jong Remix)","slug":"nice-maarten-de-jong-remix","isrc":"CH8141200029","releaseDate":"2012-10-01","publishDate":"2012-10-01","sampleUrl":"http:\/\/geo-samples.beatport.com\/lofi\/3820038.LOFI.mp3","isPreviewAvailable":null,"isAvailableForMix":true,"rtmpStreamUrl":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume5\/items\/3000000\/800000\/20000\/0\/0\/30\/3820038.LOFI","exclusive":true,"price":{"code":"usd","symbol":"$","value":249},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":100},"aiff":{"code":"usd","symbol":"$","value":100}},"losslessUpgradeFormatFee":[],"currentStatus":"Exclusive","length":"6:27","bpm":132,"key":{"standard":{"letter":"D","sharp":false,"flat":false,"chord":"major"}},"saleType":"purchase","artists":[{"id":10077,"name":"Rapha","slug":"rapha","type":"artist"},{"id":43394,"name":"Maarten
+        De Jong","slug":"maarten-de-jong","type":"remixer"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"}],"subGenres":[],"charts":[{"id":117621,"position":4,"type":"chart"},{"id":117716,"position":2,"type":"chart"},{"id":117988,"position":1,"type":"chart"},{"id":118406,"position":10,"type":"chart"},{"id":116244,"position":7,"type":"chart"},{"id":119638,"position":5,"type":"chart"},{"id":119876,"position":3,"type":"chart"},{"id":120185,"position":4,"type":"chart"}],"release":{"id":974797,"name":"Nice","type":"release","slug":"nice"},"label":{"id":16485,"name":"Tool
+        Trance","type":"label","slug":"tool-trance"},"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/6046555.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6046555.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6046556.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6046556.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6046557.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6046557.jpg"},"waveform":{"width":1500,"height":250,"url":"http:\/\/geo-media.beatport.com\/image\/6046789.png","secureUrl":"https:\/\/media.beatport.com\/image\/6046789.png"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6046557.jpg"},"waveform":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6046789.png"}},"position":4},{"id":3761648,"selected":false,"type":"track","sku":"track-3761648","name":"Not
+        Coming Down","active":true,"mixName":"Dash Berlin 4AM Remix","title":"Not
+        Coming Down (Dash Berlin 4AM Remix)","slug":"not-coming-down-dash-berlin-4am-remix","isrc":"NLQ881201060","releaseDate":"2012-09-17","publishDate":"2012-09-17","sampleUrl":"http:\/\/geo-samples.beatport.com\/lofi\/3761648.LOFI.mp3","isPreviewAvailable":null,"isAvailableForMix":true,"rtmpStreamUrl":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume2\/items\/3000000\/700000\/60000\/1000\/600\/40\/3761648.LOFI","exclusive":false,"price":{"code":"usd","symbol":"$","value":199},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":100},"aiff":{"code":"usd","symbol":"$","value":100}},"losslessUpgradeFormatFee":[],"currentStatus":"New
+        Release","length":"6:27","bpm":130,"key":{"standard":{"letter":"D","sharp":false,"flat":false,"chord":"major"}},"saleType":"purchase","artists":[{"id":3815,"name":"Ferry
+        Corsten","slug":"ferry-corsten","type":"artist"},{"id":57743,"name":"Dash
+        Berlin","slug":"dash-berlin","type":"remixer"},{"id":159667,"name":"Betsie
+        Larkin","slug":"betsie-larkin","type":"artist"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"}],"subGenres":[],"charts":[{"id":113933,"position":3,"type":"chart"},{"id":113991,"position":5,"type":"chart"},{"id":114384,"position":8,"type":"chart"},{"id":114408,"position":6,"type":"chart"},{"id":114623,"position":10,"type":"chart"},{"id":114859,"position":9,"type":"chart"},{"id":115029,"position":1,"type":"chart"},{"id":115950,"position":8,"type":"chart"},{"id":116070,"position":8,"type":"chart"},{"id":116380,"position":8,"type":"chart"},{"id":116516,"position":4,"type":"chart"},{"id":117050,"position":7,"type":"chart"},{"id":117137,"position":9,"type":"chart"},{"id":117288,"position":2,"type":"chart"},{"id":117652,"position":3,"type":"chart"},{"id":117759,"position":4,"type":"chart"},{"id":118945,"position":3,"type":"chart"},{"id":118993,"position":4,"type":"chart"},{"id":116244,"position":9,"type":"chart"},{"id":119208,"position":1,"type":"chart"},{"id":119601,"position":6,"type":"chart"}],"release":{"id":962886,"name":"Not
+        Coming Down","type":"release","slug":"not-coming-down"},"label":{"id":3896,"name":"Flashover
+        Recordings","type":"label","slug":"flashover-recordings"},"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/5931926.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5931926.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/5931927.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5931927.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5931928.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5931928.jpg"},"waveform":{"width":1500,"height":250,"url":"http:\/\/geo-media.beatport.com\/image\/5932100.png","secureUrl":"https:\/\/media.beatport.com\/image\/5932100.png"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5931928.jpg"},"waveform":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5932100.png"}},"position":5},{"id":3748906,"selected":false,"type":"track","sku":"track-3748906","name":"I''ll
+        Listen feat. Ana Criado","active":true,"mixName":"Original Mix","title":"I''ll
+        Listen feat. Ana Criado (Original Mix)","slug":"ill-listen-feat-ana-criado-original-mix","isrc":"NLF711205090","releaseDate":"2012-09-10","publishDate":"2012-09-10","sampleUrl":"http:\/\/geo-samples.beatport.com\/lofi\/3748906.LOFI.mp3","isPreviewAvailable":null,"isAvailableForMix":true,"rtmpStreamUrl":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume7\/items\/3000000\/700000\/40000\/8000\/900\/0\/3748906.LOFI","exclusive":false,"price":{"code":"usd","symbol":"$","value":199},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":100},"aiff":{"code":"usd","symbol":"$","value":100}},"losslessUpgradeFormatFee":[],"currentStatus":"New
+        Release","length":"7:22","bpm":130,"key":{"standard":{"letter":"D","sharp":false,"flat":false,"chord":"minor"}},"saleType":"purchase","artists":[{"id":2228,"name":"Armin
+        van Buuren","slug":"armin-van-buuren","type":"artist"},{"id":140691,"name":"Ana
+        Criado","slug":"ana-criado","type":"artist"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"}],"subGenres":[],"charts":[{"id":114623,"position":4,"type":"chart"},{"id":108765,"position":6,"type":"chart"},{"id":112191,"position":2,"type":"chart"},{"id":112215,"position":3,"type":"chart"},{"id":110425,"position":4,"type":"chart"},{"id":112310,"position":1,"type":"chart"},{"id":113225,"position":1,"type":"chart"},{"id":113380,"position":1,"type":"chart"},{"id":113673,"position":5,"type":"chart"},{"id":113710,"position":1,"type":"chart"},{"id":113742,"position":1,"type":"chart"},{"id":113741,"position":9,"type":"chart"},{"id":113781,"position":9,"type":"chart"},{"id":113876,"position":1,"type":"chart"},{"id":113909,"position":6,"type":"chart"},{"id":114072,"position":3,"type":"chart"},{"id":114137,"position":9,"type":"chart"},{"id":114277,"position":8,"type":"chart"},{"id":114384,"position":1,"type":"chart"},{"id":114400,"position":10,"type":"chart"},{"id":114512,"position":1,"type":"chart"},{"id":114528,"position":4,"type":"chart"},{"id":114641,"position":4,"type":"chart"},{"id":114723,"position":6,"type":"chart"},{"id":114929,"position":1,"type":"chart"},{"id":115039,"position":3,"type":"chart"},{"id":115043,"position":3,"type":"chart"},{"id":115667,"position":2,"type":"chart"},{"id":115725,"position":2,"type":"chart"},{"id":115950,"position":4,"type":"chart"},{"id":116212,"position":9,"type":"chart"},{"id":116318,"position":1,"type":"chart"},{"id":116384,"position":4,"type":"chart"},{"id":116410,"position":9,"type":"chart"},{"id":116433,"position":3,"type":"chart"},{"id":116494,"position":7,"type":"chart"},{"id":116516,"position":5,"type":"chart"},{"id":116891,"position":7,"type":"chart"},{"id":117137,"position":4,"type":"chart"},{"id":117288,"position":1,"type":"chart"},{"id":117344,"position":5,"type":"chart"},{"id":117445,"position":6,"type":"chart"},{"id":117564,"position":9,"type":"chart"},{"id":117667,"position":8,"type":"chart"},{"id":117682,"position":7,"type":"chart"},{"id":117704,"position":3,"type":"chart"},{"id":117759,"position":3,"type":"chart"},{"id":117796,"position":8,"type":"chart"},{"id":117904,"position":8,"type":"chart"},{"id":118428,"position":5,"type":"chart"},{"id":118647,"position":5,"type":"chart"},{"id":118674,"position":10,"type":"chart"},{"id":118993,"position":3,"type":"chart"},{"id":116244,"position":8,"type":"chart"},{"id":119247,"position":1,"type":"chart"},{"id":119408,"position":5,"type":"chart"},{"id":119526,"position":2,"type":"chart"},{"id":119999,"position":10,"type":"chart"},{"id":120196,"position":14,"type":"chart"}],"release":{"id":960346,"name":"I''ll
+        Listen","type":"release","slug":"ill-listen"},"label":{"id":40,"name":"Armind
+        (Armada)","type":"label","slug":"armind-armada"},"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/5906160.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5906160.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/5906161.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5906161.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5906162.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5906162.jpg"},"waveform":{"width":1500,"height":250,"url":"http:\/\/geo-media.beatport.com\/image\/5907478.png","secureUrl":"https:\/\/media.beatport.com\/image\/5907478.png"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5906162.jpg"},"waveform":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5907478.png"}},"position":6},{"id":3821931,"selected":false,"type":"track","sku":"track-3821931","name":"Everafter","active":true,"mixName":"Craig
+        Connelly Remix","title":"Everafter (Craig Connelly Remix)","slug":"everafter-craig-connelly-remix","isrc":"GBKQU1217278","releaseDate":"2012-10-01","publishDate":"2012-10-01","sampleUrl":"http:\/\/geo-samples.beatport.com\/lofi\/3821931.LOFI.mp3","isPreviewAvailable":null,"isAvailableForMix":true,"rtmpStreamUrl":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume1\/items\/3000000\/800000\/20000\/1000\/900\/30\/3821931.LOFI","exclusive":true,"price":{"code":"usd","symbol":"$","value":249},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":100},"aiff":{"code":"usd","symbol":"$","value":100}},"losslessUpgradeFormatFee":[],"currentStatus":"Exclusive","length":"8:07","bpm":135,"key":{"standard":{"letter":"A","sharp":false,"flat":false,"chord":"minor"}},"saleType":"purchase","artists":[{"id":75268,"name":"Tritonal","slug":"tritonal","type":"artist"},{"id":113764,"name":"Cristina
+        Soto","slug":"cristina-soto","type":"artist"},{"id":170707,"name":"Craig Connelly","slug":"craig-connelly","type":"remixer"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"}],"subGenres":[],"charts":[{"id":117679,"position":2,"type":"chart"},{"id":117816,"position":10,"type":"chart"},{"id":114424,"position":9,"type":"chart"},{"id":118358,"position":1,"type":"chart"},{"id":119384,"position":7,"type":"chart"}],"release":{"id":975169,"name":"Everafter
+        (Extended Remixes)","type":"release","slug":"everafter-extended-remixes"},"label":{"id":16739,"name":"Air
+        Up There Recordings","type":"label","slug":"air-up-there-recordings"},"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/6048826.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6048826.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6048827.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6048827.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6048828.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6048828.jpg"},"waveform":{"width":1500,"height":250,"url":"http:\/\/geo-media.beatport.com\/image\/6049912.png","secureUrl":"https:\/\/media.beatport.com\/image\/6049912.png"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6048828.jpg"},"waveform":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6049912.png"}},"position":7},{"id":3800328,"selected":false,"type":"track","sku":"track-3800328","name":"The
+        Joker","active":true,"mixName":"Heatbeat Remix","title":"The Joker (Heatbeat
+        Remix)","slug":"the-joker-heatbeat-remix","isrc":"GBKQU1213487","releaseDate":"2012-10-01","publishDate":"2012-10-01","sampleUrl":"http:\/\/geo-samples.beatport.com\/lofi\/3800328.LOFI.mp3","isPreviewAvailable":null,"isAvailableForMix":true,"rtmpStreamUrl":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume7\/items\/3000000\/800000\/0\/0\/300\/20\/3800328.LOFI","exclusive":true,"price":{"code":"usd","symbol":"$","value":249},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":100},"aiff":{"code":"usd","symbol":"$","value":100}},"losslessUpgradeFormatFee":[],"currentStatus":"Exclusive","length":"5:57","bpm":135,"key":{"standard":{"letter":"C","sharp":true,"flat":false,"chord":"major"}},"saleType":"purchase","artists":[{"id":28545,"name":"Heatbeat","slug":"heatbeat","type":"remixer"},{"id":38461,"name":"Paul
+        Webster","slug":"paul-webster","type":"artist"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"}],"subGenres":[],"charts":[{"id":117621,"position":7,"type":"chart"},{"id":117716,"position":1,"type":"chart"},{"id":119118,"position":1,"type":"chart"},{"id":119820,"position":1,"type":"chart"},{"id":119910,"position":9,"type":"chart"},{"id":120185,"position":9,"type":"chart"},{"id":120196,"position":13,"type":"chart"}],"release":{"id":970807,"name":"The
+        Joker","type":"release","slug":"the-joker"},"label":{"id":4760,"name":"Fraction
+        Records","type":"label","slug":"fraction-records"},"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/6005246.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6005246.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6005247.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6005247.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6005248.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6005248.jpg"},"waveform":{"width":1500,"height":250,"url":"http:\/\/geo-media.beatport.com\/image\/6009457.png","secureUrl":"https:\/\/media.beatport.com\/image\/6009457.png"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6005248.jpg"},"waveform":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6009457.png"}},"position":8},{"id":3789876,"selected":false,"type":"track","sku":"track-3789876","name":"The
+        Great Divide","active":true,"mixName":"Myon & Shane 54 Summer Of Love Mix","title":"The
+        Great Divide (Myon & Shane 54 Summer Of Love Mix)","slug":"the-great-divide-myon-and-shane-54-summer-of-love-mix","isrc":"GBEWA1200813","releaseDate":"2012-09-24","publishDate":"2012-09-24","sampleUrl":"http:\/\/geo-samples.beatport.com\/lofi\/3789876.LOFI.mp3","isPreviewAvailable":null,"isAvailableForMix":true,"rtmpStreamUrl":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume6\/items\/3000000\/700000\/80000\/9000\/800\/70\/3789876.LOFI","exclusive":false,"price":{"code":"usd","symbol":"$","value":199},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":100},"aiff":{"code":"usd","symbol":"$","value":100}},"losslessUpgradeFormatFee":[],"currentStatus":"New
+        Release","length":"7:23","bpm":132,"key":{"standard":{"letter":"E","sharp":false,"flat":false,"chord":"major"}},"saleType":"purchase","artists":[{"id":130727,"name":"Velvetine","slug":"velvetine","type":"artist"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"}],"subGenres":[],"charts":[{"id":115806,"position":7,"type":"chart"},{"id":115897,"position":6,"type":"chart"},{"id":116235,"position":5,"type":"chart"},{"id":116362,"position":9,"type":"chart"},{"id":116380,"position":5,"type":"chart"},{"id":116968,"position":10,"type":"chart"},{"id":116977,"position":4,"type":"chart"},{"id":117108,"position":5,"type":"chart"},{"id":117853,"position":1,"type":"chart"},{"id":117988,"position":2,"type":"chart"},{"id":118839,"position":3,"type":"chart"},{"id":119901,"position":2,"type":"chart"}],"release":{"id":968796,"name":"The
+        Great Divide (The Remixes)","type":"release","slug":"the-great-divide-the-remixes"},"label":{"id":804,"name":"Anjunabeats","type":"label","slug":"anjunabeats"},"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/5988388.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5988388.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/5988389.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5988389.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5988390.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5988390.jpg"},"waveform":{"width":1500,"height":250,"url":"http:\/\/geo-media.beatport.com\/image\/5990510.png","secureUrl":"https:\/\/media.beatport.com\/image\/5990510.png"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5988390.jpg"},"waveform":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5990510.png"}},"position":9},{"id":3812042,"selected":false,"type":"track","sku":"track-3812042","name":"Grenade","active":true,"mixName":"Original
+        Mix","title":"Grenade (Original Mix)","slug":"grenade-original-mix","isrc":"NLF711205438","releaseDate":"2012-09-24","publishDate":"2012-09-24","sampleUrl":"http:\/\/geo-samples.beatport.com\/lofi\/3812042.LOFI.mp3","isPreviewAvailable":null,"isAvailableForMix":true,"rtmpStreamUrl":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume3\/items\/3000000\/800000\/10000\/2000\/0\/40\/3812042.LOFI","exclusive":false,"price":{"code":"usd","symbol":"$","value":199},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":100},"aiff":{"code":"usd","symbol":"$","value":100}},"losslessUpgradeFormatFee":[],"currentStatus":"New
+        Release","length":"6:20","bpm":128,"key":{"standard":{"letter":"F","sharp":false,"flat":false,"chord":"major"}},"saleType":"purchase","artists":[{"id":64910,"name":"Ashley
+        Wallbridge","slug":"ashley-wallbridge","type":"artist"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"}],"subGenres":[],"charts":[{"id":116362,"position":1,"type":"chart"},{"id":117169,"position":2,"type":"chart"},{"id":117298,"position":4,"type":"chart"},{"id":117340,"position":10,"type":"chart"},{"id":117400,"position":2,"type":"chart"},{"id":117445,"position":1,"type":"chart"},{"id":117612,"position":1,"type":"chart"},{"id":117694,"position":4,"type":"chart"},{"id":117689,"position":4,"type":"chart"},{"id":117717,"position":2,"type":"chart"},{"id":118307,"position":1,"type":"chart"},{"id":118716,"position":7,"type":"chart"},{"id":118939,"position":1,"type":"chart"},{"id":118993,"position":8,"type":"chart"},{"id":116244,"position":2,"type":"chart"},{"id":119318,"position":6,"type":"chart"},{"id":120053,"position":1,"type":"chart"}],"release":{"id":973123,"name":"Grenade","type":"release","slug":"grenade"},"label":{"id":12570,"name":"AVA
+        Recordings (Armada)","type":"label","slug":"ava-recordings-armada"},"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/6025106.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6025106.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6025107.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6025107.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6025108.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6025108.jpg"},"waveform":{"width":1500,"height":250,"url":"http:\/\/geo-media.beatport.com\/image\/6034517.png","secureUrl":"https:\/\/media.beatport.com\/image\/6034517.png"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6025108.jpg"},"waveform":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6034517.png"}},"position":10}]}'
+    http_version: '1.1'
+  recorded_at: Wed, 10 Oct 2012 16:07:34 GMT
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/genres?subgenres=true&id=9999999
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 10 Oct 2012 16:07:37 GMT
+      server:
+      - Apache
+      expires:
+      - Wed, 10 Oct 2012 16:37:37 GMT
+      pragma:
+      - public
+      cache-control:
+      - public, max-age=1800
+      access-control-allow-origin:
+      - ! '*'
+      connection:
+      - close
+      transfer-encoding:
+      - chunked
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"page":1,"perPage":0,"count":0},"results":[]}'
+    http_version: '1.1'
+  recorded_at: Wed, 10 Oct 2012 16:07:34 GMT
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/genres?
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 10 Oct 2012 16:07:37 GMT
+      server:
+      - Apache
+      expires:
+      - Wed, 10 Oct 2012 16:37:37 GMT
+      pragma:
+      - public
+      cache-control:
+      - public, max-age=1800
+      access-control-allow-origin:
+      - ! '*'
+      connection:
+      - close
+      transfer-encoding:
+      - chunked
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"page":1,"perPage":23,"count":23},"results":[{"id":9,"name":"Breaks","slug":"breaks","subgenres":[]},{"id":10,"name":"Chill
+        Out","slug":"chill-out","subgenres":[]},{"id":16,"name":"DJ Tools","slug":"dj-tools","subgenres":[]},{"id":12,"name":"Deep
+        House","slug":"deep-house","subgenres":[]},{"id":1,"name":"Drum & Bass","slug":"drum-and-bass","subgenres":[]},{"id":18,"name":"Dubstep","slug":"dubstep","subgenres":[]},{"id":17,"name":"Electro
+        House","slug":"electro-house","subgenres":[]},{"id":3,"name":"Electronica","slug":"electronica","subgenres":[]},{"id":40,"name":"Funk
+        \/ R&B","slug":"funk-r-and-b","subgenres":[]},{"id":49,"name":"Glitch Hop","slug":"glitch-hop","subgenres":[]},{"id":8,"name":"Hard
+        Dance","slug":"hard-dance","subgenres":[]},{"id":2,"name":"Hardcore \/ Hard
+        Techno","slug":"hardcore-hard-techno","subgenres":[]},{"id":38,"name":"Hip-Hop","slug":"hip-hop","subgenres":[]},{"id":5,"name":"House","slug":"house","subgenres":[]},{"id":37,"name":"Indie
+        Dance \/ Nu Disco","slug":"indie-dance-nu-disco","subgenres":[]},{"id":14,"name":"Minimal","slug":"minimal","subgenres":[]},{"id":39,"name":"Pop
+        \/ Rock","slug":"pop-rock","subgenres":[]},{"id":15,"name":"Progressive House","slug":"progressive-house","subgenres":[]},{"id":13,"name":"Psy-Trance","slug":"psy-trance","subgenres":[]},{"id":41,"name":"Reggae
+        \/ Dub","slug":"reggae-dub","subgenres":[]},{"id":11,"name":"Tech House","slug":"tech-house","subgenres":[]},{"id":6,"name":"Techno","slug":"techno","subgenres":[]},{"id":7,"name":"Trance","slug":"trance","subgenres":[]}]}'
+    http_version: '1.1'
+  recorded_at: Wed, 10 Oct 2012 16:07:35 GMT
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/genres?subgenres=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 10 Oct 2012 16:07:37 GMT
+      server:
+      - Apache
+      expires:
+      - Wed, 10 Oct 2012 16:37:37 GMT
+      pragma:
+      - public
+      cache-control:
+      - public, max-age=1800
+      access-control-allow-origin:
+      - ! '*'
+      connection:
+      - close
+      transfer-encoding:
+      - chunked
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"page":1,"perPage":23,"count":23},"results":[{"id":9,"name":"Breaks","slug":"breaks","subgenres":[{"id":34,"name":"2
+        Step","slug":"2-step"},{"id":37,"name":"Acid","slug":"acid"},{"id":33,"name":"Big
+        Beat","slug":"big-beat"},{"id":35,"name":"Electro","slug":"electro"},{"id":62,"name":"Funky
+        Breaks","slug":"funky-breaks"},{"id":63,"name":"Hardcore Breaks","slug":"hardcore-breaks"},{"id":36,"name":"Nu
+        Skool","slug":"nu-skool"},{"id":38,"name":"Progressive","slug":"progressive"},{"id":96,"name":"Psybreaks","slug":"psybreaks"}]},{"id":10,"name":"Chill
+        Out","slug":"chill-out","subgenres":[{"id":41,"name":"Acid Jazz","slug":"acid-jazz"},{"id":69,"name":"Ambient","slug":"ambient"},{"id":39,"name":"Downtempo","slug":"downtempo"},{"id":40,"name":"Nu-Jazz","slug":"nu-jazz"},{"id":42,"name":"Trip-Hop","slug":"trip-hop"}]},{"id":16,"name":"DJ
+        Tools","slug":"dj-tools","subgenres":[{"id":46,"name":"Acapellas","slug":"acapellas"},{"id":44,"name":"Reprise","slug":"reprise"},{"id":45,"name":"loops","slug":"loops"}]},{"id":12,"name":"Deep
+        House","slug":"deep-house","subgenres":[]},{"id":1,"name":"Drum & Bass","slug":"drum-and-bass","subgenres":[{"id":65,"name":"Breakcore","slug":"breakcore"},{"id":1,"name":"Dark
+        Step","slug":"dark-step"},{"id":92,"name":"Drumstep","slug":"drumstep"},{"id":64,"name":"Electro
+        Step","slug":"electro-step"},{"id":2,"name":"Experimental","slug":"experimental"},{"id":3,"name":"Hardstep","slug":"hardstep"},{"id":4,"name":"Intelligent","slug":"intelligent"},{"id":6,"name":"Jump
+        Up","slug":"jump-up"},{"id":66,"name":"Jungle","slug":"jungle"},{"id":5,"name":"Liquid","slug":"liquid"},{"id":10,"name":"Old
+        School","slug":"old-school"},{"id":7,"name":"Ragga","slug":"ragga"},{"id":8,"name":"Techstep
+        \/ Electrostep","slug":"techstep-electrostep"},{"id":9,"name":"Vocal","slug":"vocal"}]},{"id":18,"name":"Dubstep","slug":"dubstep","subgenres":[]},{"id":17,"name":"Electro
+        House","slug":"electro-house","subgenres":[{"id":99,"name":"Moombahton","slug":"moombahton"}]},{"id":3,"name":"Electronica","slug":"electronica","subgenres":[{"id":93,"name":"Bass
+        Music","slug":"bass-music"},{"id":14,"name":"Electro","slug":"electro"},{"id":71,"name":"Experimental\/Noise\/Industrial","slug":"experimental-noise-industrial"},{"id":13,"name":"IDM","slug":"idm"},{"id":70,"name":"Indie","slug":"indie"},{"id":94,"name":"Juke","slug":"juke"},{"id":15,"name":"LeftField","slug":"leftfield"}]},{"id":40,"name":"Funk
+        \/ R&B","slug":"funk-r-and-b","subgenres":[{"id":97,"name":"Jazz","slug":"jazz"},{"id":98,"name":"World","slug":"world"}]},{"id":49,"name":"Glitch
+        Hop","slug":"glitch-hop","subgenres":[]},{"id":8,"name":"Hard Dance","slug":"hard-dance","subgenres":[{"id":100,"name":"Hard
+        Style","slug":"hard-style"},{"id":32,"name":"Nu-NRG","slug":"nu-nrg"}]},{"id":2,"name":"Hardcore
+        \/ Hard Techno","slug":"hardcore-hard-techno","subgenres":[{"id":11,"name":"Gabber","slug":"gabber"},{"id":12,"name":"Happy","slug":"happy"}]},{"id":38,"name":"Hip-Hop","slug":"hip-hop","subgenres":[{"id":95,"name":"Grime","slug":"grime"}]},{"id":5,"name":"House","slug":"house","subgenres":[{"id":18,"name":"Disco","slug":"disco"},{"id":87,"name":"Garage","slug":"garage"},{"id":19,"name":"Tribal","slug":"tribal"},{"id":17,"name":"Vocal
+        House","slug":"vocal-house"}]},{"id":37,"name":"Indie Dance \/ Nu Disco","slug":"indie-dance-nu-disco","subgenres":[{"id":88,"name":"Indie
+        Dance","slug":"indie-dance"},{"id":89,"name":"Nu Disco","slug":"nu-disco"}]},{"id":14,"name":"Minimal","slug":"minimal","subgenres":[]},{"id":39,"name":"Pop
+        \/ Rock","slug":"pop-rock","subgenres":[]},{"id":15,"name":"Progressive House","slug":"progressive-house","subgenres":[{"id":91,"name":"ProgNo","slug":"progno"}]},{"id":13,"name":"Psy-Trance","slug":"psy-trance","subgenres":[]},{"id":41,"name":"Reggae
+        \/ Dub","slug":"reggae-dub","subgenres":[]},{"id":11,"name":"Tech House","slug":"tech-house","subgenres":[{"id":43,"name":"Acid","slug":"acid"}]},{"id":6,"name":"Techno","slug":"techno","subgenres":[{"id":90,"name":"Acid","slug":"acid"},{"id":25,"name":"Detroit
+        Techno","slug":"detroit-techno"},{"id":68,"name":"Dub Techno","slug":"dub-techno"},{"id":23,"name":"Ghetto-Tek","slug":"ghetto-tek"},{"id":67,"name":"Hard
+        Techno","slug":"hard-techno"},{"id":24,"name":"Melodic","slug":"melodic"}]},{"id":7,"name":"Trance","slug":"trance","subgenres":[{"id":28,"name":"Acid","slug":"acid"},{"id":30,"name":"Epic","slug":"epic"},{"id":31,"name":"Hard","slug":"hard"},{"id":27,"name":"Progressive","slug":"progressive"},{"id":29,"name":"Tech","slug":"tech"},{"id":26,"name":"Tribal","slug":"tribal"}]}]}'
+    http_version: '1.1'
+  recorded_at: Wed, 10 Oct 2012 16:07:35 GMT
+recorded_with: VCR 2.2.5

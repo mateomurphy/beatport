@@ -2,6 +2,14 @@ require 'spec_helper'
 
 module Beatport::Catalog
   describe Track do
+    before :each do
+      VCR.insert_cassette 'track'
+    end
+
+    after :each do
+      VCR.eject_cassette
+    end
+
     describe 'lazy loading' do
       it "should lazy load artists" do
         pending "Not implemented yet"
@@ -10,9 +18,7 @@ module Beatport::Catalog
     end
 
     describe 'structure' do
-      subject do
-        VCR.use_cassette('track_1217790') { Track.find(1217790) }
-      end
+      subject { Track.find(1217790) }
       
       it { should be_a(Track) }
       its (:id) { should == 1217790 }

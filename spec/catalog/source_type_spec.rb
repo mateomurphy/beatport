@@ -2,10 +2,16 @@ require 'spec_helper'
 
 module Beatport::Catalog
   describe SourceType do
+    before :each do
+      VCR.insert_cassette 'source_type'
+    end
+
+    after :each do
+      VCR.eject_cassette
+    end
+
     describe "structure" do
-      subject do
-        VCR.use_cassette("source_type_all") { SourceType.all.first }
-      end
+      subject { SourceType.all.first }
       
       it { should be_a(SourceType) }
       its (:id) { should == 1 }

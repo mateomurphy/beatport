@@ -2,10 +2,16 @@ require 'spec_helper'
 
 module Beatport::Catalog
   describe "AudioFormat" do
+    before :each do
+      VCR.insert_cassette 'audio_format'
+    end
+
+    after :each do
+      VCR.eject_cassette
+    end
+
     describe 'structure' do
-      subject do
-        VCR.use_cassette('audio_format_all') { AudioFormat.all.first }
-      end
+      subject { AudioFormat.all.first }
      
       it { should be_an(AudioFormat) }
       its (:id) { should == 1 }
@@ -14,25 +20,19 @@ module Beatport::Catalog
     end    
   
     describe '.all' do
-      subject do
-        VCR.use_cassette('audio_format_all') { AudioFormat.all }
-      end
+      subject { AudioFormat.all }
       
       its (:length) { should be > 1 }
     end
 
     describe '.find' do
       context "by id" do
-        subject do
-          VCR.use_cassette("audio_format_2") { AudioFormat.find(2) }
-        end
+        subject { AudioFormat.find(2) }
         its (:name) { should == "m4a" }
       end
       
       context "by name" do
-        subject do
-          VCR.use_cassette("audio_format_wav") { AudioFormat.find('wav') }
-        end
+        subject { AudioFormat.find('wav') }
         its (:name) { should == "wav" }
       end
     end
