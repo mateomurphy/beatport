@@ -60,7 +60,7 @@ module Beatport
       def process_facets(values)
         map_values(values) do |value|
           k, v = split_value(value, ':')
-          v.to_a.map {|v| "#{k}:#{v}"}.join(',')
+          Array(v).map {|v| "#{k}:#{v}"}.join(',')
         end       
       end
     
