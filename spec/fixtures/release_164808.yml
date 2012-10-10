@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/releases?id=164808
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 10 Oct 2012 00:54:10 GMT
+      server:
+      - Apache
+      expires:
+      - Wed, 10 Oct 2012 01:24:10 GMT
+      pragma:
+      - public
+      cache-control:
+      - public, max-age=1800
+      access-control-allow-origin:
+      - ! '*'
+      connection:
+      - close
+      transfer-encoding:
+      - chunked
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/releases","query":"id=164808","page":1,"perPage":10,"count":1,"totalPages":1,"perPageOptions":[{"value":50,"applyQuery":"id=164808&perPage=50"},{"value":100,"applyQuery":"id=164808&perPage=100"},{"value":150,"applyQuery":"id=164808&perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"dateFilters":[{"name":"today","startDate":"2012-10-09","endDate":"2012-10-09","applyQuery":"id=164808&publishDateStart=2012-10-09&publishDateEnd=2012-10-09","applied":false},{"name":"yesterday","startDate":"2012-10-08","endDate":"2012-10-09","applyQuery":"id=164808&publishDateStart=2012-10-08&publishDateEnd=2012-10-09","applied":false},{"name":"weekToDate","startDate":"2012-10-02","endDate":"2012-10-09","applyQuery":"id=164808&publishDateStart=2012-10-02&publishDateEnd=2012-10-09","applied":false},{"name":"monthToDate","startDate":"2012-09-09","endDate":"2012-10-09","applyQuery":"id=164808&publishDateStart=2012-09-09&publishDateEnd=2012-10-09","applied":false},{"name":"yearToDate","startDate":"2011-10-09","endDate":"2012-10-09","applyQuery":"id=164808&publishDateStart=2011-10-09&publishDateEnd=2012-10-09","applied":false},{"custom":true,"name":"customRange","applied":false,"applyQuery":"id=164808"}],"spellcheck":{"suggestions":[]}},"results":[{"id":164808,"type":"release","sku":"release-164808","name":"Anjunabeats
+        Volume 6 (Unmixed - DJ Ready)","slug":"anjunabeats-volume-6-unmixed-dj-ready","active":true,"releaseDate":"2009-04-06","publishDate":"2009-04-06","exclusive":false,"category":"Album","currentStatus":"General
+        Content","catalogNumber":"ANJCDCO011D","purchasable":true,"price":{"code":"usd","symbol":"$","value":999},"tracksPrice":{"code":"usd","symbol":"$","value":4321},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":2900},"aiff":{"code":"usd","symbol":"$","value":2900}},"label":{"id":804,"name":"Anjunabeats","type":"label","slug":"anjunabeats"},"artists":[{"id":211,"name":"Andy
+        Moor","slug":"andy-moor","type":"artist"},{"id":2976,"name":"Shane 54","slug":"shane-54","type":"artist"},{"id":5386,"name":"Bart
+        Claessen","slug":"bart-claessen","type":"artist"},{"id":6489,"name":"OceanLab","slug":"oceanlab","type":"artist"},{"id":6669,"name":"Signalrunners","slug":"signalrunners","type":"artist"},{"id":7181,"name":"Above
+        & Beyond","slug":"above-and-beyond","type":"artist"},{"id":8998,"name":"Jaytech","slug":"jaytech","type":"artist"},{"id":11879,"name":"Boom
+        Jinx","slug":"boom-jinx","type":"artist"},{"id":12919,"name":"Julie Thompson","slug":"julie-thompson","type":"artist"},{"id":16498,"name":"Johan
+        Vermeulen","slug":"johan-vermeulen","type":"artist"},{"id":17030,"name":"Paul
+        Keeley","slug":"paul-keeley","type":"artist"},{"id":19090,"name":"Neumann","slug":"neumann","type":"artist"},{"id":19183,"name":"Nitrous
+        Oxide","slug":"nitrous-oxide","type":"artist"},{"id":19557,"name":"Adam Nickey","slug":"adam-nickey","type":"artist"},{"id":22052,"name":"Joonas
+        Hahmo","slug":"joonas-hahmo","type":"artist"},{"id":24276,"name":"PROFF","slug":"proff","type":"artist"},{"id":32659,"name":"Daniel
+        Kandi","slug":"daniel-kandi","type":"artist"},{"id":35216,"name":"Komytea","slug":"komytea","type":"artist"},{"id":35625,"name":"Mat
+        Zo","slug":"mat-zo","type":"artist"},{"id":41125,"name":"Oliver Smith","slug":"oliver-smith","type":"artist"},{"id":51726,"name":"Dave
+        Schiemann","slug":"dave-schiemann","type":"artist"},{"id":61954,"name":"Myon
+        & Shane 54","slug":"myon-and-shane-54","type":"artist"},{"id":75268,"name":"Tritonal","slug":"tritonal","type":"artist"},{"id":81018,"name":"Sundriver","slug":"sundriver","type":"artist"},{"id":93336,"name":"Super8
+        & Tab","slug":"super8-and-tab","type":"artist"},{"id":40060,"name":"Michael
+        Cassette","slug":"michael-cassette","type":"remixer"},{"id":58751,"name":"Dinka","slug":"dinka","type":"remixer"}],"genres":[{"id":15,"name":"Progressive
+        House","slug":"progressive-house","type":"genre"},{"id":7,"name":"Trance","slug":"trance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/392699.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/392699.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/392700.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/392700.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/392701.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/392701.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/392701.jpg"}}}]}'
+    http_version: '1.1'
+  recorded_at: Wed, 10 Oct 2012 00:54:10 GMT
+recorded_with: VCR 2.2.5

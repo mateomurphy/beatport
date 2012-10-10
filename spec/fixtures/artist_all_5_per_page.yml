@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/artists?perPage=5&page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 10 Oct 2012 00:31:41 GMT
+      server:
+      - Apache
+      expires:
+      - Wed, 10 Oct 2012 01:01:41 GMT
+      pragma:
+      - public
+      cache-control:
+      - public, max-age=1800
+      access-control-allow-origin:
+      - ! '*'
+      connection:
+      - close
+      transfer-encoding:
+      - chunked
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/artists","query":"perPage=5","page":1,"perPage":5,"count":257551,"totalPages":51511,"nextQuery":"perPage=5&page=2","perPageOptions":[{"value":50,"applyQuery":"perPage=50"},{"value":100,"applyQuery":"perPage=100"},{"value":150,"applyQuery":"perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"spellcheck":{"suggestions":[]}},"results":[{"id":100,"type":"artist","name":"Ixis","slug":"ixis","active":true,"lastPublishDate":"2004-11-10","biography":"","genres":[{"id":1,"name":"Drum
+        & Bass","slug":"drum-and-bass","type":"genre"}],"subGenres":[{"id":8,"name":"Techstep
+        \/ Electrostep","slug":"techstep-electrostep","type":"subgenre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491527.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491527.jpg"},"medium":{"width":88,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491530.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491530.jpg"},"large":{"width":590,"height":404,"url":"http:\/\/geo-media.beatport.com\/image\/5539565.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539565.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5539565.jpg"}},"imageTextPosition":"left","imageTextBrightness":"dark","displayLevel":1},{"id":157,"type":"artist","name":"Greg
+        Packer","slug":"greg-packer","active":true,"lastPublishDate":"2012-09-21","biography":"","genres":[{"id":1,"name":"Drum
+        & Bass","slug":"drum-and-bass","type":"genre"},{"id":18,"name":"Dubstep","slug":"dubstep","type":"genre"},{"id":9,"name":"Breaks","slug":"breaks","type":"genre"}],"subGenres":[{"id":4,"name":"Intelligent","slug":"intelligent","type":"subgenre"},{"id":92,"name":"Drumstep","slug":"drumstep","type":"subgenre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491527.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491527.jpg"},"medium":{"width":88,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491530.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491530.jpg"},"large":{"width":590,"height":404,"url":"http:\/\/geo-media.beatport.com\/image\/5539565.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539565.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5539565.jpg"}},"imageTextPosition":"left","imageTextBrightness":"dark","displayLevel":1},{"id":158,"type":"artist","name":"Sheef","slug":"sheef","active":true,"lastPublishDate":"2003-12-04","biography":"","genres":[{"id":1,"name":"Drum
+        & Bass","slug":"drum-and-bass","type":"genre"}],"subGenres":[],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491527.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491527.jpg"},"medium":{"width":88,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491530.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491530.jpg"},"large":{"width":590,"height":404,"url":"http:\/\/geo-media.beatport.com\/image\/5539565.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539565.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5539565.jpg"}},"imageTextPosition":"left","imageTextBrightness":"dark","displayLevel":1},{"id":159,"type":"artist","name":"Beta","slug":"beta","active":true,"lastPublishDate":"2012-10-01","biography":"","genres":[{"id":1,"name":"Drum
+        & Bass","slug":"drum-and-bass","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"},{"id":15,"name":"Progressive
+        House","slug":"progressive-house","type":"genre"},{"id":9,"name":"Breaks","slug":"breaks","type":"genre"},{"id":10,"name":"Chill
+        Out","slug":"chill-out","type":"genre"},{"id":8,"name":"Hard Dance","slug":"hard-dance","type":"genre"},{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":17,"name":"Electro
+        House","slug":"electro-house","type":"genre"}],"subGenres":[{"id":17,"name":"Vocal
+        House","slug":"vocal-house","type":"subgenre"},{"id":42,"name":"Trip-Hop","slug":"trip-hop","type":"subgenre"},{"id":38,"name":"Progressive","slug":"progressive","type":"subgenre"},{"id":36,"name":"Nu
+        Skool","slug":"nu-skool","type":"subgenre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491527.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491527.jpg"},"medium":{"width":88,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491530.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491530.jpg"},"large":{"width":590,"height":404,"url":"http:\/\/geo-media.beatport.com\/image\/5539565.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539565.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5539565.jpg"}},"imageTextPosition":"left","imageTextBrightness":"dark","displayLevel":1},{"id":160,"type":"artist","name":"Spirit","slug":"spirit","active":true,"lastPublishDate":"2012-07-10","biography":"","genres":[{"id":1,"name":"Drum
+        & Bass","slug":"drum-and-bass","type":"genre"},{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":38,"name":"Hip-Hop","slug":"hip-hop","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"},{"id":15,"name":"Progressive
+        House","slug":"progressive-house","type":"genre"},{"id":17,"name":"Electro
+        House","slug":"electro-house","type":"genre"},{"id":9,"name":"Breaks","slug":"breaks","type":"genre"},{"id":13,"name":"Psy-Trance","slug":"psy-trance","type":"genre"},{"id":14,"name":"Minimal","slug":"minimal","type":"genre"},{"id":11,"name":"Tech
+        House","slug":"tech-house","type":"genre"},{"id":12,"name":"Deep House","slug":"deep-house","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"}],"subGenres":[{"id":3,"name":"Hardstep","slug":"hardstep","type":"subgenre"},{"id":19,"name":"Tribal","slug":"tribal","type":"subgenre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491527.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491527.jpg"},"medium":{"width":88,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491530.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491530.jpg"},"large":{"width":590,"height":404,"url":"http:\/\/geo-media.beatport.com\/image\/5539565.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539565.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5539565.jpg"}},"imageTextPosition":"left","imageTextBrightness":"dark","displayLevel":1}]}'
+    http_version: '1.1'
+  recorded_at: Wed, 10 Oct 2012 00:31:41 GMT
+recorded_with: VCR 2.2.5

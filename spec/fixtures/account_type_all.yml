@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/account-types?
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 10 Oct 2012 00:24:32 GMT
+      server:
+      - Apache
+      expires:
+      - Wed, 10 Oct 2012 00:54:32 GMT
+      pragma:
+      - public
+      cache-control:
+      - public, max-age=1800
+      access-control-allow-origin:
+      - ! '*'
+      connection:
+      - close
+      transfer-encoding:
+      - chunked
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"page":1,"perPage":10,"count":6},"results":[{"code":"AMEX","bpid":1,"name":"American
+        Express","cybersourceCardType":"003","issueNumberOrStartDateRequired":false,"validationRegex":"^3[47][0-9]{13}$","images":{"small":{"width":37,"height":23,"url":"https:\/\/secure-beatport.bpddn.com\/images\/creditcard\/logo_cc_amex_37x23.gif"}}},{"code":"VISA","bpid":2,"name":"Visa","cybersourceCardType":"001","issueNumberOrStartDateRequired":false,"validationRegex":"^4[0-9]{12}(?:[0-9]{3})?$","images":{"small":{"width":37,"height":23,"url":"https:\/\/secure-beatport.bpddn.com\/images\/creditcard\/logo_cc_visa_37x23.gif"}}},{"code":"ECMC","bpid":3,"name":"Master
+        Card","cybersourceCardType":"002","issueNumberOrStartDateRequired":false,"validationRegex":"^5[1-5][0-9]{14}$","images":{"small":{"width":37,"height":23,"url":"https:\/\/secure-beatport.bpddn.com\/images\/creditcard\/logo_cc_mc_37x23.gif"}}},{"code":"SOLO_GB","bpid":5,"name":"Solo","cybersourceCardType":"024","issueNumberOrStartDateRequired":true,"validationRegex":"^(6334|6767)[0-9]{12,17}$","images":{"small":{"width":19,"height":23,"url":"https:\/\/secure-beatport.bpddn.com\/images\/creditcard\/logo_cc_solo_19x23.gif"}}},{"code":"PAYPAL","bpid":6,"name":"PayPal","cybersourceCardType":"","issueNumberOrStartDateRequired":false,"validationRegex":null,"images":{"small":{"width":37,"height":23,"url":"https:\/\/secure-beatport.bpddn.com\/images\/creditcard\/logo_cc_pp_37x23.gif"}}},{"code":"JCB","bpid":8,"name":"JCB","cybersourceCardType":"007","issueNumberOrStartDateRequired":false,"validationRegex":"^(?:2131|1800|35[0-9]{3})[0-9]{11}$","images":{"small":{"width":30,"height":23,"url":"https:\/\/secure-beatport.bpddn.com\/images\/creditcard\/logo_cc_jcb_30x23.gif"}}}]}'
+    http_version: '1.1'
+  recorded_at: Wed, 10 Oct 2012 00:24:32 GMT
+recorded_with: VCR 2.2.5

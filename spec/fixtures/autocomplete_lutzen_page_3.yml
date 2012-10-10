@@ -1,0 +1,39 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/autocomplete?page=3&perPage=2&query=lutzen
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 10 Oct 2012 00:37:39 GMT
+      server:
+      - Apache
+      expires:
+      - Wed, 10 Oct 2012 01:07:39 GMT
+      pragma:
+      - public
+      cache-control:
+      - public, max-age=1800
+      access-control-allow-origin:
+      - ! '*'
+      connection:
+      - close
+      transfer-encoding:
+      - chunked
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/autocomplete","query":"perPage=2&query=lutzen","page":3,"perPage":2,"count":36,"totalPages":18,"nextQuery":"perPage=2&query=lutzen&page=4","prevQuery":"perPage=2&query=lutzen&page=2","perPageOptions":[{"value":50,"applyQuery":"perPage=50&query=lutzen"},{"value":100,"applyQuery":"perPage=100&query=lutzen"},{"value":150,"applyQuery":"perPage=150&query=lutzen"}],"facets":{"fields":[]},"spellcheck":{"suggestions":[]}},"results":[{"name":"Tobias
+        Lutzenkirchen"},{"name":"Lutzenkirchen Top 10"}]}'
+    http_version: '1.1'
+  recorded_at: Wed, 10 Oct 2012 00:37:39 GMT
+recorded_with: VCR 2.2.5

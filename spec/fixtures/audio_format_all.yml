@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/audio-formats?
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 10 Oct 2012 00:36:24 GMT
+      server:
+      - Apache
+      expires:
+      - Wed, 10 Oct 2012 01:06:24 GMT
+      pragma:
+      - public
+      cache-control:
+      - public, max-age=1800
+      access-control-allow-origin:
+      - ! '*'
+      connection:
+      - close
+      transfer-encoding:
+      - chunked
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"page":1,"perPage":10,"count":15},"results":[{"id":1,"name":"mp3","personPreferenceVisibility":true,"isLossless":false},{"id":2,"name":"m4a","personPreferenceVisibility":false,"isLossless":false},{"id":3,"name":"wav","personPreferenceVisibility":true,"isLossless":true},{"id":4,"name":"zip","personPreferenceVisibility":false,"isLossless":false},{"id":5,"name":"full
+        download","personPreferenceVisibility":false,"isLossless":false},{"id":6,"name":"apple
+        loops","personPreferenceVisibility":false,"isLossless":false},{"id":7,"name":"rex","personPreferenceVisibility":false,"isLossless":false},{"id":8,"name":"synth
+        presets","personPreferenceVisibility":false,"isLossless":false},{"id":9,"name":"sampler
+        patches","personPreferenceVisibility":false,"isLossless":false},{"id":10,"name":"reason
+        refill","personPreferenceVisibility":false,"isLossless":false},{"id":11,"name":"elements","personPreferenceVisibility":false,"isLossless":false},{"id":12,"name":"s4","personPreferenceVisibility":false,"isLossless":false},{"id":13,"name":"ableton
+        live racks","personPreferenceVisibility":false,"isLossless":false},{"id":14,"name":"aiff","personPreferenceVisibility":true,"isLossless":true},{"id":15,"name":"mp4","personPreferenceVisibility":false,"isLossless":false}]}'
+    http_version: '1.1'
+  recorded_at: Wed, 10 Oct 2012 00:36:25 GMT
+recorded_with: VCR 2.2.5

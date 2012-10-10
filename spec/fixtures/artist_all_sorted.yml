@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/artists?sortBy=publishDate%20asc%2CartistId%20asc&genreId=5&perPage=5&page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 10 Oct 2012 00:31:41 GMT
+      server:
+      - Apache
+      expires:
+      - Wed, 10 Oct 2012 01:01:41 GMT
+      pragma:
+      - public
+      cache-control:
+      - public, max-age=1800
+      access-control-allow-origin:
+      - ! '*'
+      connection:
+      - close
+      transfer-encoding:
+      - chunked
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/artists","query":"sortBy=publishDate+asc%2CartistId+asc&genreId=5&perPage=5","page":1,"perPage":5,"count":257551,"totalPages":51511,"nextQuery":"sortBy=publishDate+asc%2CartistId+asc&genreId=5&perPage=5&page=2","perPageOptions":[{"value":50,"applyQuery":"sortBy=publishDate+asc%2CartistId+asc&genreId=5&perPage=50"},{"value":100,"applyQuery":"sortBy=publishDate+asc%2CartistId+asc&genreId=5&perPage=100"},{"value":150,"applyQuery":"sortBy=publishDate+asc%2CartistId+asc&genreId=5&perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"spellcheck":{"suggestions":[]}},"results":[{"id":210376,"type":"artist","name":"The
+        Disco Express","slug":"the-disco-express","active":true,"lastPublishDate":"1976-01-01","biography":"","genres":[{"id":5,"name":"House","slug":"house","type":"genre"}],"subGenres":[{"id":18,"name":"Disco","slug":"disco","type":"subgenre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491527.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491527.jpg"},"medium":{"width":88,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491530.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491530.jpg"},"large":{"width":590,"height":404,"url":"http:\/\/geo-media.beatport.com\/image\/5539565.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539565.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5539565.jpg"}},"imageTextPosition":"left","imageTextBrightness":"light","displayLevel":1},{"id":202864,"type":"artist","name":"Amber
+        Route","slug":"amber-route","active":true,"lastPublishDate":"1980-05-05","biography":"","genres":[{"id":3,"name":"Electronica","slug":"electronica","type":"genre"}],"subGenres":[],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491527.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491527.jpg"},"medium":{"width":88,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491530.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491530.jpg"},"large":{"width":590,"height":404,"url":"http:\/\/geo-media.beatport.com\/image\/5539565.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539565.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5539565.jpg"}},"imageTextPosition":"left","imageTextBrightness":"light","displayLevel":1},{"id":197163,"type":"artist","name":"Winston
+        Edwards","slug":"winston-edwards","active":true,"lastPublishDate":"1980-10-31","biography":"","genres":[{"id":41,"name":"Reggae
+        \/ Dub","slug":"reggae-dub","type":"genre"}],"subGenres":[],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491527.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491527.jpg"},"medium":{"width":88,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491530.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491530.jpg"},"large":{"width":590,"height":404,"url":"http:\/\/geo-media.beatport.com\/image\/5539565.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539565.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5539565.jpg"}},"imageTextPosition":"left","imageTextBrightness":"light","displayLevel":1},{"id":202928,"type":"artist","name":"George
+        Higton","slug":"george-higton","active":true,"lastPublishDate":"1983-05-25","biography":"","genres":[{"id":3,"name":"Electronica","slug":"electronica","type":"genre"}],"subGenres":[{"id":13,"name":"IDM","slug":"idm","type":"subgenre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491527.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491527.jpg"},"medium":{"width":88,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491530.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491530.jpg"},"large":{"width":590,"height":404,"url":"http:\/\/geo-media.beatport.com\/image\/5539565.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539565.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5539565.jpg"}},"imageTextPosition":"left","imageTextBrightness":"light","displayLevel":1},{"id":202867,"type":"artist","name":"Amber
+        Route (with Walter Holland)","slug":"amber-route-with-walter-holland","active":true,"lastPublishDate":"1983-08-03","biography":"","genres":[{"id":3,"name":"Electronica","slug":"electronica","type":"genre"}],"subGenres":[],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491527.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491527.jpg"},"medium":{"width":88,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491530.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491530.jpg"},"large":{"width":590,"height":404,"url":"http:\/\/geo-media.beatport.com\/image\/5539565.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539565.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5539565.jpg"}},"imageTextPosition":"left","imageTextBrightness":"light","displayLevel":1}]}'
+    http_version: '1.1'
+  recorded_at: Wed, 10 Oct 2012 00:31:42 GMT
+recorded_with: VCR 2.2.5

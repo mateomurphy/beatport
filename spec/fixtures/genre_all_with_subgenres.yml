@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/genres?subgenres=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 10 Oct 2012 00:47:52 GMT
+      server:
+      - Apache
+      expires:
+      - Wed, 10 Oct 2012 01:17:53 GMT
+      pragma:
+      - public
+      cache-control:
+      - public, max-age=1800
+      access-control-allow-origin:
+      - ! '*'
+      connection:
+      - close
+      transfer-encoding:
+      - chunked
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"page":1,"perPage":23,"count":23},"results":[{"id":9,"name":"Breaks","slug":"breaks","subgenres":[{"id":34,"name":"2
+        Step","slug":"2-step"},{"id":37,"name":"Acid","slug":"acid"},{"id":33,"name":"Big
+        Beat","slug":"big-beat"},{"id":35,"name":"Electro","slug":"electro"},{"id":62,"name":"Funky
+        Breaks","slug":"funky-breaks"},{"id":63,"name":"Hardcore Breaks","slug":"hardcore-breaks"},{"id":36,"name":"Nu
+        Skool","slug":"nu-skool"},{"id":38,"name":"Progressive","slug":"progressive"},{"id":96,"name":"Psybreaks","slug":"psybreaks"}]},{"id":10,"name":"Chill
+        Out","slug":"chill-out","subgenres":[{"id":41,"name":"Acid Jazz","slug":"acid-jazz"},{"id":69,"name":"Ambient","slug":"ambient"},{"id":39,"name":"Downtempo","slug":"downtempo"},{"id":40,"name":"Nu-Jazz","slug":"nu-jazz"},{"id":42,"name":"Trip-Hop","slug":"trip-hop"}]},{"id":16,"name":"DJ
+        Tools","slug":"dj-tools","subgenres":[{"id":46,"name":"Acapellas","slug":"acapellas"},{"id":44,"name":"Reprise","slug":"reprise"},{"id":45,"name":"loops","slug":"loops"}]},{"id":12,"name":"Deep
+        House","slug":"deep-house","subgenres":[]},{"id":1,"name":"Drum & Bass","slug":"drum-and-bass","subgenres":[{"id":65,"name":"Breakcore","slug":"breakcore"},{"id":1,"name":"Dark
+        Step","slug":"dark-step"},{"id":92,"name":"Drumstep","slug":"drumstep"},{"id":64,"name":"Electro
+        Step","slug":"electro-step"},{"id":2,"name":"Experimental","slug":"experimental"},{"id":3,"name":"Hardstep","slug":"hardstep"},{"id":4,"name":"Intelligent","slug":"intelligent"},{"id":6,"name":"Jump
+        Up","slug":"jump-up"},{"id":66,"name":"Jungle","slug":"jungle"},{"id":5,"name":"Liquid","slug":"liquid"},{"id":10,"name":"Old
+        School","slug":"old-school"},{"id":7,"name":"Ragga","slug":"ragga"},{"id":8,"name":"Techstep
+        \/ Electrostep","slug":"techstep-electrostep"},{"id":9,"name":"Vocal","slug":"vocal"}]},{"id":18,"name":"Dubstep","slug":"dubstep","subgenres":[]},{"id":17,"name":"Electro
+        House","slug":"electro-house","subgenres":[{"id":99,"name":"Moombahton","slug":"moombahton"}]},{"id":3,"name":"Electronica","slug":"electronica","subgenres":[{"id":93,"name":"Bass
+        Music","slug":"bass-music"},{"id":14,"name":"Electro","slug":"electro"},{"id":71,"name":"Experimental\/Noise\/Industrial","slug":"experimental-noise-industrial"},{"id":13,"name":"IDM","slug":"idm"},{"id":70,"name":"Indie","slug":"indie"},{"id":94,"name":"Juke","slug":"juke"},{"id":15,"name":"LeftField","slug":"leftfield"}]},{"id":40,"name":"Funk
+        \/ R&B","slug":"funk-r-and-b","subgenres":[{"id":97,"name":"Jazz","slug":"jazz"},{"id":98,"name":"World","slug":"world"}]},{"id":49,"name":"Glitch
+        Hop","slug":"glitch-hop","subgenres":[]},{"id":8,"name":"Hard Dance","slug":"hard-dance","subgenres":[{"id":100,"name":"Hard
+        Style","slug":"hard-style"},{"id":32,"name":"Nu-NRG","slug":"nu-nrg"}]},{"id":2,"name":"Hardcore
+        \/ Hard Techno","slug":"hardcore-hard-techno","subgenres":[{"id":11,"name":"Gabber","slug":"gabber"},{"id":12,"name":"Happy","slug":"happy"}]},{"id":38,"name":"Hip-Hop","slug":"hip-hop","subgenres":[{"id":95,"name":"Grime","slug":"grime"}]},{"id":5,"name":"House","slug":"house","subgenres":[{"id":18,"name":"Disco","slug":"disco"},{"id":87,"name":"Garage","slug":"garage"},{"id":19,"name":"Tribal","slug":"tribal"},{"id":17,"name":"Vocal
+        House","slug":"vocal-house"}]},{"id":37,"name":"Indie Dance \/ Nu Disco","slug":"indie-dance-nu-disco","subgenres":[{"id":88,"name":"Indie
+        Dance","slug":"indie-dance"},{"id":89,"name":"Nu Disco","slug":"nu-disco"}]},{"id":14,"name":"Minimal","slug":"minimal","subgenres":[]},{"id":39,"name":"Pop
+        \/ Rock","slug":"pop-rock","subgenres":[]},{"id":15,"name":"Progressive House","slug":"progressive-house","subgenres":[{"id":91,"name":"ProgNo","slug":"progno"}]},{"id":13,"name":"Psy-Trance","slug":"psy-trance","subgenres":[]},{"id":41,"name":"Reggae
+        \/ Dub","slug":"reggae-dub","subgenres":[]},{"id":11,"name":"Tech House","slug":"tech-house","subgenres":[{"id":43,"name":"Acid","slug":"acid"}]},{"id":6,"name":"Techno","slug":"techno","subgenres":[{"id":90,"name":"Acid","slug":"acid"},{"id":25,"name":"Detroit
+        Techno","slug":"detroit-techno"},{"id":68,"name":"Dub Techno","slug":"dub-techno"},{"id":23,"name":"Ghetto-Tek","slug":"ghetto-tek"},{"id":67,"name":"Hard
+        Techno","slug":"hard-techno"},{"id":24,"name":"Melodic","slug":"melodic"}]},{"id":7,"name":"Trance","slug":"trance","subgenres":[{"id":28,"name":"Acid","slug":"acid"},{"id":30,"name":"Epic","slug":"epic"},{"id":31,"name":"Hard","slug":"hard"},{"id":27,"name":"Progressive","slug":"progressive"},{"id":29,"name":"Tech","slug":"tech"},{"id":26,"name":"Tribal","slug":"tribal"}]}]}'
+    http_version: '1.1'
+  recorded_at: Wed, 10 Oct 2012 00:47:53 GMT
+recorded_with: VCR 2.2.5

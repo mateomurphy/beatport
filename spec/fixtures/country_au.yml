@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/countries?codeShort=au
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 10 Oct 2012 00:43:13 GMT
+      server:
+      - Apache
+      expires:
+      - Wed, 10 Oct 2012 01:13:13 GMT
+      pragma:
+      - public
+      cache-control:
+      - public, max-age=1800
+      access-control-allow-origin:
+      - ! '*'
+      connection:
+      - close
+      transfer-encoding:
+      - chunked
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"page":1,"perPage":10,"count":1},"results":[{"id":5,"code":"AUS","codeShort":"AU","name":"Australia","vatEnabled":"0","vatRate":0,"iso3166-3":"AUS","iso3166-2":"AU","currency":{"code":"USD","name":"Dollar"},"states":[{"id":"111","code":"ACT","name":"Australian
+        Capital Territory","type":"territory"},{"id":"112","code":"NSW","name":"New
+        South Wales","type":"territory"},{"id":"113","code":"NT","name":"Northern
+        Territory","type":"territory"},{"id":"114","code":"QLD","name":"Queensland","type":"territory"},{"id":"115","code":"SA","name":"South
+        Australia","type":"territory"},{"id":"116","code":"TAS","name":"Tasmania","type":"territory"},{"id":"117","code":"VIC","name":"Victoria","type":"territory"},{"id":"118","code":"WA","name":"Western
+        Australia","type":"territory"}]}]}'
+    http_version: '1.1'
+  recorded_at: Wed, 10 Oct 2012 00:43:13 GMT
+recorded_with: VCR 2.2.5

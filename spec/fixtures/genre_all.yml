@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/genres?
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 10 Oct 2012 00:47:52 GMT
+      server:
+      - Apache
+      expires:
+      - Wed, 10 Oct 2012 01:17:52 GMT
+      pragma:
+      - public
+      cache-control:
+      - public, max-age=1800
+      access-control-allow-origin:
+      - ! '*'
+      connection:
+      - close
+      transfer-encoding:
+      - chunked
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"page":1,"perPage":23,"count":23},"results":[{"id":9,"name":"Breaks","slug":"breaks","subgenres":[]},{"id":10,"name":"Chill
+        Out","slug":"chill-out","subgenres":[]},{"id":16,"name":"DJ Tools","slug":"dj-tools","subgenres":[]},{"id":12,"name":"Deep
+        House","slug":"deep-house","subgenres":[]},{"id":1,"name":"Drum & Bass","slug":"drum-and-bass","subgenres":[]},{"id":18,"name":"Dubstep","slug":"dubstep","subgenres":[]},{"id":17,"name":"Electro
+        House","slug":"electro-house","subgenres":[]},{"id":3,"name":"Electronica","slug":"electronica","subgenres":[]},{"id":40,"name":"Funk
+        \/ R&B","slug":"funk-r-and-b","subgenres":[]},{"id":49,"name":"Glitch Hop","slug":"glitch-hop","subgenres":[]},{"id":8,"name":"Hard
+        Dance","slug":"hard-dance","subgenres":[]},{"id":2,"name":"Hardcore \/ Hard
+        Techno","slug":"hardcore-hard-techno","subgenres":[]},{"id":38,"name":"Hip-Hop","slug":"hip-hop","subgenres":[]},{"id":5,"name":"House","slug":"house","subgenres":[]},{"id":37,"name":"Indie
+        Dance \/ Nu Disco","slug":"indie-dance-nu-disco","subgenres":[]},{"id":14,"name":"Minimal","slug":"minimal","subgenres":[]},{"id":39,"name":"Pop
+        \/ Rock","slug":"pop-rock","subgenres":[]},{"id":15,"name":"Progressive House","slug":"progressive-house","subgenres":[]},{"id":13,"name":"Psy-Trance","slug":"psy-trance","subgenres":[]},{"id":41,"name":"Reggae
+        \/ Dub","slug":"reggae-dub","subgenres":[]},{"id":11,"name":"Tech House","slug":"tech-house","subgenres":[]},{"id":6,"name":"Techno","slug":"techno","subgenres":[]},{"id":7,"name":"Trance","slug":"trance","subgenres":[]}]}'
+    http_version: '1.1'
+  recorded_at: Wed, 10 Oct 2012 00:47:52 GMT
+recorded_with: VCR 2.2.5

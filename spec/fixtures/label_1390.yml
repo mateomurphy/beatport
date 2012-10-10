@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/labels?id=1390
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 10 Oct 2012 00:51:11 GMT
+      server:
+      - Apache
+      expires:
+      - Wed, 10 Oct 2012 01:21:11 GMT
+      pragma:
+      - public
+      cache-control:
+      - public, max-age=1800
+      access-control-allow-origin:
+      - ! '*'
+      connection:
+      - close
+      transfer-encoding:
+      - chunked
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/labels","query":"id=1390","page":1,"perPage":10,"count":1,"totalPages":1,"perPageOptions":[{"value":50,"applyQuery":"id=1390&perPage=50"},{"value":100,"applyQuery":"id=1390&perPage=100"},{"value":150,"applyQuery":"id=1390&perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"spellcheck":{"suggestions":[]}},"results":[{"id":1390,"type":"label","name":"Anjunadeep","slug":"anjunadeep","active":true,"lastPublishDate":"2012-10-08","biography":"","genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":15,"name":"Progressive
+        House","slug":"progressive-house","type":"genre"},{"id":17,"name":"Electro
+        House","slug":"electro-house","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"},{"id":11,"name":"Tech
+        House","slug":"tech-house","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"},{"id":1,"name":"Drum
+        & Bass","slug":"drum-and-bass","type":"genre"},{"id":10,"name":"Chill Out","slug":"chill-out","type":"genre"},{"id":12,"name":"Deep
+        House","slug":"deep-house","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":18,"name":"Dubstep","slug":"dubstep","type":"genre"}],"subGenres":[{"id":27,"name":"Progressive","slug":"progressive","type":"subgenre"},{"id":91,"name":"ProgNo","slug":"progno","type":"subgenre"}],"displayLevel":1,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/3406.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/3406.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/1191.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/1191.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/345152.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/345152.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/1191.jpg"}}}]}'
+    http_version: '1.1'
+  recorded_at: Wed, 10 Oct 2012 00:51:11 GMT
+recorded_with: VCR 2.2.5

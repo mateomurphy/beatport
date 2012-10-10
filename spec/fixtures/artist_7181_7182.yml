@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/artists?ids[]=7181&ids[]=7182
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 10 Oct 2012 00:27:47 GMT
+      server:
+      - Apache
+      expires:
+      - Wed, 10 Oct 2012 00:57:47 GMT
+      pragma:
+      - public
+      cache-control:
+      - public, max-age=1800
+      access-control-allow-origin:
+      - ! '*'
+      connection:
+      - close
+      transfer-encoding:
+      - chunked
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/artists","query":"ids%5B0%5D=7181&ids%5B1%5D=7182","page":1,"perPage":10,"count":2,"totalPages":1,"perPageOptions":[{"value":50,"applyQuery":"ids%5B0%5D=7181&ids%5B1%5D=7182&perPage=50"},{"value":100,"applyQuery":"ids%5B0%5D=7181&ids%5B1%5D=7182&perPage=100"},{"value":150,"applyQuery":"ids%5B0%5D=7181&ids%5B1%5D=7182&perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"spellcheck":{"suggestions":[]}},"results":[{"id":7181,"type":"artist","name":"Above
+        & Beyond","slug":"above-and-beyond","active":true,"lastPublishDate":"2012-09-28","biography":"","genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":10,"name":"Chill
+        Out","slug":"chill-out","type":"genre"},{"id":15,"name":"Progressive House","slug":"progressive-house","type":"genre"},{"id":9,"name":"Breaks","slug":"breaks","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"},{"id":17,"name":"Electro
+        House","slug":"electro-house","type":"genre"},{"id":1,"name":"Drum & Bass","slug":"drum-and-bass","type":"genre"},{"id":39,"name":"Pop
+        \/ Rock","slug":"pop-rock","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"},{"id":16,"name":"DJ
+        Tools","slug":"dj-tools","type":"genre"},{"id":18,"name":"Dubstep","slug":"dubstep","type":"genre"}],"subGenres":[{"id":27,"name":"Progressive","slug":"progressive","type":"subgenre"},{"id":38,"name":"Progressive","slug":"progressive","type":"subgenre"},{"id":30,"name":"Epic","slug":"epic","type":"subgenre"},{"id":39,"name":"Downtempo","slug":"downtempo","type":"subgenre"},{"id":46,"name":"Acapellas","slug":"acapellas","type":"subgenre"},{"id":18,"name":"Disco","slug":"disco","type":"subgenre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491527.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491527.jpg"},"medium":{"width":88,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491530.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491530.jpg"},"large":{"width":590,"height":404,"url":"http:\/\/geo-media.beatport.com\/image\/4686424.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/4686424.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/4686424.jpg"}},"imageTextPosition":"right","imageTextBrightness":"dark","displayLevel":1},{"id":7182,"type":"artist","name":"Bernal
+        Boogie","slug":"bernal-boogie","active":true,"lastPublishDate":"2005-06-07","biography":"","genres":[{"id":38,"name":"Hip-Hop","slug":"hip-hop","type":"genre"}],"subGenres":[],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491527.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491527.jpg"},"medium":{"width":88,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491530.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491530.jpg"},"large":{"width":590,"height":404,"url":"http:\/\/geo-media.beatport.com\/image\/5539565.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539565.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5539565.jpg"}},"imageTextPosition":"left","imageTextBrightness":"dark","displayLevel":1}]}'
+    http_version: '1.1'
+  recorded_at: Wed, 10 Oct 2012 00:27:47 GMT
+recorded_with: VCR 2.2.5
