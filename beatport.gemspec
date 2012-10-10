@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "beatport"
-  s.version = "0.1.4"
+  s.version = "0.1.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Mateo Murphy"]
@@ -37,6 +37,7 @@ Gem::Specification.new do |s|
     "lib/beatport/catalog/chart_overview.rb",
     "lib/beatport/catalog/country.rb",
     "lib/beatport/catalog/currency.rb",
+    "lib/beatport/catalog/djprofile.rb",
     "lib/beatport/catalog/feature.rb",
     "lib/beatport/catalog/genre.rb",
     "lib/beatport/catalog/home.rb",
@@ -48,6 +49,7 @@ Gem::Specification.new do |s|
     "lib/beatport/catalog/label.rb",
     "lib/beatport/catalog/list.rb",
     "lib/beatport/catalog/mixed.rb",
+    "lib/beatport/catalog/part.rb",
     "lib/beatport/catalog/recommendations.rb",
     "lib/beatport/catalog/release.rb",
     "lib/beatport/catalog/search.rb",
@@ -109,6 +111,10 @@ Gem::Specification.new do |s|
     "spec/fixtures/label_1390.yml",
     "spec/fixtures/label_all.yml",
     "spec/fixtures/release_164808.yml",
+    "spec/fixtures/search_ANJCDCO011D.yml",
+    "spec/fixtures/search_anjunadeep_genre_trance.yml",
+    "spec/fixtures/search_archipel.yml",
+    "spec/fixtures/search_believe_2004.yml",
     "spec/fixtures/source_type_all.yml",
     "spec/fixtures/track_1217790.yml",
     "spec/item_spec.rb",
