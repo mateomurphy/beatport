@@ -11,7 +11,7 @@ gem 'money'    # https://github.com/aflatter/money
 group :development do
   gem 'bundler'
   gem 'fakeweb'
-  gem 'jeweler', '~> 1.6.3'
+  gem 'jeweler'
   #gem "rcov", ">= 0"
   gem 'log_buddy'
   gem 'rspec', '>= 0'
