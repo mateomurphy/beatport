@@ -4,7 +4,9 @@ A ruby gem for accessing the Beatport API
 
 http://api.beatport.com
 
-Currently incomplete, but under active development. 
+Currently incomplete, but under development. 
+
+{<img src="https://secure.travis-ci.org/mateomurphy/beatport.png" alt="Build Status" />}[http://travis-ci.org/mateomurphy/beatport]
 
 == Contributing to beatport
  
