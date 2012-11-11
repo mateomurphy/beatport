@@ -8,6 +8,14 @@ Currently incomplete, but under development.
 
 {<img src="https://secure.travis-ci.org/mateomurphy/beatport.png" alt="Build Status" />}[http://travis-ci.org/mateomurphy/beatport]
 
+== Facets
+
+Many queries to beatport support facets, but they aren't properly documentated on their site. These are the ones I've found so far:
+
+* genreName
+* artistName (and not performerName)
+* labelName
+
 == Contributing to beatport
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
