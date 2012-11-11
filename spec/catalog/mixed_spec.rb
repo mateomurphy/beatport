@@ -26,7 +26,7 @@ module Beatport::Catalog
       end
 
       it "should return the right ids" do
-        subject.map(&:id).should == [804, 1390, 7181, 10395, 15722, 29514, 164808, 385763, 1746687, 1873426]
+        subject.map(&:id).sort.should == [804, 1390, 7181, 10395, 15722, 29514, 164808, 385763, 1746687, 1873426]
       end
 
     end

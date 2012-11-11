@@ -40,7 +40,7 @@ module Beatport::Catalog
       context 'with multiple ids' do
         subject { Artist.find(7181, 7182) }
         
-#        it { should be_a(Collection) }
+        # it { should be_a(Collection) }
         its (:length) { should == 2 }
         it "returns the requested artists" do
           subject.map(&:id).should == [7181, 7182]
@@ -50,7 +50,7 @@ module Beatport::Catalog
       context 'with an array of ids' do
         subject { Artist.find(7181, 7182) }
         
-#        it { should be_a(Collection) }
+        # it { should be_a(Collection) }
         its (:length) { should == 2 }
         it "returns the requested artists" do
           subject.map(&:id).should == [7181, 7182]

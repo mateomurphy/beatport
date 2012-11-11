@@ -20,7 +20,8 @@ module Beatport::Catalog
       its (:slug) { should == "anjunadeep" }      
       pending "source type is no longer returned?"
       #its (:source_type) { should == ["store", "mobile", "sushi"] }
-      its (:last_publish_date) { should == Date.new(2012, 9, 10) }
+
+      its (:last_publish_date) { should > Date.new(2012, 9, 10) }
       its (:biography) { should == "" }
       its (:'genres.length') { should be > 1 }
       its (:'sub_genres.length') { should be > 0 }      
