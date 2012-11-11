@@ -20,6 +20,7 @@ module Beatport
     autoload :Keys,             'beatport/catalog/keys'
     autoload :Label,            'beatport/catalog/label'
     autoload :List,             'beatport/catalog/list'
+    autoload :Mix,              'beatport/catalog/mix'
     autoload :Mixed,            'beatport/catalog/mixed'
     autoload :Part,             'beatport/catalog/part'
     autoload :Recommendations,  'beatport/catalog/recommendations'
