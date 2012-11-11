@@ -13,11 +13,11 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Wed, 10 Oct 2012 16:07:35 GMT
+      - Sun, 11 Nov 2012 17:28:17 GMT
       server:
       - Apache
       expires:
-      - Wed, 10 Oct 2012 16:37:35 GMT
+      - Sun, 11 Nov 2012 17:58:17 GMT
       pragma:
       - public
       cache-control:
@@ -39,5 +39,5 @@ http_interactions:
         Australia","type":"territory"},{"id":"116","code":"TAS","name":"Tasmania","type":"territory"},{"id":"117","code":"VIC","name":"Victoria","type":"territory"},{"id":"118","code":"WA","name":"Western
         Australia","type":"territory"}]}]}'
     http_version: '1.1'
-  recorded_at: Wed, 10 Oct 2012 16:07:33 GMT
+  recorded_at: Sun, 11 Nov 2012 17:28:15 GMT
 recorded_with: VCR 2.2.5

@@ -13,11 +13,11 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Wed, 10 Oct 2012 16:07:30 GMT
+      - Sun, 11 Nov 2012 17:28:05 GMT
       server:
       - Apache
       expires:
-      - Wed, 10 Oct 2012 16:37:30 GMT
+      - Sun, 11 Nov 2012 17:58:05 GMT
       pragma:
       - public
       cache-control:
@@ -37,7 +37,7 @@ http_interactions:
         Top 10"},{"name":"Lutzenkirchen Best Of"},{"name":"Lutzenkirchen Charts"},{"name":"Lutzenkirchen
         Chart"},{"name":"Lutzenkirchen Top 10 5\/07"}]}'
     http_version: '1.1'
-  recorded_at: Wed, 10 Oct 2012 16:07:27 GMT
+  recorded_at: Sun, 11 Nov 2012 17:28:03 GMT
 - request:
     method: get
     uri: http://api.beatport.com/catalog/3/autocomplete?page=3&perPage=2&query=lutzen
@@ -51,11 +51,11 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Wed, 10 Oct 2012 16:07:30 GMT
+      - Sun, 11 Nov 2012 17:28:05 GMT
       server:
       - Apache
       expires:
-      - Wed, 10 Oct 2012 16:37:30 GMT
+      - Sun, 11 Nov 2012 17:58:05 GMT
       pragma:
       - public
       cache-control:
@@ -73,5 +73,5 @@ http_interactions:
       string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/autocomplete","query":"perPage=2&query=lutzen","page":3,"perPage":2,"count":36,"totalPages":18,"nextQuery":"perPage=2&query=lutzen&page=4","prevQuery":"perPage=2&query=lutzen&page=2","perPageOptions":[{"value":50,"applyQuery":"perPage=50&query=lutzen"},{"value":100,"applyQuery":"perPage=100&query=lutzen"},{"value":150,"applyQuery":"perPage=150&query=lutzen"}],"facets":{"fields":[]},"spellcheck":{"suggestions":[]}},"results":[{"name":"Tobias
         Lutzenkirchen"},{"name":"Lutzenkirchen Top 10"}]}'
     http_version: '1.1'
-  recorded_at: Wed, 10 Oct 2012 16:07:28 GMT
+  recorded_at: Sun, 11 Nov 2012 17:28:04 GMT
 recorded_with: VCR 2.2.5
