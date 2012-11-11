@@ -20,6 +20,24 @@ module Beatport
         return if respond_to?(var)
         class_eval "def #{var}; @#{var}; end"
       end
+
+      def find_by_name(name, *args)
+        raise "finding by name is not supported" unless respond_to?(:name_facet)
+
+        options = args.last || {}
+        options[:facets] ||= {}
+        options[:facets][name_facet] = name
+        results = find(options)
+
+        case results.length
+        when 0
+          nil
+        when 1
+          results.first
+        else
+          raise "find_by_name returned multiple results"
+        end
+      end
     end
   
     def initialize(data = {})

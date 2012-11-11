@@ -8,18 +8,24 @@ module Beatport
       has_many :most_popular_releases, Release
       has_one :images, Images
       
-      def self.find(*args)
-        Client.retrieve 'labels', Label, *args
+      class << self
+        def all(options = {})
+          Client.retrieve 'labels', Label, options
+        end
+
+        def featured(*args)
+          Client.retrieve 'featured/labels', Label, *args
+        end
+
+        def find(*args)
+          Client.retrieve 'labels', Label, *args
+        end
+
+        def name_facet
+          :label_name
+        end
       end
 
-      def self.all(options = {})
-        Client.retrieve 'labels', Label, options
-      end
-    
-      def self.featured(*args)
-        Client.retrieve 'featured/labels', Label, *args
-      end    
-    
       def releases(options)
         options[:label_id] = id
         Release.all(options)

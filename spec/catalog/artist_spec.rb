@@ -58,6 +58,13 @@ module Beatport::Catalog
       end
     end    
   
+    describe '.find_by_name' do
+      subject { Artist.find_by_name('Above & Beyond') }
+      
+      it { should be_an(Artist) }
+      its (:id) { should == 7181 }
+    end
+
     describe '.all' do
       it "should get arbitrary artists" do
         artists = Artist.all

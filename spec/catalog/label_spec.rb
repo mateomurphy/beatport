@@ -42,6 +42,13 @@ module Beatport::Catalog
       end
     end
   
+    describe '.find_by_name' do
+      it 'returns Anjunadeep' do
+        label = Label.find_by_name('Anjunadeep')
+        label.id.should == 1390
+      end
+    end
+
     describe '.all' do
       it "should get arbitrary labels" do
         labels = Label.all
