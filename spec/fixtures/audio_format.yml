@@ -13,11 +13,11 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Sun, 11 Nov 2012 17:28:01 GMT
+      - Sat, 22 Dec 2012 21:47:55 GMT
       server:
       - Apache
       expires:
-      - Sun, 11 Nov 2012 17:58:01 GMT
+      - Sat, 22 Dec 2012 22:17:55 GMT
       pragma:
       - public
       cache-control:
@@ -40,7 +40,7 @@ http_interactions:
         refill","personPreferenceVisibility":false,"isLossless":false},{"id":11,"name":"elements","personPreferenceVisibility":false,"isLossless":false},{"id":12,"name":"s4","personPreferenceVisibility":false,"isLossless":false},{"id":13,"name":"ableton
         live racks","personPreferenceVisibility":false,"isLossless":false},{"id":14,"name":"aiff","personPreferenceVisibility":true,"isLossless":true},{"id":15,"name":"mp4","personPreferenceVisibility":false,"isLossless":false}]}'
     http_version: '1.1'
-  recorded_at: Sun, 11 Nov 2012 17:27:59 GMT
+  recorded_at: Sat, 22 Dec 2012 21:47:54 GMT
 - request:
     method: get
     uri: http://api.beatport.com/catalog/3/audio-formats?id=2
@@ -54,11 +54,11 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Sun, 11 Nov 2012 17:28:01 GMT
+      - Sat, 22 Dec 2012 21:47:55 GMT
       server:
       - Apache
       expires:
-      - Sun, 11 Nov 2012 17:58:01 GMT
+      - Sat, 22 Dec 2012 22:17:55 GMT
       pragma:
       - public
       cache-control:
@@ -75,7 +75,7 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{"metadata":{"page":1,"perPage":10,"count":1},"results":[{"id":2,"name":"m4a","personPreferenceVisibility":false,"isLossless":false}]}'
     http_version: '1.1'
-  recorded_at: Sun, 11 Nov 2012 17:28:00 GMT
+  recorded_at: Sat, 22 Dec 2012 21:47:54 GMT
 - request:
     method: get
     uri: http://api.beatport.com/catalog/3/audio-formats?name=wav
@@ -89,11 +89,11 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Sun, 11 Nov 2012 17:28:02 GMT
+      - Sat, 22 Dec 2012 21:47:55 GMT
       server:
       - Apache
       expires:
-      - Sun, 11 Nov 2012 17:58:02 GMT
+      - Sat, 22 Dec 2012 22:17:55 GMT
       pragma:
       - public
       cache-control:
@@ -110,5 +110,5 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{"metadata":{"page":1,"perPage":10,"count":1},"results":[{"id":3,"name":"wav","personPreferenceVisibility":true,"isLossless":true}]}'
     http_version: '1.1'
-  recorded_at: Sun, 11 Nov 2012 17:28:00 GMT
-recorded_with: VCR 2.2.5
+  recorded_at: Sat, 22 Dec 2012 21:47:55 GMT
+recorded_with: VCR 2.3.0

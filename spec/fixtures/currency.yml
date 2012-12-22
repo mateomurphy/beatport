@@ -13,11 +13,11 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Sun, 11 Nov 2012 17:28:17 GMT
+      - Sat, 22 Dec 2012 21:48:13 GMT
       server:
       - Apache
       expires:
-      - Sun, 11 Nov 2012 17:58:17 GMT
+      - Sat, 22 Dec 2012 22:18:13 GMT
       pragma:
       - public
       cache-control:
@@ -123,5 +123,5 @@ http_interactions:
         Ounces","code":"XAU"},{"id":169,"name":"Panama Balboa","code":"PAB"},{"id":170,"name":"Guatemala
         Quetzales","code":"GTQ"},{"id":171,"name":"Papua New Guinea Kina","code":"PGK"}]}'
     http_version: '1.1'
-  recorded_at: Sun, 11 Nov 2012 17:28:16 GMT
-recorded_with: VCR 2.2.5
+  recorded_at: Sat, 22 Dec 2012 21:48:12 GMT
+recorded_with: VCR 2.3.0
