@@ -5,16 +5,16 @@
 
 Gem::Specification.new do |s|
   s.name = "beatport"
-  s.version = "0.1.6"
+  s.version = "0.1.7"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Mateo Murphy"]
-  s.date = "2012-11-11"
+  s.date = "2012-12-22"
   s.description = "A ruby gem for accessing the beatport api"
   s.email = "mateo.murphy@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
-    "README.rdoc"
+    "README.md"
   ]
   s.files = [
     ".document",
@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
-    "README.rdoc",
+    "README.md",
     "Rakefile",
     "VERSION",
     "beatport.gemspec",
@@ -104,6 +104,7 @@ Gem::Specification.new do |s|
     "spec/fixtures/source_type.yml",
     "spec/fixtures/track.yml",
     "spec/item_spec.rb",
+    "spec/price_spec.rb",
     "spec/spec_helper.rb",
     "spec/support/inflector_spec.rb",
     "spec/support/query_builder_spec.rb"
@@ -111,7 +112,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/mateomurphy/beatport"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.24"
+  s.rubygems_version = "1.8.23"
   s.summary = "ruby gem for accessing the beatport api"
 
   if s.respond_to? :specification_version then
