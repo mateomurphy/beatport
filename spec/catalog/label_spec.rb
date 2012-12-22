@@ -25,7 +25,7 @@ module Beatport::Catalog
       its (:biography) { should == "" }
       its (:'genres.length') { should be > 1 }
       its (:'sub_genres.length') { should be > 0 }      
-      its (:display_level) { should == 1 }
+#      its (:display_level) { should == 1 }
       its (:'images.small.url') { should == "http://geo-media.beatport.com/image/3406.jpg"}
       its (:'images.medium.url') { should == "http://geo-media.beatport.com/image/1191.jpg"}
       its (:'images.banner.url') { should == "http://geo-media.beatport.com/image/345152.jpg"}            
