@@ -10,7 +10,7 @@ gem 'money'    # https://github.com/aflatter/money
 # Include everything needed to run rake, tests, features, etc.
 group :development do
   gem 'bundler'
-  gem 'fakeweb'
+  gem 'webmock'
   gem 'jeweler'
   #gem "rcov", ">= 0"
   gem 'log_buddy'
