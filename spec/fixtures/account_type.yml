@@ -13,11 +13,11 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Sat, 22 Dec 2012 21:47:34 GMT
+      - Fri, 08 Feb 2013 20:58:02 GMT
       server:
       - Apache
       expires:
-      - Sat, 22 Dec 2012 22:17:34 GMT
+      - Fri, 08 Feb 2013 21:28:02 GMT
       pragma:
       - public
       cache-control:
@@ -36,7 +36,7 @@ http_interactions:
         Express","cybersourceCardType":"003","issueNumberOrStartDateRequired":false,"validationRegex":"^3[47][0-9]{13}$","images":{"small":{"width":37,"height":23,"url":"https:\/\/secure-beatport.bpddn.com\/images\/creditcard\/logo_cc_amex_37x23.gif"}}},{"code":"VISA","bpid":2,"name":"Visa","cybersourceCardType":"001","issueNumberOrStartDateRequired":false,"validationRegex":"^4[0-9]{12}(?:[0-9]{3})?$","images":{"small":{"width":37,"height":23,"url":"https:\/\/secure-beatport.bpddn.com\/images\/creditcard\/logo_cc_visa_37x23.gif"}}},{"code":"ECMC","bpid":3,"name":"Master
         Card","cybersourceCardType":"002","issueNumberOrStartDateRequired":false,"validationRegex":"^5[1-5][0-9]{14}$","images":{"small":{"width":37,"height":23,"url":"https:\/\/secure-beatport.bpddn.com\/images\/creditcard\/logo_cc_mc_37x23.gif"}}},{"code":"SOLO_GB","bpid":5,"name":"Solo","cybersourceCardType":"024","issueNumberOrStartDateRequired":true,"validationRegex":"^(6334|6767)[0-9]{12,17}$","images":{"small":{"width":19,"height":23,"url":"https:\/\/secure-beatport.bpddn.com\/images\/creditcard\/logo_cc_solo_19x23.gif"}}},{"code":"PAYPAL","bpid":6,"name":"PayPal","cybersourceCardType":"","issueNumberOrStartDateRequired":false,"validationRegex":null,"images":{"small":{"width":37,"height":23,"url":"https:\/\/secure-beatport.bpddn.com\/images\/creditcard\/logo_cc_pp_37x23.gif"}}},{"code":"JCB","bpid":8,"name":"JCB","cybersourceCardType":"007","issueNumberOrStartDateRequired":false,"validationRegex":"^(?:2131|1800|35[0-9]{3})[0-9]{11}$","images":{"small":{"width":30,"height":23,"url":"https:\/\/secure-beatport.bpddn.com\/images\/creditcard\/logo_cc_jcb_30x23.gif"}}}]}'
     http_version: '1.1'
-  recorded_at: Sat, 22 Dec 2012 21:47:33 GMT
+  recorded_at: Fri, 08 Feb 2013 20:58:02 GMT
 - request:
     method: get
     uri: http://api.beatport.com/catalog/3/account-types?name=Visa
@@ -50,11 +50,11 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Sat, 22 Dec 2012 21:47:34 GMT
+      - Fri, 08 Feb 2013 20:58:02 GMT
       server:
       - Apache
       expires:
-      - Sat, 22 Dec 2012 22:17:34 GMT
+      - Fri, 08 Feb 2013 21:28:02 GMT
       pragma:
       - public
       cache-control:
@@ -71,5 +71,5 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{"metadata":{"page":1,"perPage":10,"count":1},"results":[{"code":"VISA","bpid":2,"name":"Visa","cybersourceCardType":"001","issueNumberOrStartDateRequired":false,"validationRegex":"^4[0-9]{12}(?:[0-9]{3})?$","images":{"small":{"width":37,"height":23,"url":"https:\/\/secure-beatport.bpddn.com\/images\/creditcard\/logo_cc_visa_37x23.gif"}}}]}'
     http_version: '1.1'
-  recorded_at: Sat, 22 Dec 2012 21:47:34 GMT
+  recorded_at: Fri, 08 Feb 2013 20:58:02 GMT
 recorded_with: VCR 2.3.0

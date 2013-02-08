@@ -13,11 +13,11 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Sat, 22 Dec 2012 21:47:59 GMT
+      - Fri, 08 Feb 2013 20:58:22 GMT
       server:
       - Apache
       expires:
-      - Sat, 22 Dec 2012 22:17:59 GMT
+      - Fri, 08 Feb 2013 21:28:22 GMT
       pragma:
       - public
       cache-control:
@@ -32,12 +32,11 @@ http_interactions:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/autocomplete","query":"query=lutzen","page":1,"perPage":10,"count":37,"totalPages":4,"nextQuery":"query=lutzen&page=2","perPageOptions":[{"value":50,"applyQuery":"query=lutzen&perPage=50"},{"value":100,"applyQuery":"query=lutzen&perPage=100"},{"value":150,"applyQuery":"query=lutzen&perPage=150"}],"facets":{"fields":[]},"spellcheck":{"suggestions":[]}},"results":[{"name":"Lutzencraft"},{"name":"Lutzenfierht"},{"name":"Lutzenkirchen"},{"name":"Lutzenkirchin"},{"name":"LXR
-        aka Lutzenkirchen"},{"name":"Tobias Lutzenkirchen"},{"name":"Lutzenkirchen
-        Top 10"},{"name":"Lutzenkirchen Best Of"},{"name":"Lutzenkirchen Charts"},{"name":"Lutzenkirchen
-        Chart"}]}'
+      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/autocomplete","query":"query=lutzen","page":1,"perPage":10,"count":39,"totalPages":4,"nextQuery":"query=lutzen&page=2","perPageOptions":[{"value":50,"applyQuery":"query=lutzen&perPage=50"},{"value":100,"applyQuery":"query=lutzen&perPage=100"},{"value":150,"applyQuery":"query=lutzen&perPage=150"}],"facets":{"fields":[]},"spellcheck":{"suggestions":[]}},"results":[{"name":"Lutzencraft"},{"name":"Lutzenfierht"},{"name":"Lutzenkirchen"},{"name":"Lutzenkirchin"},{"name":"LXR
+        aka Lutzenkirchen"},{"name":"LXR aka Lutzenkrichen"},{"name":"Tobias Lutzenkirchen"},{"name":"Lutzenkirchen
+        Top 10"},{"name":"Lutzenkirchen Best Of"},{"name":"Lutzenkirchen Charts"}]}'
     http_version: '1.1'
-  recorded_at: Sat, 22 Dec 2012 21:47:58 GMT
+  recorded_at: Fri, 08 Feb 2013 20:58:22 GMT
 - request:
     method: get
     uri: http://api.beatport.com/catalog/3/autocomplete?page=3&perPage=2&query=lutzen
@@ -51,11 +50,11 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Sat, 22 Dec 2012 21:47:59 GMT
+      - Fri, 08 Feb 2013 20:58:22 GMT
       server:
       - Apache
       expires:
-      - Sat, 22 Dec 2012 22:17:59 GMT
+      - Fri, 08 Feb 2013 21:28:22 GMT
       pragma:
       - public
       cache-control:
@@ -70,8 +69,8 @@ http_interactions:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/autocomplete","query":"perPage=2&query=lutzen","page":3,"perPage":2,"count":37,"totalPages":19,"nextQuery":"perPage=2&query=lutzen&page=4","prevQuery":"perPage=2&query=lutzen&page=2","perPageOptions":[{"value":50,"applyQuery":"perPage=50&query=lutzen"},{"value":100,"applyQuery":"perPage=100&query=lutzen"},{"value":150,"applyQuery":"perPage=150&query=lutzen"}],"facets":{"fields":[]},"spellcheck":{"suggestions":[]}},"results":[{"name":"LXR
-        aka Lutzenkirchen"},{"name":"Tobias Lutzenkirchen"}]}'
+      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/autocomplete","query":"perPage=2&query=lutzen","page":3,"perPage":2,"count":39,"totalPages":20,"nextQuery":"perPage=2&query=lutzen&page=4","prevQuery":"perPage=2&query=lutzen&page=2","perPageOptions":[{"value":50,"applyQuery":"perPage=50&query=lutzen"},{"value":100,"applyQuery":"perPage=100&query=lutzen"},{"value":150,"applyQuery":"perPage=150&query=lutzen"}],"facets":{"fields":[]},"spellcheck":{"suggestions":[]}},"results":[{"name":"LXR
+        aka Lutzenkirchen"},{"name":"LXR aka Lutzenkrichen"}]}'
     http_version: '1.1'
-  recorded_at: Sat, 22 Dec 2012 21:47:59 GMT
+  recorded_at: Fri, 08 Feb 2013 20:58:22 GMT
 recorded_with: VCR 2.3.0

@@ -13,11 +13,11 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Sat, 22 Dec 2012 21:48:17 GMT
+      - Fri, 08 Feb 2013 20:58:44 GMT
       server:
       - Apache
       expires:
-      - Sat, 22 Dec 2012 22:18:17 GMT
+      - Fri, 08 Feb 2013 21:28:44 GMT
       pragma:
       - public
       cache-control:
@@ -36,8 +36,9 @@ http_interactions:
         download","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":6,"name":"apple
         loops","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":7,"name":"rex","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":8,"name":"synth
         presets","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":9,"name":"sampler
-        patches","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":11,"name":"elements","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":12,"name":"s4","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":13,"name":"ableton
+        patches","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":10,"name":"reason
+        refill","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":11,"name":"elements","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":12,"name":"s4","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":13,"name":"ableton
         live racks","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":14,"name":"aiff","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}}]},{"id":10,"name":"part","defaultPrice":{"code":"usd","symbol":"$","value":99},"audioFormats":[{"id":3,"name":"wav","mimeType":{"id":11,"header":"audio\/x-wav","ext":"wav"}},{"id":14,"name":"aiff","mimeType":{"id":10,"header":"audio\/x-aiff","ext":"aiff"}},{"id":15,"name":"mp4","mimeType":{"id":13,"header":"video\/quicktime","ext":"mp4"}}]},{"id":11,"name":"djprofile","defaultPrice":null,"audioFormats":[]},{"id":12,"name":"mix","defaultPrice":{"code":"usd","symbol":"$","value":999},"audioFormats":[{"id":1,"name":"mp3","mimeType":{"id":367,"header":"audio\/mpeg","ext":"mp3"}},{"id":3,"name":"wav","mimeType":{"id":11,"header":"audio\/x-wav","ext":"wav"}},{"id":14,"name":"aiff","mimeType":{"id":10,"header":"audio\/x-aiff","ext":"aiff"}}]},{"id":13,"name":"event","defaultPrice":null,"audioFormats":[]},{"id":14,"name":"prepaid_package","defaultPrice":null,"audioFormats":[]}]}'
     http_version: '1.1'
-  recorded_at: Sat, 22 Dec 2012 21:48:17 GMT
+  recorded_at: Fri, 08 Feb 2013 20:58:44 GMT
 recorded_with: VCR 2.3.0
