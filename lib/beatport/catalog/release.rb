@@ -29,7 +29,7 @@ module Beatport
 
       def tracks(options = {})
         options[:release_id] = id
-        @tracks ||= Track.all(options)
+        Track.all(options)
       end
     end
   end

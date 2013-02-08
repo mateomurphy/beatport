@@ -22,7 +22,7 @@ module Beatport
       end
     
       def top_downloads(options = {})
-        @top_downloads ||= Track.most_popular_for_artist(id, options)
+        Track.most_popular_for_artist(id, options)
       end
     end
   end
