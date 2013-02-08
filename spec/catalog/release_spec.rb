@@ -27,8 +27,8 @@ module Beatport::Catalog
       its (:purchasable) { should == true }
       its (:'price.to_s') { should == "9.99" }
       its (:'tracks_price.to_s') { should == "43.21" }
-      its (:'audio_format_fee.wav.to_s') { should == '29.00'}
-      its (:'audio_format_fee.aiff.to_s') { should == '29.00'}
+      its (:'audio_format_fee.wav.to_s') { should == '21.75'}
+      its (:'audio_format_fee.aiff.to_s') { should == '21.75'}
       its (:'label.id') { should == 804 }
       specify { subject.artists.map(&:name).should include("Paul Keeley") }
       specify { subject.genres.map(&:name).sort.should == ["Progressive House", "Trance"] }

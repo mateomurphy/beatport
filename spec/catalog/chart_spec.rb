@@ -23,8 +23,8 @@ module Beatport::Catalog
       its (:description) { should == "" }
       its (:publish_date) { should == Date.new(2009, 05, 12) }
       its (:'price.to_s') { should == '13.91' }
-      its (:'audio_format_fee.wav.to_s') { should == "9.00" }
-      its (:'audio_format_fee.aiff.to_s') { should == "9.00" }      
+      its (:'audio_format_fee.wav.to_s') { should == "6.75" }
+      its (:'audio_format_fee.aiff.to_s') { should == "6.75" }      
       specify { subject.genres.map(&:name).should == ["Trance"] }
       its (:'images.small.url') { should == "http://geo-media.beatport.com/image/491534.jpg"}
       its (:'images.medium.url') { should == "http://geo-media.beatport.com/image/412921.jpg"}

@@ -33,8 +33,8 @@ module Beatport::Catalog
       its (:rtmp_stream_url) { should == 'rtmp://geo-rtmp-samples.beatport.com/beatport/_definst_/mp3:lofi_samples/items/volumes/volume7/items/1000000/200000/10000/7000/700/90/1217790.LOFI'}
       its (:exclusive) { should be_false }
       its (:'price.to_s') { should == "1.49" }
-      its (:'audio_format_fee.wav.to_s') { should == "1.00" }
-      its (:'audio_format_fee.aiff.to_s') { should == "1.00" }
+      its (:'audio_format_fee.wav.to_s') { should == "0.75" }
+      its (:'audio_format_fee.aiff.to_s') { should == "0.75" }
       # for some reason this doesn't always return the same result
 #      it { @track.current_status) { should == nil "General Content" }
       its (:length) { should == "07:53" }
