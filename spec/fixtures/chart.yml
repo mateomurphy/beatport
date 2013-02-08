@@ -553,4 +553,225 @@ http_interactions:
         06:13:39","trackCount":0}]}'
     http_version: '1.1'
   recorded_at: Fri, 08 Feb 2013 20:58:39 GMT
-recorded_with: VCR 2.3.0
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/charts?ids%5B0%5D=15722&ids%5B1%5D=15723
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 08 Feb 2013 21:06:55 GMT
+      Server:
+      - Apache
+      Expires:
+      - Fri, 08 Feb 2013 21:36:55 GMT
+      Pragma:
+      - public
+      Cache-Control:
+      - public, max-age=1800
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/charts","query":"ids%5B0%5D=15722&ids%5B1%5D=15723","page":1,"perPage":10,"count":2,"totalPages":1,"perPageOptions":[{"value":50,"applyQuery":"ids%5B0%5D=15722&ids%5B1%5D=15723&perPage=50"},{"value":100,"applyQuery":"ids%5B0%5D=15722&ids%5B1%5D=15723&perPage=100"},{"value":150,"applyQuery":"ids%5B0%5D=15722&ids%5B1%5D=15723&perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"dateFilters":[{"name":"today","startDate":"2013-02-08","endDate":"2013-02-08","applyQuery":"ids%5B0%5D=15722&ids%5B1%5D=15723&publishDateStart=2013-02-08&publishDateEnd=2013-02-08","applied":false},{"name":"yesterday","startDate":"2013-02-07","endDate":"2013-02-08","applyQuery":"ids%5B0%5D=15722&ids%5B1%5D=15723&publishDateStart=2013-02-07&publishDateEnd=2013-02-08","applied":false},{"name":"weekToDate","startDate":"2013-02-01","endDate":"2013-02-08","applyQuery":"ids%5B0%5D=15722&ids%5B1%5D=15723&publishDateStart=2013-02-01&publishDateEnd=2013-02-08","applied":false},{"name":"monthToDate","startDate":"2013-01-08","endDate":"2013-02-08","applyQuery":"ids%5B0%5D=15722&ids%5B1%5D=15723&publishDateStart=2013-01-08&publishDateEnd=2013-02-08","applied":false},{"name":"yearToDate","startDate":"2012-02-08","endDate":"2013-02-08","applyQuery":"ids%5B0%5D=15722&ids%5B1%5D=15723&publishDateStart=2012-02-08&publishDateEnd=2013-02-08","applied":false},{"custom":true,"name":"customRange","applied":false,"applyQuery":"ids%5B0%5D=15722&ids%5B1%5D=15723"}],"spellcheck":{"suggestions":[]}},"results":[{"id":15722,"type":"chart","sku":"chart-15722","name":"Nitrous
+        Oxide \u2013 April Top 10","slug":"nitrous-oxide-april-top-10","description":"","active":true,"publishDate":"2009-05-12","price":{"code":"usd","symbol":"$","value":1391},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":675},"aiff":{"code":"usd","symbol":"$","value":675}},"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491534.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491534.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/412921.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/412921.jpg"},"large":{"width":130,"height":130,"url":"http:\/\/geo-media.beatport.com\/image\/412922.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/412922.jpg"},"xlarge":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5245821.jpg"}},"chartOwner":null,"trackCount":0},{"id":15723,"type":"chart","sku":"chart-15723","name":"S-Groove\u2019s
+        Spring 2009 Picks","slug":"s-groove-s-spring-2009-picks","description":"Belfast
+        based dj\/producer Sean Grieve. Signed to Forensic Records & Dutchie Music.\r\nMyspace;
+        http:\/\/www.myspace.com\/sgroove01\r\n","active":true,"publishDate":"2009-05-12","price":{"code":"usd","symbol":"$","value":1490},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":750},"aiff":{"code":"usd","symbol":"$","value":750}},"genres":[{"id":5,"name":"House","slug":"house","type":"genre"},{"id":15,"name":"Progressive
+        House","slug":"progressive-house","type":"genre"},{"id":12,"name":"Deep House","slug":"deep-house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491534.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491534.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/412932.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/412932.jpg"},"large":{"width":130,"height":130,"url":"http:\/\/geo-media.beatport.com\/image\/412933.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/412933.jpg"},"xlarge":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5245821.jpg"}},"chartOwner":null,"trackCount":0}]}'
+    http_version: 
+  recorded_at: Fri, 08 Feb 2013 21:06:55 GMT
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/charts?page=1&perPage=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 08 Feb 2013 21:06:56 GMT
+      Server:
+      - Apache
+      Expires:
+      - Fri, 08 Feb 2013 21:36:56 GMT
+      Pragma:
+      - public
+      Cache-Control:
+      - public, max-age=1800
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/charts","query":"perPage=5","page":1,"perPage":5,"count":124694,"totalPages":24939,"nextQuery":"perPage=5&page=2","perPageOptions":[{"value":50,"applyQuery":"perPage=50"},{"value":100,"applyQuery":"perPage=100"},{"value":150,"applyQuery":"perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"dateFilters":[{"name":"today","startDate":"2013-02-08","endDate":"2013-02-08","applyQuery":"perPage=5&publishDateStart=2013-02-08&publishDateEnd=2013-02-08","applied":false},{"name":"yesterday","startDate":"2013-02-07","endDate":"2013-02-08","applyQuery":"perPage=5&publishDateStart=2013-02-07&publishDateEnd=2013-02-08","applied":false},{"name":"weekToDate","startDate":"2013-02-01","endDate":"2013-02-08","applyQuery":"perPage=5&publishDateStart=2013-02-01&publishDateEnd=2013-02-08","applied":false},{"name":"monthToDate","startDate":"2013-01-08","endDate":"2013-02-08","applyQuery":"perPage=5&publishDateStart=2013-01-08&publishDateEnd=2013-02-08","applied":false},{"name":"yearToDate","startDate":"2012-02-08","endDate":"2013-02-08","applyQuery":"perPage=5&publishDateStart=2012-02-08&publishDateEnd=2013-02-08","applied":false},{"custom":true,"name":"customRange","applied":false,"applyQuery":"perPage=5"}],"spellcheck":{"suggestions":[]}},"results":[{"id":1,"type":"chart","sku":"chart-1","name":"Twisted
+        America''s Top 10","slug":"twisted-americas-top-10","description":"Past hits!","active":true,"publishDate":"2004-12-17","price":{"code":"usd","symbol":"$","value":1640},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":750},"aiff":{"code":"usd","symbol":"$","value":750}},"genres":[{"id":5,"name":"House","slug":"house","type":"genre"},{"id":15,"name":"Progressive
+        House","slug":"progressive-house","type":"genre"},{"id":8,"name":"Hard Dance","slug":"hard-dance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491534.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491534.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491533.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491533.jpg"},"xlarge":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5245821.jpg"}},"chartOwner":null,"trackCount":0},{"id":2,"type":"chart","sku":"chart-2","name":"IHR
+        Top 10","slug":"ihr-top-10","description":"Past hits!","active":true,"publishDate":"2004-12-17","price":{"code":"usd","symbol":"$","value":1490},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":750},"aiff":{"code":"usd","symbol":"$","value":750}},"genres":[{"id":5,"name":"House","slug":"house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491534.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491534.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491533.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491533.jpg"},"xlarge":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5245821.jpg"}},"chartOwner":null,"trackCount":0},{"id":3,"type":"chart","sku":"chart-3","name":"Moody
+        Recordings Top 10","slug":"moody-recordings-top-10","description":"Past hits!","active":true,"publishDate":"2004-12-17","price":{"code":"usd","symbol":"$","value":1391},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":675},"aiff":{"code":"usd","symbol":"$","value":675}},"genres":[{"id":5,"name":"House","slug":"house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491534.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491534.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491533.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491533.jpg"},"xlarge":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5245821.jpg"}},"chartOwner":null,"trackCount":0},{"id":4,"type":"chart","sku":"chart-4","name":"Fade
+        Records Top 10","slug":"fade-records-top-10","description":"Past hits!","active":true,"publishDate":"2004-12-17","price":{"code":"usd","symbol":"$","value":1490},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":750},"aiff":{"code":"usd","symbol":"$","value":750}},"genres":[{"id":15,"name":"Progressive
+        House","slug":"progressive-house","type":"genre"},{"id":12,"name":"Deep House","slug":"deep-house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491534.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491534.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491533.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491533.jpg"},"xlarge":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5245821.jpg"}},"chartOwner":null,"trackCount":0},{"id":5,"type":"chart","sku":"chart-5","name":"Vox
+        Box","slug":"vox-box","description":"Vocal Flava","active":true,"publishDate":"2004-12-17","price":{"code":"usd","symbol":"$","value":596},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":300},"aiff":{"code":"usd","symbol":"$","value":300}},"genres":[{"id":16,"name":"DJ
+        Tools","slug":"dj-tools","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"},{"id":12,"name":"Deep
+        House","slug":"deep-house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491534.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491534.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491533.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491533.jpg"},"xlarge":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5245821.jpg"}},"chartOwner":null,"trackCount":0}]}'
+    http_version: 
+  recorded_at: Fri, 08 Feb 2013 21:06:56 GMT
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/charts?genreId=5&page=1&perPage=5&sortBy=publishDate%20asc,chartId%20asc
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 08 Feb 2013 21:06:56 GMT
+      Server:
+      - Apache
+      Expires:
+      - Fri, 08 Feb 2013 21:36:56 GMT
+      Pragma:
+      - public
+      Cache-Control:
+      - public, max-age=1800
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/charts","query":"sortBy=publishDate+asc%2CchartId+asc&genreId=5&perPage=5","page":1,"perPage":5,"count":124694,"totalPages":24939,"nextQuery":"sortBy=publishDate+asc%2CchartId+asc&genreId=5&perPage=5&page=2","perPageOptions":[{"value":50,"applyQuery":"sortBy=publishDate+asc%2CchartId+asc&genreId=5&perPage=50"},{"value":100,"applyQuery":"sortBy=publishDate+asc%2CchartId+asc&genreId=5&perPage=100"},{"value":150,"applyQuery":"sortBy=publishDate+asc%2CchartId+asc&genreId=5&perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"dateFilters":[{"name":"today","startDate":"2013-02-08","endDate":"2013-02-08","applyQuery":"sortBy=publishDate+asc%2CchartId+asc&genreId=5&perPage=5&publishDateStart=2013-02-08&publishDateEnd=2013-02-08","applied":false},{"name":"yesterday","startDate":"2013-02-07","endDate":"2013-02-08","applyQuery":"sortBy=publishDate+asc%2CchartId+asc&genreId=5&perPage=5&publishDateStart=2013-02-07&publishDateEnd=2013-02-08","applied":false},{"name":"weekToDate","startDate":"2013-02-01","endDate":"2013-02-08","applyQuery":"sortBy=publishDate+asc%2CchartId+asc&genreId=5&perPage=5&publishDateStart=2013-02-01&publishDateEnd=2013-02-08","applied":false},{"name":"monthToDate","startDate":"2013-01-08","endDate":"2013-02-08","applyQuery":"sortBy=publishDate+asc%2CchartId+asc&genreId=5&perPage=5&publishDateStart=2013-01-08&publishDateEnd=2013-02-08","applied":false},{"name":"yearToDate","startDate":"2012-02-08","endDate":"2013-02-08","applyQuery":"sortBy=publishDate+asc%2CchartId+asc&genreId=5&perPage=5&publishDateStart=2012-02-08&publishDateEnd=2013-02-08","applied":false},{"custom":true,"name":"customRange","applied":false,"applyQuery":"sortBy=publishDate+asc%2CchartId+asc&genreId=5&perPage=5"}],"spellcheck":{"suggestions":[]}},"results":[{"id":1,"type":"chart","sku":"chart-1","name":"Twisted
+        America''s Top 10","slug":"twisted-americas-top-10","description":"Past hits!","active":true,"publishDate":"2004-12-17","price":{"code":"usd","symbol":"$","value":1640},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":750},"aiff":{"code":"usd","symbol":"$","value":750}},"genres":[{"id":5,"name":"House","slug":"house","type":"genre"},{"id":15,"name":"Progressive
+        House","slug":"progressive-house","type":"genre"},{"id":8,"name":"Hard Dance","slug":"hard-dance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491534.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491534.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491533.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491533.jpg"},"xlarge":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5245821.jpg"}},"chartOwner":null,"trackCount":0},{"id":2,"type":"chart","sku":"chart-2","name":"IHR
+        Top 10","slug":"ihr-top-10","description":"Past hits!","active":true,"publishDate":"2004-12-17","price":{"code":"usd","symbol":"$","value":1490},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":750},"aiff":{"code":"usd","symbol":"$","value":750}},"genres":[{"id":5,"name":"House","slug":"house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491534.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491534.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491533.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491533.jpg"},"xlarge":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5245821.jpg"}},"chartOwner":null,"trackCount":0},{"id":3,"type":"chart","sku":"chart-3","name":"Moody
+        Recordings Top 10","slug":"moody-recordings-top-10","description":"Past hits!","active":true,"publishDate":"2004-12-17","price":{"code":"usd","symbol":"$","value":1391},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":675},"aiff":{"code":"usd","symbol":"$","value":675}},"genres":[{"id":5,"name":"House","slug":"house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491534.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491534.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491533.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491533.jpg"},"xlarge":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5245821.jpg"}},"chartOwner":null,"trackCount":0},{"id":4,"type":"chart","sku":"chart-4","name":"Fade
+        Records Top 10","slug":"fade-records-top-10","description":"Past hits!","active":true,"publishDate":"2004-12-17","price":{"code":"usd","symbol":"$","value":1490},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":750},"aiff":{"code":"usd","symbol":"$","value":750}},"genres":[{"id":15,"name":"Progressive
+        House","slug":"progressive-house","type":"genre"},{"id":12,"name":"Deep House","slug":"deep-house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491534.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491534.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491533.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491533.jpg"},"xlarge":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5245821.jpg"}},"chartOwner":null,"trackCount":0},{"id":5,"type":"chart","sku":"chart-5","name":"Vox
+        Box","slug":"vox-box","description":"Vocal Flava","active":true,"publishDate":"2004-12-17","price":{"code":"usd","symbol":"$","value":596},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":300},"aiff":{"code":"usd","symbol":"$","value":300}},"genres":[{"id":16,"name":"DJ
+        Tools","slug":"dj-tools","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"},{"id":12,"name":"Deep
+        House","slug":"deep-house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491534.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491534.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491533.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491533.jpg"},"xlarge":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5245821.jpg"}},"chartOwner":null,"trackCount":0}]}'
+    http_version: 
+  recorded_at: Fri, 08 Feb 2013 21:06:56 GMT
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/charts?returnFacets=genreName,performerName
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 08 Feb 2013 21:06:56 GMT
+      Server:
+      - Apache
+      Expires:
+      - Fri, 08 Feb 2013 21:36:56 GMT
+      Pragma:
+      - public
+      Cache-Control:
+      - public, max-age=1800
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/charts","query":"returnFacets=genreName%2CperformerName","page":1,"perPage":10,"count":124694,"totalPages":12470,"nextQuery":"returnFacets=genreName%2CperformerName&page=2","perPageOptions":[{"value":50,"applyQuery":"returnFacets=genreName%2CperformerName&perPage=50"},{"value":100,"applyQuery":"returnFacets=genreName%2CperformerName&perPage=100"},{"value":150,"applyQuery":"returnFacets=genreName%2CperformerName&perPage=150"}],"facets":{"fields":{"genreName":[{"name":"Tech
+        House","count":73647,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3ATech+House","removeQuery":null},{"name":"House","count":58346,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AHouse","removeQuery":null},{"name":"Techno","count":54466,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3ATechno","removeQuery":null},{"name":"Deep
+        House","count":50180,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3ADeep+House","removeQuery":null},{"name":"Progressive
+        House","count":34903,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AProgressive+House","removeQuery":null},{"name":"Electro
+        House","count":27948,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AElectro+House","removeQuery":null},{"name":"Indie
+        Dance \/ Nu Disco","count":18854,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AIndie+Dance+%2F+Nu+Disco","removeQuery":null},{"name":"Minimal","count":17502,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AMinimal","removeQuery":null},{"name":"Electronica","count":15043,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AElectronica","removeQuery":null},{"name":"Trance","count":10741,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3ATrance","removeQuery":null},{"name":"Dubstep","count":7647,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3ADubstep","removeQuery":null},{"name":"Drum
+        & Bass","count":5034,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3ADrum+%26+Bass","removeQuery":null},{"name":"Breaks","count":4899,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3ABreaks","removeQuery":null},{"name":"Chill
+        Out","count":4460,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AChill+Out","removeQuery":null},{"name":"Hip-Hop","count":1857,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AHip-Hop","removeQuery":null},{"name":"Psy-Trance","count":1677,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3APsy-Trance","removeQuery":null},{"name":"Pop
+        \/ Rock","count":1585,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3APop+%2F+Rock","removeQuery":null},{"name":"Glitch
+        Hop","count":1426,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AGlitch+Hop","removeQuery":null},{"name":"DJ
+        Tools","count":848,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3ADJ+Tools","removeQuery":null},{"name":"Funk
+        \/ R&B","count":830,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AFunk+%2F+R%26B","removeQuery":null},{"name":"Hardcore
+        \/ Hard Techno","count":587,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AHardcore+%2F+Hard+Techno","removeQuery":null},{"name":"Hard
+        Dance","count":511,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AHard+Dance","removeQuery":null},{"name":"Reggae
+        \/ Dub","count":370,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AReggae+%2F+Dub","removeQuery":null},{"name":"World","count":1,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AWorld","removeQuery":null}],"performerName":[]}},"appliedFacets":[],"dateFilters":[{"name":"today","startDate":"2013-02-08","endDate":"2013-02-08","applyQuery":"returnFacets=genreName%2CperformerName&publishDateStart=2013-02-08&publishDateEnd=2013-02-08","applied":false},{"name":"yesterday","startDate":"2013-02-07","endDate":"2013-02-08","applyQuery":"returnFacets=genreName%2CperformerName&publishDateStart=2013-02-07&publishDateEnd=2013-02-08","applied":false},{"name":"weekToDate","startDate":"2013-02-01","endDate":"2013-02-08","applyQuery":"returnFacets=genreName%2CperformerName&publishDateStart=2013-02-01&publishDateEnd=2013-02-08","applied":false},{"name":"monthToDate","startDate":"2013-01-08","endDate":"2013-02-08","applyQuery":"returnFacets=genreName%2CperformerName&publishDateStart=2013-01-08&publishDateEnd=2013-02-08","applied":false},{"name":"yearToDate","startDate":"2012-02-08","endDate":"2013-02-08","applyQuery":"returnFacets=genreName%2CperformerName&publishDateStart=2012-02-08&publishDateEnd=2013-02-08","applied":false},{"custom":true,"name":"customRange","applied":false,"applyQuery":"returnFacets=genreName%2CperformerName"}],"spellcheck":{"suggestions":[]}},"results":[{"id":1,"type":"chart","sku":"chart-1","name":"Twisted
+        America''s Top 10","slug":"twisted-americas-top-10","description":"Past hits!","active":true,"publishDate":"2004-12-17","price":{"code":"usd","symbol":"$","value":1640},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":750},"aiff":{"code":"usd","symbol":"$","value":750}},"genres":[{"id":5,"name":"House","slug":"house","type":"genre"},{"id":15,"name":"Progressive
+        House","slug":"progressive-house","type":"genre"},{"id":8,"name":"Hard Dance","slug":"hard-dance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491534.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491534.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491533.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491533.jpg"},"xlarge":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5245821.jpg"}},"chartOwner":null,"trackCount":0},{"id":2,"type":"chart","sku":"chart-2","name":"IHR
+        Top 10","slug":"ihr-top-10","description":"Past hits!","active":true,"publishDate":"2004-12-17","price":{"code":"usd","symbol":"$","value":1490},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":750},"aiff":{"code":"usd","symbol":"$","value":750}},"genres":[{"id":5,"name":"House","slug":"house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491534.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491534.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491533.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491533.jpg"},"xlarge":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5245821.jpg"}},"chartOwner":null,"trackCount":0},{"id":3,"type":"chart","sku":"chart-3","name":"Moody
+        Recordings Top 10","slug":"moody-recordings-top-10","description":"Past hits!","active":true,"publishDate":"2004-12-17","price":{"code":"usd","symbol":"$","value":1391},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":675},"aiff":{"code":"usd","symbol":"$","value":675}},"genres":[{"id":5,"name":"House","slug":"house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491534.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491534.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491533.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491533.jpg"},"xlarge":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5245821.jpg"}},"chartOwner":null,"trackCount":0},{"id":4,"type":"chart","sku":"chart-4","name":"Fade
+        Records Top 10","slug":"fade-records-top-10","description":"Past hits!","active":true,"publishDate":"2004-12-17","price":{"code":"usd","symbol":"$","value":1490},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":750},"aiff":{"code":"usd","symbol":"$","value":750}},"genres":[{"id":15,"name":"Progressive
+        House","slug":"progressive-house","type":"genre"},{"id":12,"name":"Deep House","slug":"deep-house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491534.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491534.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491533.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491533.jpg"},"xlarge":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5245821.jpg"}},"chartOwner":null,"trackCount":0},{"id":5,"type":"chart","sku":"chart-5","name":"Vox
+        Box","slug":"vox-box","description":"Vocal Flava","active":true,"publishDate":"2004-12-17","price":{"code":"usd","symbol":"$","value":596},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":300},"aiff":{"code":"usd","symbol":"$","value":300}},"genres":[{"id":16,"name":"DJ
+        Tools","slug":"dj-tools","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"},{"id":12,"name":"Deep
+        House","slug":"deep-house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491534.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491534.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491533.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491533.jpg"},"xlarge":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5245821.jpg"}},"chartOwner":null,"trackCount":0},{"id":6,"type":"chart","sku":"chart-6","name":"Tech
+        House Tool Kit","slug":"tech-house-tool-kit","description":"Dirty Tech House
+        For The Afterhours","active":true,"publishDate":"2004-12-17","price":{"code":"usd","symbol":"$","value":646},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":300},"aiff":{"code":"usd","symbol":"$","value":300}},"genres":[{"id":5,"name":"House","slug":"house","type":"genre"},{"id":11,"name":"Tech
+        House","slug":"tech-house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491534.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491534.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491533.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491533.jpg"},"xlarge":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5245821.jpg"}},"chartOwner":null,"trackCount":0},{"id":7,"type":"chart","sku":"chart-7","name":"Top
+        Ten Rollers - Drum and Bass","slug":"top-ten-rollers-drum-and-bass","description":"","active":true,"publishDate":"2004-12-17","price":{"code":"usd","symbol":"$","value":497},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":225},"aiff":{"code":"usd","symbol":"$","value":225}},"genres":[{"id":1,"name":"Drum
+        & Bass","slug":"drum-and-bass","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491534.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491534.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491533.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491533.jpg"},"xlarge":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5245821.jpg"}},"chartOwner":null,"trackCount":0},{"id":8,"type":"chart","sku":"chart-8","name":"Beats
+        to Break to","slug":"beats-to-break-to","description":"","active":true,"publishDate":"2004-12-17","price":{"code":"usd","symbol":"$","value":745},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":375},"aiff":{"code":"usd","symbol":"$","value":375}},"genres":[{"id":9,"name":"Breaks","slug":"breaks","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491534.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491534.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491533.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491533.jpg"},"xlarge":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5245821.jpg"}},"chartOwner":null,"trackCount":0},{"id":9,"type":"chart","sku":"chart-9","name":"Top
+        Ten Progressive Choons","slug":"top-ten-progressive-choons","description":"","active":true,"publishDate":"2004-12-17","price":{"code":"usd","symbol":"$","value":795},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":375},"aiff":{"code":"usd","symbol":"$","value":375}},"genres":[{"id":15,"name":"Progressive
+        House","slug":"progressive-house","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491534.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491534.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491533.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491533.jpg"},"xlarge":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5245821.jpg"}},"chartOwner":null,"trackCount":0},{"id":11,"type":"chart","sku":"chart-11","name":"The
+        Set List","slug":"the-set-list","description":"Tracks sure to fit in any good
+        house set.","active":true,"publishDate":"2004-12-17","price":{"code":"usd","symbol":"$","value":1292},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":600},"aiff":{"code":"usd","symbol":"$","value":600}},"genres":[{"id":5,"name":"House","slug":"house","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491534.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491534.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491533.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491533.jpg"},"xlarge":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5245821.jpg"}},"chartOwner":null,"trackCount":0}]}'
+    http_version: 
+  recorded_at: Fri, 08 Feb 2013 21:07:00 GMT
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/charts?facets=genreName:Trance,genreName:Progessive%20House
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 08 Feb 2013 21:07:00 GMT
+      Server:
+      - Apache
+      Expires:
+      - Fri, 08 Feb 2013 21:37:00 GMT
+      Pragma:
+      - public
+      Cache-Control:
+      - public, max-age=1800
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/charts","query":"facets%5B0%5D=genreName%3ATrance%2CgenreName%3AProgessive+House","page":1,"perPage":10,"count":0,"totalPages":0,"perPageOptions":[{"value":50,"applyQuery":"facets%5B0%5D=genreName%3ATrance%2CgenreName%3AProgessive+House&perPage=50"},{"value":100,"applyQuery":"facets%5B0%5D=genreName%3ATrance%2CgenreName%3AProgessive+House&perPage=100"},{"value":150,"applyQuery":"facets%5B0%5D=genreName%3ATrance%2CgenreName%3AProgessive+House&perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"dateFilters":[{"name":"today","startDate":"2013-02-08","endDate":"2013-02-08","applyQuery":"facets%5B0%5D=genreName%3ATrance%2CgenreName%3AProgessive+House&publishDateStart=2013-02-08&publishDateEnd=2013-02-08","applied":false},{"name":"yesterday","startDate":"2013-02-07","endDate":"2013-02-08","applyQuery":"facets%5B0%5D=genreName%3ATrance%2CgenreName%3AProgessive+House&publishDateStart=2013-02-07&publishDateEnd=2013-02-08","applied":false},{"name":"weekToDate","startDate":"2013-02-01","endDate":"2013-02-08","applyQuery":"facets%5B0%5D=genreName%3ATrance%2CgenreName%3AProgessive+House&publishDateStart=2013-02-01&publishDateEnd=2013-02-08","applied":false},{"name":"monthToDate","startDate":"2013-01-08","endDate":"2013-02-08","applyQuery":"facets%5B0%5D=genreName%3ATrance%2CgenreName%3AProgessive+House&publishDateStart=2013-01-08&publishDateEnd=2013-02-08","applied":false},{"name":"yearToDate","startDate":"2012-02-08","endDate":"2013-02-08","applyQuery":"facets%5B0%5D=genreName%3ATrance%2CgenreName%3AProgessive+House&publishDateStart=2012-02-08&publishDateEnd=2013-02-08","applied":false},{"custom":true,"name":"customRange","applied":false,"applyQuery":"facets%5B0%5D=genreName%3ATrance%2CgenreName%3AProgessive+House"}],"spellcheck":{"suggestions":[]}},"results":[]}'
+    http_version: 
+  recorded_at: Fri, 08 Feb 2013 21:07:00 GMT
+recorded_with: VCR 2.4.0

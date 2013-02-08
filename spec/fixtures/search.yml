@@ -317,4 +317,117 @@ http_interactions:
         House","slug":"progressive-house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/631718.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/631718.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/631719.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/631719.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/631720.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/631720.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/631720.jpg"}}}]}'
     http_version: '1.1'
   recorded_at: Fri, 08 Feb 2013 20:59:11 GMT
-recorded_with: VCR 2.3.0
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/search?facets=genreName:Trance&query=anjunadeep
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 08 Feb 2013 21:07:17 GMT
+      Server:
+      - Apache
+      Expires:
+      - Fri, 08 Feb 2013 21:37:17 GMT
+      Pragma:
+      - public
+      Cache-Control:
+      - public, max-age=1800
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/search","query":"facets%5B0%5D=genreName%3ATrance&query=anjunadeep","page":1,"perPage":10,"count":80,"totalPages":8,"nextQuery":"facets%5B0%5D=genreName%3ATrance&query=anjunadeep&page=2","perPageOptions":[{"value":50,"applyQuery":"facets%5B0%5D=genreName%3ATrance&query=anjunadeep&perPage=50"},{"value":100,"applyQuery":"facets%5B0%5D=genreName%3ATrance&query=anjunadeep&perPage=100"},{"value":150,"applyQuery":"facets%5B0%5D=genreName%3ATrance&query=anjunadeep&perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"spellcheck":{"suggestions":[]}},"results":[{"id":1390,"type":"label","name":"Anjunadeep","slug":"anjunadeep","active":true,"lastPublishDate":"2012-12-17","biography":"","genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":15,"name":"Progressive
+        House","slug":"progressive-house","type":"genre"},{"id":17,"name":"Electro
+        House","slug":"electro-house","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"},{"id":9,"name":"Breaks","slug":"breaks","type":"genre"},{"id":11,"name":"Tech
+        House","slug":"tech-house","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"},{"id":1,"name":"Drum
+        & Bass","slug":"drum-and-bass","type":"genre"},{"id":10,"name":"Chill Out","slug":"chill-out","type":"genre"},{"id":12,"name":"Deep
+        House","slug":"deep-house","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":18,"name":"Dubstep","slug":"dubstep","type":"genre"}],"subGenres":[{"id":27,"name":"Progressive","slug":"progressive","type":"subgenre"},{"id":91,"name":"ProgNo","slug":"progno","type":"subgenre"},{"id":24,"name":"Melodic","slug":"melodic","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/3406.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/3406.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/1191.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/1191.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/345152.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/345152.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/1191.jpg"}}},{"id":38792,"type":"chart","sku":"chart-38792","name":"Jaytech''s
+        Anjunadeep August Chart","slug":"jaytechs-anjunadeep-august-chart","description":"","active":true,"publishDate":"2011-08-23","price":{"code":"usd","symbol":"$","value":1490},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":750},"aiff":{"code":"usd","symbol":"$","value":750}},"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":15,"name":"Progressive
+        House","slug":"progressive-house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/3271944.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/3271944.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/3271945.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/3271945.jpg"},"large":{"width":130,"height":130,"url":"http:\/\/geo-media.beatport.com\/image\/3271946.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/3271946.jpg"},"xlarge":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/3271947.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/3271947.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/3271947.jpg"}},"chartOwner":null,"updatedDate":"2011-08-23
+        03:12:51","trackCount":0},{"id":48813,"type":"chart","sku":"chart-48813","name":"Joonas
+        Hahmo - Anjunadeep 04 chart","slug":"joonas-hahmo-anjunadeep-04-chart","description":"","active":true,"publishDate":"2012-03-02","price":{"code":"usd","symbol":"$","value":1341},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":675},"aiff":{"code":"usd","symbol":"$","value":675}},"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":15,"name":"Progressive
+        House","slug":"progressive-house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/5081777.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5081777.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/5081778.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5081778.jpg"},"large":{"width":130,"height":130,"url":"http:\/\/geo-media.beatport.com\/image\/5081779.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5081779.jpg"},"xlarge":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5081780.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5081780.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5081780.jpg"}},"chartOwner":null,"updatedDate":"2012-03-02
+        10:57:56","trackCount":0},{"id":215217,"selected":false,"type":"track","sku":"track-215217","name":"Volume
+        1","trackNumber":5,"active":true,"mixName":"AnjunaDeep Mix","title":"Volume
+        1 (AnjunaDeep Mix)","slug":"volume-1-anjunadeep-mix","isrc":null,"releaseDate":"2000-06-01","publishDate":"2000-06-01","sampleUrl":"http:\/\/geo-samples.beatport.com\/lofi\/215217.LOFI.mp3","isPreviewAvailable":true,"isAvailableForMix":true,"rtmpStreamUrl":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume2\/items\/0\/200000\/10000\/5000\/200\/10\/215217.LOFI","exclusive":false,"isPromotable":false,"preview":{"mp3":{"http":"http:\/\/geo-samples.beatport.com\/lofi\/215217.LOFI.mp3","rtmp":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume2\/items\/0\/200000\/10000\/5000\/200\/10\/215217.LOFI"}},"price":{"code":"usd","symbol":"$","value":149},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":75},"aiff":{"code":"usd","symbol":"$","value":75}},"losslessUpgradeFormatFee":[],"currentStatus":"General
+        Content","length":"08:46","bpm":136,"key":{"standard":{"letter":"A","sharp":true,"flat":false,"chord":"minor"},"shortName":"A&#9839;min"},"saleType":"purchase","artists":[{"id":28093,"name":"Anjuna
+        Beats","slug":"anjuna-beats","type":"artist"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"}],"subGenres":[],"charts":[],"release":{"id":38763,"name":"Volume
+        1","type":"release","slug":"volume-1"},"label":{"id":804,"name":"Anjunabeats","type":"label","slug":"anjunabeats","status":true},"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/60759.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/60759.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/60760.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/60760.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"},"waveform":{"width":1500,"height":250,"url":"http:\/\/geo-media.beatport.com\/image\/2353813.png","secureUrl":"https:\/\/media.beatport.com\/image\/2353813.png"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/60760.jpg"}}},{"id":940969,"type":"release","sku":"release-940969","name":"Anjunadeep
+        04 (Unmixed & DJ Ready)","slug":"anjunadeep-04-unmixed-and-dj-ready","active":true,"releaseDate":"2012-07-24","publishDate":"2012-07-24","exclusive":false,"category":"Album","description":"","currentStatus":"General
+        Content","catalogNumber":"ANJCDCO092D","purchasable":true,"price":{"code":"usd","symbol":"$","value":999},"tracksPrice":{"code":"usd","symbol":"$","value":3576},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":1800},"aiff":{"code":"usd","symbol":"$","value":1800}},"label":{"id":1390,"name":"Anjunadeep","type":"label","slug":"anjunadeep"},"artists":[{"id":61194,"name":"Dusky","slug":"dusky","type":"artist"},{"id":13732,"name":"Martin
+        Roth","slug":"martin-roth","type":"artist"},{"id":6510,"name":"Vincenzo","slug":"vincenzo","type":"artist"},{"id":98835,"name":"Andrew
+        Bayer","slug":"andrew-bayer","type":"artist"},{"id":48881,"name":"Paronator","slug":"paronator","type":"artist"},{"id":79895,"name":"Full
+        Tilt","slug":"full-tilt","type":"artist"},{"id":37844,"name":"Parker & Hanson","slug":"parker-and-hanson","type":"artist"},{"id":6484,"name":"Stephen
+        J. Kroos","slug":"stephen-j-kroos","type":"artist"},{"id":16068,"name":"P8","slug":"p8","type":"artist"},{"id":111898,"name":"Answer42","slug":"answer42","type":"artist"},{"id":6471,"name":"P.O.S.","slug":"p-o-s","type":"artist"},{"id":88779,"name":"Kobana","slug":"kobana","type":"artist"},{"id":172648,"name":"Yane3dots","slug":"yane3dots","type":"artist"},{"id":41125,"name":"Oliver
+        Smith","slug":"oliver-smith","type":"artist"},{"id":82515,"name":"Solarity","slug":"solarity","type":"artist"},{"id":143091,"name":"Suspect
+        44","slug":"suspect-44","type":"artist"},{"id":8998,"name":"Jaytech","slug":"jaytech","type":"artist"},{"id":27206,"name":"Vadim
+        Soloviev","slug":"vadim-soloviev","type":"artist"},{"id":126709,"name":"Soundprank","slug":"soundprank","type":"artist"},{"id":22052,"name":"Joonas
+        Hahmo","slug":"joonas-hahmo","type":"artist"},{"id":176503,"name":"Levente
+        Marton","slug":"levente-marton","type":"artist"},{"id":1768,"name":"Tom Middleton","slug":"tom-middleton","type":"remixer"},{"id":95557,"name":"James
+        Grant","slug":"james-grant","type":"remixer"}],"genres":[{"id":3,"name":"Electronica","slug":"electronica","type":"genre"},{"id":12,"name":"Deep
+        House","slug":"deep-house","type":"genre"},{"id":15,"name":"Progressive House","slug":"progressive-house","type":"genre"},{"id":7,"name":"Trance","slug":"trance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/5714024.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5714024.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/5714025.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5714025.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5714026.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5714026.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5714026.jpg"}}},{"id":80986,"type":"release","sku":"release-80986","name":"Welsh
+        Morphology","slug":"welsh-morphology","active":true,"releaseDate":"2007-10-29","publishDate":"2007-10-29","exclusive":false,"category":"Release","description":"David
+        West is back on Anjunabeats with what can only be described as innovative,
+        progressive, trance with big room written all over it. \u2018Welsh Morphology\u2019
+        \u2013 get ready to hear this on every dance floor on the globe.\r\n\r\nThe
+        Original Mix is a monster of a tune take a playful melody, graced with a soft
+        non-sensical vocal, and build with a bouncing baseline and you have \u2018Welsh
+        Morphology\u2019.  The Charles Gudagavfa Remix is a deeper, housey play on
+        the original. Blending the original vocals with an electro edge, think Urban
+        Torque cross Martin Roth and add a sparkle of original and booyah! This package
+        is nothing far from impressive; the original is already on Armin Van Buurens
+        \u2018Universal Religion\u2019 2007.","currentStatus":"General Content","catalogNumber":"ANJDEE017","purchasable":true,"price":{"code":"usd","symbol":"$","value":149},"tracksPrice":{"code":"usd","symbol":"$","value":149},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":75},"aiff":{"code":"usd","symbol":"$","value":75}},"label":{"id":1390,"name":"Anjunadeep","type":"label","slug":"anjunadeep"},"artists":[{"id":5393,"name":"David
+        West","slug":"david-west","type":"artist"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/3406.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/3406.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/1191.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/1191.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/1191.jpg"}}},{"id":80987,"type":"release","sku":"release-80987","name":"Welsh
+        Morphology","slug":"welsh-morphology","active":true,"releaseDate":"2007-10-29","publishDate":"2007-10-29","exclusive":false,"category":"Release","description":"David
+        West is back on Anjunabeats with what can only be described as innovative,
+        progressive, trance with big room written all over it. \u2018Welsh Morphology\u2019
+        \u2013 get ready to hear this on every dance floor on the globe.\r\n\r\nThe
+        Original Mix is a monster of a tune take a playful melody, graced with a soft
+        non-sensical vocal, and build with a bouncing baseline and you have \u2018Welsh
+        Morphology\u2019.  The Charles Gudagavfa Remix is a deeper, housey play on
+        the original. Blending the original vocals with an electro edge, think Urban
+        Torque cross Martin Roth and add a sparkle of original and booyah! This package
+        is nothing far from impressive; the original is already on Armin Van Buurens
+        \u2018Universal Religion\u2019 2007.","currentStatus":"General Content","catalogNumber":"ANJDEE017","purchasable":true,"price":{"code":"usd","symbol":"$","value":149},"tracksPrice":{"code":"usd","symbol":"$","value":149},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":75},"aiff":{"code":"usd","symbol":"$","value":75}},"label":{"id":1390,"name":"Anjunadeep","type":"label","slug":"anjunadeep"},"artists":[{"id":5393,"name":"David
+        West","slug":"david-west","type":"artist"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/3406.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/3406.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/1191.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/1191.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/1191.jpg"}}},{"id":80989,"type":"release","sku":"release-80989","name":"Welsh
+        Morphology","slug":"welsh-morphology","active":true,"releaseDate":"2007-10-29","publishDate":"2007-10-29","exclusive":false,"category":"Release","description":"David
+        West is back on Anjunabeats with what can only be described as innovative,
+        progressive, trance with big room written all over it. \u2018Welsh Morphology\u2019
+        \u2013 get ready to hear this on every dance floor on the globe.\r\n\r\nThe
+        Original Mix is a monster of a tune take a playful melody, graced with a soft
+        non-sensical vocal, and build with a bouncing baseline and you have \u2018Welsh
+        Morphology\u2019.  The Charles Gudagavfa Remix is a deeper, housey play on
+        the original. Blending the original vocals with an electro edge, think Urban
+        Torque cross Martin Roth and add a sparkle of original and booyah! This package
+        is nothing far from impressive; the original is already on Armin Van Buurens
+        \u2018Universal Religion\u2019 2007.","currentStatus":"General Content","catalogNumber":"ANJDEE017","purchasable":true,"price":{"code":"usd","symbol":"$","value":149},"tracksPrice":{"code":"usd","symbol":"$","value":149},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":75},"aiff":{"code":"usd","symbol":"$","value":75}},"label":{"id":1390,"name":"Anjunadeep","type":"label","slug":"anjunadeep"},"artists":[{"id":5393,"name":"David
+        West","slug":"david-west","type":"artist"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/3406.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/3406.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/1191.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/1191.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/1191.jpg"}}},{"id":80991,"type":"release","sku":"release-80991","name":"Welsh
+        Morphology","slug":"welsh-morphology","active":true,"releaseDate":"2007-10-29","publishDate":"2007-10-29","exclusive":false,"category":"Release","description":"David
+        West is back on Anjunabeats with what can only be described as innovative,
+        progressive, trance with big room written all over it. \u2018Welsh Morphology\u2019
+        \u2013 get ready to hear this on every dance floor on the globe.\r\n\r\nThe
+        Original Mix is a monster of a tune take a playful melody, graced with a soft
+        non-sensical vocal, and build with a bouncing baseline and you have \u2018Welsh
+        Morphology\u2019.  The Charles Gudagavfa Remix is a deeper, housey play on
+        the original. Blending the original vocals with an electro edge, think Urban
+        Torque cross Martin Roth and add a sparkle of original and booyah! This package
+        is nothing far from impressive; the original is already on Armin Van Buurens
+        \u2018Universal Religion\u2019 2007.","currentStatus":"General Content","catalogNumber":"ANJDEE017","purchasable":true,"price":{"code":"usd","symbol":"$","value":149},"tracksPrice":{"code":"usd","symbol":"$","value":149},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":75},"aiff":{"code":"usd","symbol":"$","value":75}},"label":{"id":1390,"name":"Anjunadeep","type":"label","slug":"anjunadeep"},"artists":[{"id":5393,"name":"David
+        West","slug":"david-west","type":"artist"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/3406.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/3406.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/1191.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/1191.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/1191.jpg"}}},{"id":232766,"type":"release","sku":"release-232766","name":"Hola","slug":"hola","active":true,"releaseDate":"2010-03-30","publishDate":"2010-03-30","exclusive":false,"category":"Release","description":"","currentStatus":"General
+        Content","catalogNumber":"ANJDEE072D","purchasable":true,"price":{"code":"usd","symbol":"$","value":298},"tracksPrice":{"code":"usd","symbol":"$","value":298},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":150},"aiff":{"code":"usd","symbol":"$","value":150}},"label":{"id":1390,"name":"Anjunadeep","type":"label","slug":"anjunadeep"},"artists":[{"id":9793,"name":"Alex
+        Monakhov","slug":"alex-monakhov","type":"artist"},{"id":129781,"name":"Que","slug":"que","type":"artist"},{"id":24276,"name":"PROFF","slug":"proff","type":"remixer"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":15,"name":"Progressive
+        House","slug":"progressive-house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/631718.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/631718.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/631719.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/631719.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/631720.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/631720.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/631720.jpg"}}}]}'
+    http_version: 
+  recorded_at: Fri, 08 Feb 2013 21:07:17 GMT
+recorded_with: VCR 2.4.0

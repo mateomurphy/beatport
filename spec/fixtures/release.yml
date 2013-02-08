@@ -1251,4 +1251,557 @@ http_interactions:
         Volume 6 (Unmixed - DJ Ready)","type":"release","slug":"anjunabeats-volume-6-unmixed-dj-ready"},"label":{"id":804,"name":"Anjunabeats","type":"label","slug":"anjunabeats","status":true},"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/392699.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/392699.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/392700.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/392700.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/392701.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/392701.jpg"},"waveform":{"width":1500,"height":250,"url":"http:\/\/geo-media.beatport.com\/image\/2059417.png","secureUrl":"https:\/\/media.beatport.com\/image\/2059417.png"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/392701.jpg"},"waveform":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/2059417.png"}}}]}'
     http_version: '1.1'
   recorded_at: Fri, 08 Feb 2013 20:59:09 GMT
-recorded_with: VCR 2.3.0
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/releases?page=1&perPage=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 08 Feb 2013 21:07:12 GMT
+      Server:
+      - Apache
+      Expires:
+      - Fri, 08 Feb 2013 21:37:12 GMT
+      Pragma:
+      - public
+      Cache-Control:
+      - public, max-age=1800
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/releases","query":"perPage=5","page":1,"perPage":5,"count":513255,"totalPages":102651,"nextQuery":"perPage=5&page=2","perPageOptions":[{"value":50,"applyQuery":"perPage=50"},{"value":100,"applyQuery":"perPage=100"},{"value":150,"applyQuery":"perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"dateFilters":[{"name":"today","startDate":"2013-02-08","endDate":"2013-02-08","applyQuery":"perPage=5&publishDateStart=2013-02-08&publishDateEnd=2013-02-08","applied":false},{"name":"yesterday","startDate":"2013-02-07","endDate":"2013-02-08","applyQuery":"perPage=5&publishDateStart=2013-02-07&publishDateEnd=2013-02-08","applied":false},{"name":"weekToDate","startDate":"2013-02-01","endDate":"2013-02-08","applyQuery":"perPage=5&publishDateStart=2013-02-01&publishDateEnd=2013-02-08","applied":false},{"name":"monthToDate","startDate":"2013-01-08","endDate":"2013-02-08","applyQuery":"perPage=5&publishDateStart=2013-01-08&publishDateEnd=2013-02-08","applied":false},{"name":"yearToDate","startDate":"2012-02-08","endDate":"2013-02-08","applyQuery":"perPage=5&publishDateStart=2012-02-08&publishDateEnd=2013-02-08","applied":false},{"custom":true,"name":"customRange","applied":false,"applyQuery":"perPage=5"}],"spellcheck":{"suggestions":[]}},"results":[{"id":34,"type":"release","sku":"release-34","name":"Don''t
+        Cross The Line","slug":"dont-cross-the-line","active":true,"releaseDate":"2000-03-28","publishDate":"2000-03-28","exclusive":false,"category":"Release","description":"","currentStatus":"General
+        Content","catalogNumber":"THM001","purchasable":true,"price":{"code":"usd","symbol":"$","value":149},"tracksPrice":{"code":"usd","symbol":"$","value":149},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":75},"aiff":{"code":"usd","symbol":"$","value":75}},"label":{"id":3,"name":"12
+        Inch Thumpers","type":"label","slug":"12-inch-thumpers"},"artists":[{"id":1,"name":"12
+        Inch Thumpers","slug":"12-inch-thumpers","type":"artist"}],"genres":[{"id":8,"name":"Hard
+        Dance","slug":"hard-dance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/6158614.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158614.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6158615.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158615.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6158616.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158616.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6158616.jpg"}}},{"id":35,"type":"release","sku":"release-35","name":"Don''t
+        Cross The LIne (Remixes)","slug":"dont-cross-the-line-remixes","active":true,"releaseDate":"2000-11-20","publishDate":"2000-11-20","exclusive":false,"category":"Release","description":"","currentStatus":"General
+        Content","catalogNumber":"THM012","purchasable":true,"price":{"code":"usd","symbol":"$","value":298},"tracksPrice":{"code":"usd","symbol":"$","value":298},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":150},"aiff":{"code":"usd","symbol":"$","value":150}},"label":{"id":3,"name":"12
+        Inch Thumpers","type":"label","slug":"12-inch-thumpers"},"artists":[{"id":1,"name":"12
+        Inch Thumpers","slug":"12-inch-thumpers","type":"artist"},{"id":1162,"name":"UK
+        Gold","slug":"uk-gold","type":"remixer"},{"id":1163,"name":"Paul Glazby","slug":"paul-glazby","type":"remixer"}],"genres":[{"id":8,"name":"Hard
+        Dance","slug":"hard-dance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/6158614.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158614.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6158615.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158615.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6158616.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158616.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6158616.jpg"}}},{"id":36,"type":"release","sku":"release-36","name":"The
+        Tumbler Remixes","slug":"the-tumbler-remixes","active":true,"releaseDate":"2001-02-12","publishDate":"2001-02-12","exclusive":false,"category":"Release","description":"","currentStatus":"General
+        Content","catalogNumber":"THM015","purchasable":true,"price":{"code":"usd","symbol":"$","value":298},"tracksPrice":{"code":"usd","symbol":"$","value":298},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":150},"aiff":{"code":"usd","symbol":"$","value":150}},"label":{"id":3,"name":"12
+        Inch Thumpers","type":"label","slug":"12-inch-thumpers"},"artists":[{"id":1,"name":"12
+        Inch Thumpers","slug":"12-inch-thumpers","type":"artist"},{"id":1165,"name":"Ilogik","slug":"ilogik","type":"remixer"},{"id":1163,"name":"Paul
+        Glazby","slug":"paul-glazby","type":"remixer"}],"genres":[{"id":8,"name":"Hard
+        Dance","slug":"hard-dance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/6158614.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158614.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6158615.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158615.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6158616.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158616.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6158616.jpg"}}},{"id":37,"type":"release","sku":"release-37","name":"3
+        Turntables (Remixes)","slug":"3-turntables-remixes","active":true,"releaseDate":"2001-03-19","publishDate":"2001-03-19","exclusive":false,"category":"Release","description":"","currentStatus":"General
+        Content","catalogNumber":"THM018","purchasable":true,"price":{"code":"usd","symbol":"$","value":149},"tracksPrice":{"code":"usd","symbol":"$","value":149},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":75},"aiff":{"code":"usd","symbol":"$","value":75}},"label":{"id":3,"name":"12
+        Inch Thumpers","type":"label","slug":"12-inch-thumpers"},"artists":[{"id":1,"name":"12
+        Inch Thumpers","slug":"12-inch-thumpers","type":"artist"},{"id":1163,"name":"Paul
+        Glazby","slug":"paul-glazby","type":"remixer"}],"genres":[{"id":8,"name":"Hard
+        Dance","slug":"hard-dance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/6158614.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158614.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6158615.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158615.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6158616.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158616.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6158616.jpg"}}},{"id":38,"type":"release","sku":"release-38","name":"Nine
+        Beats To The Bar Remix","slug":"nine-beats-to-the-bar-remix","active":true,"releaseDate":"2001-06-16","publishDate":"2001-06-16","exclusive":false,"category":"Release","description":"","currentStatus":"General
+        Content","catalogNumber":"THM020","purchasable":true,"price":{"code":"usd","symbol":"$","value":298},"tracksPrice":{"code":"usd","symbol":"$","value":298},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":150},"aiff":{"code":"usd","symbol":"$","value":150}},"label":{"id":3,"name":"12
+        Inch Thumpers","type":"label","slug":"12-inch-thumpers"},"artists":[{"id":1,"name":"12
+        Inch Thumpers","slug":"12-inch-thumpers","type":"artist"},{"id":1167,"name":"jOHNNYDANGEROUs","slug":"johnnydangerous","type":"remixer"},{"id":1168,"name":"John
+        Whiteman","slug":"john-whiteman","type":"remixer"},{"id":1163,"name":"Paul
+        Glazby","slug":"paul-glazby","type":"remixer"}],"genres":[{"id":8,"name":"Hard
+        Dance","slug":"hard-dance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/6158614.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158614.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6158615.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158615.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6158616.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158616.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6158616.jpg"}}}]}'
+    http_version: 
+  recorded_at: Fri, 08 Feb 2013 21:07:12 GMT
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/releases?genreId=5&page=1&perPage=5&sortBy=publishDate%20asc,releaseId%20asc
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 08 Feb 2013 21:07:13 GMT
+      Server:
+      - Apache
+      Expires:
+      - Fri, 08 Feb 2013 21:37:13 GMT
+      Pragma:
+      - public
+      Cache-Control:
+      - public, max-age=1800
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/releases","query":"sortBy=publishDate+asc%2CreleaseId+asc&genreId=5&perPage=5","page":1,"perPage":5,"count":106587,"totalPages":21318,"nextQuery":"sortBy=publishDate+asc%2CreleaseId+asc&genreId=5&perPage=5&page=2","perPageOptions":[{"value":50,"applyQuery":"sortBy=publishDate+asc%2CreleaseId+asc&genreId=5&perPage=50"},{"value":100,"applyQuery":"sortBy=publishDate+asc%2CreleaseId+asc&genreId=5&perPage=100"},{"value":150,"applyQuery":"sortBy=publishDate+asc%2CreleaseId+asc&genreId=5&perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"dateFilters":[{"name":"today","startDate":"2013-02-08","endDate":"2013-02-08","applyQuery":"sortBy=publishDate+asc%2CreleaseId+asc&genreId=5&perPage=5&publishDateStart=2013-02-08&publishDateEnd=2013-02-08","applied":false},{"name":"yesterday","startDate":"2013-02-07","endDate":"2013-02-08","applyQuery":"sortBy=publishDate+asc%2CreleaseId+asc&genreId=5&perPage=5&publishDateStart=2013-02-07&publishDateEnd=2013-02-08","applied":false},{"name":"weekToDate","startDate":"2013-02-01","endDate":"2013-02-08","applyQuery":"sortBy=publishDate+asc%2CreleaseId+asc&genreId=5&perPage=5&publishDateStart=2013-02-01&publishDateEnd=2013-02-08","applied":false},{"name":"monthToDate","startDate":"2013-01-08","endDate":"2013-02-08","applyQuery":"sortBy=publishDate+asc%2CreleaseId+asc&genreId=5&perPage=5&publishDateStart=2013-01-08&publishDateEnd=2013-02-08","applied":false},{"name":"yearToDate","startDate":"2012-02-08","endDate":"2013-02-08","applyQuery":"sortBy=publishDate+asc%2CreleaseId+asc&genreId=5&perPage=5&publishDateStart=2012-02-08&publishDateEnd=2013-02-08","applied":false},{"custom":true,"name":"customRange","applied":false,"applyQuery":"sortBy=publishDate+asc%2CreleaseId+asc&genreId=5&perPage=5"}],"spellcheck":{"suggestions":[]}},"results":[{"id":435001,"type":"release","sku":"release-435001","name":"Funky
+        Stuff (Get Down Tonight)","slug":"funky-stuff-get-down-tonight","active":true,"releaseDate":"1976-01-01","publishDate":"1976-01-01","exclusive":false,"category":"Album","description":"","currentStatus":"General
+        Content","catalogNumber":"GEMR003","purchasable":true,"price":{"code":"usd","symbol":"$","value":999},"tracksPrice":{"code":"usd","symbol":"$","value":1341},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":675},"aiff":{"code":"usd","symbol":"$","value":675}},"label":{"id":8271,"name":"Genetic
+        Recordings","type":"label","slug":"genetic-recordings"},"artists":[{"id":210376,"name":"The
+        Disco Express","slug":"the-disco-express","type":"artist"}],"genres":[{"id":5,"name":"House","slug":"house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/3235000.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/3235000.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/3235001.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/3235001.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/3235002.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/3235002.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/3235002.jpg"}}},{"id":76882,"type":"release","sku":"release-76882","name":"You
+        Are The One","slug":"you-are-the-one","active":true,"releaseDate":"1980-05-01","publishDate":"1980-05-01","exclusive":false,"category":"Release","description":"","currentStatus":"General
+        Content","catalogNumber":"MAL38007","purchasable":true,"price":{"code":"usd","symbol":"$","value":1343},"tracksPrice":{"code":"usd","symbol":"$","value":1343},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":525},"aiff":{"code":"usd","symbol":"$","value":525}},"label":{"id":6824,"name":"Malligator
+        Productions","type":"label","slug":"malligator-productions"},"artists":[{"id":42443,"name":"Cerrone","slug":"cerrone","type":"artist"}],"genres":[{"id":5,"name":"House","slug":"house","type":"genre"},{"id":10,"name":"Chill
+        Out","slug":"chill-out","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/151711.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/151711.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/151712.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/151712.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/151712.jpg"}}},{"id":216616,"type":"release","sku":"release-216616","name":"Ce
+        N''Est Q''Un Debut Remastered","slug":"ce-nest-qun-debut-remastered","active":true,"releaseDate":"1984-01-31","publishDate":"1984-01-31","exclusive":false,"category":"Release","description":"The
+        first seminal album by Alexander Robotnick. Just a bit remastered from vinyl
+        version. No changes in the original sound. First release: 1984","currentStatus":"General
+        Content","catalogNumber":"MASO33029HEM5010","purchasable":true,"price":{"code":"usd","symbol":"$","value":944},"tracksPrice":{"code":"usd","symbol":"$","value":944},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":450},"aiff":{"code":"usd","symbol":"$","value":450}},"label":{"id":1371,"name":"Hot
+        Elephant Music","type":"label","slug":"hot-elephant-music"},"artists":[{"id":10374,"name":"Alexander
+        Robotnick","slug":"alexander-robotnick","type":"artist"}],"genres":[{"id":5,"name":"House","slug":"house","type":"genre"},{"id":37,"name":"Indie
+        Dance \/ Nu Disco","slug":"indie-dance-nu-disco","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/575160.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/575160.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/575161.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/575161.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/575162.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/575162.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/575162.jpg"}}},{"id":110283,"type":"release","sku":"release-110283","name":"Fresh''s
+        Greatest 12 Inch Mixes","slug":"freshs-greatest-12-inch-mixes","active":true,"releaseDate":"1984-04-30","publishDate":"1984-04-30","exclusive":false,"category":"Album","description":"","currentStatus":"General
+        Content","catalogNumber":"WR30202","purchasable":true,"price":{"code":"usd","symbol":"$","value":999},"tracksPrice":{"code":"usd","symbol":"$","value":1690},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":750},"aiff":{"code":"usd","symbol":"$","value":750}},"label":{"id":4251,"name":"Fresh
+        Records","type":"label","slug":"fresh-records"},"artists":[{"id":75198,"name":"Hanson
+        & David","slug":"hanson-and-david","type":"artist"},{"id":75201,"name":"Cyre","slug":"cyre","type":"artist"},{"id":75202,"name":"Chandra
+        Simmons","slug":"chandra-simmons","type":"artist"},{"id":2605,"name":"Todd
+        Terry","slug":"todd-terry","type":"artist"},{"id":75203,"name":"El Barrio","slug":"el-barrio","type":"artist"}],"genres":[{"id":5,"name":"House","slug":"house","type":"genre"},{"id":38,"name":"Hip-Hop","slug":"hip-hop","type":"genre"},{"id":9,"name":"Breaks","slug":"breaks","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/238481.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/238481.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/238482.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/238482.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/238482.jpg"}}},{"id":323836,"type":"release","sku":"release-323836","name":"Jack
+        The Bass","slug":"jack-the-bass","active":true,"releaseDate":"1985-01-01","publishDate":"1985-01-01","exclusive":false,"category":"Release","description":"","currentStatus":"General
+        Content","catalogNumber":"354610","purchasable":true,"price":{"code":"usd","symbol":"$","value":447},"tracksPrice":{"code":"usd","symbol":"$","value":447},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":225},"aiff":{"code":"usd","symbol":"$","value":225}},"label":{"id":13050,"name":"Trax
+        Records","type":"label","slug":"trax-records"},"artists":[{"id":27452,"name":"Farley
+        Jackmaster Funk","slug":"farley-jackmaster-funk","type":"artist"}],"genres":[{"id":5,"name":"House","slug":"house","type":"genre"},{"id":16,"name":"DJ
+        Tools","slug":"dj-tools","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/944025.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/944025.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/944026.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/944026.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/944027.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/944027.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/944027.jpg"}}}]}'
+    http_version: 
+  recorded_at: Fri, 08 Feb 2013 21:07:13 GMT
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/releases?returnFacets=genreName,performerName
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 08 Feb 2013 21:07:13 GMT
+      Server:
+      - Apache
+      Expires:
+      - Fri, 08 Feb 2013 21:37:13 GMT
+      Pragma:
+      - public
+      Cache-Control:
+      - public, max-age=1800
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/releases","query":"returnFacets=genreName%2CperformerName","page":1,"perPage":10,"count":513255,"totalPages":51326,"nextQuery":"returnFacets=genreName%2CperformerName&page=2","perPageOptions":[{"value":50,"applyQuery":"returnFacets=genreName%2CperformerName&perPage=50"},{"value":100,"applyQuery":"returnFacets=genreName%2CperformerName&perPage=100"},{"value":150,"applyQuery":"returnFacets=genreName%2CperformerName&perPage=150"}],"facets":{"fields":{"genreName":[{"name":"House","count":106587,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AHouse","removeQuery":null},{"name":"Tech
+        House","count":105298,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3ATech+House","removeQuery":null},{"name":"Progressive
+        House","count":87450,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AProgressive+House","removeQuery":null},{"name":"Techno","count":85029,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3ATechno","removeQuery":null},{"name":"Electro
+        House","count":58540,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AElectro+House","removeQuery":null},{"name":"Deep
+        House","count":53864,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3ADeep+House","removeQuery":null},{"name":"Trance","count":43047,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3ATrance","removeQuery":null},{"name":"Minimal","count":36513,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AMinimal","removeQuery":null},{"name":"Electronica","count":31147,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AElectronica","removeQuery":null},{"name":"Chill
+        Out","count":26803,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AChill+Out","removeQuery":null},{"name":"Drum
+        & Bass","count":20075,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3ADrum+%26+Bass","removeQuery":null},{"name":"Breaks","count":20043,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3ABreaks","removeQuery":null},{"name":"Dubstep","count":17141,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3ADubstep","removeQuery":null},{"name":"Indie
+        Dance \/ Nu Disco","count":14860,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AIndie+Dance+%2F+Nu+Disco","removeQuery":null},{"name":"Hip-Hop","count":11445,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AHip-Hop","removeQuery":null},{"name":"Hard
+        Dance","count":10295,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AHard+Dance","removeQuery":null},{"name":"DJ
+        Tools","count":8892,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3ADJ+Tools","removeQuery":null},{"name":"Hardcore
+        \/ Hard Techno","count":8638,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AHardcore+%2F+Hard+Techno","removeQuery":null},{"name":"Psy-Trance","count":7403,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3APsy-Trance","removeQuery":null},{"name":"Pop
+        \/ Rock","count":4366,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3APop+%2F+Rock","removeQuery":null},{"name":"Reggae
+        \/ Dub","count":2825,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AReggae+%2F+Dub","removeQuery":null},{"name":"Funk
+        \/ R&B","count":2101,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AFunk+%2F+R%26B","removeQuery":null},{"name":"Glitch
+        Hop","count":1575,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AGlitch+Hop","removeQuery":null},{"name":"World","count":10,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AWorld","removeQuery":null},{"name":"Vocal","count":3,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AVocal","removeQuery":null}],"performerName":[{"name":"Various
+        Artists","count":1443,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AVarious+Artists","removeQuery":null},{"name":"Peter
+        Brown","count":1176,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3APeter+Brown","removeQuery":null},{"name":"Tune
+        Brothers","count":1011,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ATune+Brothers","removeQuery":null},{"name":"DJ
+        Fist","count":937,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ADJ+Fist","removeQuery":null},{"name":"Dany
+        Cohiba","count":807,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ADany+Cohiba","removeQuery":null},{"name":"Chris
+        Montana","count":766,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AChris+Montana","removeQuery":null},{"name":"John
+        De Mark","count":718,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AJohn+De+Mark","removeQuery":null},{"name":"Rio
+        Dela Duna","count":699,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ARio+Dela+Duna","removeQuery":null},{"name":"Christian
+        Hornbostel","count":679,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AChristian+Hornbostel","removeQuery":null},{"name":"Lucas
+        Reyes","count":656,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ALucas+Reyes","removeQuery":null},{"name":"Stefano
+        Noferini","count":652,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AStefano+Noferini","removeQuery":null},{"name":"Etienne
+        Ozborne","count":651,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AEtienne+Ozborne","removeQuery":null},{"name":"DJ
+        Chus","count":647,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ADJ+Chus","removeQuery":null},{"name":"John
+        Dahlback","count":644,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AJohn+Dahlback","removeQuery":null},{"name":"Robbie
+        Rivera","count":629,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ARobbie+Rivera","removeQuery":null},{"name":"Tony
+        Thomas","count":593,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ATony+Thomas","removeQuery":null},{"name":"Kid
+        Massive","count":590,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AKid+Massive","removeQuery":null},{"name":"Tony
+        Romera","count":557,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ATony+Romera","removeQuery":null},{"name":"Phunk
+        Investigation","count":544,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3APhunk+Investigation","removeQuery":null},{"name":"Jason
+        Rivas","count":534,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AJason+Rivas","removeQuery":null},{"name":"DJ
+        PP","count":529,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ADJ+PP","removeQuery":null},{"name":"The
+        Sura Quintet","count":527,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AThe+Sura+Quintet","removeQuery":null},{"name":"DJ
+        Wady","count":526,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ADJ+Wady","removeQuery":null},{"name":"Thomas
+        Gold","count":517,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AThomas+Gold","removeQuery":null},{"name":"Da
+        Fresh","count":507,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ADa+Fresh","removeQuery":null},{"name":"Josh
+        The Funky 1","count":500,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AJosh+The+Funky+1","removeQuery":null},{"name":"Alex
+        Kenji","count":495,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AAlex+Kenji","removeQuery":null},{"name":"AnGy
+        KoRe","count":495,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AAnGy+KoRe","removeQuery":null},{"name":"Armin
+        van Buuren","count":495,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AArmin+van+Buuren","removeQuery":null},{"name":"Alan
+        Barratt","count":493,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AAlan+Barratt","removeQuery":null},{"name":"DJ
+        Monxa","count":491,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ADJ+Monxa","removeQuery":null},{"name":"SL
+        Curtiz","count":483,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ASL+Curtiz","removeQuery":null},{"name":"Muzzaik","count":481,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AMuzzaik","removeQuery":null},{"name":"Damolh33","count":479,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ADamolh33","removeQuery":null},{"name":"Swanky
+        Tunes","count":478,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ASwanky+Tunes","removeQuery":null},{"name":"Dave
+        Kurtis","count":473,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ADave+Kurtis","removeQuery":null},{"name":"Stereoliner","count":469,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AStereoliner","removeQuery":null},{"name":"Lutzenkirchen","count":468,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ALutzenkirchen","removeQuery":null},{"name":"Manuel
+        De La Mare","count":458,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AManuel+De+La+Mare","removeQuery":null},{"name":"David
+        Herrero","count":451,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ADavid+Herrero","removeQuery":null},{"name":"Laera","count":448,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ALaera","removeQuery":null},{"name":"Pierre
+        Deutschmann","count":447,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3APierre+Deutschmann","removeQuery":null},{"name":"Hector
+        Couto","count":446,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AHector+Couto","removeQuery":null},{"name":"Enrico
+        Donner","count":445,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AEnrico+Donner","removeQuery":null},{"name":"Lissat
+        & Voltaxx","count":445,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ALissat+%26+Voltaxx","removeQuery":null},{"name":"Jerome
+        Isma-Ae","count":444,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AJerome+Isma-Ae","removeQuery":null},{"name":"Steve
+        Kid","count":444,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ASteve+Kid","removeQuery":null},{"name":"DJ
+        Smilk","count":443,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ADJ+Smilk","removeQuery":null},{"name":"Sean
+        Finn","count":441,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ASean+Finn","removeQuery":null},{"name":"Martin
+        Eyerer","count":434,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AMartin+Eyerer","removeQuery":null},{"name":"Tritonal","count":434,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ATritonal","removeQuery":null},{"name":"Chriss
+        Ortega","count":431,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AChriss+Ortega","removeQuery":null},{"name":"Damir
+        Pushkar","count":431,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ADamir+Pushkar","removeQuery":null},{"name":"John
+        O''Callaghan","count":430,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AJohn+O%27Callaghan","removeQuery":null},{"name":"Wally
+        Lopez","count":429,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AWally+Lopez","removeQuery":null},{"name":"Blacktron","count":424,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ABlacktron","removeQuery":null},{"name":"Jeff
+        Bennett","count":424,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AJeff+Bennett","removeQuery":null},{"name":"Afrojack","count":417,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AAfrojack","removeQuery":null},{"name":"Matan
+        Caspi","count":417,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AMatan+Caspi","removeQuery":null},{"name":"Don
+        Gorda Project","count":416,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ADon+Gorda+Project","removeQuery":null},{"name":"Brown
+        Sugar","count":415,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ABrown+Sugar","removeQuery":null},{"name":"UMEK","count":415,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AUMEK","removeQuery":null},{"name":"Jesse
+        Voorn","count":414,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AJesse+Voorn","removeQuery":null},{"name":"Todd
+        Terry","count":414,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ATodd+Terry","removeQuery":null},{"name":"Kolombo","count":412,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AKolombo","removeQuery":null},{"name":"Francesco
+        Diaz","count":411,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AFrancesco+Diaz","removeQuery":null},{"name":"Dani
+        Sbert","count":410,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ADani+Sbert","removeQuery":null},{"name":"Plastik
+        Funk","count":407,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3APlastik+Funk","removeQuery":null},{"name":"Belocca","count":406,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ABelocca","removeQuery":null},{"name":"Niels
+        Van Gogh","count":405,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ANiels+Van+Gogh","removeQuery":null},{"name":"Rey
+        Salinero","count":405,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ARey+Salinero","removeQuery":null},{"name":"BK
+        Duke","count":402,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ABK+Duke","removeQuery":null},{"name":"Fine
+        Touch","count":401,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AFine+Touch","removeQuery":null},{"name":"Marga
+        Sol","count":396,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AMarga+Sol","removeQuery":null},{"name":"Robin
+        Hirte","count":396,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ARobin+Hirte","removeQuery":null},{"name":"Koen
+        Groeneveld","count":391,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AKoen+Groeneveld","removeQuery":null},{"name":"Chris
+        Kaeser","count":390,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AChris+Kaeser","removeQuery":null},{"name":"Hard
+        Rock Sofa","count":388,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AHard+Rock+Sofa","removeQuery":null},{"name":"Richard
+        Grey","count":384,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ARichard+Grey","removeQuery":null},{"name":"Eric
+        Tyrell","count":381,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AEric+Tyrell","removeQuery":null},{"name":"Jorgensen","count":380,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AJorgensen","removeQuery":null},{"name":"Arty","count":378,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AArty","removeQuery":null},{"name":"Reza","count":376,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AReza","removeQuery":null},{"name":"Blue
+        Wave","count":373,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ABlue+Wave","removeQuery":null},{"name":"Coqui
+        Selection","count":373,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ACoqui+Selection","removeQuery":null},{"name":"Stonebridge","count":372,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AStonebridge","removeQuery":null},{"name":"Kid
+        Shakers","count":371,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AKid+Shakers","removeQuery":null},{"name":"Vincent
+        Vega","count":370,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AVincent+Vega","removeQuery":null},{"name":"Stan
+        Kolev","count":367,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AStan+Kolev","removeQuery":null},{"name":"Cane
+        Garden Quartet","count":365,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ACane+Garden+Quartet","removeQuery":null},{"name":"Erick
+        Decks","count":365,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AErick+Decks","removeQuery":null},{"name":"Voltaxx","count":364,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AVoltaxx","removeQuery":null},{"name":"Daniel
+        Kandi","count":363,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ADaniel+Kandi","removeQuery":null},{"name":"Filthy
+        Rich","count":363,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AFilthy+Rich","removeQuery":null},{"name":"Boogie
+        Pimps","count":362,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ABoogie+Pimps","removeQuery":null},{"name":"DBN","count":361,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ADBN","removeQuery":null},{"name":"Vortex","count":361,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AVortex","removeQuery":null},{"name":"Alexander
+        Fog","count":357,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AAlexander+Fog","removeQuery":null},{"name":"Omega
+        Drive","count":357,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3AOmega+Drive","removeQuery":null},{"name":"Technikal","count":357,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=performerName%3ATechnikal","removeQuery":null}]}},"appliedFacets":[],"dateFilters":[{"name":"today","startDate":"2013-02-08","endDate":"2013-02-08","applyQuery":"returnFacets=genreName%2CperformerName&publishDateStart=2013-02-08&publishDateEnd=2013-02-08","applied":false},{"name":"yesterday","startDate":"2013-02-07","endDate":"2013-02-08","applyQuery":"returnFacets=genreName%2CperformerName&publishDateStart=2013-02-07&publishDateEnd=2013-02-08","applied":false},{"name":"weekToDate","startDate":"2013-02-01","endDate":"2013-02-08","applyQuery":"returnFacets=genreName%2CperformerName&publishDateStart=2013-02-01&publishDateEnd=2013-02-08","applied":false},{"name":"monthToDate","startDate":"2013-01-08","endDate":"2013-02-08","applyQuery":"returnFacets=genreName%2CperformerName&publishDateStart=2013-01-08&publishDateEnd=2013-02-08","applied":false},{"name":"yearToDate","startDate":"2012-02-08","endDate":"2013-02-08","applyQuery":"returnFacets=genreName%2CperformerName&publishDateStart=2012-02-08&publishDateEnd=2013-02-08","applied":false},{"custom":true,"name":"customRange","applied":false,"applyQuery":"returnFacets=genreName%2CperformerName"}],"spellcheck":{"suggestions":[]}},"results":[{"id":34,"type":"release","sku":"release-34","name":"Don''t
+        Cross The Line","slug":"dont-cross-the-line","active":true,"releaseDate":"2000-03-28","publishDate":"2000-03-28","exclusive":false,"category":"Release","description":"","currentStatus":"General
+        Content","catalogNumber":"THM001","purchasable":true,"price":{"code":"usd","symbol":"$","value":149},"tracksPrice":{"code":"usd","symbol":"$","value":149},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":75},"aiff":{"code":"usd","symbol":"$","value":75}},"label":{"id":3,"name":"12
+        Inch Thumpers","type":"label","slug":"12-inch-thumpers"},"artists":[{"id":1,"name":"12
+        Inch Thumpers","slug":"12-inch-thumpers","type":"artist"}],"genres":[{"id":8,"name":"Hard
+        Dance","slug":"hard-dance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/6158614.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158614.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6158615.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158615.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6158616.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158616.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6158616.jpg"}}},{"id":35,"type":"release","sku":"release-35","name":"Don''t
+        Cross The LIne (Remixes)","slug":"dont-cross-the-line-remixes","active":true,"releaseDate":"2000-11-20","publishDate":"2000-11-20","exclusive":false,"category":"Release","description":"","currentStatus":"General
+        Content","catalogNumber":"THM012","purchasable":true,"price":{"code":"usd","symbol":"$","value":298},"tracksPrice":{"code":"usd","symbol":"$","value":298},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":150},"aiff":{"code":"usd","symbol":"$","value":150}},"label":{"id":3,"name":"12
+        Inch Thumpers","type":"label","slug":"12-inch-thumpers"},"artists":[{"id":1,"name":"12
+        Inch Thumpers","slug":"12-inch-thumpers","type":"artist"},{"id":1162,"name":"UK
+        Gold","slug":"uk-gold","type":"remixer"},{"id":1163,"name":"Paul Glazby","slug":"paul-glazby","type":"remixer"}],"genres":[{"id":8,"name":"Hard
+        Dance","slug":"hard-dance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/6158614.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158614.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6158615.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158615.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6158616.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158616.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6158616.jpg"}}},{"id":36,"type":"release","sku":"release-36","name":"The
+        Tumbler Remixes","slug":"the-tumbler-remixes","active":true,"releaseDate":"2001-02-12","publishDate":"2001-02-12","exclusive":false,"category":"Release","description":"","currentStatus":"General
+        Content","catalogNumber":"THM015","purchasable":true,"price":{"code":"usd","symbol":"$","value":298},"tracksPrice":{"code":"usd","symbol":"$","value":298},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":150},"aiff":{"code":"usd","symbol":"$","value":150}},"label":{"id":3,"name":"12
+        Inch Thumpers","type":"label","slug":"12-inch-thumpers"},"artists":[{"id":1,"name":"12
+        Inch Thumpers","slug":"12-inch-thumpers","type":"artist"},{"id":1165,"name":"Ilogik","slug":"ilogik","type":"remixer"},{"id":1163,"name":"Paul
+        Glazby","slug":"paul-glazby","type":"remixer"}],"genres":[{"id":8,"name":"Hard
+        Dance","slug":"hard-dance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/6158614.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158614.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6158615.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158615.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6158616.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158616.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6158616.jpg"}}},{"id":37,"type":"release","sku":"release-37","name":"3
+        Turntables (Remixes)","slug":"3-turntables-remixes","active":true,"releaseDate":"2001-03-19","publishDate":"2001-03-19","exclusive":false,"category":"Release","description":"","currentStatus":"General
+        Content","catalogNumber":"THM018","purchasable":true,"price":{"code":"usd","symbol":"$","value":149},"tracksPrice":{"code":"usd","symbol":"$","value":149},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":75},"aiff":{"code":"usd","symbol":"$","value":75}},"label":{"id":3,"name":"12
+        Inch Thumpers","type":"label","slug":"12-inch-thumpers"},"artists":[{"id":1,"name":"12
+        Inch Thumpers","slug":"12-inch-thumpers","type":"artist"},{"id":1163,"name":"Paul
+        Glazby","slug":"paul-glazby","type":"remixer"}],"genres":[{"id":8,"name":"Hard
+        Dance","slug":"hard-dance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/6158614.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158614.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6158615.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158615.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6158616.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158616.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6158616.jpg"}}},{"id":38,"type":"release","sku":"release-38","name":"Nine
+        Beats To The Bar Remix","slug":"nine-beats-to-the-bar-remix","active":true,"releaseDate":"2001-06-16","publishDate":"2001-06-16","exclusive":false,"category":"Release","description":"","currentStatus":"General
+        Content","catalogNumber":"THM020","purchasable":true,"price":{"code":"usd","symbol":"$","value":298},"tracksPrice":{"code":"usd","symbol":"$","value":298},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":150},"aiff":{"code":"usd","symbol":"$","value":150}},"label":{"id":3,"name":"12
+        Inch Thumpers","type":"label","slug":"12-inch-thumpers"},"artists":[{"id":1,"name":"12
+        Inch Thumpers","slug":"12-inch-thumpers","type":"artist"},{"id":1167,"name":"jOHNNYDANGEROUs","slug":"johnnydangerous","type":"remixer"},{"id":1168,"name":"John
+        Whiteman","slug":"john-whiteman","type":"remixer"},{"id":1163,"name":"Paul
+        Glazby","slug":"paul-glazby","type":"remixer"}],"genres":[{"id":8,"name":"Hard
+        Dance","slug":"hard-dance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/6158614.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158614.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6158615.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158615.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6158616.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158616.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6158616.jpg"}}},{"id":39,"type":"release","sku":"release-39","name":"50,000
+        Watts","slug":"50-000-watts","active":true,"releaseDate":"2001-08-20","publishDate":"2001-08-20","exclusive":false,"category":"Release","description":"","currentStatus":"General
+        Content","catalogNumber":"THM024","purchasable":true,"price":{"code":"usd","symbol":"$","value":298},"tracksPrice":{"code":"usd","symbol":"$","value":298},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":150},"aiff":{"code":"usd","symbol":"$","value":150}},"label":{"id":3,"name":"12
+        Inch Thumpers","type":"label","slug":"12-inch-thumpers"},"artists":[{"id":1,"name":"12
+        Inch Thumpers","slug":"12-inch-thumpers","type":"artist"}],"genres":[{"id":8,"name":"Hard
+        Dance","slug":"hard-dance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/6158614.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158614.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6158615.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158615.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6158616.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158616.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6158616.jpg"}}},{"id":40,"type":"release","sku":"release-40","name":"Play
+        The Game","slug":"play-the-game","active":true,"releaseDate":"2001-10-24","publishDate":"2001-10-24","exclusive":false,"category":"Release","description":"","currentStatus":"General
+        Content","catalogNumber":"THM025","purchasable":true,"price":{"code":"usd","symbol":"$","value":298},"tracksPrice":{"code":"usd","symbol":"$","value":298},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":150},"aiff":{"code":"usd","symbol":"$","value":150}},"label":{"id":3,"name":"12
+        Inch Thumpers","type":"label","slug":"12-inch-thumpers"},"artists":[{"id":1,"name":"12
+        Inch Thumpers","slug":"12-inch-thumpers","type":"artist"},{"id":1165,"name":"Ilogik","slug":"ilogik","type":"remixer"},{"id":1181,"name":"Mobi
+        D","slug":"mobi-d","type":"remixer"}],"genres":[{"id":8,"name":"Hard Dance","slug":"hard-dance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/6158614.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158614.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6158615.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158615.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6158616.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158616.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6158616.jpg"}}},{"id":41,"type":"release","sku":"release-41","name":"The
+        Nawty EP 3","slug":"the-nawty-ep-3","active":true,"releaseDate":"2001-08-06","publishDate":"2001-08-06","exclusive":false,"category":"Release","description":"","currentStatus":"General
+        Content","catalogNumber":"THM026","purchasable":true,"price":{"code":"usd","symbol":"$","value":298},"tracksPrice":{"code":"usd","symbol":"$","value":298},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":150},"aiff":{"code":"usd","symbol":"$","value":150}},"label":{"id":3,"name":"12
+        Inch Thumpers","type":"label","slug":"12-inch-thumpers"},"artists":[{"id":1182,"name":"Jason
+        Nawty","slug":"jason-nawty","type":"artist"}],"genres":[{"id":8,"name":"Hard
+        Dance","slug":"hard-dance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/6158614.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158614.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6158615.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158615.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6158616.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158616.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6158616.jpg"}}},{"id":42,"type":"release","sku":"release-42","name":"Underground
+        Sound","slug":"underground-sound","active":true,"releaseDate":"2001-11-05","publishDate":"2001-11-05","exclusive":false,"category":"Release","description":"","currentStatus":"General
+        Content","catalogNumber":"THM028","purchasable":true,"price":{"code":"usd","symbol":"$","value":298},"tracksPrice":{"code":"usd","symbol":"$","value":298},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":150},"aiff":{"code":"usd","symbol":"$","value":150}},"label":{"id":3,"name":"12
+        Inch Thumpers","type":"label","slug":"12-inch-thumpers"},"artists":[{"id":1181,"name":"Mobi
+        D","slug":"mobi-d","type":"artist"}],"genres":[{"id":8,"name":"Hard Dance","slug":"hard-dance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/6158614.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158614.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6158615.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158615.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6158616.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158616.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6158616.jpg"}}},{"id":43,"type":"release","sku":"release-43","name":"All
+        Systems","slug":"all-systems","active":true,"releaseDate":"2001-10-29","publishDate":"2001-10-29","exclusive":false,"category":"Release","description":"","currentStatus":"General
+        Content","catalogNumber":"THM030","purchasable":true,"price":{"code":"usd","symbol":"$","value":298},"tracksPrice":{"code":"usd","symbol":"$","value":298},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":150},"aiff":{"code":"usd","symbol":"$","value":150}},"label":{"id":3,"name":"12
+        Inch Thumpers","type":"label","slug":"12-inch-thumpers"},"artists":[{"id":1185,"name":"Vinyl
+        Coup","slug":"vinyl-coup","type":"artist"}],"genres":[{"id":8,"name":"Hard
+        Dance","slug":"hard-dance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/6158614.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158614.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6158615.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158615.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6158616.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158616.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6158616.jpg"}}}]}'
+    http_version: 
+  recorded_at: Fri, 08 Feb 2013 21:07:14 GMT
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/releases?facets=genreName:Trance,performerName:Above%20%26%20Beyond
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 08 Feb 2013 21:07:15 GMT
+      Server:
+      - Apache
+      Expires:
+      - Fri, 08 Feb 2013 21:37:15 GMT
+      Pragma:
+      - public
+      Cache-Control:
+      - public, max-age=1800
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/releases","query":"facets%5B0%5D=genreName%3ATrance%2CperformerName%3AAbove+%26+Beyond","page":1,"perPage":10,"count":119,"totalPages":12,"nextQuery":"facets%5B0%5D=genreName%3ATrance%2CperformerName%3AAbove+%26+Beyond&page=2","perPageOptions":[{"value":50,"applyQuery":"facets%5B0%5D=genreName%3ATrance%2CperformerName%3AAbove+%26+Beyond&perPage=50"},{"value":100,"applyQuery":"facets%5B0%5D=genreName%3ATrance%2CperformerName%3AAbove+%26+Beyond&perPage=100"},{"value":150,"applyQuery":"facets%5B0%5D=genreName%3ATrance%2CperformerName%3AAbove+%26+Beyond&perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"dateFilters":[{"name":"today","startDate":"2013-02-08","endDate":"2013-02-08","applyQuery":"facets%5B0%5D=genreName%3ATrance%2CperformerName%3AAbove+%26+Beyond&publishDateStart=2013-02-08&publishDateEnd=2013-02-08","applied":false},{"name":"yesterday","startDate":"2013-02-07","endDate":"2013-02-08","applyQuery":"facets%5B0%5D=genreName%3ATrance%2CperformerName%3AAbove+%26+Beyond&publishDateStart=2013-02-07&publishDateEnd=2013-02-08","applied":false},{"name":"weekToDate","startDate":"2013-02-01","endDate":"2013-02-08","applyQuery":"facets%5B0%5D=genreName%3ATrance%2CperformerName%3AAbove+%26+Beyond&publishDateStart=2013-02-01&publishDateEnd=2013-02-08","applied":false},{"name":"monthToDate","startDate":"2013-01-08","endDate":"2013-02-08","applyQuery":"facets%5B0%5D=genreName%3ATrance%2CperformerName%3AAbove+%26+Beyond&publishDateStart=2013-01-08&publishDateEnd=2013-02-08","applied":false},{"name":"yearToDate","startDate":"2012-02-08","endDate":"2013-02-08","applyQuery":"facets%5B0%5D=genreName%3ATrance%2CperformerName%3AAbove+%26+Beyond&publishDateStart=2012-02-08&publishDateEnd=2013-02-08","applied":false},{"custom":true,"name":"customRange","applied":false,"applyQuery":"facets%5B0%5D=genreName%3ATrance%2CperformerName%3AAbove+%26+Beyond"}],"spellcheck":{"suggestions":[]}},"results":[{"id":65291,"type":"release","sku":"release-65291","name":"The
+        Best Trance Remixes Ever!","slug":"the-best-trance-remixes-ever!","active":true,"releaseDate":"2007-07-18","publishDate":"2007-07-18","exclusive":false,"category":"Album","description":"","currentStatus":"General
+        Content","catalogNumber":"ARDI373","purchasable":true,"price":{"code":"usd","symbol":"$","value":999},"tracksPrice":{"code":"usd","symbol":"$","value":1341},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":675},"aiff":{"code":"usd","symbol":"$","value":675}},"label":{"id":38,"name":"Armada
+        Music","type":"label","slug":"armada-music"},"artists":[{"id":43529,"name":"Perpeteous
+        Dreamer","slug":"perpeteous-dreamer","type":"artist"},{"id":594,"name":"M.I.K.E.","slug":"m-i-k-e","type":"artist"},{"id":2199,"name":"Signum","slug":"signum","type":"artist"},{"id":11924,"name":"Solid
+        Sessions","slug":"solid-sessions","type":"artist"},{"id":13084,"name":"Origene","slug":"origene","type":"artist"},{"id":2221,"name":"Pulser","slug":"pulser","type":"artist"},{"id":4665,"name":"Audioholics","slug":"audioholics","type":"artist"},{"id":2201,"name":"Robert
+        Nickson","slug":"robert-nickson","type":"artist"},{"id":15009,"name":"Dave
+        Masters","slug":"dave-masters","type":"artist"},{"id":2215,"name":"Firewall","slug":"firewall","type":"artist"},{"id":7181,"name":"Above
+        & Beyond","slug":"above-and-beyond","type":"remixer"},{"id":12495,"name":"Pierre
+        Hiver","slug":"pierre-hiver","type":"remixer"},{"id":14494,"name":"Mario Hammer","slug":"mario-hammer","type":"remixer"},{"id":4178,"name":"Tiesto","slug":"tiesto","type":"remixer"},{"id":2228,"name":"Armin
+        van Buuren","slug":"armin-van-buuren","type":"remixer"},{"id":2293,"name":"Harry
+        Lemon","slug":"harry-lemon","type":"remixer"},{"id":2216,"name":"Lange","slug":"lange","type":"remixer"},{"id":11181,"name":"Perry
+        O''Neil","slug":"perry-oneil","type":"remixer"},{"id":2266,"name":"Mike Shiver","slug":"mike-shiver","type":"remixer"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/123420.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/123420.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/123421.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/123421.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/123421.jpg"}}},{"id":266738,"type":"release","sku":"release-266738","name":"Trance
+        4Ever","slug":"trance-4ever","active":true,"releaseDate":"2010-08-06","publishDate":"2010-08-06","exclusive":false,"category":"Album","description":"","currentStatus":"General
+        Content","catalogNumber":"ARDI1635","purchasable":true,"price":{"code":"usd","symbol":"$","value":999},"tracksPrice":{"code":"usd","symbol":"$","value":2980},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":1500},"aiff":{"code":"usd","symbol":"$","value":1500}},"label":{"id":38,"name":"Armada
+        Music","type":"label","slug":"armada-music"},"artists":[{"id":3810,"name":"The
+        Thrillseekers","slug":"the-thrillseekers","type":"artist"},{"id":6778,"name":"John
+        O''Callaghan","slug":"john-ocallaghan","type":"artist"},{"id":104446,"name":"Audrey
+        Gallagher","slug":"audrey-gallagher","type":"artist"},{"id":2227,"name":"Mark
+        Otten","slug":"mark-otten","type":"artist"},{"id":24175,"name":"Sunlounger","slug":"sunlounger","type":"artist"},{"id":74885,"name":"Zara","slug":"zara","type":"artist"},{"id":641,"name":"Airwave","slug":"airwave","type":"artist"},{"id":7054,"name":"Rising
+        Star","slug":"rising-star","type":"artist"},{"id":61636,"name":"Arnej","slug":"arnej","type":"artist"},{"id":16528,"name":"Perpetuous
+        Dreamer","slug":"perpetuous-dreamer","type":"artist"},{"id":29976,"name":"Orjan
+        Nilsen","slug":"orjan-nilsen","type":"artist"},{"id":211,"name":"Andy Moor","slug":"andy-moor","type":"artist"},{"id":2199,"name":"Signum","slug":"signum","type":"artist"},{"id":34717,"name":"Filo","slug":"filo","type":"artist"},{"id":34718,"name":"Peri","slug":"peri","type":"artist"},{"id":57743,"name":"Dash
+        Berlin","slug":"dash-berlin","type":"artist"},{"id":105228,"name":"Emma Hewitt","slug":"emma-hewitt","type":"artist"},{"id":10296,"name":"Mike
+        Foyle","slug":"mike-foyle","type":"artist"},{"id":21194,"name":"The Space
+        Brothers","slug":"the-space-brothers","type":"artist"},{"id":9101,"name":"Marcus
+        Schossow","slug":"marcus-schossow","type":"artist"},{"id":21442,"name":"Matt
+        Cerf","slug":"matt-cerf","type":"artist"},{"id":34993,"name":"Jaren","slug":"jaren","type":"artist"},{"id":41275,"name":"Mitiska","slug":"mitiska","type":"artist"},{"id":67269,"name":"W&W","slug":"w-and-w","type":"artist"},{"id":2221,"name":"Pulser","slug":"pulser","type":"artist"},{"id":217,"name":"Roland
+        Klinkenberg","slug":"roland-klinkenberg","type":"artist"},{"id":9315,"name":"DJ
+        Remy","slug":"dj-remy","type":"artist"},{"id":3776,"name":"Goldenscan","slug":"goldenscan","type":"artist"},{"id":3815,"name":"Ferry
+        Corsten","slug":"ferry-corsten","type":"remixer"},{"id":1728,"name":"Markus
+        Schulz","slug":"markus-schulz","type":"remixer"},{"id":34597,"name":"DCML","slug":"dcml","type":"remixer"},{"id":7181,"name":"Above
+        & Beyond","slug":"above-and-beyond","type":"remixer"},{"id":2228,"name":"Armin
+        van Buuren","slug":"armin-van-buuren","type":"remixer"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":11,"name":"Tech
+        House","slug":"tech-house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/749434.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/749434.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/749435.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/749435.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/749436.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/749436.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/749436.jpg"}}},{"id":286163,"type":"release","sku":"release-286163","name":"Trance
+        30 - 2010 - 03","slug":"trance-30-2010-03","active":true,"releaseDate":"2010-10-08","publishDate":"2010-10-08","exclusive":false,"category":"Album","description":"","currentStatus":"General
+        Content","catalogNumber":"ARDI1781","purchasable":true,"price":{"code":"usd","symbol":"$","value":1199},"tracksPrice":{"code":"usd","symbol":"$","value":4470},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":2250},"aiff":{"code":"usd","symbol":"$","value":2250}},"label":{"id":38,"name":"Armada
+        Music","type":"label","slug":"armada-music"},"artists":[{"id":7181,"name":"Above
+        & Beyond","slug":"above-and-beyond","type":"artist"},{"id":38975,"name":"Kyau
+        & Albert","slug":"kyau-and-albert","type":"artist"},{"id":4769,"name":"Gareth
+        Emery","slug":"gareth-emery","type":"artist"},{"id":8672,"name":"Sylvia Tosun","slug":"sylvia-tosun","type":"artist"},{"id":4258,"name":"Svenson","slug":"svenson","type":"artist"},{"id":17084,"name":"Gielen","slug":"gielen","type":"artist"},{"id":24175,"name":"Sunlounger","slug":"sunlounger","type":"artist"},{"id":94680,"name":"Roger
+        Shah","slug":"roger-shah","type":"artist"},{"id":57743,"name":"Dash Berlin","slug":"dash-berlin","type":"artist"},{"id":25538,"name":"Strobe","slug":"strobe","type":"artist"},{"id":61954,"name":"Myon
+        & Shane 54","slug":"myon-and-shane-54","type":"artist"},{"id":148766,"name":"Labworks","slug":"labworks","type":"artist"},{"id":23339,"name":"Sequentia","slug":"sequentia","type":"artist"},{"id":5386,"name":"Bart
+        Claessen","slug":"bart-claessen","type":"artist"},{"id":2206,"name":"Thomas
+        Datt","slug":"thomas-datt","type":"artist"},{"id":145341,"name":"Asedo","slug":"asedo","type":"artist"},{"id":67269,"name":"W&W","slug":"w-and-w","type":"artist"},{"id":3842,"name":"Vascotia","slug":"vascotia","type":"artist"},{"id":12594,"name":"Jon
+        O''Bir","slug":"jon-obir","type":"artist"},{"id":15817,"name":"Luke Terry","slug":"luke-terry","type":"artist"},{"id":95185,"name":"Kerry
+        Leva","slug":"kerry-leva","type":"artist"},{"id":34508,"name":"Ron Hagen","slug":"ron-hagen","type":"artist"},{"id":147453,"name":"Al
+        Exander","slug":"al-exander","type":"artist"},{"id":2668,"name":"Talla 2xlc","slug":"talla-2xlc","type":"artist"},{"id":35625,"name":"Mat
+        Zo","slug":"mat-zo","type":"artist"},{"id":98209,"name":"Gary Maguire","slug":"gary-maguire","type":"artist"},{"id":17901,"name":"Lang
+        & Yep","slug":"lang-and-yep","type":"artist"},{"id":105888,"name":"Maxi Valvona","slug":"maxi-valvona","type":"artist"},{"id":2405,"name":"Revolution
+        9","slug":"revolution-9","type":"artist"},{"id":4071,"name":"Activa","slug":"activa","type":"artist"},{"id":137703,"name":"Who.is","slug":"who-is","type":"artist"},{"id":9375,"name":"Nenes","slug":"nenes","type":"artist"},{"id":44287,"name":"Pascal
+        Feliz","slug":"pascal-feliz","type":"artist"},{"id":29976,"name":"Orjan Nilsen","slug":"orjan-nilsen","type":"artist"},{"id":75268,"name":"Tritonal","slug":"tritonal","type":"artist"},{"id":27234,"name":"Matias
+        Faint","slug":"matias-faint","type":"artist"},{"id":38461,"name":"Paul Webster","slug":"paul-webster","type":"artist"},{"id":12005,"name":"Protoculture","slug":"protoculture","type":"artist"},{"id":3396,"name":"Alex
+        M.O.R.P.H.","slug":"alex-m-o-r-p-h","type":"remixer"},{"id":5166,"name":"Jochen
+        Miller","slug":"jochen-miller","type":"remixer"},{"id":18513,"name":"Richard
+        Durand","slug":"richard-durand","type":"remixer"},{"id":53790,"name":"Arctic
+        Moon","slug":"arctic-moon","type":"remixer"},{"id":100105,"name":"Arty","slug":"arty","type":"remixer"},{"id":33891,"name":"Scot
+        Project","slug":"scot-project","type":"remixer"},{"id":2666,"name":"Ronski
+        Speed","slug":"ronski-speed","type":"remixer"},{"id":11218,"name":"Sean Tyas","slug":"sean-tyas","type":"remixer"},{"id":6778,"name":"John
+        O''Callaghan","slug":"john-ocallaghan","type":"remixer"},{"id":24875,"name":"Ummet
+        Ozcan","slug":"ummet-ozcan","type":"remixer"},{"id":10635,"name":"G-Tek","slug":"g-tek","type":"remixer"},{"id":31283,"name":"Ben
+        Gold","slug":"ben-gold","type":"remixer"},{"id":54416,"name":"The Blizzard","slug":"the-blizzard","type":"remixer"},{"id":28545,"name":"Heatbeat","slug":"heatbeat","type":"remixer"},{"id":92988,"name":"Matt
+        Skyer","slug":"matt-skyer","type":"remixer"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":15,"name":"Progressive
+        House","slug":"progressive-house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/815622.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/815622.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/815623.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/815623.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/815624.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/815624.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/815624.jpg"}}},{"id":963033,"type":"release","sku":"release-963033","name":"Global
+        DJ Broadcast Top 20 - August\/September 2012 - Including Classic Bonus Track","slug":"global-dj-broadcast-top-20-august-september-2012-including-classic-bonus-track","active":true,"releaseDate":"2012-09-21","publishDate":"2012-09-21","exclusive":false,"category":"Album","description":"","currentStatus":"General
+        Content","catalogNumber":"ARDI3240","purchasable":true,"price":{"code":"usd","symbol":"$","value":999},"tracksPrice":{"code":"usd","symbol":"$","value":3129},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":1575},"aiff":{"code":"usd","symbol":"$","value":1575}},"label":{"id":38,"name":"Armada
+        Music","type":"label","slug":"armada-music"},"artists":[{"id":1728,"name":"Markus
+        Schulz","slug":"markus-schulz","type":"artist"},{"id":271504,"name":"Adina
+        Butar","slug":"adina-butar","type":"artist"},{"id":2207,"name":"Elevation","slug":"elevation","type":"artist"},{"id":190201,"name":"Grube","slug":"grube","type":"artist"},{"id":190202,"name":"Hovsepian","slug":"hovsepian","type":"artist"},{"id":39239,"name":"Beat
+        Service","slug":"beat-service","type":"artist"},{"id":88123,"name":"Raneem","slug":"raneem","type":"artist"},{"id":71079,"name":"KhoMha","slug":"khomha","type":"artist"},{"id":68467,"name":"Skytech","slug":"skytech","type":"artist"},{"id":285329,"name":"Team
+        Bastian","slug":"team-bastian","type":"artist"},{"id":4179,"name":"Andain","slug":"andain","type":"artist"},{"id":181731,"name":"2Players","slug":"2players","type":"artist"},{"id":3913,"name":"Meridian","slug":"meridian","type":"artist"},{"id":22853,"name":"Mr.
+        Pit","slug":"mr-pit","type":"artist"},{"id":6479,"name":"Tranquility Base","slug":"tranquility-base","type":"artist"},{"id":7181,"name":"Above
+        & Beyond","slug":"above-and-beyond","type":"artist"},{"id":1325,"name":"Max
+        Graham","slug":"max-graham","type":"artist"},{"id":131661,"name":"Timewave","slug":"timewave","type":"artist"},{"id":211,"name":"Andy
+        Moor","slug":"andy-moor","type":"artist"},{"id":68306,"name":"Max Freegrant","slug":"max-freegrant","type":"artist"},{"id":169668,"name":"Scotty.A","slug":"scotty-a","type":"artist"},{"id":6385,"name":"16
+        Bit Lolitas","slug":"16-bit-lolitas","type":"artist"},{"id":213155,"name":"Boxer","slug":"boxer","type":"artist"},{"id":233167,"name":"Forbes","slug":"forbes","type":"artist"},{"id":45912,"name":"Vix","slug":"vix","type":"artist"},{"id":132620,"name":"Snatt","slug":"snatt","type":"artist"},{"id":65002,"name":"Motehra","slug":"motehra","type":"artist"},{"id":71416,"name":"Basil
+        O''Glue","slug":"basil-oglue","type":"remixer"},{"id":80730,"name":"Paul Trainer","slug":"paul-trainer","type":"remixer"},{"id":88893,"name":"Xtigma","slug":"xtigma","type":"remixer"},{"id":37036,"name":"Wellenrausch","slug":"wellenrausch","type":"remixer"},{"id":31283,"name":"Ben
+        Gold","slug":"ben-gold","type":"remixer"},{"id":5033,"name":"Jerome Isma-Ae","slug":"jerome-isma-ae","type":"remixer"},{"id":150931,"name":"Pobsky","slug":"pobsky","type":"remixer"},{"id":286121,"name":"DJ
+        Tarkan & V-Sag","slug":"dj-tarkan-and-v-sag","type":"remixer"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":9,"name":"Breaks","slug":"breaks","type":"genre"},{"id":15,"name":"Progressive
+        House","slug":"progressive-house","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/5932606.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5932606.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/5932607.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5932607.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5932608.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5932608.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5932608.jpg"}}},{"id":192426,"type":"release","sku":"release-192426","name":"Global
+        Underground 2010","slug":"global-underground-2010","active":true,"releaseDate":"2009-09-27","publishDate":"2009-09-27","exclusive":false,"category":"Album","description":"","currentStatus":"General
+        Content","catalogNumber":"GUA10DIG","purchasable":true,"price":{"code":"usd","symbol":"$","value":2199},"tracksPrice":{"code":"usd","symbol":"$","value":5215},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":2625},"aiff":{"code":"usd","symbol":"$","value":2625}},"label":{"id":219,"name":"Global
+        Underground","type":"label","slug":"global-underground"},"artists":[{"id":14576,"name":"Fred
+        Falke","slug":"fred-falke","type":"artist"},{"id":2480,"name":"Way Out West","slug":"way-out-west","type":"artist"},{"id":3964,"name":"ATFC","slug":"atfc","type":"artist"},{"id":96898,"name":"Downtown
+        Party Network","slug":"downtown-party-network","type":"artist"},{"id":38019,"name":"Dana
+        Bergquist","slug":"dana-bergquist","type":"artist"},{"id":54458,"name":"Peder
+        G","slug":"peder-g","type":"artist"},{"id":5100,"name":"Danny Howells","slug":"danny-howells","type":"artist"},{"id":25438,"name":"Thomas
+        Sagstad","slug":"thomas-sagstad","type":"artist"},{"id":8677,"name":"Stan
+        Kolev","slug":"stan-kolev","type":"artist"},{"id":66850,"name":"Bubu","slug":"bubu","type":"artist"},{"id":10554,"name":"Pryda","slug":"pryda","type":"artist"},{"id":107660,"name":"Jiro
+        Vega","slug":"jiro-vega","type":"artist"},{"id":13106,"name":"Dark Globe","slug":"dark-globe","type":"artist"},{"id":8265,"name":"James
+        Talk","slug":"james-talk","type":"artist"},{"id":61519,"name":"Ridney","slug":"ridney","type":"artist"},{"id":112122,"name":"Doves","slug":"doves","type":"artist"},{"id":106671,"name":"Example","slug":"example","type":"artist"},{"id":4577,"name":"Samuel
+        L Session","slug":"samuel-l-session","type":"artist"},{"id":11778,"name":"Joris
+        Voorn","slug":"joris-voorn","type":"artist"},{"id":22378,"name":"Moby","slug":"moby","type":"artist"},{"id":1570,"name":"Sultan","slug":"sultan","type":"artist"},{"id":15610,"name":"Ned
+        Shepard","slug":"ned-shepard","type":"artist"},{"id":15613,"name":"Jim Rivers","slug":"jim-rivers","type":"artist"},{"id":9120,"name":"Nic
+        Fanciulli","slug":"nic-fanciulli","type":"artist"},{"id":1354,"name":"Trafik","slug":"trafik","type":"artist"},{"id":3548,"name":"Slam","slug":"slam","type":"artist"},{"id":5128,"name":"Plastique
+        de Reve","slug":"plastique-de-reve","type":"artist"},{"id":3659,"name":"Eelke
+        Kleijn","slug":"eelke-kleijn","type":"artist"},{"id":8062,"name":"Stu Hirst","slug":"stu-hirst","type":"artist"},{"id":21602,"name":"Sam
+        Ball","slug":"sam-ball","type":"artist"},{"id":8460,"name":"Richard Dinsdale","slug":"richard-dinsdale","type":"artist"},{"id":105370,"name":"Burn
+        The Negative","slug":"burn-the-negative","type":"artist"},{"id":3105,"name":"Trisco","slug":"trisco","type":"artist"},{"id":1091,"name":"D.Ramirez","slug":"d-ramirez","type":"artist"},{"id":10650,"name":"Cirez
+        D","slug":"cirez-d","type":"artist"},{"id":1355,"name":"Luke Chable","slug":"luke-chable","type":"artist"},{"id":54166,"name":"Dirty
+        Vegas","slug":"dirty-vegas","type":"artist"},{"id":10578,"name":"Various Artists","slug":"various-artists","type":"artist"},{"id":6146,"name":"Jody
+        Wisternoff","slug":"jody-wisternoff","type":"remixer"},{"id":2675,"name":"Sasha","slug":"sasha","type":"remixer"},{"id":58248,"name":"Moam","slug":"moam","type":"remixer"},{"id":15617,"name":"Gui
+        Boratto","slug":"gui-boratto","type":"remixer"},{"id":1030,"name":"Namito","slug":"namito","type":"remixer"},{"id":22031,"name":"Guy
+        J","slug":"guy-j","type":"remixer"},{"id":10184,"name":"Jerome Sydenham","slug":"jerome-sydenham","type":"remixer"},{"id":62544,"name":"Fusion
+        F & Come T","slug":"fusion-f-and-come-t","type":"remixer"},{"id":91437,"name":"Come
+        T (inactive)","slug":"come-t-inactive","type":"remixer"},{"id":14419,"name":"The
+        Black Dog","slug":"the-black-dog","type":"remixer"},{"id":3642,"name":"Juan
+        MacLean","slug":"juan-maclean","type":"remixer"},{"id":14428,"name":"Sebastian
+        Davidson","slug":"sebastian-davidson","type":"remixer"},{"id":85889,"name":"Analog
+        People In A Digital World","slug":"analog-people-in-a-digital-world","type":"remixer"},{"id":8438,"name":"Luke
+        Walker","slug":"luke-walker","type":"remixer"},{"id":7181,"name":"Above &
+        Beyond","slug":"above-and-beyond","type":"remixer"}],"genres":[{"id":37,"name":"Indie
+        Dance \/ Nu Disco","slug":"indie-dance-nu-disco","type":"genre"},{"id":15,"name":"Progressive
+        House","slug":"progressive-house","type":"genre"},{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"},{"id":11,"name":"Tech
+        House","slug":"tech-house","type":"genre"},{"id":17,"name":"Electro House","slug":"electro-house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/489207.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/489207.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/489208.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/489208.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/489209.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/489209.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/489209.jpg"}}},{"id":82536,"type":"release","sku":"release-82536","name":"DT8
+        Project Remixed","slug":"dt8-project-remixed","active":true,"releaseDate":"2007-11-09","publishDate":"2007-11-09","exclusive":false,"category":"Release","description":"After  a
+        huge amount of interest the remixes from the ''DT8 Project - Perfect World''
+        Album are now officially released","currentStatus":"General Content","catalogNumber":"MND057CD1","purchasable":true,"price":{"code":"usd","symbol":"$","value":1192},"tracksPrice":{"code":"usd","symbol":"$","value":1192},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":600},"aiff":{"code":"usd","symbol":"$","value":600}},"label":{"id":313,"name":"Mondo
+        Records","type":"label","slug":"mondo-records"},"artists":[{"id":19311,"name":"DT8
+        Project","slug":"dt8-project","type":"artist"},{"id":7181,"name":"Above &
+        Beyond","slug":"above-and-beyond","type":"remixer"},{"id":13447,"name":"Sunny
+        Lax","slug":"sunny-lax","type":"remixer"},{"id":4842,"name":"Adam White","slug":"adam-white","type":"remixer"},{"id":40079,"name":"Corderoy","slug":"corderoy","type":"remixer"},{"id":23916,"name":"Jurgen
+        Vries","slug":"jurgen-vries","type":"remixer"},{"id":8795,"name":"Koishii
+        & Hush","slug":"koishii-and-hush","type":"remixer"},{"id":2408,"name":"Darren
+        Tate","slug":"darren-tate","type":"remixer"},{"id":1325,"name":"Max Graham","slug":"max-graham","type":"remixer"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":15,"name":"Progressive
+        House","slug":"progressive-house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/166731.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/166731.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/166732.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/166732.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/166732.jpg"}}},{"id":155140,"type":"release","sku":"release-155140","name":"Destination","slug":"destination","active":true,"releaseDate":"2009-02-02","publishDate":"2009-02-02","exclusive":false,"category":"Release","description":"DT8
+        Project is the brain child of internationally renowned composer and producer
+        Darren Tate. \"Destination\" has been reworked, reshaped and refreshed by
+        some of the finest up and coming producers for 2009. \r\n\r\nBack in 2002
+        when \"Destination\" was originally released, it was a global smash and took
+        the world by storm. Even today, the beautiful melodic vocal is still considered
+        one of the best top lines ever written on a dance record.\r\n\r\nNow, heading
+        into 2009 we see this anthem reincarnated, leading with the stunning new album
+        version (from the critically acclaimed album \"Perfect World\") which captures
+        perfectly the energy and vibe that was adored in the original version yet
+        manages to take things up a level and is quite simply breathtaking. \r\n\r\nIf
+        that wasn''t enough, a monstrous bundle of remixes join the new album version
+        courtesy of trance superstars Above & Beyond who deliver their trademark,
+        epic and emotional trance sound. Next up, Godskitchen resident Mark Eteson,
+        grinds out a gritty, tech fuelled monster that will destroy any dance floor
+        it''s dropped on. Adding something different to the package, Dale Corderoy
+        steps up with his DFunkt guise to deliver a diverse progressive house meets
+        trance crossover. \r\n\r\nCrafting a huge euphoric, hands in the air masterpiece,
+        up and coming talent Akesson delivers the next remix, showing just why he''s
+        been causing so much damage in the scene lately. Finally, rising star Redstar,
+        whose talents as a new producer are being recognised all over the world, brings
+        home a true trance roots mix to complete an utterly outstanding package, which
+        will for sure tickle your trance bone.\r\n","currentStatus":"General Content","catalogNumber":"MND075","purchasable":true,"price":{"code":"usd","symbol":"$","value":1937},"tracksPrice":{"code":"usd","symbol":"$","value":1937},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":975},"aiff":{"code":"usd","symbol":"$","value":975}},"label":{"id":313,"name":"Mondo
+        Records","type":"label","slug":"mondo-records"},"artists":[{"id":19311,"name":"DT8
+        Project","slug":"dt8-project","type":"artist"},{"id":2408,"name":"Darren Tate","slug":"darren-tate","type":"remixer"},{"id":7181,"name":"Above
+        & Beyond","slug":"above-and-beyond","type":"remixer"},{"id":40079,"name":"Corderoy","slug":"corderoy","type":"remixer"},{"id":99311,"name":"Dfunkt","slug":"dfunkt","type":"remixer"},{"id":20572,"name":"Mark
+        Eteson","slug":"mark-eteson","type":"remixer"},{"id":74029,"name":"Akesson","slug":"akesson","type":"remixer"},{"id":62809,"name":"Redstar","slug":"redstar","type":"remixer"},{"id":18177,"name":"Pagano","slug":"pagano","type":"remixer"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/358618.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/358618.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/358619.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/358619.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/358620.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/358620.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/358620.jpg"}}},{"id":169534,"type":"release","sku":"release-169534","name":"The
+        Mondo Sessions 002 (Disc 2)","slug":"the-mondo-sessions-002-disc-2","active":true,"releaseDate":"2009-05-06","publishDate":"2009-05-06","exclusive":false,"category":"Album","currentStatus":"General
+        Content","catalogNumber":"MNDA04","purchasable":true,"price":{"code":"usd","symbol":"$","value":1099},"tracksPrice":{"code":"usd","symbol":"$","value":1937},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":975},"aiff":{"code":"usd","symbol":"$","value":975}},"label":{"id":313,"name":"Mondo
+        Records","type":"label","slug":"mondo-records"},"artists":[{"id":9826,"name":"Mark
+        Sherry","slug":"mark-sherry","type":"artist"},{"id":36255,"name":"Outburst","slug":"outburst","type":"artist"},{"id":2227,"name":"Mark
+        Otten","slug":"mark-otten","type":"artist"},{"id":3755,"name":"Menno De Jong","slug":"menno-de-jong","type":"artist"},{"id":56279,"name":"Amurai","slug":"amurai","type":"artist"},{"id":83803,"name":"Saint-Jules","slug":"saint-jules","type":"artist"},{"id":41125,"name":"Oliver
+        Smith","slug":"oliver-smith","type":"artist"},{"id":19311,"name":"DT8 Project","slug":"dt8-project","type":"artist"},{"id":20077,"name":"Giuseppe
+        Ottaviani","slug":"giuseppe-ottaviani","type":"artist"},{"id":4944,"name":"Hydroid","slug":"hydroid","type":"artist"},{"id":11218,"name":"Sean
+        Tyas","slug":"sean-tyas","type":"artist"},{"id":15383,"name":"Simon Patterson","slug":"simon-patterson","type":"artist"},{"id":40079,"name":"Corderoy","slug":"corderoy","type":"artist"},{"id":47535,"name":"U4ICDJ''s","slug":"u4icdjs","type":"artist"},{"id":8692,"name":"Vengeance","slug":"vengeance","type":"artist"},{"id":6473,"name":"Super8","slug":"super8","type":"artist"},{"id":6482,"name":"DJ
+        Tab","slug":"dj-tab","type":"artist"},{"id":6489,"name":"OceanLab","slug":"oceanlab","type":"artist"},{"id":83805,"name":"Digitalis
+        Airride","slug":"digitalis-airride","type":"remixer"},{"id":7015,"name":"Steve
+        Anderson","slug":"steve-anderson","type":"remixer"},{"id":40080,"name":"Reaves","slug":"reaves","type":"remixer"},{"id":40081,"name":"Ahorn","slug":"ahorn","type":"remixer"},{"id":20572,"name":"Mark
+        Eteson","slug":"mark-eteson","type":"remixer"},{"id":18319,"name":"Denga","slug":"denga","type":"remixer"},{"id":20789,"name":"Manus","slug":"manus","type":"remixer"},{"id":7181,"name":"Above
+        & Beyond","slug":"above-and-beyond","type":"remixer"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/409347.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/409347.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/409348.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/409348.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/409349.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/409349.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/409349.jpg"}}},{"id":346893,"type":"release","sku":"release-346893","name":"Decennium
+        (A Decade Of Trance)","slug":"decennium-a-decade-of-trance","active":true,"releaseDate":"2011-04-11","publishDate":"2011-04-11","exclusive":false,"category":"Album","description":"Mondo
+        Records is proud to present ''Decennium'', an album that celebrates the massive
+        impact this pioneering label has had on the worldwide dance community since
+        its inception ten years ago.\r\n\r\nMondo has unquestionably become one of
+        the most influential and pioneering record labels in the electronic music
+        scene. A name that''s synonymous for its quality of artists and productions,
+        Mondo first came to light in 2001 and immediately took the dance fraternity
+        by storm. Delivering time and time again iconic club moments the label continued
+        to stamp it''s mark firmly on the global club scene with club smashes such
+        as ''DT8 Project - The Sun Is Shining (Down On Me)'', ''Darren Tate vs Jono
+        Grant - Let The Light Shine In'', ''Kota - Waiting'', ''The Green Martian
+        - Ladies & Gentlemen'', ''Flash Brothers - Faith In Love'' and hundreds more.
+        The label also helped pave the way for new artists with its open approach
+        to A&Ring, helping to establish talents such as Zirenz, The Young Punx, Tom
+        Colontonio, Steve Anderson (AB Project), Mio, The Flash Brothers, DT8, Corderoy
+        and many others.\r\n\r\nIn this special celebratory package entitled ''Decennium'',
+        we pay homage to thirty of the most influential and defining tracks of the
+        last decade that have helped shape the world of dance music to make it what
+        it is today.","currentStatus":"General Content","catalogNumber":"MND103","purchasable":true,"price":{"code":"usd","symbol":"$","value":2199},"tracksPrice":{"code":"usd","symbol":"$","value":3874},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":1950},"aiff":{"code":"usd","symbol":"$","value":1950}},"label":{"id":313,"name":"Mondo
+        Records","type":"label","slug":"mondo-records"},"artists":[{"id":2408,"name":"Darren
+        Tate","slug":"darren-tate","type":"artist"},{"id":2414,"name":"Jono Grant","slug":"jono-grant","type":"artist"},{"id":181940,"name":"Kota","slug":"kota","type":"artist"},{"id":1350,"name":"Hemstock
+        & Jennings","slug":"hemstock-and-jennings","type":"artist"},{"id":4842,"name":"Adam
+        White","slug":"adam-white","type":"artist"},{"id":2246,"name":"Astura","slug":"astura","type":"artist"},{"id":4805,"name":"ATN","slug":"atn","type":"artist"},{"id":1333,"name":"Classified
+        Project","slug":"classified-project","type":"artist"},{"id":181941,"name":"Slip
+        Friction","slug":"slip-friction","type":"artist"},{"id":8791,"name":"Perpetual
+        Motion","slug":"perpetual-motion","type":"artist"},{"id":1750,"name":"The
+        Green Martian","slug":"the-green-martian","type":"artist"},{"id":19311,"name":"DT8
+        Project","slug":"dt8-project","type":"artist"},{"id":8793,"name":"Lennox","slug":"lennox","type":"artist"},{"id":8794,"name":"Digital
+        Delay","slug":"digital-delay","type":"artist"},{"id":1686,"name":"Flash Brothers","slug":"flash-brothers","type":"artist"},{"id":8982,"name":"Kay
+        Stone","slug":"kay-stone","type":"artist"},{"id":20818,"name":"Zirenz","slug":"zirenz","type":"artist"},{"id":40079,"name":"Corderoy","slug":"corderoy","type":"artist"},{"id":7973,"name":"A\/B
+        Project","slug":"a-b-project","type":"artist"},{"id":97458,"name":"MIO","slug":"mio","type":"artist"},{"id":7015,"name":"Steve
+        Anderson","slug":"steve-anderson","type":"artist"},{"id":13447,"name":"Sunny
+        Lax","slug":"sunny-lax","type":"artist"},{"id":23587,"name":"Acacia","slug":"acacia","type":"artist"},{"id":27880,"name":"Lee
+        Osborne","slug":"lee-osborne","type":"artist"},{"id":1137,"name":"Agnelli
+        & Nelson","slug":"agnelli-and-nelson","type":"remixer"},{"id":6778,"name":"John
+        O''Callaghan","slug":"john-ocallaghan","type":"remixer"},{"id":4666,"name":"Whiteroom","slug":"whiteroom","type":"remixer"},{"id":47825,"name":"Ehren
+        Stowers","slug":"ehren-stowers","type":"remixer"},{"id":12786,"name":"Frase","slug":"frase","type":"remixer"},{"id":7181,"name":"Above
+        & Beyond","slug":"above-and-beyond","type":"remixer"},{"id":100105,"name":"Arty","slug":"arty","type":"remixer"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/1209240.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/1209240.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/1209241.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/1209241.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/1209243.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/1209243.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/1209243.jpg"}}},{"id":385437,"type":"release","sku":"release-385437","name":"Vocal
+        Anthems Vol. 1","slug":"vocal-anthems-vol-1","active":true,"releaseDate":"2011-06-27","publishDate":"2011-06-27","exclusive":false,"category":"Album","description":"Mondo
+        Records presents Vocal Anthems, a collection of 10 unforgettable vocal tracks.
+        In this first instalment there are classic tracks and sublime vocals from
+        DT8 Project, MIO, Second Left, Zirenz and more. A bunch of carefully selected
+        originals and remixes that enhance the vocal experience on any dancefloor.","currentStatus":"General
+        Content","catalogNumber":"MNDSM07","purchasable":true,"price":{"code":"usd","symbol":"$","value":1199},"tracksPrice":{"code":"usd","symbol":"$","value":1490},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":750},"aiff":{"code":"usd","symbol":"$","value":750}},"label":{"id":313,"name":"Mondo
+        Records","type":"label","slug":"mondo-records"},"artists":[{"id":99712,"name":"Chase
+        Costello","slug":"chase-costello","type":"artist"},{"id":97211,"name":"Second
+        Left","slug":"second-left","type":"artist"},{"id":2408,"name":"Darren Tate","slug":"darren-tate","type":"artist"},{"id":2414,"name":"Jono
+        Grant","slug":"jono-grant","type":"artist"},{"id":124658,"name":"Angelic","slug":"angelic","type":"artist"},{"id":19311,"name":"DT8
+        Project","slug":"dt8-project","type":"artist"},{"id":7015,"name":"Steve Anderson","slug":"steve-anderson","type":"artist"},{"id":97458,"name":"MIO","slug":"mio","type":"artist"},{"id":20818,"name":"Zirenz","slug":"zirenz","type":"artist"},{"id":40079,"name":"Corderoy","slug":"corderoy","type":"remixer"},{"id":100105,"name":"Arty","slug":"arty","type":"remixer"},{"id":78403,"name":"Daz
+        Bailey","slug":"daz-bailey","type":"remixer"},{"id":7181,"name":"Above & Beyond","slug":"above-and-beyond","type":"remixer"},{"id":60409,"name":"Bass
+        Fly","slug":"bass-fly","type":"remixer"},{"id":2266,"name":"Mike Shiver","slug":"mike-shiver","type":"remixer"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":17,"name":"Electro
+        House","slug":"electro-house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/2958209.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/2958209.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/2958210.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/2958210.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/2958211.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/2958211.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/2958211.jpg"}}}]}'
+    http_version: 
+  recorded_at: Fri, 08 Feb 2013 21:07:15 GMT
+recorded_with: VCR 2.4.0
