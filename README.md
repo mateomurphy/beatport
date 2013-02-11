@@ -22,8 +22,8 @@ Many queries to beatport support facets, but they aren't properly documentated o
 require 'beatport'
 # Search using the query "Mord Fustang" on Beatport
   query = Beatport::Catalog::Search.query("Mord Fustang")
-  # returns a Beatport::Collection object
-  query.class # => Beatport::Collection
+  
+  query.class # => returns a Beatport::Collection object
 
   query.to_a[0].class # => first result is a Beatport::Catalog::Artist object
   query.to_a[0].id # => returns the Beatport id of the artist
