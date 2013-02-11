@@ -34,9 +34,11 @@ require 'beatport'
 # Find top downloads for a given genre
   genres = Beatport::Catalog::Genre.all # => list all genres
   # display each genre and its corresponding Beatport genre ID
+
   genres.each do |genre|
     puts "Genre: #{genre.name} id: #{genre.id}"
   end
+  
   # find the top 10 downloads for the genre Trance
   trance_genre = Beatport::Catalog::Genre.find(7) # => create Trance Genre object
   trance_top_10 = trance_genre.top_downloads # => list the top downloads for the Trance genre
