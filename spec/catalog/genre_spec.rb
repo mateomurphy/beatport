@@ -39,16 +39,16 @@ module Beatport::Catalog
         Genre.find(7).name.should == "Trance"
       end
 
-      it "should retrieve information about the trance genre via the slug" do
-        pending "find by slug deprecated?"
+      it 'does not find trance via the slug' do
+        Genre.find('trance').should be_nil
+      end
 
-        Genre.find('trance').name.should == "Trance"
+      it "should retrieve information about the trance genre via the slug" do
+        Genre.find('breaks').name.should == "Breaks"
       end
 
       it "should retrieve information about the trance genre via the slug passed as a symbol" do
-        pending "find by slug deprecated?"
-
-        Genre.find(:trance).name.should == "Trance"
+        Genre.find(:breaks).name.should == "Breaks"
       end
 
       it "should return nil with an invalid id" do

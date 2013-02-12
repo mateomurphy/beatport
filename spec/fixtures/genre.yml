@@ -326,4 +326,74 @@ http_interactions:
       string: ! '{"metadata":{"page":1,"perPage":0,"count":0},"results":[]}'
     http_version: 
   recorded_at: Fri, 08 Feb 2013 21:07:02 GMT
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/genres?slug=breaks&subgenres=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 12 Feb 2013 19:22:25 GMT
+      Server:
+      - Apache
+      Expires:
+      - Tue, 12 Feb 2013 19:52:25 GMT
+      Pragma:
+      - public
+      Cache-Control:
+      - public, max-age=1800
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"page":1,"perPage":1,"count":1},"results":[{"id":9,"name":"Breaks","type":"genre","slug":"breaks","subgenres":[{"id":34,"name":"2
+        Step","slug":"2-step"},{"id":37,"name":"Acid","slug":"acid"},{"id":33,"name":"Big
+        Beat","slug":"big-beat"},{"id":35,"name":"Electro","slug":"electro"},{"id":62,"name":"Funky
+        Breaks","slug":"funky-breaks"},{"id":63,"name":"Hardcore Breaks","slug":"hardcore-breaks"},{"id":36,"name":"Nu
+        Skool","slug":"nu-skool"},{"id":38,"name":"Progressive","slug":"progressive"},{"id":96,"name":"Psybreaks","slug":"psybreaks"}]}]}'
+    http_version: 
+  recorded_at: Tue, 12 Feb 2013 19:22:25 GMT
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/genres?slug=trance&subgenres=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 12 Feb 2013 19:23:00 GMT
+      Server:
+      - Apache
+      Expires:
+      - Tue, 12 Feb 2013 19:53:00 GMT
+      Pragma:
+      - public
+      Cache-Control:
+      - public, max-age=1800
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"page":1,"perPage":0,"count":0},"results":[]}'
+    http_version: 
+  recorded_at: Tue, 12 Feb 2013 19:23:00 GMT
 recorded_with: VCR 2.4.0
