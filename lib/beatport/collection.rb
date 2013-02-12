@@ -5,7 +5,7 @@ module Beatport
     include Enumerable
     extend Forwardable
     
-    def_delegators :@results, :each, :'<=>', :length, :==, :===, :to_a
+    def_delegators :@results, :each, :'<=>', :length, :==, :===, :[], :to_a
     
     attr_reader :host, :path, :query, :next_query
     attr_reader :per_page_options, :page, :per_page, :total_pages, :count
