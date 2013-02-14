@@ -16,6 +16,48 @@ Many queries to beatport support facets, but they aren't properly documentated o
 * artistName (and not performerName)
 * labelName
 
+## Examples
+
+```ruby
+require 'beatport'
+# Search using the query "Mord Fustang" on Beatport
+  query = Beatport::Catalog::Search.query("Mord Fustang")
+  
+  query.class # => returns a Beatport::Collection object
+
+  query[0].class # => first result is a Beatport::Catalog::Artist object
+  query[0].id # => returns the Beatport id of the artist
+
+  query[1].class # => second result is a Beatport.Catalog::Chart object
+  query[1].publish_date # => returns the published date of the Chart
+
+  # Note that search results change frequently, so first result may not
+    necessarily be a Beatport::Catalog::Artist object
+
+# Find top downloads for a given genre
+  genres = Beatport::Catalog::Genre.all # => list all genres
+  # display each genre and its corresponding Beatport genre slug
+
+  genres.each do |genre|
+    puts "Genre: #{genre.name} slug: #{genre.slug}"
+  end
+  
+  # find the top 10 downloads for the genre Electro House
+  electro_house_genre = Beatport::Catalog::Genre.find('electro-house') 
+  # => create Electro House Genre object by searching by slug
+
+  electro_house_top_10 = trance_genre.top_downloads
+  # => list the top downloads for the Electro House genre
+
+  electro_house_top_10[0].name
+  # => find the name of the #1 downloaded Electro House track
+
+  # An alternative for searching for genre by slug is searching by genre ID
+  trance_genre = Beatport::Catalog::Genre.find(7) # => returns a Trance Genre object
+
+
+```
+
 ## Contributing to beatport
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
