@@ -43,6 +43,17 @@ module Beatport
         options[:collection] = true
         Client.retrieve "most-popular/label", Track, options
       end
+
+      # also works for multiple id's as input
+      def self.similar(id, options = {}) 
+        options[:id] = id
+        options[:collection] = true
+        Client.retrieve "tracks/similar", Track, options
+      end
+
+      def similar(options = {})
+        @similar ||= Track.similar(id, options)
+      end
     
     end
   end

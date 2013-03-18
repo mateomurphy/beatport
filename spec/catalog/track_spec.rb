@@ -177,6 +177,16 @@ module Beatport::Catalog
         end
       end      
     end
+    describe '.similar' do
+      it "should get a list of tracks similar to track with id 1217790" do
+        tracks = Track.similar 1217790
+        tracks.length.should be > 1
+      end
+      it "should get a list of tracks similar to a list of track ids" do
+        tracks = Track.similar "4166013,1217790"
+        tracks.length.should be > 1
+      end
+    end
   end
 end
 
