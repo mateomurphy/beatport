@@ -29,7 +29,7 @@ module Beatport::Catalog
       its (:next_query) { should == "query=lutzen&page=2"}
       its (:per_page_options) { should_not be_nil }
       its (:facets) { should_not be_nil }
-      its (:spellcheck) { should_not be_nil }
+      its (:spellcheck) { should be_nil }
     end
     
     describe '.query' do

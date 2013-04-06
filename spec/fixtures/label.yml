@@ -2,46 +2,6 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.beatport.com/catalog/3/labels?id=1390
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers: {}
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      date:
-      - Fri, 08 Feb 2013 20:58:48 GMT
-      server:
-      - Apache
-      expires:
-      - Fri, 08 Feb 2013 21:28:48 GMT
-      pragma:
-      - public
-      cache-control:
-      - public, max-age=1800
-      access-control-allow-origin:
-      - ! '*'
-      connection:
-      - close
-      transfer-encoding:
-      - chunked
-      content-type:
-      - application/json
-    body:
-      encoding: US-ASCII
-      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/labels","query":"id=1390","page":1,"perPage":10,"count":1,"totalPages":1,"perPageOptions":[{"value":50,"applyQuery":"id=1390&perPage=50"},{"value":100,"applyQuery":"id=1390&perPage=100"},{"value":150,"applyQuery":"id=1390&perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"spellcheck":{"suggestions":[]}},"results":[{"id":1390,"type":"label","name":"Anjunadeep","slug":"anjunadeep","active":true,"lastPublishDate":"2012-12-17","biography":"","genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":15,"name":"Progressive
-        House","slug":"progressive-house","type":"genre"},{"id":17,"name":"Electro
-        House","slug":"electro-house","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"},{"id":9,"name":"Breaks","slug":"breaks","type":"genre"},{"id":11,"name":"Tech
-        House","slug":"tech-house","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"},{"id":1,"name":"Drum
-        & Bass","slug":"drum-and-bass","type":"genre"},{"id":10,"name":"Chill Out","slug":"chill-out","type":"genre"},{"id":12,"name":"Deep
-        House","slug":"deep-house","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":18,"name":"Dubstep","slug":"dubstep","type":"genre"}],"subGenres":[{"id":27,"name":"Progressive","slug":"progressive","type":"subgenre"},{"id":91,"name":"ProgNo","slug":"progno","type":"subgenre"},{"id":24,"name":"Melodic","slug":"melodic","type":"subgenre"}],"mixCount":172,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/3406.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/3406.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/1191.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/1191.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/345152.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/345152.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/1191.jpg"}}}]}'
-    http_version: '1.1'
-  recorded_at: Fri, 08 Feb 2013 20:58:48 GMT
-- request:
-    method: get
     uri: http://api.beatport.com/catalog/3/labels?facets=labelName%3AAnjunadeep
     body:
       encoding: US-ASCII
@@ -78,80 +38,6 @@ http_interactions:
         House","slug":"tech-house","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"},{"id":1,"name":"Drum
         & Bass","slug":"drum-and-bass","type":"genre"},{"id":10,"name":"Chill Out","slug":"chill-out","type":"genre"},{"id":12,"name":"Deep
         House","slug":"deep-house","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":18,"name":"Dubstep","slug":"dubstep","type":"genre"}],"subGenres":[{"id":27,"name":"Progressive","slug":"progressive","type":"subgenre"},{"id":91,"name":"ProgNo","slug":"progno","type":"subgenre"},{"id":24,"name":"Melodic","slug":"melodic","type":"subgenre"}],"mixCount":172,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/3406.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/3406.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/1191.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/1191.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/345152.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/345152.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/1191.jpg"}}}]}'
-    http_version: '1.1'
-  recorded_at: Fri, 08 Feb 2013 20:58:49 GMT
-- request:
-    method: get
-    uri: http://api.beatport.com/catalog/3/labels?
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers: {}
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      date:
-      - Fri, 08 Feb 2013 20:58:49 GMT
-      server:
-      - Apache
-      expires:
-      - Fri, 08 Feb 2013 21:28:49 GMT
-      pragma:
-      - public
-      cache-control:
-      - public, max-age=1800
-      access-control-allow-origin:
-      - ! '*'
-      connection:
-      - close
-      transfer-encoding:
-      - chunked
-      content-type:
-      - application/json
-    body:
-      encoding: US-ASCII
-      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/labels","query":false,"page":1,"perPage":10,"count":24283,"totalPages":2429,"nextQuery":"page=2","perPageOptions":[{"value":50,"applyQuery":"perPage=50"},{"value":100,"applyQuery":"perPage=100"},{"value":150,"applyQuery":"perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"spellcheck":{"suggestions":[]}},"results":[{"id":3,"type":"label","name":"12
-        Inch Thumpers","slug":"12-inch-thumpers","active":true,"lastPublishDate":"2010-09-15","biography":"","genres":[{"id":8,"name":"Hard
-        Dance","slug":"hard-dance","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"},{"id":15,"name":"Progressive
-        House","slug":"progressive-house","type":"genre"},{"id":16,"name":"DJ Tools","slug":"dj-tools","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":2,"name":"Hardcore
-        \/ Hard Techno","slug":"hardcore-hard-techno","type":"genre"}],"subGenres":[{"id":18,"name":"Disco","slug":"disco","type":"subgenre"},{"id":46,"name":"Acapellas","slug":"acapellas","type":"subgenre"},{"id":17,"name":"Vocal
-        House","slug":"vocal-house","type":"subgenre"},{"id":29,"name":"Tech","slug":"tech","type":"subgenre"},{"id":31,"name":"Hard","slug":"hard","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/6158614.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158614.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6158615.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158615.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6158616.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158616.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/37199.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/37199.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6158616.jpg"},"banner":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/37199.jpg"}}},{"id":5,"type":"label","name":"24seven","slug":"24seven","active":true,"lastPublishDate":"2007-05-15","biography":"","genres":[{"id":5,"name":"House","slug":"house","type":"genre"},{"id":15,"name":"Progressive
-        House","slug":"progressive-house","type":"genre"},{"id":17,"name":"Electro
-        House","slug":"electro-house","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"}],"subGenres":[{"id":19,"name":"Tribal","slug":"tribal","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/73504.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/73504.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/73503.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/73503.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/73503.jpg"}}},{"id":7,"type":"label","name":"3am
-        Recordings","slug":"3am-recordings","active":true,"lastPublishDate":"2013-02-04","biography":"","genres":[{"id":5,"name":"House","slug":"house","type":"genre"},{"id":12,"name":"Deep
-        House","slug":"deep-house","type":"genre"},{"id":11,"name":"Tech House","slug":"tech-house","type":"genre"},{"id":10,"name":"Chill
-        Out","slug":"chill-out","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"},{"id":15,"name":"Progressive
-        House","slug":"progressive-house","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":37,"name":"Indie
-        Dance \/ Nu Disco","slug":"indie-dance-nu-disco","type":"genre"}],"subGenres":[{"id":39,"name":"Downtempo","slug":"downtempo","type":"subgenre"},{"id":43,"name":"Acid","slug":"acid","type":"subgenre"},{"id":18,"name":"Disco","slug":"disco","type":"subgenre"},{"id":14,"name":"Electro","slug":"electro","type":"subgenre"},{"id":87,"name":"Garage","slug":"garage","type":"subgenre"},{"id":19,"name":"Tribal","slug":"tribal","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/4050320.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/4050320.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/4050321.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/4050321.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/4050322.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/4050322.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/836697.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/836697.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/4050322.jpg"},"banner":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/836697.jpg"}}},{"id":8,"type":"label","name":"720
-        Degrees Music","slug":"720-degrees-music","active":true,"lastPublishDate":"2004-12-17","biography":"","genres":[],"subGenres":[],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/2219.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/2219.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6.jpg"}}},{"id":11,"type":"label","name":"83
-        West Records","slug":"83-west-records","active":true,"lastPublishDate":"2005-06-07","biography":"","genres":[{"id":5,"name":"House","slug":"house","type":"genre"},{"id":10,"name":"Chill
-        Out","slug":"chill-out","type":"genre"},{"id":12,"name":"Deep House","slug":"deep-house","type":"genre"}],"subGenres":[{"id":17,"name":"Vocal
-        House","slug":"vocal-house","type":"subgenre"},{"id":41,"name":"Acid Jazz","slug":"acid-jazz","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/2220.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/2220.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/7.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/7.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/37464.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/37464.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/7.jpg"}}},{"id":12,"type":"label","name":"A
-        State Of Trance (Armada)","slug":"a-state-of-trance-armada","active":true,"lastPublishDate":"2013-01-28","biography":"","genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":10,"name":"Chill
-        Out","slug":"chill-out","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"},{"id":15,"name":"Progressive
-        House","slug":"progressive-house","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"},{"id":9,"name":"Breaks","slug":"breaks","type":"genre"}],"subGenres":[{"id":30,"name":"Epic","slug":"epic","type":"subgenre"},{"id":40,"name":"Nu-Jazz","slug":"nu-jazz","type":"subgenre"},{"id":27,"name":"Progressive","slug":"progressive","type":"subgenre"},{"id":31,"name":"Hard","slug":"hard","type":"subgenre"},{"id":33,"name":"Big
-        Beat","slug":"big-beat","type":"subgenre"},{"id":29,"name":"Tech","slug":"tech","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/2221.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/2221.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/8.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/8.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/37281.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/37281.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/8.jpg"}}},{"id":15,"type":"label","name":"AcropolisRPM","slug":"acropolisrpm","active":true,"lastPublishDate":"2012-12-21","biography":"","genres":[{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":1,"name":"Drum
-        & Bass","slug":"drum-and-bass","type":"genre"},{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":8,"name":"Hard
-        Dance","slug":"hard-dance","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"},{"id":9,"name":"Breaks","slug":"breaks","type":"genre"},{"id":15,"name":"Progressive
-        House","slug":"progressive-house","type":"genre"},{"id":17,"name":"Electro
-        House","slug":"electro-house","type":"genre"},{"id":10,"name":"Chill Out","slug":"chill-out","type":"genre"},{"id":11,"name":"Tech
-        House","slug":"tech-house","type":"genre"},{"id":37,"name":"Indie Dance \/
-        Nu Disco","slug":"indie-dance-nu-disco","type":"genre"},{"id":18,"name":"Dubstep","slug":"dubstep","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"}],"subGenres":[{"id":29,"name":"Tech","slug":"tech","type":"subgenre"},{"id":31,"name":"Hard","slug":"hard","type":"subgenre"},{"id":28,"name":"Acid","slug":"acid","type":"subgenre"},{"id":39,"name":"Downtempo","slug":"downtempo","type":"subgenre"},{"id":27,"name":"Progressive","slug":"progressive","type":"subgenre"},{"id":19,"name":"Tribal","slug":"tribal","type":"subgenre"},{"id":30,"name":"Epic","slug":"epic","type":"subgenre"},{"id":88,"name":"Indie
-        Dance","slug":"indie-dance","type":"subgenre"},{"id":32,"name":"Nu-NRG","slug":"nu-nrg","type":"subgenre"},{"id":18,"name":"Disco","slug":"disco","type":"subgenre"},{"id":38,"name":"Progressive","slug":"progressive","type":"subgenre"},{"id":17,"name":"Vocal
-        House","slug":"vocal-house","type":"subgenre"},{"id":24,"name":"Melodic","slug":"melodic","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/2498.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/2498.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/285.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/285.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/285.jpg"}}},{"id":16,"type":"label","name":"Acute
-        Recordings","slug":"acute-recordings","active":true,"lastPublishDate":"2011-07-14","biography":"","genres":[{"id":15,"name":"Progressive
-        House","slug":"progressive-house","type":"genre"},{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":11,"name":"Tech
-        House","slug":"tech-house","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":17,"name":"Electro
-        House","slug":"electro-house","type":"genre"},{"id":12,"name":"Deep House","slug":"deep-house","type":"genre"}],"subGenres":[{"id":27,"name":"Progressive","slug":"progressive","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/2505.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/2505.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/292.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/292.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/37454.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/37454.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/292.jpg"}}},{"id":18,"type":"label","name":"Adjusted
-        Music","slug":"adjusted-music","active":true,"lastPublishDate":"2012-08-27","biography":"","genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":10,"name":"Chill
-        Out","slug":"chill-out","type":"genre"}],"subGenres":[{"id":40,"name":"Nu-Jazz","slug":"nu-jazz","type":"subgenre"},{"id":27,"name":"Progressive","slug":"progressive","type":"subgenre"},{"id":29,"name":"Tech","slug":"tech","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/2497.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/2497.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/284.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/284.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/37397.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/37397.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/284.jpg"}}},{"id":19,"type":"label","name":"Advanced
-        Records","slug":"advanced-records","active":true,"lastPublishDate":"2010-03-29","biography":"","genres":[{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":15,"name":"Progressive
-        House","slug":"progressive-house","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"},{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":14,"name":"Minimal","slug":"minimal","type":"genre"},{"id":17,"name":"Electro
-        House","slug":"electro-house","type":"genre"},{"id":10,"name":"Chill Out","slug":"chill-out","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"},{"id":1,"name":"Drum
-        & Bass","slug":"drum-and-bass","type":"genre"},{"id":9,"name":"Breaks","slug":"breaks","type":"genre"},{"id":11,"name":"Tech
-        House","slug":"tech-house","type":"genre"},{"id":16,"name":"DJ Tools","slug":"dj-tools","type":"genre"}],"subGenres":[{"id":24,"name":"Melodic","slug":"melodic","type":"subgenre"},{"id":39,"name":"Downtempo","slug":"downtempo","type":"subgenre"},{"id":14,"name":"Electro","slug":"electro","type":"subgenre"},{"id":38,"name":"Progressive","slug":"progressive","type":"subgenre"},{"id":44,"name":"Reprise","slug":"reprise","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/2222.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/2222.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/9.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/9.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/37164.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/37164.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/9.jpg"}}}]}'
     http_version: '1.1'
   recorded_at: Fri, 08 Feb 2013 20:58:49 GMT
 - request:
@@ -373,6 +259,44 @@ http_interactions:
   recorded_at: Fri, 08 Feb 2013 20:58:51 GMT
 - request:
     method: get
+    uri: http://api.beatport.com/catalog/3/labels?id=1390
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 06 Apr 2013 17:40:44 GMT
+      Server:
+      - Apache
+      Expires:
+      - Sat, 06 Apr 2013 18:10:44 GMT
+      Pragma:
+      - public
+      Cache-Control:
+      - public, max-age=1800
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/labels","query":"id=1390","page":1,"perPage":10,"count":1,"totalPages":1,"perPageOptions":[{"value":50,"applyQuery":"id=1390&perPage=50"},{"value":100,"applyQuery":"id=1390&perPage=100"},{"value":150,"applyQuery":"id=1390&perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"spellcheck":null},"results":[{"id":1390,"type":"label","name":"Anjunadeep","slug":"anjunadeep","active":true,"lastPublishDate":"2013-03-25","biography":"","genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":15,"name":"Progressive
+        House","slug":"progressive-house","type":"genre"},{"id":17,"name":"Electro
+        House","slug":"electro-house","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"},{"id":11,"name":"Tech
+        House","slug":"tech-house","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"},{"id":1,"name":"Drum
+        & Bass","slug":"drum-and-bass","type":"genre"},{"id":10,"name":"Chill Out","slug":"chill-out","type":"genre"},{"id":12,"name":"Deep
+        House","slug":"deep-house","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":18,"name":"Dubstep","slug":"dubstep","type":"genre"}],"subGenres":[{"id":27,"name":"Progressive","slug":"progressive","type":"subgenre"},{"id":91,"name":"ProgNo","slug":"progno","type":"subgenre"},{"id":24,"name":"Melodic","slug":"melodic","type":"subgenre"}],"mixCount":217,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/3406.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/3406.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/1191.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/1191.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/345152.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/345152.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/1191.jpg"}}}]}'
+    http_version: 
+  recorded_at: Sat, 06 Apr 2013 17:40:44 GMT
+- request:
+    method: get
     uri: http://api.beatport.com/catalog/3/labels?facets=labelName:Anjunadeep
     body:
       encoding: US-ASCII
@@ -384,11 +308,11 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 08 Feb 2013 21:07:03 GMT
+      - Sat, 06 Apr 2013 17:40:44 GMT
       Server:
       - Apache
       Expires:
-      - Fri, 08 Feb 2013 21:37:03 GMT
+      - Sat, 06 Apr 2013 18:10:44 GMT
       Pragma:
       - public
       Cache-Control:
@@ -401,17 +325,17 @@ http_interactions:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/labels","query":"facets%5B0%5D=labelName%3AAnjunadeep","page":1,"perPage":10,"count":1,"totalPages":1,"perPageOptions":[{"value":50,"applyQuery":"facets%5B0%5D=labelName%3AAnjunadeep&perPage=50"},{"value":100,"applyQuery":"facets%5B0%5D=labelName%3AAnjunadeep&perPage=100"},{"value":150,"applyQuery":"facets%5B0%5D=labelName%3AAnjunadeep&perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"spellcheck":{"suggestions":[]}},"results":[{"id":1390,"type":"label","name":"Anjunadeep","slug":"anjunadeep","active":true,"lastPublishDate":"2012-12-17","biography":"","genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":15,"name":"Progressive
+      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/labels","query":"facets%5B0%5D=labelName%3AAnjunadeep","page":1,"perPage":10,"count":1,"totalPages":1,"perPageOptions":[{"value":50,"applyQuery":"facets%5B0%5D=labelName%3AAnjunadeep&perPage=50"},{"value":100,"applyQuery":"facets%5B0%5D=labelName%3AAnjunadeep&perPage=100"},{"value":150,"applyQuery":"facets%5B0%5D=labelName%3AAnjunadeep&perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"spellcheck":null},"results":[{"id":1390,"type":"label","name":"Anjunadeep","slug":"anjunadeep","active":true,"lastPublishDate":"2013-03-25","biography":"","genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":15,"name":"Progressive
         House","slug":"progressive-house","type":"genre"},{"id":17,"name":"Electro
-        House","slug":"electro-house","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"},{"id":9,"name":"Breaks","slug":"breaks","type":"genre"},{"id":11,"name":"Tech
+        House","slug":"electro-house","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"},{"id":11,"name":"Tech
         House","slug":"tech-house","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"},{"id":1,"name":"Drum
         & Bass","slug":"drum-and-bass","type":"genre"},{"id":10,"name":"Chill Out","slug":"chill-out","type":"genre"},{"id":12,"name":"Deep
-        House","slug":"deep-house","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":18,"name":"Dubstep","slug":"dubstep","type":"genre"}],"subGenres":[{"id":27,"name":"Progressive","slug":"progressive","type":"subgenre"},{"id":91,"name":"ProgNo","slug":"progno","type":"subgenre"},{"id":24,"name":"Melodic","slug":"melodic","type":"subgenre"}],"mixCount":172,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/3406.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/3406.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/1191.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/1191.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/345152.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/345152.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/1191.jpg"}}}]}'
+        House","slug":"deep-house","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":18,"name":"Dubstep","slug":"dubstep","type":"genre"}],"subGenres":[{"id":27,"name":"Progressive","slug":"progressive","type":"subgenre"},{"id":91,"name":"ProgNo","slug":"progno","type":"subgenre"},{"id":24,"name":"Melodic","slug":"melodic","type":"subgenre"}],"mixCount":217,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/3406.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/3406.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/1191.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/1191.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/345152.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/345152.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/1191.jpg"}}}]}'
     http_version: 
-  recorded_at: Fri, 08 Feb 2013 21:07:03 GMT
+  recorded_at: Sat, 06 Apr 2013 17:40:44 GMT
 - request:
     method: get
-    uri: http://api.beatport.com/catalog/3/labels?page=1&perPage=5
+    uri: http://api.beatport.com/catalog/3/labels?
     body:
       encoding: US-ASCII
       string: ''
@@ -422,11 +346,11 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 08 Feb 2013 21:07:03 GMT
+      - Sat, 06 Apr 2013 17:40:44 GMT
       Server:
       - Apache
       Expires:
-      - Fri, 08 Feb 2013 21:37:03 GMT
+      - Sat, 06 Apr 2013 18:10:44 GMT
       Pragma:
       - public
       Cache-Control:
@@ -439,119 +363,15 @@ http_interactions:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/labels","query":"perPage=5","page":1,"perPage":5,"count":24283,"totalPages":4857,"nextQuery":"perPage=5&page=2","perPageOptions":[{"value":50,"applyQuery":"perPage=50"},{"value":100,"applyQuery":"perPage=100"},{"value":150,"applyQuery":"perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"spellcheck":{"suggestions":[]}},"results":[{"id":3,"type":"label","name":"12
-        Inch Thumpers","slug":"12-inch-thumpers","active":true,"lastPublishDate":"2010-09-15","biography":"","genres":[{"id":8,"name":"Hard
+      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/labels","query":false,"page":1,"perPage":10,"count":25310,"totalPages":2531,"nextQuery":"page=2","perPageOptions":[{"value":50,"applyQuery":"perPage=50"},{"value":100,"applyQuery":"perPage=100"},{"value":150,"applyQuery":"perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"spellcheck":null},"results":[{"id":3,"type":"label","name":"12
+        Inch Thumpers","slug":"12-inch-thumpers","active":true,"lastPublishDate":"2013-04-01","biography":"","genres":[{"id":8,"name":"Hard
         Dance","slug":"hard-dance","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"},{"id":15,"name":"Progressive
         House","slug":"progressive-house","type":"genre"},{"id":16,"name":"DJ Tools","slug":"dj-tools","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":2,"name":"Hardcore
         \/ Hard Techno","slug":"hardcore-hard-techno","type":"genre"}],"subGenres":[{"id":18,"name":"Disco","slug":"disco","type":"subgenre"},{"id":46,"name":"Acapellas","slug":"acapellas","type":"subgenre"},{"id":17,"name":"Vocal
         House","slug":"vocal-house","type":"subgenre"},{"id":29,"name":"Tech","slug":"tech","type":"subgenre"},{"id":31,"name":"Hard","slug":"hard","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/6158614.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158614.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6158615.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158615.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6158616.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158616.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/37199.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/37199.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6158616.jpg"},"banner":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/37199.jpg"}}},{"id":5,"type":"label","name":"24seven","slug":"24seven","active":true,"lastPublishDate":"2007-05-15","biography":"","genres":[{"id":5,"name":"House","slug":"house","type":"genre"},{"id":15,"name":"Progressive
         House","slug":"progressive-house","type":"genre"},{"id":17,"name":"Electro
         House","slug":"electro-house","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"}],"subGenres":[{"id":19,"name":"Tribal","slug":"tribal","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/73504.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/73504.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/73503.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/73503.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/73503.jpg"}}},{"id":7,"type":"label","name":"3am
-        Recordings","slug":"3am-recordings","active":true,"lastPublishDate":"2013-02-04","biography":"","genres":[{"id":5,"name":"House","slug":"house","type":"genre"},{"id":12,"name":"Deep
-        House","slug":"deep-house","type":"genre"},{"id":11,"name":"Tech House","slug":"tech-house","type":"genre"},{"id":10,"name":"Chill
-        Out","slug":"chill-out","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"},{"id":15,"name":"Progressive
-        House","slug":"progressive-house","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":37,"name":"Indie
-        Dance \/ Nu Disco","slug":"indie-dance-nu-disco","type":"genre"}],"subGenres":[{"id":39,"name":"Downtempo","slug":"downtempo","type":"subgenre"},{"id":43,"name":"Acid","slug":"acid","type":"subgenre"},{"id":18,"name":"Disco","slug":"disco","type":"subgenre"},{"id":14,"name":"Electro","slug":"electro","type":"subgenre"},{"id":87,"name":"Garage","slug":"garage","type":"subgenre"},{"id":19,"name":"Tribal","slug":"tribal","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/4050320.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/4050320.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/4050321.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/4050321.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/4050322.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/4050322.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/836697.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/836697.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/4050322.jpg"},"banner":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/836697.jpg"}}},{"id":8,"type":"label","name":"720
-        Degrees Music","slug":"720-degrees-music","active":true,"lastPublishDate":"2004-12-17","biography":"","genres":[],"subGenres":[],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/2219.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/2219.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6.jpg"}}},{"id":11,"type":"label","name":"83
-        West Records","slug":"83-west-records","active":true,"lastPublishDate":"2005-06-07","biography":"","genres":[{"id":5,"name":"House","slug":"house","type":"genre"},{"id":10,"name":"Chill
-        Out","slug":"chill-out","type":"genre"},{"id":12,"name":"Deep House","slug":"deep-house","type":"genre"}],"subGenres":[{"id":17,"name":"Vocal
-        House","slug":"vocal-house","type":"subgenre"},{"id":41,"name":"Acid Jazz","slug":"acid-jazz","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/2220.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/2220.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/7.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/7.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/37464.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/37464.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/7.jpg"}}}]}'
-    http_version: 
-  recorded_at: Fri, 08 Feb 2013 21:07:03 GMT
-- request:
-    method: get
-    uri: http://api.beatport.com/catalog/3/labels?genreId=5&page=1&perPage=5&sortBy=publishDate%20asc,labelId%20asc
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers: {}
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Fri, 08 Feb 2013 21:07:04 GMT
-      Server:
-      - Apache
-      Expires:
-      - Fri, 08 Feb 2013 21:37:04 GMT
-      Pragma:
-      - public
-      Cache-Control:
-      - public, max-age=1800
-      Access-Control-Allow-Origin:
-      - ! '*'
-      Transfer-Encoding:
-      - chunked
-      Content-Type:
-      - application/json
-    body:
-      encoding: US-ASCII
-      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/labels","query":"sortBy=publishDate+asc%2ClabelId+asc&genreId=5&perPage=5","page":1,"perPage":5,"count":24283,"totalPages":4857,"nextQuery":"sortBy=publishDate+asc%2ClabelId+asc&genreId=5&perPage=5&page=2","perPageOptions":[{"value":50,"applyQuery":"sortBy=publishDate+asc%2ClabelId+asc&genreId=5&perPage=50"},{"value":100,"applyQuery":"sortBy=publishDate+asc%2ClabelId+asc&genreId=5&perPage=100"},{"value":150,"applyQuery":"sortBy=publishDate+asc%2ClabelId+asc&genreId=5&perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"spellcheck":{"suggestions":[]}},"results":[{"id":4251,"type":"label","name":"Fresh
-        Records","slug":"fresh-records","active":true,"lastPublishDate":"1989-01-01","biography":"","genres":[{"id":38,"name":"Hip-Hop","slug":"hip-hop","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"},{"id":9,"name":"Breaks","slug":"breaks","type":"genre"},{"id":16,"name":"DJ
-        Tools","slug":"dj-tools","type":"genre"}],"subGenres":[{"id":17,"name":"Vocal
-        House","slug":"vocal-house","type":"subgenre"},{"id":46,"name":"Acapellas","slug":"acapellas","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/65221.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/65221.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/65220.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/65220.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/214152.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/214152.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/65220.jpg"}}},{"id":4249,"type":"label","name":"Idlers","slug":"idlers","active":true,"lastPublishDate":"1989-09-20","biography":"","genres":[{"id":5,"name":"House","slug":"house","type":"genre"},{"id":10,"name":"Chill
-        Out","slug":"chill-out","type":"genre"},{"id":38,"name":"Hip-Hop","slug":"hip-hop","type":"genre"},{"id":16,"name":"DJ
-        Tools","slug":"dj-tools","type":"genre"},{"id":9,"name":"Breaks","slug":"breaks","type":"genre"}],"subGenres":[{"id":42,"name":"Trip-Hop","slug":"trip-hop","type":"subgenre"},{"id":19,"name":"Tribal","slug":"tribal","type":"subgenre"},{"id":17,"name":"Vocal
-        House","slug":"vocal-house","type":"subgenre"},{"id":18,"name":"Disco","slug":"disco","type":"subgenre"},{"id":46,"name":"Acapellas","slug":"acapellas","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/65217.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/65217.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/65216.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/65216.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/65216.jpg"}}},{"id":28856,"type":"label","name":"Cramboy","slug":"cramboy","active":true,"lastPublishDate":"1991-01-01","biography":"","genres":[{"id":3,"name":"Electronica","slug":"electronica","type":"genre"}],"subGenres":[],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/6081542.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6081542.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6081543.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6081543.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6081544.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6081544.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6081544.jpg"}}},{"id":21071,"type":"label","name":"POINTBLANK","slug":"pointblank","active":true,"lastPublishDate":"1992-06-29","biography":"","genres":[{"id":40,"name":"Funk
-        \/ R&B","slug":"funk-r-and-b","type":"genre"}],"subGenres":[],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491531.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491531.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491532.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491532.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5539566.jpg"}}},{"id":7664,"type":"label","name":"Addictive","slug":"addictive","active":true,"lastPublishDate":"1992-07-13","biography":"","genres":[{"id":15,"name":"Progressive
-        House","slug":"progressive-house","type":"genre"}],"subGenres":[],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/153864.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/153864.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/153863.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/153863.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/153863.jpg"}}}]}'
-    http_version: 
-  recorded_at: Fri, 08 Feb 2013 21:07:04 GMT
-- request:
-    method: get
-    uri: http://api.beatport.com/catalog/3/labels?returnFacets=genreName,performerName
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers: {}
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Fri, 08 Feb 2013 21:07:04 GMT
-      Server:
-      - Apache
-      Expires:
-      - Fri, 08 Feb 2013 21:37:04 GMT
-      Pragma:
-      - public
-      Cache-Control:
-      - public, max-age=1800
-      Access-Control-Allow-Origin:
-      - ! '*'
-      Transfer-Encoding:
-      - chunked
-      Content-Type:
-      - application/json
-    body:
-      encoding: US-ASCII
-      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/labels","query":"returnFacets=genreName%2CperformerName","page":1,"perPage":10,"count":24283,"totalPages":2429,"nextQuery":"returnFacets=genreName%2CperformerName&page=2","perPageOptions":[{"value":50,"applyQuery":"returnFacets=genreName%2CperformerName&perPage=50"},{"value":100,"applyQuery":"returnFacets=genreName%2CperformerName&perPage=100"},{"value":150,"applyQuery":"returnFacets=genreName%2CperformerName&perPage=150"}],"facets":{"fields":{"genreName":[{"name":"House","count":10641,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AHouse","removeQuery":null},{"name":"Tech
-        House","count":10185,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3ATech+House","removeQuery":null},{"name":"Techno","count":9133,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3ATechno","removeQuery":null},{"name":"Progressive
-        House","count":7788,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AProgressive+House","removeQuery":null},{"name":"Deep
-        House","count":7568,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3ADeep+House","removeQuery":null},{"name":"Electro
-        House","count":7293,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AElectro+House","removeQuery":null},{"name":"Electronica","count":6859,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AElectronica","removeQuery":null},{"name":"Chill
-        Out","count":5234,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AChill+Out","removeQuery":null},{"name":"Minimal","count":4970,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AMinimal","removeQuery":null},{"name":"Breaks","count":4429,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3ABreaks","removeQuery":null},{"name":"Indie
-        Dance \/ Nu Disco","count":3881,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AIndie+Dance+%2F+Nu+Disco","removeQuery":null},{"name":"Trance","count":3812,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3ATrance","removeQuery":null},{"name":"Dubstep","count":3577,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3ADubstep","removeQuery":null},{"name":"Drum
-        & Bass","count":2997,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3ADrum+%26+Bass","removeQuery":null},{"name":"DJ
-        Tools","count":2784,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3ADJ+Tools","removeQuery":null},{"name":"Hip-Hop","count":2540,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AHip-Hop","removeQuery":null},{"name":"Pop
-        \/ Rock","count":1586,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3APop+%2F+Rock","removeQuery":null},{"name":"Hardcore
-        \/ Hard Techno","count":1113,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AHardcore+%2F+Hard+Techno","removeQuery":null},{"name":"Hard
-        Dance","count":1068,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AHard+Dance","removeQuery":null},{"name":"Funk
-        \/ R&B","count":727,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AFunk+%2F+R%26B","removeQuery":null},{"name":"Psy-Trance","count":704,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3APsy-Trance","removeQuery":null},{"name":"Reggae
-        \/ Dub","count":639,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AReggae+%2F+Dub","removeQuery":null},{"name":"Glitch
-        Hop","count":544,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AGlitch+Hop","removeQuery":null},{"name":"World","count":8,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AWorld","removeQuery":null},{"name":"Vocal","count":3,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AVocal","removeQuery":null}],"performerName":[]}},"appliedFacets":[],"spellcheck":{"suggestions":[]}},"results":[{"id":3,"type":"label","name":"12
-        Inch Thumpers","slug":"12-inch-thumpers","active":true,"lastPublishDate":"2010-09-15","biography":"","genres":[{"id":8,"name":"Hard
-        Dance","slug":"hard-dance","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"},{"id":15,"name":"Progressive
-        House","slug":"progressive-house","type":"genre"},{"id":16,"name":"DJ Tools","slug":"dj-tools","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":2,"name":"Hardcore
-        \/ Hard Techno","slug":"hardcore-hard-techno","type":"genre"}],"subGenres":[{"id":18,"name":"Disco","slug":"disco","type":"subgenre"},{"id":46,"name":"Acapellas","slug":"acapellas","type":"subgenre"},{"id":17,"name":"Vocal
-        House","slug":"vocal-house","type":"subgenre"},{"id":29,"name":"Tech","slug":"tech","type":"subgenre"},{"id":31,"name":"Hard","slug":"hard","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/6158614.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158614.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6158615.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158615.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6158616.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158616.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/37199.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/37199.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6158616.jpg"},"banner":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/37199.jpg"}}},{"id":5,"type":"label","name":"24seven","slug":"24seven","active":true,"lastPublishDate":"2007-05-15","biography":"","genres":[{"id":5,"name":"House","slug":"house","type":"genre"},{"id":15,"name":"Progressive
-        House","slug":"progressive-house","type":"genre"},{"id":17,"name":"Electro
-        House","slug":"electro-house","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"}],"subGenres":[{"id":19,"name":"Tribal","slug":"tribal","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/73504.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/73504.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/73503.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/73503.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/73503.jpg"}}},{"id":7,"type":"label","name":"3am
-        Recordings","slug":"3am-recordings","active":true,"lastPublishDate":"2013-02-04","biography":"","genres":[{"id":5,"name":"House","slug":"house","type":"genre"},{"id":12,"name":"Deep
+        Recordings","slug":"3am-recordings","active":true,"lastPublishDate":"2013-04-01","biography":"","genres":[{"id":5,"name":"House","slug":"house","type":"genre"},{"id":12,"name":"Deep
         House","slug":"deep-house","type":"genre"},{"id":11,"name":"Tech House","slug":"tech-house","type":"genre"},{"id":10,"name":"Chill
         Out","slug":"chill-out","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"},{"id":15,"name":"Progressive
         House","slug":"progressive-house","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":37,"name":"Indie
@@ -560,9 +380,10 @@ http_interactions:
         West Records","slug":"83-west-records","active":true,"lastPublishDate":"2005-06-07","biography":"","genres":[{"id":5,"name":"House","slug":"house","type":"genre"},{"id":10,"name":"Chill
         Out","slug":"chill-out","type":"genre"},{"id":12,"name":"Deep House","slug":"deep-house","type":"genre"}],"subGenres":[{"id":17,"name":"Vocal
         House","slug":"vocal-house","type":"subgenre"},{"id":41,"name":"Acid Jazz","slug":"acid-jazz","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/2220.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/2220.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/7.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/7.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/37464.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/37464.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/7.jpg"}}},{"id":12,"type":"label","name":"A
-        State Of Trance (Armada)","slug":"a-state-of-trance-armada","active":true,"lastPublishDate":"2013-01-28","biography":"","genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":10,"name":"Chill
+        State Of Trance (Armada)","slug":"a-state-of-trance-armada","active":true,"lastPublishDate":"2013-04-01","biography":"","genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":10,"name":"Chill
         Out","slug":"chill-out","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"},{"id":15,"name":"Progressive
-        House","slug":"progressive-house","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"},{"id":9,"name":"Breaks","slug":"breaks","type":"genre"}],"subGenres":[{"id":30,"name":"Epic","slug":"epic","type":"subgenre"},{"id":40,"name":"Nu-Jazz","slug":"nu-jazz","type":"subgenre"},{"id":27,"name":"Progressive","slug":"progressive","type":"subgenre"},{"id":31,"name":"Hard","slug":"hard","type":"subgenre"},{"id":33,"name":"Big
+        House","slug":"progressive-house","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"},{"id":9,"name":"Breaks","slug":"breaks","type":"genre"},{"id":16,"name":"DJ
+        Tools","slug":"dj-tools","type":"genre"}],"subGenres":[{"id":30,"name":"Epic","slug":"epic","type":"subgenre"},{"id":40,"name":"Nu-Jazz","slug":"nu-jazz","type":"subgenre"},{"id":27,"name":"Progressive","slug":"progressive","type":"subgenre"},{"id":31,"name":"Hard","slug":"hard","type":"subgenre"},{"id":33,"name":"Big
         Beat","slug":"big-beat","type":"subgenre"},{"id":29,"name":"Tech","slug":"tech","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/2221.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/2221.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/8.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/8.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/37281.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/37281.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/8.jpg"}}},{"id":15,"type":"label","name":"AcropolisRPM","slug":"acropolisrpm","active":true,"lastPublishDate":"2012-12-21","biography":"","genres":[{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":1,"name":"Drum
         & Bass","slug":"drum-and-bass","type":"genre"},{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":8,"name":"Hard
         Dance","slug":"hard-dance","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"},{"id":9,"name":"Breaks","slug":"breaks","type":"genre"},{"id":15,"name":"Progressive
@@ -576,7 +397,7 @@ http_interactions:
         House","slug":"progressive-house","type":"genre"},{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":11,"name":"Tech
         House","slug":"tech-house","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":17,"name":"Electro
         House","slug":"electro-house","type":"genre"},{"id":12,"name":"Deep House","slug":"deep-house","type":"genre"}],"subGenres":[{"id":27,"name":"Progressive","slug":"progressive","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/2505.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/2505.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/292.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/292.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/37454.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/37454.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/292.jpg"}}},{"id":18,"type":"label","name":"Adjusted
-        Music","slug":"adjusted-music","active":true,"lastPublishDate":"2012-08-27","biography":"","genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":10,"name":"Chill
+        Music","slug":"adjusted-music","active":true,"lastPublishDate":"2013-02-12","biography":"","genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":10,"name":"Chill
         Out","slug":"chill-out","type":"genre"}],"subGenres":[{"id":40,"name":"Nu-Jazz","slug":"nu-jazz","type":"subgenre"},{"id":27,"name":"Progressive","slug":"progressive","type":"subgenre"},{"id":29,"name":"Tech","slug":"tech","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/2497.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/2497.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/284.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/284.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/37397.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/37397.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/284.jpg"}}},{"id":19,"type":"label","name":"Advanced
         Records","slug":"advanced-records","active":true,"lastPublishDate":"2010-03-29","biography":"","genres":[{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":15,"name":"Progressive
         House","slug":"progressive-house","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"},{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":14,"name":"Minimal","slug":"minimal","type":"genre"},{"id":17,"name":"Electro
@@ -584,7 +405,185 @@ http_interactions:
         & Bass","slug":"drum-and-bass","type":"genre"},{"id":9,"name":"Breaks","slug":"breaks","type":"genre"},{"id":11,"name":"Tech
         House","slug":"tech-house","type":"genre"},{"id":16,"name":"DJ Tools","slug":"dj-tools","type":"genre"}],"subGenres":[{"id":24,"name":"Melodic","slug":"melodic","type":"subgenre"},{"id":39,"name":"Downtempo","slug":"downtempo","type":"subgenre"},{"id":14,"name":"Electro","slug":"electro","type":"subgenre"},{"id":38,"name":"Progressive","slug":"progressive","type":"subgenre"},{"id":44,"name":"Reprise","slug":"reprise","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/2222.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/2222.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/9.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/9.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/37164.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/37164.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/9.jpg"}}}]}'
     http_version: 
-  recorded_at: Fri, 08 Feb 2013 21:07:09 GMT
+  recorded_at: Sat, 06 Apr 2013 17:40:45 GMT
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/labels?page=1&perPage=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 06 Apr 2013 17:40:45 GMT
+      Server:
+      - Apache
+      Expires:
+      - Sat, 06 Apr 2013 18:10:45 GMT
+      Pragma:
+      - public
+      Cache-Control:
+      - public, max-age=1800
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/labels","query":"perPage=5","page":1,"perPage":5,"count":25310,"totalPages":5062,"nextQuery":"perPage=5&page=2","perPageOptions":[{"value":50,"applyQuery":"perPage=50"},{"value":100,"applyQuery":"perPage=100"},{"value":150,"applyQuery":"perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"spellcheck":null},"results":[{"id":3,"type":"label","name":"12
+        Inch Thumpers","slug":"12-inch-thumpers","active":true,"lastPublishDate":"2013-04-01","biography":"","genres":[{"id":8,"name":"Hard
+        Dance","slug":"hard-dance","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"},{"id":15,"name":"Progressive
+        House","slug":"progressive-house","type":"genre"},{"id":16,"name":"DJ Tools","slug":"dj-tools","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":2,"name":"Hardcore
+        \/ Hard Techno","slug":"hardcore-hard-techno","type":"genre"}],"subGenres":[{"id":18,"name":"Disco","slug":"disco","type":"subgenre"},{"id":46,"name":"Acapellas","slug":"acapellas","type":"subgenre"},{"id":17,"name":"Vocal
+        House","slug":"vocal-house","type":"subgenre"},{"id":29,"name":"Tech","slug":"tech","type":"subgenre"},{"id":31,"name":"Hard","slug":"hard","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/6158614.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158614.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6158615.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158615.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6158616.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158616.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/37199.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/37199.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6158616.jpg"},"banner":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/37199.jpg"}}},{"id":5,"type":"label","name":"24seven","slug":"24seven","active":true,"lastPublishDate":"2007-05-15","biography":"","genres":[{"id":5,"name":"House","slug":"house","type":"genre"},{"id":15,"name":"Progressive
+        House","slug":"progressive-house","type":"genre"},{"id":17,"name":"Electro
+        House","slug":"electro-house","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"}],"subGenres":[{"id":19,"name":"Tribal","slug":"tribal","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/73504.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/73504.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/73503.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/73503.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/73503.jpg"}}},{"id":7,"type":"label","name":"3am
+        Recordings","slug":"3am-recordings","active":true,"lastPublishDate":"2013-04-01","biography":"","genres":[{"id":5,"name":"House","slug":"house","type":"genre"},{"id":12,"name":"Deep
+        House","slug":"deep-house","type":"genre"},{"id":11,"name":"Tech House","slug":"tech-house","type":"genre"},{"id":10,"name":"Chill
+        Out","slug":"chill-out","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"},{"id":15,"name":"Progressive
+        House","slug":"progressive-house","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":37,"name":"Indie
+        Dance \/ Nu Disco","slug":"indie-dance-nu-disco","type":"genre"}],"subGenres":[{"id":39,"name":"Downtempo","slug":"downtempo","type":"subgenre"},{"id":43,"name":"Acid","slug":"acid","type":"subgenre"},{"id":18,"name":"Disco","slug":"disco","type":"subgenre"},{"id":14,"name":"Electro","slug":"electro","type":"subgenre"},{"id":87,"name":"Garage","slug":"garage","type":"subgenre"},{"id":19,"name":"Tribal","slug":"tribal","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/4050320.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/4050320.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/4050321.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/4050321.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/4050322.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/4050322.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/836697.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/836697.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/4050322.jpg"},"banner":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/836697.jpg"}}},{"id":8,"type":"label","name":"720
+        Degrees Music","slug":"720-degrees-music","active":true,"lastPublishDate":"2004-12-17","biography":"","genres":[],"subGenres":[],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/2219.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/2219.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6.jpg"}}},{"id":11,"type":"label","name":"83
+        West Records","slug":"83-west-records","active":true,"lastPublishDate":"2005-06-07","biography":"","genres":[{"id":5,"name":"House","slug":"house","type":"genre"},{"id":10,"name":"Chill
+        Out","slug":"chill-out","type":"genre"},{"id":12,"name":"Deep House","slug":"deep-house","type":"genre"}],"subGenres":[{"id":17,"name":"Vocal
+        House","slug":"vocal-house","type":"subgenre"},{"id":41,"name":"Acid Jazz","slug":"acid-jazz","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/2220.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/2220.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/7.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/7.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/37464.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/37464.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/7.jpg"}}}]}'
+    http_version: 
+  recorded_at: Sat, 06 Apr 2013 17:40:45 GMT
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/labels?genreId=5&page=1&perPage=5&sortBy=publishDate%20asc,labelId%20asc
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 06 Apr 2013 17:40:45 GMT
+      Server:
+      - Apache
+      Expires:
+      - Sat, 06 Apr 2013 18:10:45 GMT
+      Pragma:
+      - public
+      Cache-Control:
+      - public, max-age=1800
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/labels","query":"sortBy=publishDate+asc%2ClabelId+asc&genreId=5&perPage=5","page":1,"perPage":5,"count":25310,"totalPages":5062,"nextQuery":"sortBy=publishDate+asc%2ClabelId+asc&genreId=5&perPage=5&page=2","perPageOptions":[{"value":50,"applyQuery":"sortBy=publishDate+asc%2ClabelId+asc&genreId=5&perPage=50"},{"value":100,"applyQuery":"sortBy=publishDate+asc%2ClabelId+asc&genreId=5&perPage=100"},{"value":150,"applyQuery":"sortBy=publishDate+asc%2ClabelId+asc&genreId=5&perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"spellcheck":null},"results":[{"id":4251,"type":"label","name":"Fresh
+        Records","slug":"fresh-records","active":true,"lastPublishDate":"1989-01-01","biography":"","genres":[{"id":38,"name":"Hip-Hop","slug":"hip-hop","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"},{"id":9,"name":"Breaks","slug":"breaks","type":"genre"},{"id":16,"name":"DJ
+        Tools","slug":"dj-tools","type":"genre"}],"subGenres":[{"id":17,"name":"Vocal
+        House","slug":"vocal-house","type":"subgenre"},{"id":46,"name":"Acapellas","slug":"acapellas","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/65221.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/65221.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/65220.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/65220.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/214152.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/214152.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/65220.jpg"}}},{"id":4249,"type":"label","name":"Idlers","slug":"idlers","active":true,"lastPublishDate":"1989-09-20","biography":"","genres":[{"id":5,"name":"House","slug":"house","type":"genre"},{"id":10,"name":"Chill
+        Out","slug":"chill-out","type":"genre"},{"id":38,"name":"Hip-Hop","slug":"hip-hop","type":"genre"},{"id":16,"name":"DJ
+        Tools","slug":"dj-tools","type":"genre"},{"id":9,"name":"Breaks","slug":"breaks","type":"genre"}],"subGenres":[{"id":42,"name":"Trip-Hop","slug":"trip-hop","type":"subgenre"},{"id":19,"name":"Tribal","slug":"tribal","type":"subgenre"},{"id":17,"name":"Vocal
+        House","slug":"vocal-house","type":"subgenre"},{"id":18,"name":"Disco","slug":"disco","type":"subgenre"},{"id":46,"name":"Acapellas","slug":"acapellas","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/65217.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/65217.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/65216.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/65216.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/65216.jpg"}}},{"id":28856,"type":"label","name":"Cramboy","slug":"cramboy","active":true,"lastPublishDate":"1991-01-01","biography":"","genres":[{"id":3,"name":"Electronica","slug":"electronica","type":"genre"}],"subGenres":[],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/6081542.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6081542.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6081543.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6081543.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6081544.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6081544.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6081544.jpg"}}},{"id":21071,"type":"label","name":"POINTBLANK","slug":"pointblank","active":true,"lastPublishDate":"1992-06-29","biography":"","genres":[{"id":40,"name":"Funk
+        \/ R&B","slug":"funk-r-and-b","type":"genre"}],"subGenres":[],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491531.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491531.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/491532.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491532.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5539566.jpg"}}},{"id":9738,"type":"label","name":"System
+        3","slug":"system-3","active":true,"lastPublishDate":"1992-11-16","biography":"","genres":[{"id":1,"name":"Drum
+        & Bass","slug":"drum-and-bass","type":"genre"},{"id":16,"name":"DJ Tools","slug":"dj-tools","type":"genre"}],"subGenres":[{"id":44,"name":"Reprise","slug":"reprise","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/222623.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/222623.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/222624.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/222624.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/222624.jpg"}}}]}'
+    http_version: 
+  recorded_at: Sat, 06 Apr 2013 17:40:45 GMT
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/labels?returnFacets=genreName,performerName
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 06 Apr 2013 17:40:46 GMT
+      Server:
+      - Apache
+      Expires:
+      - Sat, 06 Apr 2013 18:10:46 GMT
+      Pragma:
+      - public
+      Cache-Control:
+      - public, max-age=1800
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/labels","query":"returnFacets=genreName%2CperformerName","page":1,"perPage":10,"count":25310,"totalPages":2531,"nextQuery":"returnFacets=genreName%2CperformerName&page=2","perPageOptions":[{"value":50,"applyQuery":"returnFacets=genreName%2CperformerName&perPage=50"},{"value":100,"applyQuery":"returnFacets=genreName%2CperformerName&perPage=100"},{"value":150,"applyQuery":"returnFacets=genreName%2CperformerName&perPage=150"}],"facets":{"fields":{"genreName":[{"name":"House","count":11063,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AHouse","removeQuery":null},{"name":"Tech
+        House","count":10485,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3ATech+House","removeQuery":null},{"name":"Techno","count":9433,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3ATechno","removeQuery":null},{"name":"Progressive
+        House","count":7995,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AProgressive+House","removeQuery":null},{"name":"Deep
+        House","count":7928,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3ADeep+House","removeQuery":null},{"name":"Electro
+        House","count":7536,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AElectro+House","removeQuery":null},{"name":"Electronica","count":7162,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AElectronica","removeQuery":null},{"name":"Chill
+        Out","count":5421,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AChill+Out","removeQuery":null},{"name":"Minimal","count":5120,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AMinimal","removeQuery":null},{"name":"Breaks","count":4529,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3ABreaks","removeQuery":null},{"name":"Indie
+        Dance \/ Nu Disco","count":4043,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AIndie+Dance+%2F+Nu+Disco","removeQuery":null},{"name":"Trance","count":3925,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3ATrance","removeQuery":null},{"name":"Dubstep","count":3764,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3ADubstep","removeQuery":null},{"name":"Drum
+        & Bass","count":3142,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3ADrum+%26+Bass","removeQuery":null},{"name":"DJ
+        Tools","count":2821,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3ADJ+Tools","removeQuery":null},{"name":"Hip-Hop","count":2659,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AHip-Hop","removeQuery":null},{"name":"Pop
+        \/ Rock","count":1689,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3APop+%2F+Rock","removeQuery":null},{"name":"Hardcore
+        \/ Hard Techno","count":1160,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AHardcore+%2F+Hard+Techno","removeQuery":null},{"name":"Hard
+        Dance","count":1106,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AHard+Dance","removeQuery":null},{"name":"Funk
+        \/ R&B","count":753,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AFunk+%2F+R%26B","removeQuery":null},{"name":"Psy-Trance","count":748,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3APsy-Trance","removeQuery":null},{"name":"Reggae
+        \/ Dub","count":676,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AReggae+%2F+Dub","removeQuery":null},{"name":"Glitch
+        Hop","count":603,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AGlitch+Hop","removeQuery":null},{"name":"World","count":10,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AWorld","removeQuery":null},{"name":"Vocal","count":3,"applied":false,"applyQuery":"returnFacets=genreName%2CperformerName&facets%5B0%5D=genreName%3AVocal","removeQuery":null}],"performerName":[]}},"appliedFacets":[],"spellcheck":null},"results":[{"id":3,"type":"label","name":"12
+        Inch Thumpers","slug":"12-inch-thumpers","active":true,"lastPublishDate":"2013-04-01","biography":"","genres":[{"id":8,"name":"Hard
+        Dance","slug":"hard-dance","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"},{"id":15,"name":"Progressive
+        House","slug":"progressive-house","type":"genre"},{"id":16,"name":"DJ Tools","slug":"dj-tools","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":2,"name":"Hardcore
+        \/ Hard Techno","slug":"hardcore-hard-techno","type":"genre"}],"subGenres":[{"id":18,"name":"Disco","slug":"disco","type":"subgenre"},{"id":46,"name":"Acapellas","slug":"acapellas","type":"subgenre"},{"id":17,"name":"Vocal
+        House","slug":"vocal-house","type":"subgenre"},{"id":29,"name":"Tech","slug":"tech","type":"subgenre"},{"id":31,"name":"Hard","slug":"hard","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/6158614.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158614.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6158615.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158615.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6158616.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6158616.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/37199.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/37199.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6158616.jpg"},"banner":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/37199.jpg"}}},{"id":5,"type":"label","name":"24seven","slug":"24seven","active":true,"lastPublishDate":"2007-05-15","biography":"","genres":[{"id":5,"name":"House","slug":"house","type":"genre"},{"id":15,"name":"Progressive
+        House","slug":"progressive-house","type":"genre"},{"id":17,"name":"Electro
+        House","slug":"electro-house","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"}],"subGenres":[{"id":19,"name":"Tribal","slug":"tribal","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/73504.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/73504.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/73503.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/73503.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/73503.jpg"}}},{"id":7,"type":"label","name":"3am
+        Recordings","slug":"3am-recordings","active":true,"lastPublishDate":"2013-04-01","biography":"","genres":[{"id":5,"name":"House","slug":"house","type":"genre"},{"id":12,"name":"Deep
+        House","slug":"deep-house","type":"genre"},{"id":11,"name":"Tech House","slug":"tech-house","type":"genre"},{"id":10,"name":"Chill
+        Out","slug":"chill-out","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"},{"id":15,"name":"Progressive
+        House","slug":"progressive-house","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":37,"name":"Indie
+        Dance \/ Nu Disco","slug":"indie-dance-nu-disco","type":"genre"}],"subGenres":[{"id":39,"name":"Downtempo","slug":"downtempo","type":"subgenre"},{"id":43,"name":"Acid","slug":"acid","type":"subgenre"},{"id":18,"name":"Disco","slug":"disco","type":"subgenre"},{"id":14,"name":"Electro","slug":"electro","type":"subgenre"},{"id":87,"name":"Garage","slug":"garage","type":"subgenre"},{"id":19,"name":"Tribal","slug":"tribal","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/4050320.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/4050320.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/4050321.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/4050321.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/4050322.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/4050322.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/836697.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/836697.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/4050322.jpg"},"banner":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/836697.jpg"}}},{"id":8,"type":"label","name":"720
+        Degrees Music","slug":"720-degrees-music","active":true,"lastPublishDate":"2004-12-17","biography":"","genres":[],"subGenres":[],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/2219.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/2219.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6.jpg"}}},{"id":11,"type":"label","name":"83
+        West Records","slug":"83-west-records","active":true,"lastPublishDate":"2005-06-07","biography":"","genres":[{"id":5,"name":"House","slug":"house","type":"genre"},{"id":10,"name":"Chill
+        Out","slug":"chill-out","type":"genre"},{"id":12,"name":"Deep House","slug":"deep-house","type":"genre"}],"subGenres":[{"id":17,"name":"Vocal
+        House","slug":"vocal-house","type":"subgenre"},{"id":41,"name":"Acid Jazz","slug":"acid-jazz","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/2220.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/2220.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/7.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/7.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/37464.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/37464.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/7.jpg"}}},{"id":12,"type":"label","name":"A
+        State Of Trance (Armada)","slug":"a-state-of-trance-armada","active":true,"lastPublishDate":"2013-04-01","biography":"","genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":10,"name":"Chill
+        Out","slug":"chill-out","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"},{"id":15,"name":"Progressive
+        House","slug":"progressive-house","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"},{"id":9,"name":"Breaks","slug":"breaks","type":"genre"},{"id":16,"name":"DJ
+        Tools","slug":"dj-tools","type":"genre"}],"subGenres":[{"id":30,"name":"Epic","slug":"epic","type":"subgenre"},{"id":40,"name":"Nu-Jazz","slug":"nu-jazz","type":"subgenre"},{"id":27,"name":"Progressive","slug":"progressive","type":"subgenre"},{"id":31,"name":"Hard","slug":"hard","type":"subgenre"},{"id":33,"name":"Big
+        Beat","slug":"big-beat","type":"subgenre"},{"id":29,"name":"Tech","slug":"tech","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/2221.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/2221.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/8.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/8.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/37281.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/37281.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/8.jpg"}}},{"id":15,"type":"label","name":"AcropolisRPM","slug":"acropolisrpm","active":true,"lastPublishDate":"2012-12-21","biography":"","genres":[{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":1,"name":"Drum
+        & Bass","slug":"drum-and-bass","type":"genre"},{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":8,"name":"Hard
+        Dance","slug":"hard-dance","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"},{"id":9,"name":"Breaks","slug":"breaks","type":"genre"},{"id":15,"name":"Progressive
+        House","slug":"progressive-house","type":"genre"},{"id":17,"name":"Electro
+        House","slug":"electro-house","type":"genre"},{"id":10,"name":"Chill Out","slug":"chill-out","type":"genre"},{"id":11,"name":"Tech
+        House","slug":"tech-house","type":"genre"},{"id":37,"name":"Indie Dance \/
+        Nu Disco","slug":"indie-dance-nu-disco","type":"genre"},{"id":18,"name":"Dubstep","slug":"dubstep","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"}],"subGenres":[{"id":29,"name":"Tech","slug":"tech","type":"subgenre"},{"id":31,"name":"Hard","slug":"hard","type":"subgenre"},{"id":28,"name":"Acid","slug":"acid","type":"subgenre"},{"id":39,"name":"Downtempo","slug":"downtempo","type":"subgenre"},{"id":27,"name":"Progressive","slug":"progressive","type":"subgenre"},{"id":19,"name":"Tribal","slug":"tribal","type":"subgenre"},{"id":30,"name":"Epic","slug":"epic","type":"subgenre"},{"id":88,"name":"Indie
+        Dance","slug":"indie-dance","type":"subgenre"},{"id":32,"name":"Nu-NRG","slug":"nu-nrg","type":"subgenre"},{"id":18,"name":"Disco","slug":"disco","type":"subgenre"},{"id":38,"name":"Progressive","slug":"progressive","type":"subgenre"},{"id":17,"name":"Vocal
+        House","slug":"vocal-house","type":"subgenre"},{"id":24,"name":"Melodic","slug":"melodic","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/2498.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/2498.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/285.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/285.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/285.jpg"}}},{"id":16,"type":"label","name":"Acute
+        Recordings","slug":"acute-recordings","active":true,"lastPublishDate":"2011-07-14","biography":"","genres":[{"id":15,"name":"Progressive
+        House","slug":"progressive-house","type":"genre"},{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":11,"name":"Tech
+        House","slug":"tech-house","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":17,"name":"Electro
+        House","slug":"electro-house","type":"genre"},{"id":12,"name":"Deep House","slug":"deep-house","type":"genre"}],"subGenres":[{"id":27,"name":"Progressive","slug":"progressive","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/2505.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/2505.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/292.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/292.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/37454.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/37454.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/292.jpg"}}},{"id":18,"type":"label","name":"Adjusted
+        Music","slug":"adjusted-music","active":true,"lastPublishDate":"2013-02-12","biography":"","genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":10,"name":"Chill
+        Out","slug":"chill-out","type":"genre"}],"subGenres":[{"id":40,"name":"Nu-Jazz","slug":"nu-jazz","type":"subgenre"},{"id":27,"name":"Progressive","slug":"progressive","type":"subgenre"},{"id":29,"name":"Tech","slug":"tech","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/2497.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/2497.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/284.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/284.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/37397.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/37397.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/284.jpg"}}},{"id":19,"type":"label","name":"Advanced
+        Records","slug":"advanced-records","active":true,"lastPublishDate":"2010-03-29","biography":"","genres":[{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":15,"name":"Progressive
+        House","slug":"progressive-house","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"},{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":14,"name":"Minimal","slug":"minimal","type":"genre"},{"id":17,"name":"Electro
+        House","slug":"electro-house","type":"genre"},{"id":10,"name":"Chill Out","slug":"chill-out","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"},{"id":1,"name":"Drum
+        & Bass","slug":"drum-and-bass","type":"genre"},{"id":9,"name":"Breaks","slug":"breaks","type":"genre"},{"id":11,"name":"Tech
+        House","slug":"tech-house","type":"genre"},{"id":16,"name":"DJ Tools","slug":"dj-tools","type":"genre"}],"subGenres":[{"id":24,"name":"Melodic","slug":"melodic","type":"subgenre"},{"id":39,"name":"Downtempo","slug":"downtempo","type":"subgenre"},{"id":14,"name":"Electro","slug":"electro","type":"subgenre"},{"id":38,"name":"Progressive","slug":"progressive","type":"subgenre"},{"id":44,"name":"Reprise","slug":"reprise","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/2222.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/2222.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/9.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/9.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/37164.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/37164.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/9.jpg"}}}]}'
+    http_version: 
+  recorded_at: Sat, 06 Apr 2013 17:40:46 GMT
 - request:
     method: get
     uri: http://api.beatport.com/catalog/3/labels?facets=genreName:Trance,genreName:Progessive%20House
@@ -598,11 +597,11 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 08 Feb 2013 21:07:09 GMT
+      - Sat, 06 Apr 2013 17:40:47 GMT
       Server:
       - Apache
       Expires:
-      - Fri, 08 Feb 2013 21:37:09 GMT
+      - Sat, 06 Apr 2013 18:10:47 GMT
       Pragma:
       - public
       Cache-Control:
@@ -615,7 +614,7 @@ http_interactions:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/labels","query":"facets%5B0%5D=genreName%3ATrance%2CgenreName%3AProgessive+House","page":1,"perPage":10,"count":0,"totalPages":0,"perPageOptions":[{"value":50,"applyQuery":"facets%5B0%5D=genreName%3ATrance%2CgenreName%3AProgessive+House&perPage=50"},{"value":100,"applyQuery":"facets%5B0%5D=genreName%3ATrance%2CgenreName%3AProgessive+House&perPage=100"},{"value":150,"applyQuery":"facets%5B0%5D=genreName%3ATrance%2CgenreName%3AProgessive+House&perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"spellcheck":{"suggestions":[]}},"results":[]}'
+      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/labels","query":"facets%5B0%5D=genreName%3ATrance%2CgenreName%3AProgessive+House","page":1,"perPage":10,"count":0,"totalPages":0,"perPageOptions":[{"value":50,"applyQuery":"facets%5B0%5D=genreName%3ATrance%2CgenreName%3AProgessive+House&perPage=50"},{"value":100,"applyQuery":"facets%5B0%5D=genreName%3ATrance%2CgenreName%3AProgessive+House&perPage=100"},{"value":150,"applyQuery":"facets%5B0%5D=genreName%3ATrance%2CgenreName%3AProgessive+House&perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"spellcheck":null},"results":[]}'
     http_version: 
-  recorded_at: Fri, 08 Feb 2013 21:07:09 GMT
+  recorded_at: Sat, 06 Apr 2013 17:40:47 GMT
 recorded_with: VCR 2.4.0

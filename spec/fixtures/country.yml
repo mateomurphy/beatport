@@ -12,23 +12,21 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      date:
-      - Fri, 08 Feb 2013 20:58:39 GMT
-      server:
+      Date:
+      - Sat, 06 Apr 2013 17:14:16 GMT
+      Server:
       - Apache
-      expires:
-      - Fri, 08 Feb 2013 21:28:39 GMT
-      pragma:
+      Expires:
+      - Sat, 06 Apr 2013 17:44:16 GMT
+      Pragma:
       - public
-      cache-control:
+      Cache-Control:
       - public, max-age=1800
-      access-control-allow-origin:
+      Access-Control-Allow-Origin:
       - ! '*'
-      connection:
-      - close
-      transfer-encoding:
+      Transfer-Encoding:
       - chunked
-      content-type:
+      Content-Type:
       - application/json
     body:
       encoding: US-ASCII
@@ -38,6 +36,6 @@ http_interactions:
         Territory","type":"territory"},{"id":"114","code":"QLD","name":"Queensland","type":"territory"},{"id":"115","code":"SA","name":"South
         Australia","type":"territory"},{"id":"116","code":"TAS","name":"Tasmania","type":"territory"},{"id":"117","code":"VIC","name":"Victoria","type":"territory"},{"id":"118","code":"WA","name":"Western
         Australia","type":"territory"}]}]}'
-    http_version: '1.1'
-  recorded_at: Fri, 08 Feb 2013 20:58:39 GMT
-recorded_with: VCR 2.3.0
+    http_version: 
+  recorded_at: Sat, 06 Apr 2013 17:14:16 GMT
+recorded_with: VCR 2.4.0
