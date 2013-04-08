@@ -2,208 +2,6 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.beatport.com/catalog/3/search?query=believe%202004
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers: {}
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      date:
-      - Fri, 08 Feb 2013 20:59:10 GMT
-      server:
-      - Apache
-      expires:
-      - Fri, 08 Feb 2013 21:29:10 GMT
-      pragma:
-      - public
-      cache-control:
-      - public, max-age=1800
-      access-control-allow-origin:
-      - ! '*'
-      connection:
-      - close
-      transfer-encoding:
-      - chunked
-      content-type:
-      - application/json
-    body:
-      encoding: US-ASCII
-      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/search","query":"query=believe+2004","page":1,"perPage":10,"count":2,"totalPages":1,"perPageOptions":[{"value":50,"applyQuery":"query=believe+2004&perPage=50"},{"value":100,"applyQuery":"query=believe+2004&perPage=100"},{"value":150,"applyQuery":"query=believe+2004&perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"spellcheck":{"suggestions":[]}},"results":[{"id":35505,"selected":false,"type":"track","sku":"track-35505","name":"Believe","trackNumber":1,"active":true,"mixName":"2004
-        Mix","title":"Believe (2004 Mix)","slug":"believe-2004-mix","isrc":null,"releaseDate":"2004-09-03","publishDate":"2004-09-03","sampleUrl":"http:\/\/geo-samples.beatport.com\/lofi\/35505.LOFI.mp3","isPreviewAvailable":true,"isAvailableForMix":true,"rtmpStreamUrl":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume1\/items\/0\/0\/30000\/5000\/500\/0\/35505.LOFI","exclusive":false,"isPromotable":false,"preview":null,"price":{"code":"usd","symbol":"$","value":199},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":75},"aiff":{"code":"usd","symbol":"$","value":75}},"losslessUpgradeFormatFee":[],"currentStatus":"Classic","length":"08:06","bpm":138,"key":{"standard":{"letter":"D","sharp":true,"flat":false,"chord":"minor"},"shortName":"D&#9839;min"},"saleType":"purchase","artists":[{"id":2238,"name":"Smith
-        & Pledger","slug":"smith-and-pledger","type":"artist"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"}],"subGenres":[],"charts":[{"id":25647,"position":8,"type":"chart"}],"release":{"id":12549,"name":"Believe","type":"release","slug":"believe"},"label":{"id":804,"name":"Anjunabeats","type":"label","slug":"anjunabeats","status":true},"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/21114.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/21114.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/5407.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5407.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"},"waveform":{"width":1500,"height":250,"url":"http:\/\/geo-media.beatport.com\/image\/2474360.png","secureUrl":"https:\/\/media.beatport.com\/image\/2474360.png"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5407.jpg"}}},{"id":5436,"type":"mix","sku":"mix-5436","name":"Frankie
-        B - Dj Set #025","slug":"frankie-b-dj-set-number-025","genres":[{"id":12,"name":"Deep
-        House","slug":"deep-house","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":11,"name":"Tech
-        House","slug":"tech-house","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"}],"subGenres":[],"labels":[{"id":1273,"type":"label","name":"Freerange
-        Records","slug":"freerange-records"},{"id":12723,"type":"label","name":"Live
-        At Robert Johnson","slug":"live-at-robert-johnson"},{"id":21856,"type":"label","name":"Local
-        Talk","slug":"local-talk"},{"id":24028,"type":"label","name":"Platte International","slug":"platte-international"},{"id":6034,"type":"label","name":"Vidab","slug":"vidab"},{"id":8727,"type":"label","name":"Save
-        Room Recordings","slug":"save-room-recordings"},{"id":12337,"type":"label","name":"Throne
-        Of Blood","slug":"throne-of-blood"},{"id":2168,"type":"label","name":"1trax","slug":"1trax"},{"id":4104,"type":"label","name":"Real
-        Tone Records","slug":"real-tone-records"},{"id":11624,"type":"label","name":"Komplex
-        De Deep","slug":"komplex-de-deep"},{"id":5393,"type":"label","name":"Smallville
-        Records","slug":"smallville-records"}],"artists":[{"id":140558,"name":"Bassfort","slug":"bassfort","type":"artist"},{"id":8278,"name":"Roman
-        Fluegel","slug":"roman-fluegel","type":"artist"},{"id":42861,"name":"Kareem","slug":"kareem","type":"artist"},{"id":116038,"name":"Tomas
-        Svensson","slug":"tomas-svensson","type":"artist"},{"id":87068,"name":"Dirty
-        Culture","slug":"dirty-culture","type":"artist"},{"id":1478,"name":"Beat Pharmacy","slug":"beat-pharmacy","type":"artist"},{"id":111537,"name":"Huxley","slug":"huxley","type":"artist"},{"id":129873,"name":"Sam
-        Russo","slug":"sam-russo","type":"artist"},{"id":215572,"name":"Paolo Rocco","slug":"paolo-rocco","type":"artist"},{"id":40461,"name":"Matthias
-        Vogt","slug":"matthias-vogt","type":"artist"},{"id":287195,"name":"Roaming","slug":"roaming","type":"artist"},{"id":2553,"name":"Jimpster","slug":"jimpster","type":"remixer"},{"id":23501,"name":"Point
-        G","slug":"point-g","type":"remixer"},{"id":130961,"name":"Smallpeople","slug":"smallpeople","type":"remixer"}],"description":"www.djfrankieb.com\r\n\r\nFrancesco
-        Strippoli aka Frankie B, Apulian boy known for his Tech House and Deep House
-        brilliant artistic contribution. \r\nHe approached music for the first time
-        in 1998 by playing piano. He started interesting in dance music when he was
-        12 years old and he realized his first cd''sonly by using a computer. \r\nSince
-        2004 he started to perform in some renamed town''s clubs untill he sweeped
-        to regional ambit. \r\nHis sound is a Tech House \u2013 Deep House mixing,
-        he''s always looking for new resonances, ranging over in his Dj Sets'', therefore
-        succeding in making them musically attractive in their differences.\r\n\r\n_______________________________________________________
-        \r\nFollow the Sound \r\nFollow the Thrills \r\nFollow Look Alive 54 on Facebook-
-        http:\/\/www.facebook.com\/lookalive54","djProfile":{"id":20619,"name":"Frankie
-        B","slug":"frankiebdj","images":[],"personId":1171368,"type":"djprofile"},"audioFormat":"mp3","length":"00:59:45","sampleRate":44100,"bitRate":321000,"bitDepth":null,"isVariableBitRate":false,"fileSize":143822472,"price":{"code":"usd","symbol":"$","value":999},"images":{"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6142932.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6142932.jpg"},"waveform":{"width":1500,"height":250,"url":"http:\/\/geo-media.beatport.com\/image\/6144618.png","secureUrl":"https:\/\/media.beatport.com\/image\/6144618.png"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6142932.jpg"},"waveform":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6144618.png"}},"publishDate":"2012-10-16
-        19:18:34","views":54,"isFree":false,"isPreviewOnly":false,"originalTrackId":null,"status":true,"published":true,"badges":[],"sampleUrl":"http:\/\/geo-mixes-samples.beatport.com\/3\/0\/3\/5436.LOFI.mp3","rtmpStreamUrl":"rtmp:\/\/geo-rtmp-mixes-samples.beatport.com\/mixes\/preview\/mp3:3\/0\/3\/5436.LOFI","preview":{"mp3":{"http":"http:\/\/geo-mixes-samples.beatport.com\/3\/0\/3\/5436.LOFI.mp3","rtmp":"rtmp:\/\/geo-rtmp-mixes-samples.beatport.com\/mixes\/preview\/mp3:3\/0\/3\/5436.LOFI"},"mp4":{"http":"http:\/\/geo-mixes-samples.beatport.com\/3\/0\/3\/5436.LOFI.mp4","rtmp":"rtmp:\/\/geo-rtmp-mixes-samples.beatport.com\/mixes\/preview\/mp4:3\/0\/3\/5436.LOFI"}},"mixOwner":null}]}'
-    http_version: '1.1'
-  recorded_at: Fri, 08 Feb 2013 20:59:10 GMT
-- request:
-    method: get
-    uri: http://api.beatport.com/catalog/3/search?query=Archipel
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers: {}
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      date:
-      - Fri, 08 Feb 2013 20:59:10 GMT
-      server:
-      - Apache
-      expires:
-      - Fri, 08 Feb 2013 21:29:10 GMT
-      pragma:
-      - public
-      cache-control:
-      - public, max-age=1800
-      access-control-allow-origin:
-      - ! '*'
-      connection:
-      - close
-      transfer-encoding:
-      - chunked
-      content-type:
-      - application/json
-    body:
-      encoding: US-ASCII
-      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/search","query":"query=Archipel","page":1,"perPage":10,"count":782,"totalPages":79,"nextQuery":"query=Archipel&page=2","perPageOptions":[{"value":50,"applyQuery":"query=Archipel&perPage=50"},{"value":100,"applyQuery":"query=Archipel&perPage=100"},{"value":150,"applyQuery":"query=Archipel&perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"spellcheck":{"suggestions":[]}},"results":[{"id":1435378,"selected":false,"type":"track","sku":"track-1435378","name":"Archipel","trackNumber":2,"active":true,"mixName":"Lost
-        Archipel Remix","title":"Archipel (Lost Archipel Remix)","slug":"archipel-lost-archipel-remix","isrc":null,"releaseDate":"2010-09-26","publishDate":"2010-09-26","sampleUrl":"http:\/\/geo-samples.beatport.com\/lofi\/1435378.LOFI.mp3","isPreviewAvailable":true,"isAvailableForMix":true,"rtmpStreamUrl":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume7\/items\/1000000\/400000\/30000\/5000\/300\/70\/1435378.LOFI","exclusive":false,"isPromotable":false,"preview":{"mp3":{"http":"http:\/\/geo-samples.beatport.com\/lofi\/1435378.LOFI.mp3","rtmp":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume7\/items\/1000000\/400000\/30000\/5000\/300\/70\/1435378.LOFI"}},"price":{"code":"usd","symbol":"$","value":149},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":75},"aiff":{"code":"usd","symbol":"$","value":75}},"losslessUpgradeFormatFee":[],"currentStatus":"General
-        Content","length":"07:28","bpm":123,"key":{"standard":{"letter":"A","sharp":false,"flat":false,"chord":"minor"},"shortName":"Amin"},"saleType":"purchase","artists":[{"id":47626,"name":"Nils
-        Nilson","slug":"nils-nilson","type":"remixer"},{"id":100671,"name":"Oliver
-        Schories","slug":"oliver-schories","type":"artist"}],"genres":[{"id":6,"name":"Techno","slug":"techno","type":"genre"}],"subGenres":[{"id":68,"name":"Dub
-        Techno","slug":"dub-techno","type":"subgenre"}],"charts":[],"release":{"id":284365,"name":"Archipel","type":"release","slug":"archipel"},"label":{"id":6246,"name":"Ostwind
-        Records","type":"label","slug":"ostwind-records","status":true},"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/809565.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/809565.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/809566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/809566.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/809567.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/809567.jpg"},"waveform":{"width":1500,"height":250,"url":"http:\/\/geo-media.beatport.com\/image\/1594551.png","secureUrl":"https:\/\/media.beatport.com\/image\/1594551.png"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/809567.jpg"},"waveform":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/1594551.png"}}},{"id":4027689,"selected":false,"type":"track","sku":"track-4027689","name":"Archipel","trackNumber":6,"active":true,"mixName":"Nils
-        Nilson''s Lost Archipel Remix","title":"Archipel (Nils Nilson''s Lost Archipel
-        Remix)","slug":"archipel-nils-nilsons-lost-archipel-remix","isrc":"DECH61000740","releaseDate":"2013-01-09","publishDate":"2013-01-09","sampleUrl":"http:\/\/geo-samples.beatport.com\/lofi\/4027689.LOFI.mp3","isPreviewAvailable":true,"isAvailableForMix":true,"rtmpStreamUrl":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume1\/items\/4000000\/0\/20000\/7000\/600\/80\/4027689.LOFI","exclusive":false,"isPromotable":false,"preview":{"mp3":{"http":"http:\/\/geo-samples.beatport.com\/lofi\/4027689.LOFI.mp3","rtmp":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume1\/items\/4000000\/0\/20000\/7000\/600\/80\/4027689.LOFI"},"mp4":{"http":"http:\/\/geo-samples.beatport.com\/lofi\/4027689.LOFI.mp4","rtmp":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp4:lofi_samples\/items\/volumes\/volume1\/items\/4000000\/0\/20000\/7000\/600\/80\/4027689.LOFI"}},"price":{"code":"usd","symbol":"$","value":199},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":75},"aiff":{"code":"usd","symbol":"$","value":75}},"losslessUpgradeFormatFee":[],"currentStatus":"New
-        Release","length":"7:08","bpm":123,"key":{"standard":{"letter":"A","sharp":false,"flat":false,"chord":"minor"},"shortName":"Amin"},"saleType":"purchase","artists":[{"id":47626,"name":"Nils
-        Nilson","slug":"nils-nilson","type":"remixer"},{"id":100671,"name":"Oliver
-        Schories","slug":"oliver-schories","type":"artist"}],"genres":[{"id":11,"name":"Tech
-        House","slug":"tech-house","type":"genre"}],"subGenres":[],"charts":[],"release":{"id":1015651,"name":"CONSTRUCTION,
-        Vol. 1 - Selection of Asthetic Tech-House Tunes","type":"release","slug":"construction-vol-1-selection-of-asthetic-tech-house-tunes"},"label":{"id":2617,"name":"Budenzauber","type":"label","slug":"budenzauber","status":true},"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/6471642.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6471642.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6471643.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6471643.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6471644.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6471644.jpg"},"waveform":{"width":1500,"height":250,"url":"http:\/\/geo-media.beatport.com\/image\/6471701.png","secureUrl":"https:\/\/media.beatport.com\/image\/6471701.png"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6471644.jpg"},"waveform":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6471701.png"}}},{"id":2966,"type":"label","name":"Archipel","slug":"archipel","active":true,"lastPublishDate":"2013-01-29","biography":"","genres":[{"id":14,"name":"Minimal","slug":"minimal","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":16,"name":"DJ
-        Tools","slug":"dj-tools","type":"genre"},{"id":10,"name":"Chill Out","slug":"chill-out","type":"genre"},{"id":11,"name":"Tech
-        House","slug":"tech-house","type":"genre"},{"id":12,"name":"Deep House","slug":"deep-house","type":"genre"},{"id":9,"name":"Breaks","slug":"breaks","type":"genre"}],"subGenres":[{"id":13,"name":"IDM","slug":"idm","type":"subgenre"},{"id":39,"name":"Downtempo","slug":"downtempo","type":"subgenre"},{"id":15,"name":"LeftField","slug":"leftfield","type":"subgenre"},{"id":69,"name":"Ambient","slug":"ambient","type":"subgenre"},{"id":24,"name":"Melodic","slug":"melodic","type":"subgenre"},{"id":71,"name":"Experimental\/Noise\/Industrial","slug":"experimental-noise-industrial","type":"subgenre"},{"id":90,"name":"Acid","slug":"acid","type":"subgenre"},{"id":25,"name":"Detroit
-        Techno","slug":"detroit-techno","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/37857.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/37857.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/37856.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/37856.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/264626.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/264626.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/37856.jpg"}}},{"id":25998,"type":"label","name":"Archipel
-        Soundtracks","slug":"archipel-soundtracks","active":true,"lastPublishDate":"2012-11-05","biography":"","genres":[{"id":14,"name":"Minimal","slug":"minimal","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":11,"name":"Tech
-        House","slug":"tech-house","type":"genre"},{"id":18,"name":"Dubstep","slug":"dubstep","type":"genre"}],"subGenres":[],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/5274089.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5274089.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/5274090.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5274090.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5274091.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5274091.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5274091.jpg"}}},{"id":1435377,"selected":false,"type":"track","sku":"track-1435377","name":"Archipel","trackNumber":1,"active":true,"mixName":"Original
-        Mix","title":"Archipel (Original Mix)","slug":"archipel-original-mix","isrc":null,"releaseDate":"2010-09-26","publishDate":"2010-09-26","sampleUrl":"http:\/\/geo-samples.beatport.com\/lofi\/1435377.LOFI.mp3","isPreviewAvailable":true,"isAvailableForMix":true,"rtmpStreamUrl":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume6\/items\/1000000\/400000\/30000\/5000\/300\/70\/1435377.LOFI","exclusive":false,"isPromotable":false,"preview":{"mp3":{"http":"http:\/\/geo-samples.beatport.com\/lofi\/1435377.LOFI.mp3","rtmp":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume6\/items\/1000000\/400000\/30000\/5000\/300\/70\/1435377.LOFI"}},"price":{"code":"usd","symbol":"$","value":149},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":75},"aiff":{"code":"usd","symbol":"$","value":75}},"losslessUpgradeFormatFee":[],"currentStatus":"General
-        Content","length":"07:37","bpm":127,"key":{"standard":{"letter":"F","sharp":false,"flat":false,"chord":"major"},"shortName":"Fmaj"},"saleType":"purchase","artists":[{"id":100671,"name":"Oliver
-        Schories","slug":"oliver-schories","type":"artist"}],"genres":[{"id":11,"name":"Tech
-        House","slug":"tech-house","type":"genre"}],"subGenres":[],"charts":[{"id":96889,"position":1,"type":"chart"},{"id":132681,"position":1,"type":"chart"}],"release":{"id":284365,"name":"Archipel","type":"release","slug":"archipel"},"label":{"id":6246,"name":"Ostwind
-        Records","type":"label","slug":"ostwind-records","status":true},"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/809565.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/809565.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/809566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/809566.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/809567.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/809567.jpg"},"waveform":{"width":1500,"height":250,"url":"http:\/\/geo-media.beatport.com\/image\/1594536.png","secureUrl":"https:\/\/media.beatport.com\/image\/1594536.png"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/809567.jpg"},"waveform":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/1594536.png"}}},{"id":575579,"type":"part","sku":"part-575579","name":"Kick
-        Archipel","slug":"kick-archipel","genres":[{"id":6,"name":"Techno","slug":"techno","type":"genre"}],"seconds":0.9375,"filesize":null,"bpm":127,"beats":4,"progression":"","audioType":"Sample","instrument":{"id":9,"name":"Kick","parent":{"id":6,"name":"Drums","parent":null}},"active":true,"publishDate":"2011-09-23","pack":{"id":1154,"name":"Techno"},"label":{"id":24786,"name":"Sample
-        Magic"},"price":{"code":"usd","symbol":"$","value":99},"audioFormat":["wav"],"previewAudioFormats":null,"key":null},{"id":27635,"type":"chart","sku":"chart-27635","name":"Pheek''s
-        Archipel 5 Year Anniversary Chart","slug":"pheeks-archipel-5-year-anniversary-chart","description":"Pheek''s
-        label Archipel, is turning 5 year old this year! Since 2005, the little Montreal
-        based label is putting energy is releasing original and emotional music. Pheek
-        is currently working on an album to be released later this year.","active":true,"publishDate":"2010-08-31","price":{"code":"usd","symbol":"$","value":1490},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":750},"aiff":{"code":"usd","symbol":"$","value":750}},"genres":[{"id":14,"name":"Minimal","slug":"minimal","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"},{"id":11,"name":"Tech
-        House","slug":"tech-house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491534.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491534.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/787962.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/787962.jpg"},"large":{"width":130,"height":130,"url":"http:\/\/geo-media.beatport.com\/image\/787963.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/787963.jpg"},"xlarge":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5245821.jpg"}},"chartOwner":null,"trackCount":0},{"id":284365,"type":"release","sku":"release-284365","name":"Archipel","slug":"archipel","active":true,"releaseDate":"2010-09-26","publishDate":"2010-09-26","exclusive":false,"category":"Release","description":"An
-        archipelago is beautiful - just like the \"Archipel\" of Oliver Schories.
-        Various elements combined to a wonderful ensemble. Just as with ''Seenplatte''
-        or ''Ostwind Limited Series'', Oliver sets crispy beats, soft strings and
-        striking chords. Everything is in place and cut to the chase. A high area
-        of the Azores which offers unequaled opportunities. Watch out, native fans
-        of Bermuda shorts, \"Archipel\" will twist your bones with an about-face!
-        A hymn which makes you spill your endorphin and which turns the summer into
-        an unforgettable experience. On ''Flip'', Nils Nilson presents the perfect
-        matching part. A descreet grooving dub piece, rolling down like a trade wind
-        and turning into a giant warm monsoon after the break. A record made for the
-        summer season. Sun, sand and the sea, what could be better? Many thanks go
-        out to Oliver and Nils for this release.\r\n\r\nSupported by Stephan Bodzin,
-        Aka Aka, D. Diggler, Axel Bartsch, 2000 and one, Mihalis Safras, Kev Obrien","currentStatus":"General
-        Content","catalogNumber":"OW032","purchasable":true,"price":{"code":"usd","symbol":"$","value":298},"tracksPrice":{"code":"usd","symbol":"$","value":298},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":150},"aiff":{"code":"usd","symbol":"$","value":150}},"label":{"id":6246,"name":"Ostwind
-        Records","type":"label","slug":"ostwind-records"},"artists":[{"id":100671,"name":"Oliver
-        Schories","slug":"oliver-schories","type":"artist"},{"id":47626,"name":"Nils
-        Nilson","slug":"nils-nilson","type":"remixer"}],"genres":[{"id":11,"name":"Tech
-        House","slug":"tech-house","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/809565.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/809565.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/809566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/809566.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/809567.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/809567.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/809567.jpg"}}},{"id":257610,"type":"release","sku":"release-257610","name":"Alike
-        Minds 5 Years Of Archipel Music","slug":"alike-minds-5-years-of-archipel-music","active":true,"releaseDate":"2010-07-23","publishDate":"2010-07-23","exclusive":false,"category":"Album","description":"Archipel
-        has been a family and a community, in constant growth, for the past five revolutions
-        around the sun and we''ve had so many excellent personal and shared experiences
-        within this hive of great minds through this time. We are so proud to bring
-        you together with us in celebration of our five years and five years yet to
-        come.","currentStatus":"General Content","catalogNumber":"ARCHIPELCD007","purchasable":true,"price":{"code":"usd","symbol":"$","value":1199},"tracksPrice":{"code":"usd","symbol":"$","value":1788},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":900},"aiff":{"code":"usd","symbol":"$","value":900}},"label":{"id":2966,"name":"Archipel","type":"label","slug":"archipel"},"artists":[{"id":116796,"name":"Offthesky","slug":"offthesky","type":"artist"},{"id":10577,"name":"Vincent
-        Casanova","slug":"vincent-casanova","type":"artist"},{"id":49025,"name":"Sul.a","slug":"sul-a","type":"artist"},{"id":31312,"name":"Sensual
-        Physics","slug":"sensual-physics","type":"artist"},{"id":5543,"name":"Niederflur","slug":"niederflur","type":"artist"},{"id":25680,"name":"Jack
-        Rock","slug":"jack-rock","type":"artist"},{"id":5552,"name":"Pheek","slug":"pheek","type":"artist"},{"id":98700,"name":"Time
-        For Trees","slug":"time-for-trees","type":"artist"},{"id":143934,"name":"Louer","slug":"louer","type":"artist"},{"id":23067,"name":"Smirk","slug":"smirk","type":"artist"},{"id":125682,"name":"Flourish","slug":"flourish","type":"artist"},{"id":12250,"name":"Stefny
-        Winter","slug":"stefny-winter","type":"remixer"}],"genres":[{"id":3,"name":"Electronica","slug":"electronica","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":14,"name":"Minimal","slug":"minimal","type":"genre"},{"id":11,"name":"Tech
-        House","slug":"tech-house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/717931.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/717931.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/717932.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/717932.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/717933.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/717933.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/717933.jpg"}}},{"id":4022175,"selected":false,"type":"track","sku":"track-4022175","name":"Archipel","trackNumber":1,"active":true,"mixName":"Original
-        Mix","title":"Archipel (Original Mix)","slug":"archipel-original-mix","isrc":"DECH61000739","releaseDate":"2012-11-28","publishDate":"2012-11-28","sampleUrl":"http:\/\/geo-samples.beatport.com\/lofi\/4022175.LOFI.mp3","isPreviewAvailable":true,"isAvailableForMix":true,"rtmpStreamUrl":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume3\/items\/4000000\/0\/20000\/2000\/100\/70\/4022175.LOFI","exclusive":false,"isPromotable":false,"preview":{"mp3":{"http":"http:\/\/geo-samples.beatport.com\/lofi\/4022175.LOFI.mp3","rtmp":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume3\/items\/4000000\/0\/20000\/2000\/100\/70\/4022175.LOFI"},"mp4":{"http":"http:\/\/geo-samples.beatport.com\/lofi\/4022175.LOFI.mp4","rtmp":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp4:lofi_samples\/items\/volumes\/volume3\/items\/4000000\/0\/20000\/2000\/100\/70\/4022175.LOFI"}},"price":{"code":"usd","symbol":"$","value":149},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":75},"aiff":{"code":"usd","symbol":"$","value":75}},"losslessUpgradeFormatFee":[],"currentStatus":"General
-        Content","length":"7:37","bpm":127,"key":{"standard":{"letter":"F","sharp":false,"flat":false,"chord":"major"},"shortName":"Fmaj"},"saleType":"purchase","artists":[{"id":100671,"name":"Oliver
-        Schories","slug":"oliver-schories","type":"artist"}],"genres":[{"id":11,"name":"Tech
-        House","slug":"tech-house","type":"genre"}],"subGenres":[],"charts":[],"release":{"id":1014597,"name":"Zirkus
-        Zirkus, Vol. 1 - Elektronische Tanzmusik","type":"release","slug":"zirkus-zirkus-vol-1-elektronische-tanzmusik"},"label":{"id":17269,"name":"City
-        Life","type":"label","slug":"city-life","status":true},"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/6457382.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6457382.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6457383.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6457383.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6457384.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6457384.jpg"},"waveform":{"width":1500,"height":250,"url":"http:\/\/geo-media.beatport.com\/image\/6457433.png","secureUrl":"https:\/\/media.beatport.com\/image\/6457433.png"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6457384.jpg"},"waveform":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6457433.png"}}}]}'
-    http_version: '1.1'
-  recorded_at: Fri, 08 Feb 2013 20:59:10 GMT
-- request:
-    method: get
-    uri: http://api.beatport.com/catalog/3/search?query=ANJCDCO011D
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers: {}
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      date:
-      - Fri, 08 Feb 2013 20:59:11 GMT
-      server:
-      - Apache
-      expires:
-      - Fri, 08 Feb 2013 21:29:11 GMT
-      pragma:
-      - public
-      cache-control:
-      - public, max-age=1800
-      access-control-allow-origin:
-      - ! '*'
-      connection:
-      - close
-      transfer-encoding:
-      - chunked
-      content-type:
-      - application/json
-    body:
-      encoding: US-ASCII
-      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/search","query":"query=ANJCDCO011D","page":1,"perPage":10,"count":0,"totalPages":0,"perPageOptions":[{"value":50,"applyQuery":"query=ANJCDCO011D&perPage=50"},{"value":100,"applyQuery":"query=ANJCDCO011D&perPage=100"},{"value":150,"applyQuery":"query=ANJCDCO011D&perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"spellcheck":{"suggestions":[]}},"results":[]}'
-    http_version: '1.1'
-  recorded_at: Fri, 08 Feb 2013 20:59:11 GMT
-- request:
-    method: get
     uri: http://api.beatport.com/catalog/3/search?facets=genreName%3ATrance&query=anjunadeep
     body:
       encoding: US-ASCII
@@ -319,7 +117,7 @@ http_interactions:
   recorded_at: Fri, 08 Feb 2013 20:59:11 GMT
 - request:
     method: get
-    uri: http://api.beatport.com/catalog/3/search?facets=genreName:Trance&query=anjunadeep
+    uri: http://api.beatport.com/catalog/3/search?query=believe%202004
     body:
       encoding: US-ASCII
       string: ''
@@ -330,11 +128,11 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 08 Feb 2013 21:07:17 GMT
+      - Sat, 06 Apr 2013 17:41:17 GMT
       Server:
       - Apache
       Expires:
-      - Fri, 08 Feb 2013 21:37:17 GMT
+      - Sat, 06 Apr 2013 18:11:17 GMT
       Pragma:
       - public
       Cache-Control:
@@ -347,25 +145,218 @@ http_interactions:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/search","query":"facets%5B0%5D=genreName%3ATrance&query=anjunadeep","page":1,"perPage":10,"count":80,"totalPages":8,"nextQuery":"facets%5B0%5D=genreName%3ATrance&query=anjunadeep&page=2","perPageOptions":[{"value":50,"applyQuery":"facets%5B0%5D=genreName%3ATrance&query=anjunadeep&perPage=50"},{"value":100,"applyQuery":"facets%5B0%5D=genreName%3ATrance&query=anjunadeep&perPage=100"},{"value":150,"applyQuery":"facets%5B0%5D=genreName%3ATrance&query=anjunadeep&perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"spellcheck":{"suggestions":[]}},"results":[{"id":1390,"type":"label","name":"Anjunadeep","slug":"anjunadeep","active":true,"lastPublishDate":"2012-12-17","biography":"","genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":15,"name":"Progressive
+      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/search","query":"query=believe+2004","page":1,"perPage":10,"count":2,"totalPages":1,"perPageOptions":[{"value":50,"applyQuery":"query=believe+2004&perPage=50"},{"value":100,"applyQuery":"query=believe+2004&perPage=100"},{"value":150,"applyQuery":"query=believe+2004&perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"spellcheck":null},"results":[{"id":35505,"selected":false,"type":"track","sku":"track-35505","name":"Believe","trackNumber":1,"active":true,"mixName":"2004
+        Mix","title":"Believe (2004 Mix)","slug":"believe-2004-mix","isrc":null,"releaseDate":"2004-09-03","publishDate":"2004-09-03","sampleUrl":"http:\/\/geo-samples.beatport.com\/lofi\/35505.LOFI.mp3","isPreviewAvailable":true,"isAvailableForMix":true,"rtmpStreamUrl":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume1\/items\/0\/0\/30000\/5000\/500\/0\/35505.LOFI","exclusive":false,"isPromotable":false,"preview":{"mp3":{"http":"http:\/\/geo-samples.beatport.com\/lofi\/35505.LOFI.mp3","rtmp":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume1\/items\/0\/0\/30000\/5000\/500\/0\/35505.LOFI","offset":{"start":"194549","end":"314549"}},"mp4":{"http":"http:\/\/geo-samples.beatport.com\/lofi\/35505.LOFI.mp4","rtmp":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp4:lofi_samples\/items\/volumes\/volume1\/items\/0\/0\/30000\/5000\/500\/0\/35505.LOFI","offset":{"start":"194549","end":"314549"}}},"price":{"code":"usd","symbol":"US$","value":199,"display":"US$1.99"},"audioFormatFee":{"wav":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"},"aiff":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"}},"losslessUpgradeFormatFee":{"wav":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"},"aiff":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"}},"purchasable":true,"currentStatus":"Classic","length":"08:06","lengthMs":null,"bpm":138,"key":{"standard":{"letter":"D","sharp":true,"flat":false,"chord":"minor"},"shortName":"D&#9839;min"},"saleType":"purchase","artists":[{"id":2238,"name":"Smith
+        & Pledger","slug":"smith-and-pledger","type":"artist"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"}],"subGenres":[],"charts":[{"id":25647,"position":8,"type":"chart"}],"release":{"id":12549,"name":"Believe","type":"release","slug":"believe"},"label":{"id":804,"name":"Anjunabeats","type":"label","slug":"anjunabeats","status":true},"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/21114.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/21114.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/5407.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5407.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"},"waveform":{"width":1500,"height":250,"url":"http:\/\/geo-media.beatport.com\/image\/2474360.png","secureUrl":"https:\/\/media.beatport.com\/image\/2474360.png"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5407.jpg"}}},{"id":5436,"type":"mix","sku":"mix-5436","name":"Frankie
+        B - Dj Set #025","slug":"frankie-b-dj-set-number-025","genres":[{"id":12,"name":"Deep
+        House","slug":"deep-house","type":"genre"},{"id":11,"name":"Tech House","slug":"tech-house","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"}],"subGenres":[],"labels":[{"id":1273,"type":"label","name":"Freerange
+        Records","slug":"freerange-records"},{"id":12723,"type":"label","name":"Live
+        At Robert Johnson","slug":"live-at-robert-johnson"},{"id":21856,"type":"label","name":"Local
+        Talk","slug":"local-talk"},{"id":24028,"type":"label","name":"Platte International","slug":"platte-international"},{"id":6034,"type":"label","name":"Vidab","slug":"vidab"},{"id":8727,"type":"label","name":"Save
+        Room Recordings","slug":"save-room-recordings"},{"id":12337,"type":"label","name":"Throne
+        Of Blood","slug":"throne-of-blood"},{"id":2168,"type":"label","name":"1trax","slug":"1trax"},{"id":4104,"type":"label","name":"Real
+        Tone Records","slug":"real-tone-records"},{"id":11624,"type":"label","name":"Komplex
+        De Deep","slug":"komplex-de-deep"},{"id":5393,"type":"label","name":"Smallville
+        Records","slug":"smallville-records"}],"artists":[{"id":140558,"name":"Bassfort","slug":"bassfort","type":"artist"},{"id":8278,"name":"Roman
+        Fluegel","slug":"roman-fluegel","type":"artist"},{"id":42861,"name":"Kareem","slug":"kareem","type":"artist"},{"id":116038,"name":"Tomas
+        Svensson","slug":"tomas-svensson","type":"artist"},{"id":87068,"name":"Dirty
+        Culture","slug":"dirty-culture","type":"artist"},{"id":1478,"name":"Beat Pharmacy","slug":"beat-pharmacy","type":"artist"},{"id":111537,"name":"Huxley","slug":"huxley","type":"artist"},{"id":129873,"name":"Sam
+        Russo","slug":"sam-russo","type":"artist"},{"id":215572,"name":"Paolo Rocco","slug":"paolo-rocco","type":"artist"},{"id":40461,"name":"Matthias
+        Vogt","slug":"matthias-vogt","type":"artist"},{"id":287195,"name":"Roaming","slug":"roaming","type":"artist"},{"id":2553,"name":"Jimpster","slug":"jimpster","type":"remixer"},{"id":23501,"name":"Point
+        G","slug":"point-g","type":"remixer"},{"id":130961,"name":"Smallpeople","slug":"smallpeople","type":"remixer"}],"description":"www.djfrankieb.com\r\n\r\nFrancesco
+        Strippoli aka Frankie B, Apulian boy known for his Tech House and Deep House
+        brilliant artistic contribution. \r\nHe approached music for the first time
+        in 1998 by playing piano. He started interesting in dance music when he was
+        12 years old and he realized his first cd''sonly by using a computer. \r\nSince
+        2004 he started to perform in some renamed town''s clubs untill he sweeped
+        to regional ambit. \r\nHis sound is a Tech House \u2013 Deep House mixing,
+        he''s always looking for new resonances, ranging over in his Dj Sets'', therefore
+        succeding in making them musically attractive in their differences.\r\n\r\n_______________________________________________________
+        \r\nFollow the Sound \r\nFollow the Thrills \r\nFollow Look Alive 54 on Facebook-
+        http:\/\/www.facebook.com\/lookalive54","djProfile":{"id":20619,"name":"Frankie
+        B","slug":"frankiebdj","images":[],"personId":1171368,"type":"djprofile"},"audioFormat":"mp3","length":"00:59:45","lengthMs":3585000,"sampleRate":44100,"bitRate":321000,"bitDepth":null,"isVariableBitRate":false,"backgroundColor":null,"fileSize":143822472,"price":{"code":"usd","symbol":"US$","value":999,"display":"US$9.99"},"images":{"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6142932.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6142932.jpg"},"waveform":{"width":1500,"height":250,"url":"http:\/\/geo-media.beatport.com\/image\/6144618.png","secureUrl":"https:\/\/media.beatport.com\/image\/6144618.png"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6142932.jpg"},"waveform":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6144618.png"}},"publishDate":"2012-10-16
+        19:18:34","views":60,"isFree":false,"isPreviewOnly":false,"originalTrackId":null,"status":true,"published":true,"badges":[],"numTracks":11,"sampleUrl":"http:\/\/geo-mixes-samples.beatport.com\/3\/0\/3\/5436.LOFI.mp3","rtmpStreamUrl":"rtmp:\/\/geo-rtmp-mixes-samples.beatport.com\/mixes\/preview\/mp3:3\/0\/3\/5436.LOFI","preview":{"mp3":{"http":"http:\/\/geo-mixes-samples.beatport.com\/3\/0\/3\/5436.LOFI.mp3","rtmp":"rtmp:\/\/geo-rtmp-mixes-samples.beatport.com\/mixes\/preview\/mp3:3\/0\/3\/5436.LOFI","offset":{"start":0,"end":3585000}},"mp4":{"http":"http:\/\/geo-mixes-samples.beatport.com\/3\/0\/3\/5436.LOFI.mp4","rtmp":"rtmp:\/\/geo-rtmp-mixes-samples.beatport.com\/mixes\/preview\/mp4:3\/0\/3\/5436.LOFI","offset":{"start":0,"end":3585000}}},"mixOwner":null}]}'
+    http_version: 
+  recorded_at: Sat, 06 Apr 2013 17:41:18 GMT
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/search?query=Archipel
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 06 Apr 2013 17:41:18 GMT
+      Server:
+      - Apache
+      Expires:
+      - Sat, 06 Apr 2013 18:11:18 GMT
+      Pragma:
+      - public
+      Cache-Control:
+      - public, max-age=1800
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/search","query":"query=Archipel","page":1,"perPage":10,"count":804,"totalPages":81,"nextQuery":"query=Archipel&page=2","perPageOptions":[{"value":50,"applyQuery":"query=Archipel&perPage=50"},{"value":100,"applyQuery":"query=Archipel&perPage=100"},{"value":150,"applyQuery":"query=Archipel&perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"spellcheck":null},"results":[{"id":1435378,"selected":false,"type":"track","sku":"track-1435378","name":"Archipel","trackNumber":2,"active":true,"mixName":"Lost
+        Archipel Remix","title":"Archipel (Lost Archipel Remix)","slug":"archipel-lost-archipel-remix","isrc":null,"releaseDate":"2010-09-26","publishDate":"2010-09-26","sampleUrl":"http:\/\/geo-samples.beatport.com\/lofi\/1435378.LOFI.mp3","isPreviewAvailable":false,"isAvailableForMix":true,"rtmpStreamUrl":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume7\/items\/1000000\/400000\/30000\/5000\/300\/70\/1435378.LOFI","exclusive":false,"isPromotable":false,"preview":null,"price":{"code":"usd","symbol":"US$","value":149,"display":"US$1.49"},"audioFormatFee":{"wav":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"},"aiff":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"}},"losslessUpgradeFormatFee":{"wav":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"},"aiff":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"}},"purchasable":true,"currentStatus":"General
+        Content","length":"07:28","lengthMs":null,"bpm":123,"key":{"standard":{"letter":"A","sharp":false,"flat":false,"chord":"minor"},"shortName":"Amin"},"saleType":"purchase","artists":[{"id":47626,"name":"Nils
+        Nilson","slug":"nils-nilson","type":"remixer"},{"id":100671,"name":"Oliver
+        Schories","slug":"oliver-schories","type":"artist"}],"genres":[{"id":6,"name":"Techno","slug":"techno","type":"genre"}],"subGenres":[{"id":68,"name":"Dub
+        Techno","slug":"dub-techno","type":"subgenre"}],"charts":[],"release":{"id":284365,"name":"Archipel","type":"release","slug":"archipel"},"label":{"id":6246,"name":"Ostwind
+        Records","type":"label","slug":"ostwind-records","status":true},"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/809565.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/809565.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/809566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/809566.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/809567.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/809567.jpg"},"waveform":{"width":1500,"height":250,"url":"http:\/\/geo-media.beatport.com\/image\/1594551.png","secureUrl":"https:\/\/media.beatport.com\/image\/1594551.png"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/809567.jpg"},"waveform":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/1594551.png"}}},{"id":4167691,"selected":false,"type":"track","sku":"track-4167691","name":"Archipel","trackNumber":3,"active":true,"mixName":"Nils
+        Nilson''s Lost Archipel Remix","title":"Archipel (Nils Nilson''s Lost Archipel
+        Remix)","slug":"archipel-nils-nilsons-lost-archipel-remix","isrc":"DECH61000740","releaseDate":"2013-02-13","publishDate":"2013-02-13","sampleUrl":"http:\/\/geo-samples.beatport.com\/lofi\/4167691.LOFI.mp3","isPreviewAvailable":false,"isAvailableForMix":true,"rtmpStreamUrl":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume3\/items\/4000000\/100000\/60000\/7000\/600\/90\/4167691.LOFI","exclusive":false,"isPromotable":false,"preview":null,"price":{"code":"usd","symbol":"US$","value":199,"display":"US$1.99"},"audioFormatFee":{"wav":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"},"aiff":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"}},"losslessUpgradeFormatFee":{"wav":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"},"aiff":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"}},"purchasable":true,"currentStatus":"New
+        Release","length":"7:08","lengthMs":null,"bpm":123,"key":{"standard":{"letter":"A","sharp":false,"flat":false,"chord":"minor"},"shortName":"Amin"},"saleType":"purchase","artists":[{"id":47626,"name":"Nils
+        Nilson","slug":"nils-nilson","type":"remixer"},{"id":100671,"name":"Oliver
+        Schories","slug":"oliver-schories","type":"artist"}],"genres":[{"id":11,"name":"Tech
+        House","slug":"tech-house","type":"genre"}],"subGenres":[],"charts":[],"release":{"id":1044474,"name":"Nachtwandler,
+        Vol. 2 - Deep Electronic House","type":"release","slug":"nachtwandler-vol-2-deep-electronic-house"},"label":{"id":17269,"name":"City
+        Life","type":"label","slug":"city-life","status":true},"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/6928674.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6928674.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6928675.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6928675.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6928676.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6928676.jpg"},"waveform":{"width":1500,"height":250,"url":"http:\/\/geo-media.beatport.com\/image\/6928722.png","secureUrl":"https:\/\/media.beatport.com\/image\/6928722.png"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6928676.jpg"},"waveform":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6928722.png"}}},{"id":4027689,"selected":false,"type":"track","sku":"track-4027689","name":"Archipel","trackNumber":6,"active":true,"mixName":"Nils
+        Nilson''s Lost Archipel Remix","title":"Archipel (Nils Nilson''s Lost Archipel
+        Remix)","slug":"archipel-nils-nilsons-lost-archipel-remix","isrc":"DECH61000740","releaseDate":"2013-01-09","publishDate":"2013-01-09","sampleUrl":"http:\/\/geo-samples.beatport.com\/lofi\/4027689.LOFI.mp3","isPreviewAvailable":false,"isAvailableForMix":true,"rtmpStreamUrl":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume1\/items\/4000000\/0\/20000\/7000\/600\/80\/4027689.LOFI","exclusive":false,"isPromotable":false,"preview":null,"price":{"code":"usd","symbol":"US$","value":149,"display":"US$1.49"},"audioFormatFee":{"wav":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"},"aiff":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"}},"losslessUpgradeFormatFee":{"wav":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"},"aiff":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"}},"purchasable":true,"currentStatus":"General
+        Content","length":"7:08","lengthMs":null,"bpm":123,"key":{"standard":{"letter":"A","sharp":false,"flat":false,"chord":"minor"},"shortName":"Amin"},"saleType":"purchase","artists":[{"id":47626,"name":"Nils
+        Nilson","slug":"nils-nilson","type":"remixer"},{"id":100671,"name":"Oliver
+        Schories","slug":"oliver-schories","type":"artist"}],"genres":[{"id":11,"name":"Tech
+        House","slug":"tech-house","type":"genre"}],"subGenres":[],"charts":[],"release":{"id":1015651,"name":"CONSTRUCTION,
+        Vol. 1 - Selection of Asthetic Tech-House Tunes","type":"release","slug":"construction-vol-1-selection-of-asthetic-tech-house-tunes"},"label":{"id":2617,"name":"Budenzauber","type":"label","slug":"budenzauber","status":true},"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/6471642.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6471642.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6471643.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6471643.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6471644.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6471644.jpg"},"waveform":{"width":1500,"height":250,"url":"http:\/\/geo-media.beatport.com\/image\/6471701.png","secureUrl":"https:\/\/media.beatport.com\/image\/6471701.png"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6471644.jpg"},"waveform":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6471701.png"}}},{"id":4169528,"selected":false,"type":"track","sku":"track-4169528","name":"Archipel","trackNumber":3,"active":true,"mixName":"Nils
+        Nilson''s Lost Archipel Remix","title":"Archipel (Nils Nilson''s Lost Archipel
+        Remix)","slug":"archipel-nils-nilsons-lost-archipel-remix","isrc":"DECH61000740","releaseDate":"2013-02-20","publishDate":"2013-02-20","sampleUrl":"http:\/\/geo-samples.beatport.com\/lofi\/4169528.LOFI.mp3","isPreviewAvailable":false,"isAvailableForMix":true,"rtmpStreamUrl":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume6\/items\/4000000\/100000\/60000\/9000\/500\/20\/4169528.LOFI","exclusive":false,"isPromotable":false,"preview":null,"price":{"code":"usd","symbol":"US$","value":199,"display":"US$1.99"},"audioFormatFee":{"wav":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"},"aiff":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"}},"losslessUpgradeFormatFee":{"wav":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"},"aiff":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"}},"purchasable":true,"currentStatus":"New
+        Release","length":"7:08","lengthMs":null,"bpm":123,"key":{"standard":{"letter":"A","sharp":false,"flat":false,"chord":"minor"},"shortName":"Amin"},"saleType":"purchase","artists":[{"id":47626,"name":"Nils
+        Nilson","slug":"nils-nilson","type":"remixer"},{"id":100671,"name":"Oliver
+        Schories","slug":"oliver-schories","type":"artist"}],"genres":[{"id":11,"name":"Tech
+        House","slug":"tech-house","type":"genre"}],"subGenres":[],"charts":[],"release":{"id":1044783,"name":"Labyrinth
+        der Tone, Vol. 2 - Deep & Tech-House Music","type":"release","slug":"labyrinth-der-tone-vol-2-deep-and-tech-house-music"},"label":{"id":17269,"name":"City
+        Life","type":"label","slug":"city-life","status":true},"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/6936399.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6936399.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/6936400.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6936400.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/6936401.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/6936401.jpg"},"waveform":{"width":1500,"height":250,"url":"http:\/\/geo-media.beatport.com\/image\/6936437.png","secureUrl":"https:\/\/media.beatport.com\/image\/6936437.png"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6936401.jpg"},"waveform":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/6936437.png"}}},{"id":2966,"type":"label","name":"Archipel","slug":"archipel","active":true,"lastPublishDate":"2013-04-04","biography":"","genres":[{"id":14,"name":"Minimal","slug":"minimal","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":16,"name":"DJ
+        Tools","slug":"dj-tools","type":"genre"},{"id":10,"name":"Chill Out","slug":"chill-out","type":"genre"},{"id":11,"name":"Tech
+        House","slug":"tech-house","type":"genre"},{"id":12,"name":"Deep House","slug":"deep-house","type":"genre"},{"id":9,"name":"Breaks","slug":"breaks","type":"genre"}],"subGenres":[{"id":13,"name":"IDM","slug":"idm","type":"subgenre"},{"id":39,"name":"Downtempo","slug":"downtempo","type":"subgenre"},{"id":15,"name":"LeftField","slug":"leftfield","type":"subgenre"},{"id":69,"name":"Ambient","slug":"ambient","type":"subgenre"},{"id":24,"name":"Melodic","slug":"melodic","type":"subgenre"},{"id":71,"name":"Experimental\/Noise\/Industrial","slug":"experimental-noise-industrial","type":"subgenre"},{"id":90,"name":"Acid","slug":"acid","type":"subgenre"},{"id":25,"name":"Detroit
+        Techno","slug":"detroit-techno","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/37857.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/37857.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/37856.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/37856.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/264626.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/264626.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/37856.jpg"}}},{"id":25998,"type":"label","name":"Archipel
+        Soundtracks","slug":"archipel-soundtracks","active":true,"lastPublishDate":"2012-11-05","biography":"","genres":[{"id":14,"name":"Minimal","slug":"minimal","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":11,"name":"Tech
+        House","slug":"tech-house","type":"genre"},{"id":18,"name":"Dubstep","slug":"dubstep","type":"genre"}],"subGenres":[],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/5274089.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5274089.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/5274090.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5274090.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5274091.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5274091.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5274091.jpg"}}},{"id":1435377,"selected":false,"type":"track","sku":"track-1435377","name":"Archipel","trackNumber":1,"active":true,"mixName":"Original
+        Mix","title":"Archipel (Original Mix)","slug":"archipel-original-mix","isrc":null,"releaseDate":"2010-09-26","publishDate":"2010-09-26","sampleUrl":"http:\/\/geo-samples.beatport.com\/lofi\/1435377.LOFI.mp3","isPreviewAvailable":false,"isAvailableForMix":true,"rtmpStreamUrl":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume6\/items\/1000000\/400000\/30000\/5000\/300\/70\/1435377.LOFI","exclusive":false,"isPromotable":false,"preview":null,"price":{"code":"usd","symbol":"US$","value":149,"display":"US$1.49"},"audioFormatFee":{"wav":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"},"aiff":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"}},"losslessUpgradeFormatFee":{"wav":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"},"aiff":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"}},"purchasable":true,"currentStatus":"General
+        Content","length":"07:37","lengthMs":null,"bpm":127,"key":{"standard":{"letter":"F","sharp":false,"flat":false,"chord":"major"},"shortName":"Fmaj"},"saleType":"purchase","artists":[{"id":100671,"name":"Oliver
+        Schories","slug":"oliver-schories","type":"artist"}],"genres":[{"id":11,"name":"Tech
+        House","slug":"tech-house","type":"genre"}],"subGenres":[],"charts":[{"id":96889,"position":1,"type":"chart"},{"id":132681,"position":1,"type":"chart"}],"release":{"id":284365,"name":"Archipel","type":"release","slug":"archipel"},"label":{"id":6246,"name":"Ostwind
+        Records","type":"label","slug":"ostwind-records","status":true},"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/809565.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/809565.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/809566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/809566.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/809567.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/809567.jpg"},"waveform":{"width":1500,"height":250,"url":"http:\/\/geo-media.beatport.com\/image\/1594536.png","secureUrl":"https:\/\/media.beatport.com\/image\/1594536.png"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/809567.jpg"},"waveform":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/1594536.png"}}},{"id":575579,"type":"part","sku":"part-575579","name":"Kick
+        Archipel","slug":"kick-archipel","genres":[{"id":6,"name":"Techno","slug":"techno","type":"genre"}],"seconds":0.9375,"filesize":null,"bpm":127,"beats":4,"progression":"","audioType":"Sample","instrument":{"id":9,"name":"Kick","parent":{"id":6,"name":"Drums","parent":null}},"active":true,"publishDate":"2011-09-23","pack":{"id":1154,"name":"Techno"},"label":{"id":24786,"name":"Sample
+        Magic"},"price":{"code":"usd","symbol":"US$","value":99,"display":"US$0.99"},"audioFormat":["wav"],"previewAudioFormats":null,"key":null},{"id":27635,"type":"chart","sku":"chart-27635","name":"Pheek''s
+        Archipel 5 Year Anniversary Chart","slug":"pheeks-archipel-5-year-anniversary-chart","description":"Pheek''s
+        label Archipel, is turning 5 year old this year! Since 2005, the little Montreal
+        based label is putting energy is releasing original and emotional music. Pheek
+        is currently working on an album to be released later this year.","active":true,"indexed":true,"publishDate":"2010-08-31","price":{"code":"usd","symbol":"US$","value":1490,"display":"US$14.90"},"audioFormatFee":{"wav":{"code":"usd","symbol":"US$","value":750,"display":"US$7.50"},"aiff":{"code":"usd","symbol":"US$","value":750,"display":"US$7.50"}},"genres":[{"id":14,"name":"Minimal","slug":"minimal","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"},{"id":11,"name":"Tech
+        House","slug":"tech-house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/491534.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/491534.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/787962.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/787962.jpg"},"large":{"width":130,"height":130,"url":"http:\/\/geo-media.beatport.com\/image\/787963.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/787963.jpg"},"xlarge":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5245821.jpg"}},"chartOwner":null,"trackCount":0},{"id":284365,"type":"release","sku":"release-284365","name":"Archipel","slug":"archipel","active":true,"releaseDate":"2010-09-26","publishDate":"2010-09-26","exclusive":false,"category":"Release","description":"An
+        archipelago is beautiful - just like the \"Archipel\" of Oliver Schories.
+        Various elements combined to a wonderful ensemble. Just as with ''Seenplatte''
+        or ''Ostwind Limited Series'', Oliver sets crispy beats, soft strings and
+        striking chords. Everything is in place and cut to the chase. A high area
+        of the Azores which offers unequaled opportunities. Watch out, native fans
+        of Bermuda shorts, \"Archipel\" will twist your bones with an about-face!
+        A hymn which makes you spill your endorphin and which turns the summer into
+        an unforgettable experience. On ''Flip'', Nils Nilson presents the perfect
+        matching part. A descreet grooving dub piece, rolling down like a trade wind
+        and turning into a giant warm monsoon after the break. A record made for the
+        summer season. Sun, sand and the sea, what could be better? Many thanks go
+        out to Oliver and Nils for this release.\r\n\r\nSupported by Stephan Bodzin,
+        Aka Aka, D. Diggler, Axel Bartsch, 2000 and one, Mihalis Safras, Kev Obrien","currentStatus":"General
+        Content","catalogNumber":"OW032","purchasable":true,"price":{"code":"usd","symbol":"US$","value":298,"display":"US$2.98"},"tracksPrice":{"code":"usd","symbol":"US$","value":298,"display":"US$2.98"},"audioFormatFee":{"wav":{"code":"usd","symbol":"US$","value":150,"display":"US$1.50"},"aiff":{"code":"usd","symbol":"US$","value":150,"display":"US$1.50"}},"label":{"id":6246,"name":"Ostwind
+        Records","type":"label","slug":"ostwind-records"},"artists":[{"id":100671,"name":"Oliver
+        Schories","slug":"oliver-schories","type":"artist"},{"id":47626,"name":"Nils
+        Nilson","slug":"nils-nilson","type":"remixer"}],"genres":[{"id":11,"name":"Tech
+        House","slug":"tech-house","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/809565.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/809565.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/809566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/809566.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/809567.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/809567.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/809567.jpg"}}}]}'
+    http_version: 
+  recorded_at: Sat, 06 Apr 2013 17:41:18 GMT
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/search?query=ANJCDCO011D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 06 Apr 2013 17:41:19 GMT
+      Server:
+      - Apache
+      Expires:
+      - Sat, 06 Apr 2013 18:11:19 GMT
+      Pragma:
+      - public
+      Cache-Control:
+      - public, max-age=1800
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/search","query":"query=ANJCDCO011D","page":1,"perPage":10,"count":0,"totalPages":0,"perPageOptions":[{"value":50,"applyQuery":"query=ANJCDCO011D&perPage=50"},{"value":100,"applyQuery":"query=ANJCDCO011D&perPage=100"},{"value":150,"applyQuery":"query=ANJCDCO011D&perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"spellcheck":null},"results":[]}'
+    http_version: 
+  recorded_at: Sat, 06 Apr 2013 17:41:19 GMT
+- request:
+    method: get
+    uri: http://api.beatport.com/catalog/3/search?facets=genreName:Trance&query=anjunadeep
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 06 Apr 2013 17:41:19 GMT
+      Server:
+      - Apache
+      Expires:
+      - Sat, 06 Apr 2013 18:11:19 GMT
+      Pragma:
+      - public
+      Cache-Control:
+      - public, max-age=1800
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/search","query":"facets%5B0%5D=genreName%3ATrance&query=anjunadeep","page":1,"perPage":10,"count":87,"totalPages":9,"nextQuery":"facets%5B0%5D=genreName%3ATrance&query=anjunadeep&page=2","perPageOptions":[{"value":50,"applyQuery":"facets%5B0%5D=genreName%3ATrance&query=anjunadeep&perPage=50"},{"value":100,"applyQuery":"facets%5B0%5D=genreName%3ATrance&query=anjunadeep&perPage=100"},{"value":150,"applyQuery":"facets%5B0%5D=genreName%3ATrance&query=anjunadeep&perPage=150"}],"facets":{"fields":[]},"appliedFacets":[],"spellcheck":null},"results":[{"id":1390,"type":"label","name":"Anjunadeep","slug":"anjunadeep","active":true,"lastPublishDate":"2013-03-25","biography":"","genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":15,"name":"Progressive
         House","slug":"progressive-house","type":"genre"},{"id":17,"name":"Electro
-        House","slug":"electro-house","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"},{"id":9,"name":"Breaks","slug":"breaks","type":"genre"},{"id":11,"name":"Tech
+        House","slug":"electro-house","type":"genre"},{"id":5,"name":"House","slug":"house","type":"genre"},{"id":11,"name":"Tech
         House","slug":"tech-house","type":"genre"},{"id":3,"name":"Electronica","slug":"electronica","type":"genre"},{"id":1,"name":"Drum
         & Bass","slug":"drum-and-bass","type":"genre"},{"id":10,"name":"Chill Out","slug":"chill-out","type":"genre"},{"id":12,"name":"Deep
         House","slug":"deep-house","type":"genre"},{"id":6,"name":"Techno","slug":"techno","type":"genre"},{"id":18,"name":"Dubstep","slug":"dubstep","type":"genre"}],"subGenres":[{"id":27,"name":"Progressive","slug":"progressive","type":"subgenre"},{"id":91,"name":"ProgNo","slug":"progno","type":"subgenre"},{"id":24,"name":"Melodic","slug":"melodic","type":"subgenre"}],"mixCount":null,"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/3406.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/3406.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/1191.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/1191.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5539566.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5539566.jpg"},"banner":{"width":592,"height":96,"url":"http:\/\/geo-media.beatport.com\/image\/345152.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/345152.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/1191.jpg"}}},{"id":38792,"type":"chart","sku":"chart-38792","name":"Jaytech''s
-        Anjunadeep August Chart","slug":"jaytechs-anjunadeep-august-chart","description":"","active":true,"publishDate":"2011-08-23","price":{"code":"usd","symbol":"$","value":1490},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":750},"aiff":{"code":"usd","symbol":"$","value":750}},"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":15,"name":"Progressive
+        Anjunadeep August Chart","slug":"jaytechs-anjunadeep-august-chart","description":"","active":true,"indexed":true,"publishDate":"2011-08-23","price":{"code":"usd","symbol":"US$","value":1490,"display":"US$14.90"},"audioFormatFee":{"wav":{"code":"usd","symbol":"US$","value":750,"display":"US$7.50"},"aiff":{"code":"usd","symbol":"US$","value":750,"display":"US$7.50"}},"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":15,"name":"Progressive
         House","slug":"progressive-house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/3271944.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/3271944.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/3271945.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/3271945.jpg"},"large":{"width":130,"height":130,"url":"http:\/\/geo-media.beatport.com\/image\/3271946.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/3271946.jpg"},"xlarge":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/3271947.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/3271947.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/3271947.jpg"}},"chartOwner":null,"updatedDate":"2011-08-23
         03:12:51","trackCount":0},{"id":48813,"type":"chart","sku":"chart-48813","name":"Joonas
-        Hahmo - Anjunadeep 04 chart","slug":"joonas-hahmo-anjunadeep-04-chart","description":"","active":true,"publishDate":"2012-03-02","price":{"code":"usd","symbol":"$","value":1341},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":675},"aiff":{"code":"usd","symbol":"$","value":675}},"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":15,"name":"Progressive
+        Hahmo - Anjunadeep 04 chart","slug":"joonas-hahmo-anjunadeep-04-chart","description":"","active":true,"indexed":true,"publishDate":"2012-03-02","price":{"code":"usd","symbol":"US$","value":1341,"display":"US$13.41"},"audioFormatFee":{"wav":{"code":"usd","symbol":"US$","value":675,"display":"US$6.75"},"aiff":{"code":"usd","symbol":"US$","value":675,"display":"US$6.75"}},"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":15,"name":"Progressive
         House","slug":"progressive-house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/5081777.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5081777.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/5081778.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5081778.jpg"},"large":{"width":130,"height":130,"url":"http:\/\/geo-media.beatport.com\/image\/5081779.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5081779.jpg"},"xlarge":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5081780.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5081780.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5081780.jpg"}},"chartOwner":null,"updatedDate":"2012-03-02
         10:57:56","trackCount":0},{"id":215217,"selected":false,"type":"track","sku":"track-215217","name":"Volume
         1","trackNumber":5,"active":true,"mixName":"AnjunaDeep Mix","title":"Volume
-        1 (AnjunaDeep Mix)","slug":"volume-1-anjunadeep-mix","isrc":null,"releaseDate":"2000-06-01","publishDate":"2000-06-01","sampleUrl":"http:\/\/geo-samples.beatport.com\/lofi\/215217.LOFI.mp3","isPreviewAvailable":true,"isAvailableForMix":true,"rtmpStreamUrl":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume2\/items\/0\/200000\/10000\/5000\/200\/10\/215217.LOFI","exclusive":false,"isPromotable":false,"preview":{"mp3":{"http":"http:\/\/geo-samples.beatport.com\/lofi\/215217.LOFI.mp3","rtmp":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume2\/items\/0\/200000\/10000\/5000\/200\/10\/215217.LOFI"}},"price":{"code":"usd","symbol":"$","value":149},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":75},"aiff":{"code":"usd","symbol":"$","value":75}},"losslessUpgradeFormatFee":[],"currentStatus":"General
-        Content","length":"08:46","bpm":136,"key":{"standard":{"letter":"A","sharp":true,"flat":false,"chord":"minor"},"shortName":"A&#9839;min"},"saleType":"purchase","artists":[{"id":28093,"name":"Anjuna
+        1 (AnjunaDeep Mix)","slug":"volume-1-anjunadeep-mix","isrc":null,"releaseDate":"2000-06-01","publishDate":"2000-06-01","sampleUrl":"http:\/\/geo-samples.beatport.com\/lofi\/215217.LOFI.mp3","isPreviewAvailable":true,"isAvailableForMix":true,"rtmpStreamUrl":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume2\/items\/0\/200000\/10000\/5000\/200\/10\/215217.LOFI","exclusive":false,"isPromotable":false,"preview":{"mp3":{"http":"http:\/\/geo-samples.beatport.com\/lofi\/215217.LOFI.mp3","rtmp":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume2\/items\/0\/200000\/10000\/5000\/200\/10\/215217.LOFI","offset":{"start":"210687","end":"330687"}},"mp4":{"http":"http:\/\/geo-samples.beatport.com\/lofi\/215217.LOFI.mp4","rtmp":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp4:lofi_samples\/items\/volumes\/volume2\/items\/0\/200000\/10000\/5000\/200\/10\/215217.LOFI","offset":{"start":"210687","end":"330687"}}},"price":{"code":"usd","symbol":"US$","value":149,"display":"US$1.49"},"audioFormatFee":{"wav":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"},"aiff":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"}},"losslessUpgradeFormatFee":{"wav":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"},"aiff":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"}},"purchasable":true,"currentStatus":"General
+        Content","length":"08:46","lengthMs":null,"bpm":136,"key":{"standard":{"letter":"A","sharp":true,"flat":false,"chord":"minor"},"shortName":"A&#9839;min"},"saleType":"purchase","artists":[{"id":28093,"name":"Anjuna
         Beats","slug":"anjuna-beats","type":"artist"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"}],"subGenres":[],"charts":[],"release":{"id":38763,"name":"Volume
         1","type":"release","slug":"volume-1"},"label":{"id":804,"name":"Anjunabeats","type":"label","slug":"anjunabeats","status":true},"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/60759.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/60759.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/60760.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/60760.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"},"waveform":{"width":1500,"height":250,"url":"http:\/\/geo-media.beatport.com\/image\/2353813.png","secureUrl":"https:\/\/media.beatport.com\/image\/2353813.png"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/60760.jpg"}}},{"id":940969,"type":"release","sku":"release-940969","name":"Anjunadeep
         04 (Unmixed & DJ Ready)","slug":"anjunadeep-04-unmixed-and-dj-ready","active":true,"releaseDate":"2012-07-24","publishDate":"2012-07-24","exclusive":false,"category":"Album","description":"","currentStatus":"General
-        Content","catalogNumber":"ANJCDCO092D","purchasable":true,"price":{"code":"usd","symbol":"$","value":999},"tracksPrice":{"code":"usd","symbol":"$","value":3576},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":1800},"aiff":{"code":"usd","symbol":"$","value":1800}},"label":{"id":1390,"name":"Anjunadeep","type":"label","slug":"anjunadeep"},"artists":[{"id":61194,"name":"Dusky","slug":"dusky","type":"artist"},{"id":13732,"name":"Martin
+        Content","catalogNumber":"ANJCDCO092D","purchasable":true,"price":{"code":"usd","symbol":"US$","value":999,"display":"US$9.99"},"tracksPrice":{"code":"usd","symbol":"US$","value":3576,"display":"US$35.76"},"audioFormatFee":{"wav":{"code":"usd","symbol":"US$","value":1800,"display":"US$18.00"},"aiff":{"code":"usd","symbol":"US$","value":1800,"display":"US$18.00"}},"label":{"id":1390,"name":"Anjunadeep","type":"label","slug":"anjunadeep"},"artists":[{"id":61194,"name":"Dusky","slug":"dusky","type":"artist"},{"id":13732,"name":"Martin
         Roth","slug":"martin-roth","type":"artist"},{"id":6510,"name":"Vincenzo","slug":"vincenzo","type":"artist"},{"id":98835,"name":"Andrew
         Bayer","slug":"andrew-bayer","type":"artist"},{"id":48881,"name":"Paronator","slug":"paronator","type":"artist"},{"id":79895,"name":"Full
         Tilt","slug":"full-tilt","type":"artist"},{"id":37844,"name":"Parker & Hanson","slug":"parker-and-hanson","type":"artist"},{"id":6484,"name":"Stephen
@@ -376,7 +367,7 @@ http_interactions:
         Hahmo","slug":"joonas-hahmo","type":"artist"},{"id":176503,"name":"Levente
         Marton","slug":"levente-marton","type":"artist"},{"id":1768,"name":"Tom Middleton","slug":"tom-middleton","type":"remixer"},{"id":95557,"name":"James
         Grant","slug":"james-grant","type":"remixer"}],"genres":[{"id":3,"name":"Electronica","slug":"electronica","type":"genre"},{"id":12,"name":"Deep
-        House","slug":"deep-house","type":"genre"},{"id":15,"name":"Progressive House","slug":"progressive-house","type":"genre"},{"id":7,"name":"Trance","slug":"trance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/5714024.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5714024.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/5714025.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5714025.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5714026.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5714026.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5714026.jpg"}}},{"id":80986,"type":"release","sku":"release-80986","name":"Welsh
+        House","slug":"deep-house","type":"genre"},{"id":15,"name":"Progressive House","slug":"progressive-house","type":"genre"},{"id":7,"name":"Trance","slug":"trance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/5714024.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5714024.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/5714025.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5714025.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5714026.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5714026.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/5714026.jpg"}}},{"id":80991,"type":"release","sku":"release-80991","name":"Welsh
         Morphology","slug":"welsh-morphology","active":true,"releaseDate":"2007-10-29","publishDate":"2007-10-29","exclusive":false,"category":"Release","description":"David
         West is back on Anjunabeats with what can only be described as innovative,
         progressive, trance with big room written all over it. \u2018Welsh Morphology\u2019
@@ -387,47 +378,43 @@ http_interactions:
         the original. Blending the original vocals with an electro edge, think Urban
         Torque cross Martin Roth and add a sparkle of original and booyah! This package
         is nothing far from impressive; the original is already on Armin Van Buurens
-        \u2018Universal Religion\u2019 2007.","currentStatus":"General Content","catalogNumber":"ANJDEE017","purchasable":true,"price":{"code":"usd","symbol":"$","value":149},"tracksPrice":{"code":"usd","symbol":"$","value":149},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":75},"aiff":{"code":"usd","symbol":"$","value":75}},"label":{"id":1390,"name":"Anjunadeep","type":"label","slug":"anjunadeep"},"artists":[{"id":5393,"name":"David
-        West","slug":"david-west","type":"artist"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/3406.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/3406.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/1191.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/1191.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/1191.jpg"}}},{"id":80987,"type":"release","sku":"release-80987","name":"Welsh
-        Morphology","slug":"welsh-morphology","active":true,"releaseDate":"2007-10-29","publishDate":"2007-10-29","exclusive":false,"category":"Release","description":"David
-        West is back on Anjunabeats with what can only be described as innovative,
-        progressive, trance with big room written all over it. \u2018Welsh Morphology\u2019
-        \u2013 get ready to hear this on every dance floor on the globe.\r\n\r\nThe
-        Original Mix is a monster of a tune take a playful melody, graced with a soft
-        non-sensical vocal, and build with a bouncing baseline and you have \u2018Welsh
-        Morphology\u2019.  The Charles Gudagavfa Remix is a deeper, housey play on
-        the original. Blending the original vocals with an electro edge, think Urban
-        Torque cross Martin Roth and add a sparkle of original and booyah! This package
-        is nothing far from impressive; the original is already on Armin Van Buurens
-        \u2018Universal Religion\u2019 2007.","currentStatus":"General Content","catalogNumber":"ANJDEE017","purchasable":true,"price":{"code":"usd","symbol":"$","value":149},"tracksPrice":{"code":"usd","symbol":"$","value":149},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":75},"aiff":{"code":"usd","symbol":"$","value":75}},"label":{"id":1390,"name":"Anjunadeep","type":"label","slug":"anjunadeep"},"artists":[{"id":5393,"name":"David
-        West","slug":"david-west","type":"artist"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/3406.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/3406.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/1191.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/1191.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/1191.jpg"}}},{"id":80989,"type":"release","sku":"release-80989","name":"Welsh
-        Morphology","slug":"welsh-morphology","active":true,"releaseDate":"2007-10-29","publishDate":"2007-10-29","exclusive":false,"category":"Release","description":"David
-        West is back on Anjunabeats with what can only be described as innovative,
-        progressive, trance with big room written all over it. \u2018Welsh Morphology\u2019
-        \u2013 get ready to hear this on every dance floor on the globe.\r\n\r\nThe
-        Original Mix is a monster of a tune take a playful melody, graced with a soft
-        non-sensical vocal, and build with a bouncing baseline and you have \u2018Welsh
-        Morphology\u2019.  The Charles Gudagavfa Remix is a deeper, housey play on
-        the original. Blending the original vocals with an electro edge, think Urban
-        Torque cross Martin Roth and add a sparkle of original and booyah! This package
-        is nothing far from impressive; the original is already on Armin Van Buurens
-        \u2018Universal Religion\u2019 2007.","currentStatus":"General Content","catalogNumber":"ANJDEE017","purchasable":true,"price":{"code":"usd","symbol":"$","value":149},"tracksPrice":{"code":"usd","symbol":"$","value":149},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":75},"aiff":{"code":"usd","symbol":"$","value":75}},"label":{"id":1390,"name":"Anjunadeep","type":"label","slug":"anjunadeep"},"artists":[{"id":5393,"name":"David
-        West","slug":"david-west","type":"artist"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/3406.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/3406.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/1191.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/1191.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/1191.jpg"}}},{"id":80991,"type":"release","sku":"release-80991","name":"Welsh
-        Morphology","slug":"welsh-morphology","active":true,"releaseDate":"2007-10-29","publishDate":"2007-10-29","exclusive":false,"category":"Release","description":"David
-        West is back on Anjunabeats with what can only be described as innovative,
-        progressive, trance with big room written all over it. \u2018Welsh Morphology\u2019
-        \u2013 get ready to hear this on every dance floor on the globe.\r\n\r\nThe
-        Original Mix is a monster of a tune take a playful melody, graced with a soft
-        non-sensical vocal, and build with a bouncing baseline and you have \u2018Welsh
-        Morphology\u2019.  The Charles Gudagavfa Remix is a deeper, housey play on
-        the original. Blending the original vocals with an electro edge, think Urban
-        Torque cross Martin Roth and add a sparkle of original and booyah! This package
-        is nothing far from impressive; the original is already on Armin Van Buurens
-        \u2018Universal Religion\u2019 2007.","currentStatus":"General Content","catalogNumber":"ANJDEE017","purchasable":true,"price":{"code":"usd","symbol":"$","value":149},"tracksPrice":{"code":"usd","symbol":"$","value":149},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":75},"aiff":{"code":"usd","symbol":"$","value":75}},"label":{"id":1390,"name":"Anjunadeep","type":"label","slug":"anjunadeep"},"artists":[{"id":5393,"name":"David
+        \u2018Universal Religion\u2019 2007.","currentStatus":"General Content","catalogNumber":"ANJDEE017","purchasable":true,"price":{"code":"usd","symbol":"US$","value":149,"display":"US$1.49"},"tracksPrice":{"code":"usd","symbol":"US$","value":149,"display":"US$1.49"},"audioFormatFee":{"wav":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"},"aiff":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"}},"label":{"id":1390,"name":"Anjunadeep","type":"label","slug":"anjunadeep"},"artists":[{"id":5393,"name":"David
         West","slug":"david-west","type":"artist"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/3406.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/3406.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/1191.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/1191.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/1191.jpg"}}},{"id":232766,"type":"release","sku":"release-232766","name":"Hola","slug":"hola","active":true,"releaseDate":"2010-03-30","publishDate":"2010-03-30","exclusive":false,"category":"Release","description":"","currentStatus":"General
-        Content","catalogNumber":"ANJDEE072D","purchasable":true,"price":{"code":"usd","symbol":"$","value":298},"tracksPrice":{"code":"usd","symbol":"$","value":298},"audioFormatFee":{"wav":{"code":"usd","symbol":"$","value":150},"aiff":{"code":"usd","symbol":"$","value":150}},"label":{"id":1390,"name":"Anjunadeep","type":"label","slug":"anjunadeep"},"artists":[{"id":9793,"name":"Alex
+        Content","catalogNumber":"ANJDEE072D","purchasable":true,"price":{"code":"usd","symbol":"US$","value":298,"display":"US$2.98"},"tracksPrice":{"code":"usd","symbol":"US$","value":298,"display":"US$2.98"},"audioFormatFee":{"wav":{"code":"usd","symbol":"US$","value":150,"display":"US$1.50"},"aiff":{"code":"usd","symbol":"US$","value":150,"display":"US$1.50"}},"label":{"id":1390,"name":"Anjunadeep","type":"label","slug":"anjunadeep"},"artists":[{"id":9793,"name":"Alex
         Monakhov","slug":"alex-monakhov","type":"artist"},{"id":129781,"name":"Que","slug":"que","type":"artist"},{"id":24276,"name":"PROFF","slug":"proff","type":"remixer"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":15,"name":"Progressive
-        House","slug":"progressive-house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/631718.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/631718.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/631719.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/631719.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/631720.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/631720.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/631720.jpg"}}}]}'
+        House","slug":"progressive-house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/631718.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/631718.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/631719.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/631719.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/631720.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/631720.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/631720.jpg"}}},{"id":57986,"type":"release","sku":"release-57986","name":"Zeppelin
+        \/ David","slug":"zeppelin-david","active":true,"releaseDate":"2007-07-09","publishDate":"2007-07-09","exclusive":false,"category":"Release","description":"Michael
+        Cassette hails from Finland and draws his musical inspiration from the memory
+        of his late brother, David. And this essential two tracker announces him as
+        a major new house music talent. On the A-side, ''Zeppelin'' hails from the
+        ''Discopolis'' school of thinking, combining influences from the late 70''s
+        and 80''s with today''s production values. Already on the playlists of Hernan
+        Cattaneo and Chris Lake.\r\n\r\nThe result is a melodic house beauty that
+        just keeps on building and building. On the flip, ''David'' is a direct tribute
+        to Cassette''s late brother, a chunky, 80''s-infused electro houser with poignant
+        vo-coded vocals. An awesome debut. ''Zeppelin'' appears on Above & Beyond:
+        Anjunabeats Volume Five'' released May21st 2007","currentStatus":"General
+        Content","catalogNumber":"ANJDEE013","purchasable":true,"price":{"code":"usd","symbol":"US$","value":447,"display":"US$4.47"},"tracksPrice":{"code":"usd","symbol":"US$","value":447,"display":"US$4.47"},"audioFormatFee":{"wav":{"code":"usd","symbol":"US$","value":225,"display":"US$2.25"},"aiff":{"code":"usd","symbol":"US$","value":225,"display":"US$2.25"}},"label":{"id":1390,"name":"Anjunadeep","type":"label","slug":"anjunadeep"},"artists":[{"id":40060,"name":"Michael
+        Cassette","slug":"michael-cassette","type":"artist"},{"id":7848,"name":"Allende","slug":"allende","type":"remixer"}],"genres":[{"id":15,"name":"Progressive
+        House","slug":"progressive-house","type":"genre"},{"id":7,"name":"Trance","slug":"trance","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/106128.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/106128.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/106129.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/106129.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/106129.jpg"}}},{"id":81170,"type":"release","sku":"release-81170","name":"Welsh
+        Morphology","slug":"welsh-morphology","active":true,"releaseDate":"2007-10-29","publishDate":"2007-10-29","exclusive":false,"category":"Release","description":"David
+        West is back on Anjunabeats with what can only be described as innovative,
+        progressive, trance with big room written all over it. \u2018Welsh Morphology\u2019
+        \u2013 get ready to hear this on every dance floor on the globe.\r\nThe Original
+        Mix is a monster of a tune take a playful melody, graced with a soft non-sensical
+        vocal, and build with a bouncing baseline and you have \u2018Welsh Morphology\u2019.  The
+        Charles Gudagavfa Remix is a deeper, housey play on the original. Blending
+        the original vocals with an electro edge, think Urban Torque cross Martin
+        Roth and add a sparkle of original and booyah! This package is nothing far
+        from impressive; the original is already on Armin Van Buurens \u2018Universal
+        Religion\u2019 2007.","currentStatus":"General Content","catalogNumber":"ANJDEE-017","purchasable":true,"price":{"code":"usd","symbol":"US$","value":298,"display":"US$2.98"},"tracksPrice":{"code":"usd","symbol":"US$","value":298,"display":"US$2.98"},"audioFormatFee":{"wav":{"code":"usd","symbol":"US$","value":150,"display":"US$1.50"},"aiff":{"code":"usd","symbol":"US$","value":150,"display":"US$1.50"}},"label":{"id":1390,"name":"Anjunadeep","type":"label","slug":"anjunadeep"},"artists":[{"id":5393,"name":"David
+        West","slug":"david-west","type":"artist"},{"id":47304,"name":"Charles Gudagafva","slug":"charles-gudagafva","type":"remixer"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"},{"id":15,"name":"Progressive
+        House","slug":"progressive-house","type":"genre"}],"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/164125.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/164125.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/164126.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/164126.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/164126.jpg"}}},{"id":417144,"selected":false,"type":"track","sku":"track-417144","name":"Welsh
+        Morphology","trackNumber":1,"active":true,"mixName":"","title":"Welsh Morphology
+        ()","slug":"welsh-morphology","isrc":"GBEWA0701171","releaseDate":"2007-10-29","publishDate":"2007-10-29","sampleUrl":"http:\/\/geo-samples.beatport.com\/lofi\/417144.LOFI.mp3","isPreviewAvailable":false,"isAvailableForMix":true,"rtmpStreamUrl":"rtmp:\/\/geo-rtmp-samples.beatport.com\/beatport\/_definst_\/mp3:lofi_samples\/items\/volumes\/volume7\/items\/0\/400000\/10000\/7000\/100\/40\/417144.LOFI","exclusive":false,"isPromotable":false,"preview":null,"price":{"code":"usd","symbol":"US$","value":149,"display":"US$1.49"},"audioFormatFee":{"wav":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"},"aiff":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"}},"losslessUpgradeFormatFee":{"wav":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"},"aiff":{"code":"usd","symbol":"US$","value":75,"display":"US$0.75"}},"purchasable":true,"currentStatus":"General
+        Content","length":"0","lengthMs":null,"bpm":0,"key":null,"saleType":"purchase","artists":[{"id":5393,"name":"David
+        West","slug":"david-west","type":"artist"}],"genres":[{"id":7,"name":"Trance","slug":"trance","type":"genre"}],"subGenres":[],"charts":[],"release":{"id":80991,"name":"Welsh
+        Morphology","type":"release","slug":"welsh-morphology"},"label":{"id":1390,"name":"Anjunadeep","type":"label","slug":"anjunadeep","status":true},"images":{"small":{"width":30,"height":30,"url":"http:\/\/geo-media.beatport.com\/image\/3406.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/3406.jpg"},"medium":{"width":60,"height":60,"url":"http:\/\/geo-media.beatport.com\/image\/1191.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/1191.jpg"},"large":{"width":500,"height":500,"url":"http:\/\/geo-media.beatport.com\/image\/5245821.jpg","secureUrl":"https:\/\/media.beatport.com\/image\/5245821.jpg"}},"dynamicImages":{"main":{"url":"\/\/geo-media.beatport.com\/image_size{hq}\/{w}x{h}\/1191.jpg"}}}]}'
     http_version: 
-  recorded_at: Fri, 08 Feb 2013 21:07:17 GMT
+  recorded_at: Sat, 06 Apr 2013 17:41:19 GMT
 recorded_with: VCR 2.4.0

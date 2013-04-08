@@ -12,31 +12,29 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      date:
-      - Fri, 08 Feb 2013 20:58:02 GMT
-      server:
+      Date:
+      - Sat, 06 Apr 2013 17:13:47 GMT
+      Server:
       - Apache
-      expires:
-      - Fri, 08 Feb 2013 21:28:02 GMT
-      pragma:
+      Expires:
+      - Sat, 06 Apr 2013 17:43:47 GMT
+      Pragma:
       - public
-      cache-control:
+      Cache-Control:
       - public, max-age=1800
-      access-control-allow-origin:
+      Access-Control-Allow-Origin:
       - ! '*'
-      connection:
-      - close
-      transfer-encoding:
+      Transfer-Encoding:
       - chunked
-      content-type:
+      Content-Type:
       - application/json
     body:
       encoding: US-ASCII
       string: ! '{"metadata":{"page":1,"perPage":10,"count":6},"results":[{"code":"AMEX","bpid":1,"name":"American
         Express","cybersourceCardType":"003","issueNumberOrStartDateRequired":false,"validationRegex":"^3[47][0-9]{13}$","images":{"small":{"width":37,"height":23,"url":"https:\/\/secure-beatport.bpddn.com\/images\/creditcard\/logo_cc_amex_37x23.gif"}}},{"code":"VISA","bpid":2,"name":"Visa","cybersourceCardType":"001","issueNumberOrStartDateRequired":false,"validationRegex":"^4[0-9]{12}(?:[0-9]{3})?$","images":{"small":{"width":37,"height":23,"url":"https:\/\/secure-beatport.bpddn.com\/images\/creditcard\/logo_cc_visa_37x23.gif"}}},{"code":"ECMC","bpid":3,"name":"Master
         Card","cybersourceCardType":"002","issueNumberOrStartDateRequired":false,"validationRegex":"^5[1-5][0-9]{14}$","images":{"small":{"width":37,"height":23,"url":"https:\/\/secure-beatport.bpddn.com\/images\/creditcard\/logo_cc_mc_37x23.gif"}}},{"code":"SOLO_GB","bpid":5,"name":"Solo","cybersourceCardType":"024","issueNumberOrStartDateRequired":true,"validationRegex":"^(6334|6767)[0-9]{12,17}$","images":{"small":{"width":19,"height":23,"url":"https:\/\/secure-beatport.bpddn.com\/images\/creditcard\/logo_cc_solo_19x23.gif"}}},{"code":"PAYPAL","bpid":6,"name":"PayPal","cybersourceCardType":"","issueNumberOrStartDateRequired":false,"validationRegex":null,"images":{"small":{"width":37,"height":23,"url":"https:\/\/secure-beatport.bpddn.com\/images\/creditcard\/logo_cc_pp_37x23.gif"}}},{"code":"JCB","bpid":8,"name":"JCB","cybersourceCardType":"007","issueNumberOrStartDateRequired":false,"validationRegex":"^(?:2131|1800|35[0-9]{3})[0-9]{11}$","images":{"small":{"width":30,"height":23,"url":"https:\/\/secure-beatport.bpddn.com\/images\/creditcard\/logo_cc_jcb_30x23.gif"}}}]}'
-    http_version: '1.1'
-  recorded_at: Fri, 08 Feb 2013 20:58:02 GMT
+    http_version: 
+  recorded_at: Sat, 06 Apr 2013 17:13:47 GMT
 - request:
     method: get
     uri: http://api.beatport.com/catalog/3/account-types?name=Visa
@@ -49,27 +47,25 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      date:
-      - Fri, 08 Feb 2013 20:58:02 GMT
-      server:
+      Date:
+      - Sat, 06 Apr 2013 17:13:47 GMT
+      Server:
       - Apache
-      expires:
-      - Fri, 08 Feb 2013 21:28:02 GMT
-      pragma:
+      Expires:
+      - Sat, 06 Apr 2013 17:43:47 GMT
+      Pragma:
       - public
-      cache-control:
+      Cache-Control:
       - public, max-age=1800
-      access-control-allow-origin:
+      Access-Control-Allow-Origin:
       - ! '*'
-      connection:
-      - close
-      transfer-encoding:
+      Transfer-Encoding:
       - chunked
-      content-type:
+      Content-Type:
       - application/json
     body:
       encoding: US-ASCII
       string: ! '{"metadata":{"page":1,"perPage":10,"count":1},"results":[{"code":"VISA","bpid":2,"name":"Visa","cybersourceCardType":"001","issueNumberOrStartDateRequired":false,"validationRegex":"^4[0-9]{12}(?:[0-9]{3})?$","images":{"small":{"width":37,"height":23,"url":"https:\/\/secure-beatport.bpddn.com\/images\/creditcard\/logo_cc_visa_37x23.gif"}}}]}'
-    http_version: '1.1'
-  recorded_at: Fri, 08 Feb 2013 20:58:02 GMT
-recorded_with: VCR 2.3.0
+    http_version: 
+  recorded_at: Sat, 06 Apr 2013 17:13:47 GMT
+recorded_with: VCR 2.4.0

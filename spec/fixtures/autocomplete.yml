@@ -12,31 +12,29 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      date:
-      - Fri, 08 Feb 2013 20:58:22 GMT
-      server:
+      Date:
+      - Sat, 06 Apr 2013 17:14:03 GMT
+      Server:
       - Apache
-      expires:
-      - Fri, 08 Feb 2013 21:28:22 GMT
-      pragma:
+      Expires:
+      - Sat, 06 Apr 2013 17:44:03 GMT
+      Pragma:
       - public
-      cache-control:
+      Cache-Control:
       - public, max-age=1800
-      access-control-allow-origin:
+      Access-Control-Allow-Origin:
       - ! '*'
-      connection:
-      - close
-      transfer-encoding:
+      Transfer-Encoding:
       - chunked
-      content-type:
+      Content-Type:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/autocomplete","query":"query=lutzen","page":1,"perPage":10,"count":39,"totalPages":4,"nextQuery":"query=lutzen&page=2","perPageOptions":[{"value":50,"applyQuery":"query=lutzen&perPage=50"},{"value":100,"applyQuery":"query=lutzen&perPage=100"},{"value":150,"applyQuery":"query=lutzen&perPage=150"}],"facets":{"fields":[]},"spellcheck":{"suggestions":[]}},"results":[{"name":"Lutzencraft"},{"name":"Lutzenfierht"},{"name":"Lutzenkirchen"},{"name":"Lutzenkirchin"},{"name":"LXR
-        aka Lutzenkirchen"},{"name":"LXR aka Lutzenkrichen"},{"name":"Tobias Lutzenkirchen"},{"name":"Lutzenkirchen
+      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/autocomplete","query":"query=lutzen","page":1,"perPage":10,"count":39,"totalPages":4,"nextQuery":"query=lutzen&page=2","perPageOptions":[{"value":50,"applyQuery":"query=lutzen&perPage=50"},{"value":100,"applyQuery":"query=lutzen&perPage=100"},{"value":150,"applyQuery":"query=lutzen&perPage=150"}],"facets":{"fields":[]},"spellcheck":null},"results":[{"name":"Lutzencraft"},{"name":"Lutzenfierht"},{"name":"Lutzenkirchen"},{"name":"Lutzenkirchin"},{"name":"LXR
+        aka Lutzenkirchen"},{"name":"Tobias Lutzenkirchen"},{"name":"LXR aka Lutzenkrichen"},{"name":"Lutzenkirchen
         Top 10"},{"name":"Lutzenkirchen Best Of"},{"name":"Lutzenkirchen Charts"}]}'
-    http_version: '1.1'
-  recorded_at: Fri, 08 Feb 2013 20:58:22 GMT
+    http_version: 
+  recorded_at: Sat, 06 Apr 2013 17:14:03 GMT
 - request:
     method: get
     uri: http://api.beatport.com/catalog/3/autocomplete?page=3&perPage=2&query=lutzen
@@ -49,28 +47,26 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      date:
-      - Fri, 08 Feb 2013 20:58:22 GMT
-      server:
+      Date:
+      - Sat, 06 Apr 2013 17:14:03 GMT
+      Server:
       - Apache
-      expires:
-      - Fri, 08 Feb 2013 21:28:22 GMT
-      pragma:
+      Expires:
+      - Sat, 06 Apr 2013 17:44:03 GMT
+      Pragma:
       - public
-      cache-control:
+      Cache-Control:
       - public, max-age=1800
-      access-control-allow-origin:
+      Access-Control-Allow-Origin:
       - ! '*'
-      connection:
-      - close
-      transfer-encoding:
+      Transfer-Encoding:
       - chunked
-      content-type:
+      Content-Type:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/autocomplete","query":"perPage=2&query=lutzen","page":3,"perPage":2,"count":39,"totalPages":20,"nextQuery":"perPage=2&query=lutzen&page=4","prevQuery":"perPage=2&query=lutzen&page=2","perPageOptions":[{"value":50,"applyQuery":"perPage=50&query=lutzen"},{"value":100,"applyQuery":"perPage=100&query=lutzen"},{"value":150,"applyQuery":"perPage=150&query=lutzen"}],"facets":{"fields":[]},"spellcheck":{"suggestions":[]}},"results":[{"name":"LXR
-        aka Lutzenkirchen"},{"name":"LXR aka Lutzenkrichen"}]}'
-    http_version: '1.1'
-  recorded_at: Fri, 08 Feb 2013 20:58:22 GMT
-recorded_with: VCR 2.3.0
+      string: ! '{"metadata":{"host":"api.beatport.com","path":"\/catalog\/autocomplete","query":"perPage=2&query=lutzen","page":3,"perPage":2,"count":39,"totalPages":20,"nextQuery":"perPage=2&query=lutzen&page=4","prevQuery":"perPage=2&query=lutzen&page=2","perPageOptions":[{"value":50,"applyQuery":"perPage=50&query=lutzen"},{"value":100,"applyQuery":"perPage=100&query=lutzen"},{"value":150,"applyQuery":"perPage=150&query=lutzen"}],"facets":{"fields":[]},"spellcheck":null},"results":[{"name":"LXR
+        aka Lutzenkirchen"},{"name":"Tobias Lutzenkirchen"}]}'
+    http_version: 
+  recorded_at: Sat, 06 Apr 2013 17:14:03 GMT
+recorded_with: VCR 2.4.0

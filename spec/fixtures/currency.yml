@@ -12,23 +12,21 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      date:
-      - Fri, 08 Feb 2013 20:58:40 GMT
-      server:
+      Date:
+      - Sat, 06 Apr 2013 17:14:16 GMT
+      Server:
       - Apache
-      expires:
-      - Fri, 08 Feb 2013 21:28:40 GMT
-      pragma:
+      Expires:
+      - Sat, 06 Apr 2013 17:44:16 GMT
+      Pragma:
       - public
-      cache-control:
+      Cache-Control:
       - public, max-age=1800
-      access-control-allow-origin:
+      Access-Control-Allow-Origin:
       - ! '*'
-      connection:
-      - close
-      transfer-encoding:
+      Transfer-Encoding:
       - chunked
-      content-type:
+      Content-Type:
       - application/json
     body:
       encoding: US-ASCII
@@ -122,6 +120,6 @@ http_interactions:
         Pounds","code":"GIP"},{"id":167,"name":"Palladium Ounces","code":"XPD"},{"id":168,"name":"Gold
         Ounces","code":"XAU"},{"id":169,"name":"Panama Balboa","code":"PAB"},{"id":170,"name":"Guatemala
         Quetzales","code":"GTQ"},{"id":171,"name":"Papua New Guinea Kina","code":"PGK"}]}'
-    http_version: '1.1'
-  recorded_at: Fri, 08 Feb 2013 20:58:40 GMT
-recorded_with: VCR 2.3.0
+    http_version: 
+  recorded_at: Sat, 06 Apr 2013 17:14:16 GMT
+recorded_with: VCR 2.4.0
