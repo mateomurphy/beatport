@@ -13,30 +13,36 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 06 Apr 2013 17:14:22 GMT
+      - Fri, 10 May 2013 15:04:35 GMT
       Server:
       - Apache
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - DELETE, GET, HEAD, OPTIONS, POST, PUT
+      Allow:
+      - DELETE, GET, HEAD, OPTIONS, POST, PUT
+      Access-Control-Allow-Headers:
+      - content-type, Authorization
       Expires:
-      - Sat, 06 Apr 2013 17:44:22 GMT
+      - Fri, 10 May 2013 15:34:35 GMT
       Pragma:
       - public
       Cache-Control:
       - public, max-age=1800
-      Access-Control-Allow-Origin:
-      - ! '*'
       Transfer-Encoding:
       - chunked
       Content-Type:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"metadata":{"page":1,"count":14,"perPage":14},"results":[{"id":1,"name":"track","defaultPrice":null,"audioFormats":[{"id":1,"name":"mp3","mimeType":{"id":367,"header":"audio\/mpeg","ext":"mp3"}},{"id":2,"name":"m4a","mimeType":{"id":518,"header":"audio\/mp4","ext":"m4a"}},{"id":3,"name":"wav","mimeType":{"id":11,"header":"audio\/x-wav","ext":"wav"}},{"id":4,"name":"zip","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":14,"name":"aiff","mimeType":{"id":10,"header":"audio\/x-aiff","ext":"aiff"}}]},{"id":2,"name":"release","defaultPrice":null,"audioFormats":[]},{"id":3,"name":"label","defaultPrice":null,"audioFormats":[]},{"id":4,"name":"person","defaultPrice":null,"audioFormats":[]},{"id":5,"name":"performer","defaultPrice":null,"audioFormats":[]},{"id":6,"name":"genre","defaultPrice":null,"audioFormats":[]},{"id":7,"name":"image","defaultPrice":null,"audioFormats":[]},{"id":8,"name":"chart","defaultPrice":null,"audioFormats":[]},{"id":9,"name":"pack","defaultPrice":null,"audioFormats":[{"id":3,"name":"wav","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":5,"name":"full
+      string: ! '{"metadata":{"page":1,"count":15,"perPage":15},"results":[{"id":1,"name":"track","defaultPrice":null,"audioFormats":[{"id":1,"name":"mp3","mimeType":{"id":367,"header":"audio\/mpeg","ext":"mp3"}},{"id":2,"name":"m4a","mimeType":{"id":518,"header":"audio\/mp4","ext":"m4a"}},{"id":3,"name":"wav","mimeType":{"id":11,"header":"audio\/x-wav","ext":"wav"}},{"id":4,"name":"zip","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":14,"name":"aiff","mimeType":{"id":10,"header":"audio\/x-aiff","ext":"aiff"}}]},{"id":2,"name":"release","defaultPrice":null,"audioFormats":[]},{"id":3,"name":"label","defaultPrice":null,"audioFormats":[]},{"id":4,"name":"person","defaultPrice":null,"audioFormats":[]},{"id":5,"name":"performer","defaultPrice":null,"audioFormats":[]},{"id":6,"name":"genre","defaultPrice":null,"audioFormats":[]},{"id":7,"name":"image","defaultPrice":null,"audioFormats":[]},{"id":8,"name":"chart","defaultPrice":null,"audioFormats":[]},{"id":9,"name":"pack","defaultPrice":null,"audioFormats":[{"id":3,"name":"wav","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":5,"name":"full
         download","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":6,"name":"apple
         loops","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":7,"name":"rex","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":8,"name":"synth
         presets","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":9,"name":"sampler
         patches","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":10,"name":"reason
         refill","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":11,"name":"elements","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":12,"name":"s4","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":13,"name":"ableton
-        live racks","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":14,"name":"aiff","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}}]},{"id":10,"name":"part","defaultPrice":{"code":"usd","symbol":"US$","value":99,"display":"US$\u00a00.99"},"audioFormats":[{"id":3,"name":"wav","mimeType":{"id":11,"header":"audio\/x-wav","ext":"wav"}},{"id":14,"name":"aiff","mimeType":{"id":10,"header":"audio\/x-aiff","ext":"aiff"}},{"id":15,"name":"mp4","mimeType":{"id":13,"header":"video\/quicktime","ext":"mp4"}}]},{"id":11,"name":"djprofile","defaultPrice":null,"audioFormats":[]},{"id":12,"name":"mix","defaultPrice":{"code":"usd","symbol":"US$","value":999,"display":"US$\u00a09.99"},"audioFormats":[{"id":1,"name":"mp3","mimeType":{"id":367,"header":"audio\/mpeg","ext":"mp3"}},{"id":3,"name":"wav","mimeType":{"id":11,"header":"audio\/x-wav","ext":"wav"}},{"id":14,"name":"aiff","mimeType":{"id":10,"header":"audio\/x-aiff","ext":"aiff"}}]},{"id":13,"name":"event","defaultPrice":null,"audioFormats":[]},{"id":14,"name":"prepaid_package","defaultPrice":null,"audioFormats":[]}]}'
+        live racks","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}},{"id":14,"name":"aiff","mimeType":{"id":354,"header":"application\/zip","ext":"zip"}}]},{"id":10,"name":"part","defaultPrice":{"code":"usd","symbol":"$","value":99,"display":"$0.99"},"audioFormats":[{"id":3,"name":"wav","mimeType":{"id":11,"header":"audio\/x-wav","ext":"wav"}},{"id":14,"name":"aiff","mimeType":{"id":10,"header":"audio\/x-aiff","ext":"aiff"}},{"id":15,"name":"mp4","mimeType":{"id":13,"header":"video\/quicktime","ext":"mp4"}},{"id":16,"name":"ogg","mimeType":{"id":520,"header":"application\/ogg","ext":"ogg"}}]},{"id":11,"name":"djprofile","defaultPrice":null,"audioFormats":[]},{"id":12,"name":"mix","defaultPrice":{"code":"usd","symbol":"$","value":999,"display":"$9.99"},"audioFormats":[{"id":1,"name":"mp3","mimeType":{"id":367,"header":"audio\/mpeg","ext":"mp3"}},{"id":3,"name":"wav","mimeType":{"id":11,"header":"audio\/x-wav","ext":"wav"}},{"id":14,"name":"aiff","mimeType":{"id":10,"header":"audio\/x-aiff","ext":"aiff"}}]},{"id":13,"name":"event","defaultPrice":null,"audioFormats":[]},{"id":14,"name":"prepaid_package","defaultPrice":null,"audioFormats":[]},{"id":15,"name":"aggregator","defaultPrice":null,"audioFormats":[]}]}'
     http_version: 
-  recorded_at: Sat, 06 Apr 2013 17:14:22 GMT
+  recorded_at: Fri, 10 May 2013 15:04:34 GMT
 recorded_with: VCR 2.4.0

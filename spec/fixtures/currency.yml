@@ -13,17 +13,23 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 06 Apr 2013 17:14:16 GMT
+      - Fri, 10 May 2013 15:04:29 GMT
       Server:
       - Apache
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - DELETE, GET, HEAD, OPTIONS, POST, PUT
+      Allow:
+      - DELETE, GET, HEAD, OPTIONS, POST, PUT
+      Access-Control-Allow-Headers:
+      - content-type, Authorization
       Expires:
-      - Sat, 06 Apr 2013 17:44:16 GMT
+      - Fri, 10 May 2013 15:34:29 GMT
       Pragma:
       - public
       Cache-Control:
       - public, max-age=1800
-      Access-Control-Allow-Origin:
-      - ! '*'
       Transfer-Encoding:
       - chunked
       Content-Type:
@@ -121,5 +127,5 @@ http_interactions:
         Ounces","code":"XAU"},{"id":169,"name":"Panama Balboa","code":"PAB"},{"id":170,"name":"Guatemala
         Quetzales","code":"GTQ"},{"id":171,"name":"Papua New Guinea Kina","code":"PGK"}]}'
     http_version: 
-  recorded_at: Sat, 06 Apr 2013 17:14:16 GMT
+  recorded_at: Fri, 10 May 2013 15:04:29 GMT
 recorded_with: VCR 2.4.0

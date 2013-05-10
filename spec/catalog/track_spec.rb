@@ -44,7 +44,7 @@ module Beatport::Catalog
       specify { subject.artists.map(&:name).should == ["Above & Beyond", "Dirty Vegas"] }
       specify { subject.genres.map(&:name).should == ["Trance"] }
       specify { subject.sub_genres.map(&:name).should == ['Progressive'] }
-      its (:charts) { should == [] }
+      its (:'charts.count') { should > 0 }
       its (:'release.id') { should == 245137 }
       its (:'label.id') { should == 495}
       its (:'images.small.url') { should == 'http://geo-media.beatport.com/image/674759.jpg' }
