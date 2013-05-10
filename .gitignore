@@ -48,3 +48,5 @@ pkg
 #*.rbc
 
 .rvmrc
+/.ruby-gemset
+/.ruby-version
