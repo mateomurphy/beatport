@@ -37,7 +37,7 @@ module Beatport::Catalog
       its (:'audio_format_fee.aiff.to_s') { should == "0.75" }
       # for some reason this doesn't always return the same result
 #      it { @track.current_status) { should == nil "General Content" }
-      its (:length) { should == "07:53" }
+      its (:length) { should == "7:53" }
       its (:bpm) { should == 128 }
       its (:'key.standard.letter') { should == "D" }
       its (:sale_type) { should == "purchase" }
