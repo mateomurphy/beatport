@@ -8,7 +8,7 @@ GEM
     httparty (0.10.2)
       multi_json (~> 1.0)
       multi_xml (>= 0.5.2)
-    i18n (0.6.1)
+    i18n (0.6.5)
     jeweler (1.8.4)
       bundler (~> 1.0)
       git (>= 1.2.5)
@@ -16,7 +16,7 @@ GEM
       rdoc
     json (1.7.6)
     log_buddy (0.7.0)
-    money (5.1.0)
+    money (5.1.1)
       i18n (~> 0.6.0)
     multi_json (1.5.0)
     multi_xml (0.5.3)
@@ -45,7 +45,7 @@ DEPENDENCIES
   httparty
   jeweler
   log_buddy
-  money
+  money (~> 5.1.1)
   rspec
   vcr
   webmock
