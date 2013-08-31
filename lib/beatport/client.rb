@@ -11,6 +11,10 @@ module Beatport
       
       result = get("/#{path}", :query => builder.process(*args))
 
+      if result['metadata']['error']
+        raise Error.new("#{result['metadata']['error']}: #{result['metadata']['message']}")
+      end
+
       case result['results']
       when Array
         if builder.single_result?
@@ -21,7 +25,7 @@ module Beatport
       when Hash
         klass.new(result['results'])
       else
-        raise "results is an unexpected class #{result['results'].class}"
+        raise Error.new("results is an unexpected class #{result['results'].class}")
       end
     end 
   end

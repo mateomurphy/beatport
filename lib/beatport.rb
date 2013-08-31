@@ -10,6 +10,7 @@ module Beatport
   autoload :Item,            'beatport/item'
   autoload :Price,           'beatport/price'
   autoload :Support,         'beatport/support'
+  autoload :Error,           'beatport/error'
   
   def self.const_missing(name)
     if Beatport::Catalog.const_defined?(name)
