@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "beatport"
-  s.version = "0.1.10"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Mateo Murphy"]
-  s.date = "2013-08-14"
+  s.date = "2013-08-31"
   s.description = "A ruby gem for accessing the beatport api"
   s.email = "mateo.murphy@gmail.com"
   s.extra_rdoc_files = [
@@ -20,7 +20,6 @@ Gem::Specification.new do |s|
     ".document",
     ".rspec",
     "Gemfile",
-    "Gemfile.lock",
     "LICENSE.txt",
     "README.md",
     "Rakefile",
@@ -61,6 +60,8 @@ Gem::Specification.new do |s|
     "lib/beatport/catalog/track.rb",
     "lib/beatport/client.rb",
     "lib/beatport/collection.rb",
+    "lib/beatport/config.rb",
+    "lib/beatport/error.rb",
     "lib/beatport/item.rb",
     "lib/beatport/price.rb",
     "lib/beatport/support.rb",
@@ -87,21 +88,6 @@ Gem::Specification.new do |s|
     "spec/catalog/source_type_spec.rb",
     "spec/catalog/track_spec.rb",
     "spec/collection_spec.rb",
-    "spec/fixtures/account_type.yml",
-    "spec/fixtures/artist.yml",
-    "spec/fixtures/audio_format.yml",
-    "spec/fixtures/autocomplete.yml",
-    "spec/fixtures/chart.yml",
-    "spec/fixtures/country.yml",
-    "spec/fixtures/currency.yml",
-    "spec/fixtures/genre.yml",
-    "spec/fixtures/item_type.yml",
-    "spec/fixtures/label.yml",
-    "spec/fixtures/mixed.yml",
-    "spec/fixtures/release.yml",
-    "spec/fixtures/search.yml",
-    "spec/fixtures/source_type.yml",
-    "spec/fixtures/track.yml",
     "spec/item_spec.rb",
     "spec/price_spec.rb",
     "spec/spec_helper.rb",
@@ -118,7 +104,8 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<httparty>, [">= 0"])
+      s.add_runtime_dependency(%q<addressable>, [">= 0"])
+      s.add_runtime_dependency(%q<signet>, [">= 0"])
       s.add_runtime_dependency(%q<money>, ["~> 5.1.1"])
       s.add_development_dependency(%q<bundler>, [">= 0"])
       s.add_development_dependency(%q<webmock>, [">= 0"])
@@ -128,7 +115,8 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<yard>, [">= 0"])
       s.add_development_dependency(%q<vcr>, [">= 0"])
     else
-      s.add_dependency(%q<httparty>, [">= 0"])
+      s.add_dependency(%q<addressable>, [">= 0"])
+      s.add_dependency(%q<signet>, [">= 0"])
       s.add_dependency(%q<money>, ["~> 5.1.1"])
       s.add_dependency(%q<bundler>, [">= 0"])
       s.add_dependency(%q<webmock>, [">= 0"])
@@ -139,7 +127,8 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<vcr>, [">= 0"])
     end
   else
-    s.add_dependency(%q<httparty>, [">= 0"])
+    s.add_dependency(%q<addressable>, [">= 0"])
+    s.add_dependency(%q<signet>, [">= 0"])
     s.add_dependency(%q<money>, ["~> 5.1.1"])
     s.add_dependency(%q<bundler>, [">= 0"])
     s.add_dependency(%q<webmock>, [">= 0"])
