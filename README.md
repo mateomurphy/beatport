@@ -1,12 +1,10 @@
 # Beatport
 
-A ruby gem for accessing the Beatport API
-
-http://api.beatport.com
-
-Currently incomplete, but under development. 
-
 [![Dependency Status](https://gemnasium.com/mateomurphy/beatport.png)](https://gemnasium.com/mateomurphy/beatport)
+
+A ruby gem for accessing the Beatport API; currently incomplete and only supports the Catalog API, but under development. 
+
+https://oauth-api.beatport.com/docs/
 
 ## Oauth
 
@@ -17,6 +15,8 @@ your oauth credentials to make requests, for example in a rails initializer:
     Beatport.consumer_secret =     'consumer_secret'
     Beatport.access_token_key =    'access_token_key'
     Beatport.access_token_secret = 'access_token_secret'
+
+Your consumer key and secret are found in the API Keys section of your beatbort account, whereas the access token key and secret can be generated at the docs page.
 
 ## Facets
 
