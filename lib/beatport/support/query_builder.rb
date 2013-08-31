@@ -2,7 +2,7 @@ module Beatport
   module Support
     # Converts a set of arguments into a format that beatport will understand
     class QueryBuilder
-      SPECIAL_OPTIONS = ['sortBy', 'facets', 'returnFacets']
+      SPECIAL_OPTIONS = ['sortBy', 'facets', 'returnFacets', 'subgenres']
       
       def single_result?
         @single_result
@@ -37,8 +37,13 @@ module Beatport
       
         options = camelize_keys(options)
       
+        # Handle special options that need to be generated in a specific manner
         options.map do |key, value|
-          options[key] = send(Inflector.underscore("process_#{key}"), value) if special_option?(key)
+          if special_option?(key)
+            options[key] = send(Inflector.underscore("process_#{key}"), value) 
+          elsif value.is_a?(Array)
+            options[key] = value.join(',')
+          end
         end
       
         options
@@ -71,6 +76,12 @@ module Beatport
         end
       end    
     
+      # Special processing for subgenres
+      def process_subgenres(value)
+        value ? 'true' : 'false'
+      end
+    
+      # Map values delimited by ,
       def map_values(values)
         values = values.split(/,\s*/) if values.is_a?(String)
         values.map do |value|
