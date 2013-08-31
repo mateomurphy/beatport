@@ -11,7 +11,7 @@ module Beatport::Catalog
     end
 
     describe 'structure' do
-      subject do
+      subject :account_type do
         AccountType.all.first
       end
       

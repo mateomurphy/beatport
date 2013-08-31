@@ -48,7 +48,7 @@ module Beatport::Catalog
       end
 
       context 'with an array of ids' do
-        subject { Artist.find(7181, 7182) }
+        subject { Artist.find([7181, 7182]) }
         
         # it { should be_a(Collection) }
         its (:length) { should == 2 }

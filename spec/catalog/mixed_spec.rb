@@ -13,11 +13,11 @@ module Beatport::Catalog
     describe '.all' do
       subject do
         Mixed.all(
-          :label_ids => [804,1390],
+          :label_ids => [804, 1390],
           :artist_ids => [7181, 10395],
           :chart_ids => [15722, 29514],
           :release_ids => [164808, 385763],
-          :track_ids => [1873426,1746687]
+          :track_ids => [1873426, 1746687]
         )
       end
 
