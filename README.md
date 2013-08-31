@@ -8,6 +8,16 @@ Currently incomplete, but under development.
 
 [![Dependency Status](https://gemnasium.com/mateomurphy/beatport.png)](https://gemnasium.com/mateomurphy/beatport)
 
+## Oauth
+
+Beatport's api now requires authentication via Oauth. This means you now need to provide the gem
+you oauth credentials to make requests, for example in a rails initializer:
+
+    Beatport.consumer_key =        'consumer_key'
+    Beatport.consumer_secret =     'consumer_secret'
+    Beatport.access_token_key =    'access_token_key'
+    Beatport.access_token_secret = 'access_token_secret'
+
 ## Facets
 
 Many queries to beatport support facets, but they aren't properly documentated on their site. These are the ones I've found so far:
@@ -19,8 +29,9 @@ Many queries to beatport support facets, but they aren't properly documentated o
 ## Examples
 
 ```ruby
-require 'beatport'
-# Search using the query "Mord Fustang" on Beatport
+  require 'beatport'
+  
+  # Search using the query "Mord Fustang" on Beatport
   query = Beatport::Catalog::Search.query("Mord Fustang")
   
   query.class # => returns a Beatport::Collection object
@@ -34,7 +45,7 @@ require 'beatport'
   # Note that search results change frequently, so first result may not
     necessarily be a Beatport::Catalog::Artist object
 
-# Find top downloads for a given genre
+  # Find top downloads for a given genre
   genres = Beatport::Catalog::Genre.all # => list all genres
   # display each genre and its corresponding Beatport genre slug
 
@@ -54,9 +65,7 @@ require 'beatport'
 
   # An alternative for searching for genre by slug is searching by genre ID
   trance_genre = Beatport::Catalog::Genre.find(7) # => returns a Trance Genre object
-
-
-```
+  ```
 
 ## Contributing to beatport
  
@@ -70,6 +79,6 @@ require 'beatport'
 
 ## Copyright
 
-Copyright (c) 2011-2012 Mateo Murphy. See LICENSE.txt for
+Copyright (c) 2011-2013 Mateo Murphy. See LICENSE.txt for
 further details.
 
