@@ -14,6 +14,8 @@ require 'beatport'
 require 'pp'
 require 'log_buddy'
 require 'vcr'
+require 'config'
+
 
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/fixtures'
