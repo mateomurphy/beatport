@@ -50,3 +50,7 @@ pkg
 .rvmrc
 /.ruby-gemset
 /.ruby-version
+
+# Spec stuff
+/spec/fixtures/*
+/spec/config.rb
