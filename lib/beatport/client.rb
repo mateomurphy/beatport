@@ -1,5 +1,12 @@
 module Beatport
   module Client
+    def self.connection
+      @connection ||= Faraday.new do |conn|
+        conn.use Support::Middleware
+        conn.adapter  Faraday.default_adapter  # make requests with Net::HTTP
+      end      
+    end
+    
     def self.client
       @client ||= Signet::OAuth1::Client.new(
         :client_credential_key =>     Beatport.consumer_key,
@@ -13,19 +20,20 @@ module Beatport
       @builder ||= Support::QueryBuilder.new
     end
     
-    def self.retrieve(path, klass, *args)
-      uri = Addressable::URI.new(
+    def self.uri(path, args)
+      Addressable::URI.new(
         :scheme => 'https',
         :host => 'api.beatport.com',
         :path => "/catalog/3/#{path}",
         :query_values => builder.process(*args)
-      )
-      
-      result = client.fetch_protected_resource(:uri => uri.to_s)
-      result = JSON.parse(result.body)
-
-      # underscore result keys
-      result = Support::Inflector.process_keys(result) { |k| Support::Inflector.underscore(k) }
+      )      
+    end
+    
+    def self.retrieve(path, klass, *args)
+      result = client.fetch_protected_resource(
+        :connection => connection, 
+        :uri => uri(path, args).to_s
+      ).body
 
       if result['metadata']['error']
         raise Error.new("#{result['metadata']['error']}: #{result['metadata']['message']}")
