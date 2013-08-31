@@ -11,7 +11,7 @@ Currently incomplete, but under development.
 ## Oauth
 
 Beatport's api now requires authentication via Oauth. This means you now need to provide the gem
-you oauth credentials to make requests, for example in a rails initializer:
+your oauth credentials to make requests, for example in a rails initializer:
 
     Beatport.consumer_key =        'consumer_key'
     Beatport.consumer_secret =     'consumer_secret'
@@ -42,8 +42,7 @@ Many queries to beatport support facets, but they aren't properly documentated o
   query[1].class # => second result is a Beatport.Catalog::Chart object
   query[1].publish_date # => returns the published date of the Chart
 
-  # Note that search results change frequently, so first result may not
-    necessarily be a Beatport::Catalog::Artist object
+  # Note that search results change frequently, so first result may not necessarily be a Beatport::Catalog::Artist object
 
   # Find top downloads for a given genre
   genres = Beatport::Catalog::Genre.all # => list all genres
@@ -66,6 +65,11 @@ Many queries to beatport support facets, but they aren't properly documentated o
   # An alternative for searching for genre by slug is searching by genre ID
   trance_genre = Beatport::Catalog::Genre.find(7) # => returns a Trance Genre object
   ```
+
+## Running specs
+
+To run specs, you'll need to create a file with your oauth credentials in `spec/config.rb`, which
+will be loaded by `spec/spec_helper.rb`
 
 ## Contributing to beatport
  
