@@ -54,3 +54,4 @@ pkg
 # Spec stuff
 /spec/fixtures/*
 /spec/config.rb
+/Gemfile.lock
