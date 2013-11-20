@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "beatport"
-  s.version = "0.2.0"
+  s.version = "0.2.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Mateo Murphy"]
-  s.date = "2013-08-31"
+  s.date = "2013-11-20"
   s.description = "A ruby gem for accessing the beatport api"
   s.email = "mateo.murphy@gmail.com"
   s.extra_rdoc_files = [
@@ -37,6 +37,8 @@ Gem::Specification.new do |s|
     "lib/beatport/catalog/country.rb",
     "lib/beatport/catalog/currency.rb",
     "lib/beatport/catalog/djprofile.rb",
+    "lib/beatport/catalog/dynamic_image.rb",
+    "lib/beatport/catalog/dynamic_images.rb",
     "lib/beatport/catalog/feature.rb",
     "lib/beatport/catalog/genre.rb",
     "lib/beatport/catalog/home.rb",
@@ -66,8 +68,10 @@ Gem::Specification.new do |s|
     "lib/beatport/price.rb",
     "lib/beatport/support.rb",
     "lib/beatport/support/inflector.rb",
+    "lib/beatport/support/middleware.rb",
     "lib/beatport/support/parser.rb",
     "lib/beatport/support/query_builder.rb",
+    "lib/beatport/support/url.rb",
     "spec/beatport_spec.rb",
     "spec/catalog/account_type_spec.rb",
     "spec/catalog/artist_spec.rb",
@@ -106,6 +110,7 @@ Gem::Specification.new do |s|
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<addressable>, [">= 0"])
       s.add_runtime_dependency(%q<signet>, [">= 0"])
+      s.add_runtime_dependency(%q<faraday>, ["~> 0.8.8"])
       s.add_runtime_dependency(%q<money>, ["~> 5.1.1"])
       s.add_development_dependency(%q<bundler>, [">= 0"])
       s.add_development_dependency(%q<webmock>, [">= 0"])
@@ -117,6 +122,7 @@ Gem::Specification.new do |s|
     else
       s.add_dependency(%q<addressable>, [">= 0"])
       s.add_dependency(%q<signet>, [">= 0"])
+      s.add_dependency(%q<faraday>, ["~> 0.8.8"])
       s.add_dependency(%q<money>, ["~> 5.1.1"])
       s.add_dependency(%q<bundler>, [">= 0"])
       s.add_dependency(%q<webmock>, [">= 0"])
@@ -129,6 +135,7 @@ Gem::Specification.new do |s|
   else
     s.add_dependency(%q<addressable>, [">= 0"])
     s.add_dependency(%q<signet>, [">= 0"])
+    s.add_dependency(%q<faraday>, ["~> 0.8.8"])
     s.add_dependency(%q<money>, ["~> 5.1.1"])
     s.add_dependency(%q<bundler>, [">= 0"])
     s.add_dependency(%q<webmock>, [">= 0"])
