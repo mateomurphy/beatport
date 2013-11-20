@@ -14,15 +14,15 @@ module Beatport
       def discount
         tracks_price - price
       end
-    
+
       def self.find(*args)
         Client.retrieve 'releases', Release, *args
       end
 
       def self.all(options={})
         Client.retrieve 'releases', Release, options
-      end    
-    
+      end
+
       def self.featured(*args)
         Client.retrieve 'featured/releases', Release, *args
       end
@@ -34,4 +34,3 @@ module Beatport
     end
   end
 end
-  

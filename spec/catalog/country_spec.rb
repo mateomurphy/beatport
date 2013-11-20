@@ -12,7 +12,7 @@ module Beatport::Catalog
 
     describe 'structure' do
       subject { Country.find('au') }
-      
+
       it { should be_a(Country) }
       its (:id) { should ==  5 }
       its (:code) { should == "AUS" }
@@ -22,10 +22,10 @@ module Beatport::Catalog
       its (:vat_rate) { should == 0 }
       its (:iso3166_3) { should == "AUS" }
       its (:iso3166_2) { should == "AU" }
-      its (:'currency.code') { should == "USD" }
-      its (:'currency.name') { should == "Dollar" }
+      its (:'currency.code') { should == "AUD" }
+      its (:'currency.name') { should == "Australian Dollar" }
       its (:'states.first.code') { should == 'ACT' }
-      its (:'states.first.type') { should == 'territory' } 
+      its (:'states.first.type') { should == 'territory' }
       its (:'states.first.name') { should == "Australian Capital Territory" }
     end
   end
