@@ -11,6 +11,7 @@ module Beatport
       has_one :label, Label
       has_one :price, Price
       has_one :images, Images
+      has_one :dynamic_images, DynamicImages
       has_one :audio_format_fee, AudioFormatFee
       has_one :key, Keys
 

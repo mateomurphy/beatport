@@ -10,12 +10,14 @@ module Beatport
     autoload :Country,          'beatport/catalog/country'
     autoload :Currency,         'beatport/catalog/currency'
     autoload :Djprofile,        'beatport/catalog/djprofile'
-    autoload :Feature,          'beatport/catalog/feature'    
+    autoload :DynamicImage,     'beatport/catalog/dynamic_image'
+    autoload :DynamicImages,    'beatport/catalog/dynamic_images'
+    autoload :Feature,          'beatport/catalog/feature'
     autoload :Genre,            'beatport/catalog/genre'
     autoload :Home,             'beatport/catalog/home'
     autoload :ItemType,         'beatport/catalog/item_type'
     autoload :Image,            'beatport/catalog/image'
-    autoload :Images,           'beatport/catalog/images'    
+    autoload :Images,           'beatport/catalog/images'
     autoload :Key,              'beatport/catalog/key'
     autoload :Keys,             'beatport/catalog/keys'
     autoload :Label,            'beatport/catalog/label'
@@ -30,36 +32,36 @@ module Beatport
     autoload :Slide,            'beatport/catalog/slide'
     autoload :Slideshow,        'beatport/catalog/slideshow'
     autoload :SourceType,       'beatport/catalog/source_type'
-    autoload :Track,            'beatport/catalog/track'  
-    
+    autoload :Track,            'beatport/catalog/track'
+
     def self.artist(id)
       Artist.find(id)
     end
-  
+
     def self.artists(*args)
       Artist.all(*args)
     end
-  
+
     def self.chart(id)
       Chart.find(id)
     end
-  
+
     def self.chart_overview(*args)
       ChartOverview.get
     end
-  
+
     def self.charts(*args)
       Chart.all
     end
-  
+
     def self.genre(key)
       Genre.find(key)
     end
-  
+
     def self.genre_overview
       Genre.overview
     end
-  
+
     def self.genres(*args)
       Genre.all(*args)
     end
@@ -83,14 +85,14 @@ module Beatport
     def self.releases(*args)
       Release.all(*args)
     end
-  
+
     def self.track(id)
       Track.find(id)
     end
-  
+
     def self.tracks(*args)
       Track.all(*args)
-    end    
-    
+    end
+
   end
 end

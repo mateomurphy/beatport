@@ -52,6 +52,12 @@ module Beatport::Catalog
       its (:'images.medium.url') { should == 'http://geo-media.beatport.com/image/674760.jpg' }
       its (:'images.large.url') { should == 'http://geo-media.beatport.com/image/674761.jpg' }
       its (:'images.waveform.url') { should == 'http://geo-media.beatport.com/image/1268229.png' }
+      its (:'dynamic_images.main.url') { should == '//geo-media.beatport.com/image_size{hq}/{w}x{h}/674761.jpg' }
+
+      it "should render a dynamic url of the right size" do
+        subject.dynamic_images.main.dynamic_url(w: 120, h: 120).should == '//geo-media.beatport.com/image_size/120x120/674761.jpg'
+      end
+
     end
 
     describe '.find' do
