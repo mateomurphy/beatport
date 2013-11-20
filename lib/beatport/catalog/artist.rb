@@ -1,6 +1,8 @@
 module Beatport
   module Catalog
     class Artist < Item
+      include Support::Url
+
       has_many :genres, Genre
       has_many :subgenres, Genre
       has_one :images, Images
@@ -20,7 +22,7 @@ module Beatport
           :artist_name
         end
       end
-    
+
       def top_downloads(options = {})
         Track.most_popular_for_artist(id, options)
       end

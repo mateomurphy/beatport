@@ -1,6 +1,8 @@
 module Beatport
   module Catalog
     class Track < Item
+      include Support::Url
+
       has_many :genres, Genre
       has_many :sub_genres, Genre
       has_many :artists, Artist

@@ -1,6 +1,8 @@
 module Beatport
   module Catalog
     class Release < Item
+      include Support::Url
+
       has_many :artists, Artist
       has_one :audio_format_fee, AudioFormatFee
       has_many :genres, Genre

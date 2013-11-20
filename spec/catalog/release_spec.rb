@@ -25,6 +25,7 @@ module Beatport::Catalog
       its (:current_status) { should == "General Content"}
       its (:catalog_number) { should == "ANJCDCO011D"}
       its (:purchasable) { should == true }
+      its (:url) { should == "http://www.beatport.com/release/anjunabeats-volume-6-unmixed-dj-ready/164808" }
       its (:'price.to_s') { should == "9.99" }
       its (:'tracks_price.to_s') { should == "43.21" }
       its (:'audio_format_fee.wav.to_s') { should == '21.75'}

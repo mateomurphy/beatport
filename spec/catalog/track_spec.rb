@@ -32,6 +32,7 @@ module Beatport::Catalog
       #its (:sample_url) { should == 'http://geo-samples.beatport.com/lofi/1217790.LOFI.mp3' }
       #its (:rtmp_stream_url) { should == 'rtmp://geo-rtmp-samples.beatport.com/beatport/_definst_/mp3:lofi_samples/items/volumes/volume7/items/1000000/200000/10000/7000/700/90/1217790.LOFI'}
       its (:exclusive) { should be_false }
+      its (:url) { should == "http://www.beatport.com/track/tonight-ims-anthem-2009-above-and-beyond-remix/1217790" }
       its (:'price.to_s') { should == "1.49" }
       its (:'audio_format_fee.wav.to_s') { should == "0.75" }
       its (:'audio_format_fee.aiff.to_s') { should == "0.75" }
@@ -175,7 +176,7 @@ module Beatport::Catalog
         tracks.each do |track|
           track.label.id.should == 804
         end
-      end      
+      end
     end
   end
 end
