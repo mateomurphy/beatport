@@ -12,7 +12,7 @@ module Beatport::Catalog
 
     describe 'lazy loading' do
       it "should lazy load artists" do
-        pending "Not implemented yet"
+        skip "Not implemented yet"
         track = Track.all(:per_page => 1, :page => 1).first
       end
     end
@@ -31,7 +31,7 @@ module Beatport::Catalog
       its (:publish_date) { should == Date.new(2010,05,17) }
       #its (:sample_url) { should == 'http://geo-samples.beatport.com/lofi/1217790.LOFI.mp3' }
       #its (:rtmp_stream_url) { should == 'rtmp://geo-rtmp-samples.beatport.com/beatport/_definst_/mp3:lofi_samples/items/volumes/volume7/items/1000000/200000/10000/7000/700/90/1217790.LOFI'}
-      its (:exclusive) { should be_false }
+      its (:exclusive) { should be false }
       its (:url) { should == "http://www.beatport.com/track/tonight-ims-anthem-2009-above-and-beyond-remix/1217790" }
       its (:'price.to_s') { should == "1.49" }
       its (:'audio_format_fee.wav.to_s') { should == "0.75" }

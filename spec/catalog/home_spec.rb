@@ -3,10 +3,10 @@ require 'spec_helper'
 module Beatport::Catalog
   describe Home do
     describe '.get' do
-      pending "deprecated?"
+      skip "deprecated?"
 
       subject { Home.get }
-      
+
       #it { should be_a(Home) }
       #its (:'slideshow.header.length') { should be >= 1 }
       #its (:'slideshow.feature.length') { should be > 1 }

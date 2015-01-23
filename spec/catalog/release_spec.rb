@@ -33,7 +33,7 @@ module Beatport::Catalog
       its (:'label.id') { should == 804 }
       specify { subject.artists.map(&:name).should include("Paul Keeley") }
       specify { subject.genres.map(&:name).sort.should == ["Progressive House", "Trance"] }
-      its (:'images.small.url') { should == "http://geo-media.beatport.com/image/392699.jpg" }
+      its (:'images.small.url') { should == "http://geo-media.beatport.com/image/392700.jpg" }
       its (:'images.medium.url') { should == "http://geo-media.beatport.com/image/392700.jpg" }
       its (:'images.large.url') { should == "http://geo-media.beatport.com/image/392701.jpg" }
       its (:'discount.to_s') { should == "33.22" }
@@ -122,7 +122,7 @@ module Beatport::Catalog
       end
 
       it "should not give the same releases with justAdded true and false" do
-        pending "test will not give consistent results, revisit"
+        skip "test will not give consistent results, revisit"
 
         featured = Release.featured :genre_id => 7
         just_added = Release.featured :genre_id => 7, :just_added => true

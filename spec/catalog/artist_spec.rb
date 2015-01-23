@@ -20,13 +20,13 @@ module Beatport::Catalog
       its (:slug) { should == "above-and-beyond" }
       its (:url) { should == "http://www.beatport.com/artist/above-and-beyond/7181" }
       its (:last_publish_date) { should >= Date.new(2011, 12, 15)}
-      its (:biography) { should == "" }
+      its (:biography) { should_not be "" }
       its (:'genres.length') { should be > 1 }
       its (:'sub_genres.length') { should be > 1 }
       its (:'top_downloads.length') { should be > 1 }
       its (:'images.small.url') { should == "http://geo-media.beatport.com/image/491527.jpg" }
       its (:'images.medium.url') { should == "http://geo-media.beatport.com/image/491530.jpg" }
-      its (:'images.large.url') { should == "http://geo-media.beatport.com/image/4686424.jpg" }
+      its (:'images.large.url') { should == "http://geo-media.beatport.com/image/10529942.jpg" }
 #      its (:'featured_releases.length') { should be > 1 }
     end
 
@@ -108,7 +108,7 @@ module Beatport::Catalog
       end
 
       it "should get all trance artists for above & beyond" do
-        pending "Request doesn't return any results"
+        skip "Request doesn't return any results"
 
         artists = Artist.all :facets => {:genre_name => ['Trance', 'Progessive House']}
 

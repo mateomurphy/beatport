@@ -12,14 +12,14 @@ module Beatport::Catalog
 
     describe 'stucture' do
       subject { Autocomplete.query('lutzen').first }
-      
+
       its (:'name.downcase') { should match(/lutzen/) }
     end
-    
+
     describe 'collection' do
       subject { Autocomplete.query('lutzen') }
-      
-      its (:host) { should == "api.beatport.com" }
+
+      its (:host) { should == "oauth-api.beatport.com" }
       its (:path) { should == "/catalog/autocomplete" }
       its (:query) { should == "query=lutzen" }
       its (:page) { should == 1 }
@@ -31,10 +31,10 @@ module Beatport::Catalog
       its (:facets) { should_not be_nil }
       its (:spellcheck) { should be_nil }
     end
-    
+
     describe '.query' do
       subject { Autocomplete.query('lutzen', :page => 3, :per_page => 2) }
-      
+
       its (:page) { should == 3 }
       its (:per_page) { should == 2 }
     end

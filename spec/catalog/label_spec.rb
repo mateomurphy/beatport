@@ -19,7 +19,7 @@ module Beatport::Catalog
       its (:name) { should == "Anjunadeep" }
       its (:slug) { should == "anjunadeep" }
       its (:url) { should == "http://www.beatport.com/label/anjunadeep/1390" }
-      pending "source type is no longer returned?"
+      skip "source type is no longer returned?"
       #its (:source_type) { should == ["store", "mobile", "sushi"] }
 
       its (:last_publish_date) { should > Date.new(2012, 9, 10) }
@@ -106,14 +106,14 @@ module Beatport::Catalog
 
     describe '.featured' do
       it "should get the featured labels for the Home page" do
-        pending "deprecated?"
+        skip "deprecated?"
 
         labels = Label.featured
         labels.length.should be > 1
       end
 
       it "should get the featured labels for the Trance page" do
-        pending "deprecated?"
+        skip "deprecated?"
 
         labels = Label.featured :genre_id => 7
         labels.length.should be > 1

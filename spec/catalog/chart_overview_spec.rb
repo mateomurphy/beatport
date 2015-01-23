@@ -11,7 +11,7 @@ module Beatport::Catalog
     end
 
     describe '.get' do
-      pending "deprecated?"
+      skip "deprecated?"
       #subject { ChartOverview.get }
       #
       #it { should be_a(ChartOverview) }
@@ -20,4 +20,3 @@ module Beatport::Catalog
     end
   end
 end
-  

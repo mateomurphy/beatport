@@ -13,7 +13,7 @@ module Beatport::Catalog
 
     describe "structure" do
       subject { Genre.find(7) }
-      
+
       it { should be_a(Genre) }
       its (:name) { should == "Trance" }
       its (:slug) { should == "trance" }
@@ -33,7 +33,7 @@ module Beatport::Catalog
         end
 =end
     end
-    
+
     describe '.find' do
       it "should retrieve information about the trance genre via its id" do
         Genre.find(7).name.should == "Trance"
@@ -56,7 +56,7 @@ module Beatport::Catalog
         genre.should be nil
       end
     end
-  
+
     describe '.all' do
       it "should retrieve all genres" do
         genres = Genre.all
@@ -64,27 +64,27 @@ module Beatport::Catalog
         genres.length.should == genres.count
         genres.length.should == genres.per_page
       end
-  
+
       it "should retrieve genres with their subgenres" do
         genres = Genre.all(:subgenres => true)
         genres.first.subgenres.length.should be > 1
       end
     end
-    
+
     describe '.overview' do
       it "should retrieve an overview" do
-        pending "deprecated?"
+        skip "deprecated?"
 
         overview = Genre.overview
         overview.length.should be > 0
         overview.each do |genre|
           genre.counts.releases.should be > 0
-        
+
           # This fails for glitch hop?
           # genre.list.items.length.should == 3
         end
       end
-      
+
     end
 
     describe '#top_downloads' do
@@ -93,15 +93,15 @@ module Beatport::Catalog
         genre.top_downloads.length.should == 10
       end
     end
-    
+
     describe '#slideshow' do
       it "should return the slideshow of a genre loaded via find" do
-        pending "deprecated?"
+        skip "deprecated?"
 
         genre = Genre.find(7)
         genre.slideshow.header.length.should be > 1
       end
-    end    
+    end
   end
 end
 

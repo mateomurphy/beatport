@@ -16,7 +16,8 @@ group :development do
   gem 'jeweler'
   #gem "rcov", ">= 0"
   gem 'log_buddy'
-  gem 'rspec', '>= 0'
+  gem 'rspec', '~> 3.0'
+  gem 'rspec-its'
   gem 'yard', '>=0'
-  gem 'vcr'  
+  gem 'vcr'
 end

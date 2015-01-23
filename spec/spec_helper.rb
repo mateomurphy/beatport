@@ -10,26 +10,31 @@ end
 
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
+
+require 'rspec/its'
 require 'beatport'
 require 'pp'
 require 'log_buddy'
 require 'vcr'
 require 'config'
 
+I18n.enforce_available_locales = false
 
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/fixtures'
   c.hook_into :webmock
   c.allow_http_connections_when_no_cassette = false
   c.default_cassette_options = {
-    :allow_playback_repeats => true, 
-    :record => :new_episodes, 
+    :allow_playback_repeats => true,
+    :record => :new_episodes,
     :re_record_interval => 604800
   }
 end
 
 RSpec.configure do |config|
-
+  config.expect_with :rspec do |c|
+    c.syntax = [:should, :expect]
+  end
   # some (optional) config here
 end
 
