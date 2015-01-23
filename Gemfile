@@ -12,12 +12,11 @@ gem 'money', '~> 5.1.1'    # https://github.com/RubyMoney/money
 # Include everything needed to run rake, tests, features, etc.
 group :development do
   gem 'bundler'
-  gem 'webmock'
-  gem 'jeweler'
-  #gem "rcov", ">= 0"
-  gem 'log_buddy'
-  gem 'rspec', '~> 3.0'
-  gem 'rspec-its'
-  gem 'yard', '>=0'
-  gem 'vcr'
+  gem 'webmock', '~> 1.20.4'
+  gem 'jeweler', '~> 2.0.1'
+  gem 'log_buddy', '~> 0.7.0'
+  gem 'rspec', '~> 3.1.0'
+  gem 'rspec-its', '~> 1.0.1'
+  gem 'yard', '~> 0.8.7'
+  gem 'vcr', '~> 2.9.3'
 end
