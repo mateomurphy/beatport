@@ -12,7 +12,7 @@ module Beatport
     self.use_i18n = true
 
     # Default to not using currency symbol assumptions when parsing
-    self.assume_from_symbol = false
+    #self.assume_from_symbol = false
 
     # Default to not using infinite precision cents
     self.infinite_precision = false
@@ -23,8 +23,13 @@ module Beatport
     # Default the conversion of Rationals precision to 16
     self.conversion_precision = 16
 
-    def initialize(data = {})
-      super(data['value'] || 0, data['code'])
+    def initialize(*args)
+      if args[0].is_a?(Hash)
+        data = args[0]
+        super(data['value'] || 0, data['code'])
+      else
+        super(*args)
+      end
     end
   end
 end

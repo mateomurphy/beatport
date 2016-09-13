@@ -6,7 +6,7 @@ source "http://rubygems.org"
 gem 'addressable'
 gem 'signet'
 gem 'faraday', '~> 0.8.8'
-gem 'money', '~> 5.1.1'    # https://github.com/RubyMoney/money
+gem 'money', '~> 6.7.1'    # https://github.com/RubyMoney/money
 
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.
