@@ -13,7 +13,7 @@ gem 'money', '~> 5.1.1'    # https://github.com/RubyMoney/money
 group :development do
   gem 'bundler'
   gem 'webmock', '~> 1.20.4'
-  gem 'jeweler', '~> 2.0.1'
+  gem 'jeweler', '~> 2.1.1'
   gem 'log_buddy', '~> 0.7.0'
   gem 'rspec', '~> 3.1.0'
   gem 'rspec-its', '~> 1.0.1'
