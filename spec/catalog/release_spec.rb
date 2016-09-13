@@ -34,7 +34,7 @@ module Beatport::Catalog
       specify { subject.artists.map(&:name).should include("Paul Keeley") }
       specify { subject.genres.map(&:name).sort.should == ["Progressive House", "Trance"] }
       its (:'images.small.url') { should == "http://geo-media.beatport.com/image/392700.jpg" }
-      its (:'images.medium.url') { should == "http://geo-media.beatport.com/image/392700.jpg" }
+      its (:'images.medium.url') { should == "http://geo-media.beatport.com/image/14195879.jpg" }
       its (:'images.large.url') { should == "http://geo-media.beatport.com/image/392701.jpg" }
       its (:'discount.to_s') { should == "33.22" }
 #      its (:'recommendations.releases.length') { should > 1 }
