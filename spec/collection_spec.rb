@@ -20,7 +20,7 @@ module Beatport
 
     describe '.new' do
       it "should raise an error when given invalid data" do
-        expect { Collection.new(Item, 1) }.to raise_exception
+        expect { Collection.new(Item, 1) }.to raise_exception(ArgumentError)
       end
     end
   end
