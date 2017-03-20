@@ -2,7 +2,7 @@
 
 [![Dependency Status](https://gemnasium.com/mateomurphy/beatport.png)](https://gemnasium.com/mateomurphy/beatport)
 
-A ruby gem for accessing the Beatport API; currently incomplete and only supports the Catalog API, but under development. 
+A ruby gem for accessing the Beatport API; currently incomplete and only supports the Catalog API, but under development.
 
 https://oauth-api.beatport.com/docs/
 
@@ -30,10 +30,10 @@ Many queries to beatport support facets, but they aren't properly documentated o
 
 ```ruby
   require 'beatport'
-  
+
   # Search using the query "Mord Fustang" on Beatport
   query = Beatport::Catalog::Search.query("Mord Fustang")
-  
+
   query.class # => returns a Beatport::Collection object
 
   query[0].class # => first result is a Beatport::Catalog::Artist object
@@ -51,9 +51,9 @@ Many queries to beatport support facets, but they aren't properly documentated o
   genres.each do |genre|
     puts "Genre: #{genre.name} slug: #{genre.slug}"
   end
-  
+
   # find the top 10 downloads for the genre Electro House
-  electro_house_genre = Beatport::Catalog::Genre.find('electro-house') 
+  electro_house_genre = Beatport::Catalog::Genre.find('electro-house')
   # => create Electro House Genre object by searching by slug
 
   electro_house_top_10 = trance_genre.top_downloads
@@ -72,7 +72,7 @@ To run specs, you'll need to create a file with your oauth credentials in `spec/
 will be loaded by `spec/spec_helper.rb`
 
 ## Contributing to beatport
- 
+
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
 * Fork the project
@@ -83,6 +83,6 @@ will be loaded by `spec/spec_helper.rb`
 
 ## Copyright
 
-Copyright (c) 2011-2013 Mateo Murphy. See LICENSE.txt for
+Copyright (c) 2011-present Mateo Murphy. See LICENSE.txt for
 further details.
 
