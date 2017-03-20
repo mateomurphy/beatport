@@ -26,9 +26,9 @@ module Beatport::Catalog
       its (:'audio_format_fee.wav.to_s') { should == "6.00" }
       its (:'audio_format_fee.aiff.to_s') { should == "6.00" }
       specify { subject.genres.map(&:name).should == ["Trance"] }
-      its (:'images.small.url') { should == "http://geo-media.beatport.com/image/491534.jpg"}
-      its (:'images.medium.url') { should == "http://geo-media.beatport.com/image/412921.jpg"}
-      its (:'images.large.url') { should == "http://geo-media.beatport.com/image/412922.jpg"}
+      its (:'images.small.url') { should == "https://geo-media.beatport.com/image/491534.jpg"}
+      its (:'images.medium.url') { should == "https://geo-media.beatport.com/image/412921.jpg"}
+      its (:'images.large.url') { should == "https://geo-media.beatport.com/image/412922.jpg"}
       its (:'tracks.length') { should == 8 }
     end
 

@@ -24,9 +24,9 @@ module Beatport::Catalog
       its (:'genres.length') { should be > 1 }
       its (:'sub_genres.length') { should be > 1 }
       its (:'top_downloads.length') { should be > 1 }
-      its (:'images.small.url') { should == "http://geo-media.beatport.com/image/491527.jpg" }
-      its (:'images.medium.url') { should == "http://geo-media.beatport.com/image/491530.jpg" }
-      its (:'images.large.url') { should == "http://geo-media.beatport.com/image/10529942.jpg" }
+      its (:'images.small.url') { should == "https://geo-media.beatport.com/image/491527.jpg" }
+      its (:'images.medium.url') { should == "https://geo-media.beatport.com/image/491530.jpg" }
+      its (:'images.large.url') { should == "https://geo-media.beatport.com/image/10529942.jpg" }
 #      its (:'featured_releases.length') { should be > 1 }
     end
 

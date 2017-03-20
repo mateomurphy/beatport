@@ -48,10 +48,10 @@ module Beatport::Catalog
       its (:'charts.count') { should > 0 }
       its (:'release.id') { should == 245137 }
       its (:'label.id') { should == 495}
-      its (:'images.small.url') { should == 'http://geo-media.beatport.com/image/674759.jpg' }
-      its (:'images.medium.url') { should == 'http://geo-media.beatport.com/image/674760.jpg' }
-      its (:'images.large.url') { should == 'http://geo-media.beatport.com/image/674761.jpg' }
-      its (:'images.waveform.url') { should == 'http://geo-media.beatport.com/image/1268229.png' }
+      its (:'images.small.url') { should == 'https://geo-media.beatport.com/image/674759.jpg' }
+      its (:'images.medium.url') { should == 'https://geo-media.beatport.com/image/674760.jpg' }
+      its (:'images.large.url') { should == 'https://geo-media.beatport.com/image/674761.jpg' }
+      its (:'images.waveform.url') { should == 'https://geo-media.beatport.com/image/1268229.png' }
       its (:'dynamic_images.main.url') { should == '//geo-media.beatport.com/image_size{hq}/{w}x{h}/674761.jpg' }
 
       it "should render a dynamic url of the right size" do
