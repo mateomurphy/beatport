@@ -29,6 +29,7 @@ module Beatport
     autoload :Release,          'beatport/catalog/release'
     autoload :Search,           'beatport/catalog/search'
     autoload :State,            'beatport/catalog/state'
+    autoload :Stem,             'beatport/catalog/stem'
     autoload :Slide,            'beatport/catalog/slide'
     autoload :Slideshow,        'beatport/catalog/slideshow'
     autoload :SourceType,       'beatport/catalog/source_type'
