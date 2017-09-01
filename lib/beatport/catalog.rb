@@ -25,6 +25,7 @@ module Beatport
     autoload :Mix,              'beatport/catalog/mix'
     autoload :Mixed,            'beatport/catalog/mixed'
     autoload :Part,             'beatport/catalog/part'
+    autoload :Pack,             'beatport/catalog/pack'
     autoload :Recommendations,  'beatport/catalog/recommendations'
     autoload :Release,          'beatport/catalog/release'
     autoload :Search,           'beatport/catalog/search'
