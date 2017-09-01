@@ -31,7 +31,7 @@ module Beatport
     autoload :Search,           'beatport/catalog/search'
     autoload :State,            'beatport/catalog/state'
     autoload :Stem,             'beatport/catalog/stem'
-    autoload :StemPack,         'beatport/catalog/stem_pack'
+    autoload :Stem_pack,         'beatport/catalog/stem_pack'
     autoload :Slide,            'beatport/catalog/slide'
     autoload :Slideshow,        'beatport/catalog/slideshow'
     autoload :SourceType,       'beatport/catalog/source_type'
