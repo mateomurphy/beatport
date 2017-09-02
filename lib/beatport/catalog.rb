@@ -13,6 +13,7 @@ module Beatport
     autoload :DynamicImage,     'beatport/catalog/dynamic_image'
     autoload :DynamicImages,    'beatport/catalog/dynamic_images'
     autoload :Feature,          'beatport/catalog/feature'
+    autoload :Featured_page,    'beatport/catalog/featured_page'
     autoload :Genre,            'beatport/catalog/genre'
     autoload :Home,             'beatport/catalog/home'
     autoload :ItemType,         'beatport/catalog/item_type'
