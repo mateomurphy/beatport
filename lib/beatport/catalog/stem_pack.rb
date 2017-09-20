@@ -1,6 +1,6 @@
 module Beatport
 	module Catalog
-		class Stem_pack < Item
+		class StemPack < Item
 
 		end
 	end

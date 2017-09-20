@@ -1,7 +1,6 @@
 module Beatport
 	module Catalog
-		class Featured_page < Item
-
+		class FeaturedPage < Item
 		end
 	end
 end
