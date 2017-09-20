@@ -55,7 +55,7 @@ module Beatport
 
       data.each do |k, v|
         next unless v
-        @table[k.to_sym] = Date.parse(v) if k =~ /_date$/
+        @table[k.to_sym] = Date.strptime("#{v}, %y-%m-%d") if k =~ /_date$/
         @table[k.to_sym] = Regexp.new(v.to_s) if k =~ /_regex$/
       end
 
