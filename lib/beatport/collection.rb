@@ -21,7 +21,8 @@ module Beatport
 
       @results = if klass == :auto
         data['results'].map do |r|
-          item_klass = Support::Inflector.constantize("Beatport::Catalog::#{r['type'].capitalize}")
+          type = Support::Inflector.camelize(r['type'])
+          item_klass = Support::Inflector.constantize("Beatport::Catalog::#{type}")
           item_klass.new(r)
         end
       else

@@ -5,15 +5,15 @@
 # stub: beatport 0.4.0 ruby lib
 
 Gem::Specification.new do |s|
-  s.name = "beatport"
+  s.name = "beatport".freeze
   s.version = "0.4.0"
 
-  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.require_paths = ["lib"]
-  s.authors = ["Mateo Murphy"]
-  s.date = "2017-03-20"
-  s.description = "A ruby gem for accessing the beatport api"
-  s.email = "mateo.murphy@gmail.com"
+  s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
+  s.require_paths = ["lib".freeze]
+  s.authors = ["Mateo Murphy".freeze]
+  s.date = "2017-08-31"
+  s.description = "A ruby gem for accessing the beatport api".freeze
+  s.email = "mateo.murphy@gmail.com".freeze
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.md"
@@ -100,54 +100,54 @@ Gem::Specification.new do |s|
     "spec/support/inflector_spec.rb",
     "spec/support/query_builder_spec.rb"
   ]
-  s.homepage = "http://github.com/mateomurphy/beatport"
-  s.licenses = ["MIT"]
-  s.rubygems_version = "2.4.8"
-  s.summary = "ruby gem for accessing the beatport api"
+  s.homepage = "http://github.com/mateomurphy/beatport".freeze
+  s.licenses = ["MIT".freeze]
+  s.rubygems_version = "2.6.12".freeze
+  s.summary = "ruby gem for accessing the beatport api".freeze
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<addressable>, [">= 0"])
-      s.add_runtime_dependency(%q<signet>, [">= 0"])
-      s.add_runtime_dependency(%q<faraday>, ["~> 0.8.8"])
-      s.add_runtime_dependency(%q<money>, ["~> 6.8"])
-      s.add_development_dependency(%q<bundler>, ["~> 1.14.6"])
-      s.add_development_dependency(%q<webmock>, ["~> 1.20.4"])
-      s.add_development_dependency(%q<jeweler>, ["~> 2.3.3"])
-      s.add_development_dependency(%q<log_buddy>, ["~> 0.7.0"])
-      s.add_development_dependency(%q<rspec>, ["~> 3.5.0"])
-      s.add_development_dependency(%q<rspec-its>, ["~> 1.2.0"])
-      s.add_development_dependency(%q<yard>, ["~> 0.8.7"])
-      s.add_development_dependency(%q<vcr>, ["~> 2.9.3"])
+      s.add_runtime_dependency(%q<addressable>.freeze, [">= 0"])
+      s.add_runtime_dependency(%q<signet>.freeze, [">= 0"])
+      s.add_runtime_dependency(%q<faraday>.freeze, ["~> 0.9"])
+      s.add_runtime_dependency(%q<money>.freeze, ["~> 6.8"])
+      s.add_development_dependency(%q<bundler>.freeze, ["~> 1.15.4"])
+      s.add_development_dependency(%q<webmock>.freeze, ["~> 1.20.4"])
+      s.add_development_dependency(%q<jeweler>.freeze, ["~> 2.3.3"])
+      s.add_development_dependency(%q<log_buddy>.freeze, ["~> 0.7.0"])
+      s.add_development_dependency(%q<rspec>.freeze, ["~> 3.5.0"])
+      s.add_development_dependency(%q<rspec-its>.freeze, ["~> 1.2.0"])
+      s.add_development_dependency(%q<yard>.freeze, ["~> 0.8.7"])
+      s.add_development_dependency(%q<vcr>.freeze, ["~> 2.9.3"])
     else
-      s.add_dependency(%q<addressable>, [">= 0"])
-      s.add_dependency(%q<signet>, [">= 0"])
-      s.add_dependency(%q<faraday>, ["~> 0.8.8"])
-      s.add_dependency(%q<money>, ["~> 6.8"])
-      s.add_dependency(%q<bundler>, ["~> 1.14.6"])
-      s.add_dependency(%q<webmock>, ["~> 1.20.4"])
-      s.add_dependency(%q<jeweler>, ["~> 2.3.3"])
-      s.add_dependency(%q<log_buddy>, ["~> 0.7.0"])
-      s.add_dependency(%q<rspec>, ["~> 3.5.0"])
-      s.add_dependency(%q<rspec-its>, ["~> 1.2.0"])
-      s.add_dependency(%q<yard>, ["~> 0.8.7"])
-      s.add_dependency(%q<vcr>, ["~> 2.9.3"])
+      s.add_dependency(%q<addressable>.freeze, [">= 0"])
+      s.add_dependency(%q<signet>.freeze, [">= 0"])
+      s.add_dependency(%q<faraday>.freeze, ["~> 0.9"])
+      s.add_dependency(%q<money>.freeze, ["~> 6.8"])
+      s.add_dependency(%q<bundler>.freeze, ["~> 1.15.4"])
+      s.add_dependency(%q<webmock>.freeze, ["~> 1.20.4"])
+      s.add_dependency(%q<jeweler>.freeze, ["~> 2.3.3"])
+      s.add_dependency(%q<log_buddy>.freeze, ["~> 0.7.0"])
+      s.add_dependency(%q<rspec>.freeze, ["~> 3.5.0"])
+      s.add_dependency(%q<rspec-its>.freeze, ["~> 1.2.0"])
+      s.add_dependency(%q<yard>.freeze, ["~> 0.8.7"])
+      s.add_dependency(%q<vcr>.freeze, ["~> 2.9.3"])
     end
   else
-    s.add_dependency(%q<addressable>, [">= 0"])
-    s.add_dependency(%q<signet>, [">= 0"])
-    s.add_dependency(%q<faraday>, ["~> 0.8.8"])
-    s.add_dependency(%q<money>, ["~> 6.8"])
-    s.add_dependency(%q<bundler>, ["~> 1.14.6"])
-    s.add_dependency(%q<webmock>, ["~> 1.20.4"])
-    s.add_dependency(%q<jeweler>, ["~> 2.3.3"])
-    s.add_dependency(%q<log_buddy>, ["~> 0.7.0"])
-    s.add_dependency(%q<rspec>, ["~> 3.5.0"])
-    s.add_dependency(%q<rspec-its>, ["~> 1.2.0"])
-    s.add_dependency(%q<yard>, ["~> 0.8.7"])
-    s.add_dependency(%q<vcr>, ["~> 2.9.3"])
+    s.add_dependency(%q<addressable>.freeze, [">= 0"])
+    s.add_dependency(%q<signet>.freeze, [">= 0"])
+    s.add_dependency(%q<faraday>.freeze, ["~> 0.9"])
+    s.add_dependency(%q<money>.freeze, ["~> 6.8"])
+    s.add_dependency(%q<bundler>.freeze, ["~> 1.15.4"])
+    s.add_dependency(%q<webmock>.freeze, ["~> 1.20.4"])
+    s.add_dependency(%q<jeweler>.freeze, ["~> 2.3.3"])
+    s.add_dependency(%q<log_buddy>.freeze, ["~> 0.7.0"])
+    s.add_dependency(%q<rspec>.freeze, ["~> 3.5.0"])
+    s.add_dependency(%q<rspec-its>.freeze, ["~> 1.2.0"])
+    s.add_dependency(%q<yard>.freeze, ["~> 0.8.7"])
+    s.add_dependency(%q<vcr>.freeze, ["~> 2.9.3"])
   end
 end
 
