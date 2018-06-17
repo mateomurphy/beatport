@@ -1,7 +1,5 @@
 # Beatport
 
-[![Dependency Status](https://gemnasium.com/mateomurphy/beatport.png)](https://gemnasium.com/mateomurphy/beatport)
-
 A ruby gem for accessing the Beatport API; currently incomplete and only supports the Catalog API, but under development.
 
 https://oauth-api.beatport.com/docs/
